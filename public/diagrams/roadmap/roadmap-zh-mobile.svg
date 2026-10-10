@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="850" viewBox="0 0 375 850" role="img" aria-labelledby="roadmap-title roadmap-desc" xml:lang="zh">
+<title id="roadmap-title">SEO 六步路线</title><desc id="roadmap-desc">从四行说明到改写和复查的六阶段路线。过程不保证自动获得流量。</desc>
+<rect width="375" height="850" fill="#F5F6F2"/>
+<g font-family="Arial, Noto Sans CJK SC, sans-serif">
+<text x="24" y="31" font-size="15" font-weight="700" text-anchor="start" fill="#161C1A">AWESOME SEO WORKFLOW</text>
+<text x="24" y="77" font-size="29" font-weight="700" text-anchor="start" fill="#161C1A">SEO 六步路线</text>
+<text x="24" y="110" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">每站留下一份具体产物</text>
+<path d="M49 169V714" fill="none" stroke="#161C1A" stroke-width="2"/>
+<g id="01-search-opportunity" data-node-id="01-search-opportunity" data-stage="1"><title>想清楚要帮谁 · 四行说明</title>
+<circle cx="49" cy="183" r="20" fill="#D7FA64" stroke="#161C1A" stroke-width="2"/>
+<text x="49" y="189" font-size="17" font-weight="700" text-anchor="middle" fill="#161C1A">01</text>
+<text x="86" y="180" font-size="19" font-weight="700" text-anchor="start" fill="#161C1A">想清楚要帮谁</text>
+<text x="86" y="208" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">产物：四行说明</text>
+<g transform="translate(325 189) scale(0.6)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M-19-25H12L23-14V26H-19Z M12-25V-14H23"/><path d="M-5-8C-5-16 9-16 9-8C9-2 2-3 2 4"/><circle cx="2" cy="13" r="1.6" fill="#161C1A" stroke="none"/></g>
+</g>
+<g id="02-page-plan" data-node-id="02-page-plan" data-stage="2"><title>画出页面 · 页面方框</title>
+<circle cx="49" cy="284" r="20" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="49" y="290" font-size="17" font-weight="700" text-anchor="middle" fill="#161C1A">02</text>
+<text x="86" y="281" font-size="19" font-weight="700" text-anchor="start" fill="#161C1A">画出页面</text>
+<text x="86" y="309" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">产物：页面方框</text>
+<g transform="translate(325 290) scale(0.6)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="-25" y="-24" width="50" height="48" rx="3"/><path d="M-25-13H25 M-15-3H15 M-15 5H2 M-15 13H9"/><path d="M10 6L20 14L14 15L11 21Z" fill="#D7FA64"/></g>
+</g>
+<g id="03-content-production" data-node-id="03-content-production" data-stage="3"><title>写出来、做出来 · 标题和说明</title>
+<circle cx="49" cy="385" r="20" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="49" y="391" font-size="17" font-weight="700" text-anchor="middle" fill="#161C1A">03</text>
+<text x="86" y="382" font-size="19" font-weight="700" text-anchor="start" fill="#161C1A">写出来、做出来</text>
+<text x="86" y="410" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">产物：标题和说明</text>
+<g transform="translate(325 391) scale(0.6)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="-27" y="-22" width="54" height="44" rx="4"/><path d="M-27-11H27 M-18-16H-16 M-11-16H-9 M-4-16H-2 M-8-3L-15 4L-8 11 M8-3L15 4L8 11 M3-4L-3 12"/></g>
+</g>
+<g id="04-publish-check" data-node-id="04-publish-check" data-stage="4"><title>打开页面检查 · 检查记录</title>
+<circle cx="49" cy="486" r="20" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="49" y="492" font-size="17" font-weight="700" text-anchor="middle" fill="#161C1A">04</text>
+<text x="86" y="483" font-size="19" font-weight="700" text-anchor="start" fill="#161C1A">打开页面检查</text>
+<text x="86" y="511" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">产物：检查记录</text>
+<g transform="translate(325 492) scale(0.6)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M-18-23H18V26H-18Z"/><rect x="-8" y="-27" width="16" height="9" rx="2" fill="#D7FA64"/><path d="M-10-7L-7-4L-2-10 M3-7H11 M-10 5L-7 8L-2 2 M3 5H11 M-10 17L-7 20L-2 14 M3 17H11"/></g>
+</g>
+<g id="05-discovery-promotion" data-node-id="05-discovery-promotion" data-stage="5"><title>安排入口 · 入口计划</title>
+<circle cx="49" cy="587" r="20" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="49" y="593" font-size="17" font-weight="700" text-anchor="middle" fill="#161C1A">05</text>
+<text x="86" y="584" font-size="19" font-weight="700" text-anchor="start" fill="#161C1A">安排入口</text>
+<text x="86" y="612" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">产物：入口计划</text>
+<g transform="translate(325 593) scale(0.6)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0-28V28 M-21 28H21"/><path d="M-23-19H18L26-11L18-3H-23Z" fill="#D7FA64"/><path d="M23 3H-18L-26 11L-18 19H23Z"/><path d="M-13-11H13 M-13 11H13"/></g>
+</g>
+<g id="06-measure-iterate" data-node-id="06-measure-iterate" data-stage="6"><title>看结果再改 · 改写和复查</title>
+<circle cx="49" cy="688" r="20" fill="#D7FA64" stroke="#161C1A" stroke-width="2"/>
+<text x="49" y="694" font-size="17" font-weight="700" text-anchor="middle" fill="#161C1A">06</text>
+<text x="86" y="685" font-size="19" font-weight="700" text-anchor="start" fill="#161C1A">看结果再改</text>
+<text x="86" y="713" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">产物：改写和复查</text>
+<g transform="translate(325 694) scale(0.6)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M-24 2A24 24 0 0 1 18-16 M24-2A24 24 0 0 1-18 16 M9-17L19-15L20-26 M-9 17L-19 15L-20 26"/><path d="M-11 10V1 M0 10V-7 M11 10V-13" stroke-width="4"/></g>
+</g>
+<path d="M49 717V752H351V155H49" fill="none" stroke="#161C1A" stroke-width="1.2" stroke-dasharray="3 6"/>
+<path d="M57 151L49 155L57 159" fill="none" stroke="#161C1A" stroke-width="1.2"/>
+<text x="24" y="784" font-size="16" font-weight="700" text-anchor="start" fill="#161C1A">看结果，回到需要调整的一站</text>
+<text x="24" y="815" font-size="15" font-weight="400" text-anchor="start" fill="#161C1A">这是一条工作路线，不保证流量。</text>
+</g></svg>

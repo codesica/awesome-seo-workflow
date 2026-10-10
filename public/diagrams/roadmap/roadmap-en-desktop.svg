@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="roadmap-title roadmap-desc" xml:lang="en">
+<title id="roadmap-title">SEO, step by step</title><desc id="roadmap-desc">A six-stage route from a problem about a need to the next change. Following it does not guarantee traffic.</desc>
+<rect width="1100" height="500" fill="#F5F6F2"/>
+<g font-family="Arial, Noto Sans CJK SC, sans-serif">
+<text x="36" y="39" font-size="15" font-weight="700" text-anchor="start" fill="#161C1A">AWESOME SEO WORKFLOW</text>
+<text x="36" y="91" font-size="36" font-weight="700" text-anchor="start" fill="#161C1A">SEO, step by step</text>
+<text x="36" y="124" font-size="18" font-weight="400" text-anchor="start" fill="#161C1A">Leave a concrete output at each stop. Let results guide the next change.</text>
+<path d="M97 254H1002" stroke="#161C1A" stroke-width="2" fill="none"/>
+<g id="01-search-opportunity" data-node-id="01-search-opportunity" data-stage="1"><title>Whom to help · Four lines about a need</title>
+<g transform="translate(97 194) scale(1)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M-19-25H12L23-14V26H-19Z M12-25V-14H23"/><path d="M-5-8C-5-16 9-16 9-8C9-2 2-3 2 4"/><circle cx="2" cy="13" r="1.6" fill="#161C1A" stroke="none"/></g>
+<circle cx="97" cy="254" r="23" fill="#D7FA64" stroke="#161C1A" stroke-width="2"/>
+<text x="97" y="260" font-size="18" font-weight="700" text-anchor="middle" fill="#161C1A">01</text>
+<text x="97" y="313" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">Whom to help</text>
+<text x="97" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">Four lines</text>
+<text x="97" y="385" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">about a need</text>
+</g>
+<path d="M187 250L194 254L187 258" fill="none" stroke="#161C1A" stroke-width="1.5"/>
+<g id="02-page-plan" data-node-id="02-page-plan" data-stage="2"><title>Sketch the page · Page boxes</title>
+<g transform="translate(278 194) scale(1)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="-25" y="-24" width="50" height="48" rx="3"/><path d="M-25-13H25 M-15-3H15 M-15 5H2 M-15 13H9"/><path d="M10 6L20 14L14 15L11 21Z" fill="#D7FA64"/></g>
+<circle cx="278" cy="254" r="23" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="278" y="260" font-size="18" font-weight="700" text-anchor="middle" fill="#161C1A">02</text>
+<text x="278" y="313" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">Sketch the page</text>
+<text x="278" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">Page boxes</text>
+</g>
+<path d="M368 250L375 254L368 258" fill="none" stroke="#161C1A" stroke-width="1.5"/>
+<g id="03-content-production" data-node-id="03-content-production" data-stage="3"><title>Write &amp; make it · Title &amp; instructions</title>
+<g transform="translate(459 194) scale(1)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="-27" y="-22" width="54" height="44" rx="4"/><path d="M-27-11H27 M-18-16H-16 M-11-16H-9 M-4-16H-2 M-8-3L-15 4L-8 11 M8-3L15 4L8 11 M3-4L-3 12"/></g>
+<circle cx="459" cy="254" r="23" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="459" y="260" font-size="18" font-weight="700" text-anchor="middle" fill="#161C1A">03</text>
+<text x="459" y="313" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">Write &amp; make it</text>
+<text x="459" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">Title &amp; instructions</text>
+</g>
+<path d="M549 250L556 254L549 258" fill="none" stroke="#161C1A" stroke-width="1.5"/>
+<g id="04-publish-check" data-node-id="04-publish-check" data-stage="4"><title>Check access · A check log</title>
+<g transform="translate(640 194) scale(1)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M-18-23H18V26H-18Z"/><rect x="-8" y="-27" width="16" height="9" rx="2" fill="#D7FA64"/><path d="M-10-7L-7-4L-2-10 M3-7H11 M-10 5L-7 8L-2 2 M3 5H11 M-10 17L-7 20L-2 14 M3 17H11"/></g>
+<circle cx="640" cy="254" r="23" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="640" y="260" font-size="18" font-weight="700" text-anchor="middle" fill="#161C1A">04</text>
+<text x="640" y="313" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">Check access</text>
+<text x="640" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">A check plan</text>
+</g>
+<path d="M730 250L737 254L730 258" fill="none" stroke="#161C1A" stroke-width="1.5"/>
+<g id="05-discovery-promotion" data-node-id="05-discovery-promotion" data-stage="5"><title>Add entry points · An entry plan</title>
+<g transform="translate(821 194) scale(1)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0-28V28 M-21 28H21"/><path d="M-23-19H18L26-11L18-3H-23Z" fill="#D7FA64"/><path d="M23 3H-18L-26 11L-18 19H23Z"/><path d="M-13-11H13 M-13 11H13"/></g>
+<circle cx="821" cy="254" r="23" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
+<text x="821" y="260" font-size="18" font-weight="700" text-anchor="middle" fill="#161C1A">05</text>
+<text x="821" y="313" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">Add entry points</text>
+<text x="821" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">An entry</text>
+<text x="821" y="385" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">plan</text>
+</g>
+<path d="M911 250L918 254L911 258" fill="none" stroke="#161C1A" stroke-width="1.5"/>
+<g id="06-measure-iterate" data-node-id="06-measure-iterate" data-stage="6"><title>Review &amp; improve · A change &amp; recheck</title>
+<g transform="translate(1002 194) scale(1)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M-24 2A24 24 0 0 1 18-16 M24-2A24 24 0 0 1-18 16 M9-17L19-15L20-26 M-9 17L-19 15L-20 26"/><path d="M-11 10V1 M0 10V-7 M11 10V-13" stroke-width="4"/></g>
+<circle cx="1002" cy="254" r="23" fill="#D7FA64" stroke="#161C1A" stroke-width="2"/>
+<text x="1002" y="260" font-size="18" font-weight="700" text-anchor="middle" fill="#161C1A">06</text>
+<text x="1002" y="313" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">Review &amp;</text>
+<text x="1002" y="338" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">improve</text>
+<text x="1002" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">A change &amp; recheck</text>
+</g>
+<path d="M1002 400V426H97V400" fill="none" stroke="#161C1A" stroke-width="1.2" stroke-dasharray="4 6"/>
+<path d="M93 408L97 400L101 408" fill="none" stroke="#161C1A" stroke-width="1.2"/>
+<rect x="340" y="413" width="420" height="26" fill="#F5F6F2"/>
+<text x="550" y="432" font-size="16" font-weight="700" text-anchor="middle" fill="#161C1A">Return to the step that needs work</text>
+<text x="36" y="478" font-size="15" font-weight="400" text-anchor="start" fill="#161C1A">This is a working process. It does not guarantee traffic.</text>
+</g></svg>

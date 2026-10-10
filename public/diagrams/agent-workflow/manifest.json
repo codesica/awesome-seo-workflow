@@ -1,0 +1,141 @@
+{
+  "asset": "agent-workflow",
+  "version": 1,
+  "format": "standalone SVG, no script or external resource",
+  "palette": {
+    "background": "#F5F6F2",
+    "ink": "#161C1A",
+    "accent": "#D7FA64"
+  },
+  "files": [
+    {
+      "file": "agent-workflow-zh-desktop.svg",
+      "language": "zh",
+      "width": 1100,
+      "height": 440
+    },
+    {
+      "file": "agent-workflow-zh-mobile.svg",
+      "language": "zh",
+      "width": 375,
+      "height": 750
+    },
+    {
+      "file": "agent-workflow-en-desktop.svg",
+      "language": "en",
+      "width": 1100,
+      "height": 440
+    },
+    {
+      "file": "agent-workflow-en-mobile.svg",
+      "language": "en",
+      "width": 375,
+      "height": 750
+    }
+  ],
+  "nodes": [
+    {
+      "id": "step-1",
+      "zh": {
+        "title": "给出目标",
+        "description": [
+          "一个网页地址",
+          "加上你想解决的问题"
+        ]
+      },
+      "en": {
+        "title": "Give a goal",
+        "description": [
+          "Share a page URL",
+          "and the question you have"
+        ]
+      }
+    },
+    {
+      "id": "step-2",
+      "zh": {
+        "title": "按步骤查证",
+        "description": [
+          "Agent 参考 Skill 操作",
+          "查看结果，保留依据"
+        ]
+      },
+      "en": {
+        "title": "Check the evidence",
+        "description": [
+          "Agent follows a Skill",
+          "and checks the results"
+        ]
+      }
+    },
+    {
+      "id": "step-3",
+      "zh": {
+        "title": "带回发现",
+        "description": [
+          "说明已知和未知",
+          "给出建议的下一步"
+        ]
+      },
+      "en": {
+        "title": "Bring back findings",
+        "description": [
+          "Separate known from unknown",
+          "and suggest a next step"
+        ]
+      }
+    },
+    {
+      "id": "step-4",
+      "zh": {
+        "title": "由你做决定",
+        "description": [
+          "先核对证据与建议",
+          "再决定是否执行"
+        ]
+      },
+      "en": {
+        "title": "You decide",
+        "description": [
+          "Review evidence and advice",
+          "before approving any action"
+        ]
+      }
+    }
+  ],
+  "example": {
+    "zh": {
+      "example": "模拟例子 · 不是实际检查结果",
+      "known": "已知：页面能打开",
+      "unknown": "待查：搜索能否收录尚未检查",
+      "next": "下一步：检查搜索引擎收录情况",
+      "guard": "不会自动发布或修改，也不绕过权限。"
+    },
+    "en": {
+      "example": "SIMULATED EXAMPLE · NOT A LIVE CHECK",
+      "known": "Known: the page opens",
+      "unknown": "Unknown: search indexing has not been checked",
+      "next": "Next: check whether the page is indexed",
+      "guard": "No automatic publishing, editing, or permission bypass."
+    }
+  },
+  "frontend_interaction_suggestions": [
+    {
+      "interaction": "Step selection",
+      "implementation": "Implement four HTML buttons alongside the SVG, with aria-controls pointing to an adjacent explanation region. Use the manifest node labels and descriptions. Keep native keyboard support and visible focus."
+    },
+    {
+      "interaction": "Evidence reveal",
+      "implementation": "On selecting step 3, show the explicitly simulated example in HTML. Keep known and unchecked status visually distinct and readable without color."
+    },
+    {
+      "interaction": "Review checkpoint",
+      "implementation": "Step 4 can open a review checklist. It must not imply execution approval or trigger writes. Any real Agent execution needs a separate explicitly authorized application flow."
+    },
+    {
+      "interaction": "Responsive display",
+      "implementation": "Use the language-specific mobile SVG for narrow screens and desktop SVG for wide screens. Render at intrinsic aspect ratio. Provide meaningful alt text; avoid inaccessible SVG-only click targets."
+    }
+  ],
+  "disclaimer": "These static teaching illustrations do not execute an Agent, verify a real website, publish, modify content, or bypass permissions."
+}

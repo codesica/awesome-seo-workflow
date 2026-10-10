@@ -1,0 +1,47 @@
+{
+  "name": "search-journey",
+  "version": 1,
+  "assets": [
+    {
+      "locale": "zh",
+      "layout": "desktop",
+      "file": "search-journey.zh.desktop.svg",
+      "width": 1100,
+      "height": 440
+    },
+    {
+      "locale": "zh",
+      "layout": "mobile",
+      "file": "search-journey.zh.mobile.svg",
+      "width": 375,
+      "height": 750
+    },
+    {
+      "locale": "en",
+      "layout": "desktop",
+      "file": "search-journey.en.desktop.svg",
+      "width": 1100,
+      "height": 440
+    },
+    {
+      "locale": "en",
+      "layout": "mobile",
+      "file": "search-journey.en.mobile.svg",
+      "width": 375,
+      "height": 750
+    }
+  ],
+  "nodeData": "nodes.json",
+  "suggestedBreakpoint": 640,
+  "interaction": "Use data-node-id on inline SVG groups; for img/picture rendering, use a separate accessible HTML node list.",
+  "accessibility": "SVG includes title/desc. Use a concise alt on img. Native HTML buttons are recommended for interactive explanations.",
+  "sizing": "width:100%; height:auto; display:block; no fixed-height cropping",
+  "meaning": "Dashed connectors illustrate a possible sequence, not guaranteed transitions.",
+  "palette": {
+    "bg": "#F5F6F2",
+    "ink": "#161C1A",
+    "lime": "#D7FA64",
+    "muted": "#58635D",
+    "line": "#BBC4B9"
+  }
+}

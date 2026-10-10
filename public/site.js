@@ -62,3 +62,86 @@ function revealFragment() {
 }
 revealFragment();
 window.addEventListener('hashchange', revealFragment);
+
+// Progressive teaching diagrams: the native details list remains usable without JS.
+for (const diagram of document.querySelectorAll('[data-teaching-diagram]')) {
+  const nodes = [...diagram.querySelectorAll('[data-diagram-node]')];
+  const buttons = [];
+  const sync = () => {
+    for (const button of buttons) {
+      const expanded = nodes.find(node => node.dataset.diagramNode === button.dataset.diagramTarget).open;
+      button.setAttribute('aria-expanded', String(expanded));
+      button.querySelector('.node-affordance').textContent = expanded ? '−' : '+';
+    }
+  };
+  const select = (selected, expanded) => {
+    for (const node of nodes) node.open = node === selected && expanded;
+    sync();
+  };
+  for (const visual of diagram.querySelectorAll('.diagram-visual')) {
+    const svg = visual.querySelector('svg');
+    const overlay = visual.querySelector('.diagram-hotspots');
+    const visualButtons = [];
+    for (const node of nodes) {
+      const group = [...svg.querySelectorAll('[data-node-id]')].find(group => group.dataset.nodeId === node.dataset.diagramNode);
+      if (!group) continue;
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'diagram-hotspot';
+      button.dataset.diagramTarget = node.dataset.diagramNode;
+      button.setAttribute('aria-label', node.querySelector('summary').textContent.trim());
+      button.setAttribute('aria-controls', node.querySelector('.diagram-example').id);
+      const plus = document.createElement('span');
+      plus.className = 'node-affordance';
+      plus.setAttribute('aria-hidden', 'true');
+      button.append(plus);
+      button.addEventListener('click', () => {
+        select(node, !node.open);
+        if (node.open) node.querySelector('.diagram-example').scrollIntoView({block:'nearest', behavior:'instant'});
+      });
+      button.addEventListener('keydown', event => {
+        const index = visualButtons.indexOf(button);
+        const next = ({ArrowRight:(index+1)%nodes.length, ArrowDown:(index+1)%nodes.length, ArrowLeft:(index+nodes.length-1)%nodes.length, ArrowUp:(index+nodes.length-1)%nodes.length, Home:0, End:nodes.length-1})[event.key];
+        if (next !== undefined && visualButtons[next]) {
+          event.preventDefault();
+          visualButtons[next].focus();
+        }
+      });
+      overlay.append(button);
+      visualButtons.push(button);
+      buttons.push(button);
+      button.diagramGroup = group;
+    }
+    visual.diagramButtons = visualButtons;
+  }
+  const arrange = () => {
+    let ready = false;
+    for (const visual of diagram.querySelectorAll('.diagram-visual')) {
+      if (!visual.clientWidth || visual.diagramButtons.length !== nodes.length) continue;
+      const svg = visual.querySelector('svg');
+      const box = svg.viewBox.baseVal;
+      const bounds = visual.diagramButtons.map(button => button.diagramGroup.getBBox());
+      if (bounds.some(bound => !bound.width || !bound.height)) continue;
+      visual.diagramButtons.forEach((button, i) => {
+        const bound = bounds[i];
+        button.style.left = `${100*(bound.x-box.x-4)/box.width}%`;
+        button.style.top = `${100*(bound.y-box.y-4)/box.height}%`;
+        button.style.width = `${100*(bound.width+8)/box.width}%`;
+        button.style.height = `${100*(bound.height+8)/box.height}%`;
+      });
+      svg.setAttribute('aria-hidden', 'true');
+      visual.classList.add('has-hotspots');
+      ready = true;
+    }
+    diagram.classList.toggle('is-enhanced', ready);
+    const hint = diagram.querySelector('[data-diagram-hint]');
+    if (ready) hint.textContent = hint.dataset.interactiveHint;
+  };
+  for (const node of nodes) node.addEventListener('toggle', () => {
+    if (node.open) select(node, true);
+    sync();
+  });
+  sync();
+  arrange();
+  window.addEventListener('resize', arrange);
+}

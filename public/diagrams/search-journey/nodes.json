@@ -1,0 +1,94 @@
+{
+  "zh": {
+    "title": "搜索，如何带来访客？",
+    "subtitle": "以一个假设的冥想计时页面为例",
+    "caveat": "一条可能的路径，每一步都可能中断。",
+    "boundaries": [
+      "能打开 ≠ 已被收录",
+      "有展示 ≠ 一定点击"
+    ],
+    "nodes": [
+      {
+        "id": "need",
+        "label": "人有问题",
+        "caption": "想安静冥想 5 分钟",
+        "explanation": "从真实需要开始。此时，对方还不知道你的页面。",
+        "order": 1
+      },
+      {
+        "id": "search",
+        "label": "发起搜索",
+        "caption": "搜索「5 分钟冥想计时」",
+        "explanation": "用户把需要变成搜索词。",
+        "order": 2
+      },
+      {
+        "id": "result",
+        "label": "看到结果",
+        "caption": "页面可能出现在结果中",
+        "explanation": "被收录不保证展示，展示也不保证位置。",
+        "order": 3
+      },
+      {
+        "id": "visit",
+        "label": "进入页面",
+        "caption": "觉得合适，才可能点进来",
+        "explanation": "标题和说明让用户判断页面是否值得打开。",
+        "order": 4
+      },
+      {
+        "id": "finish",
+        "label": "完成计时",
+        "caption": "顺利用完 5 分钟计时",
+        "explanation": "点击之后，页面还需要真正完成用户的任务。",
+        "order": 5
+      }
+    ]
+  },
+  "en": {
+    "title": "How search brings visitors",
+    "subtitle": "An example: a hypothetical meditation timer",
+    "caveat": "One possible path. People can stop at any step.",
+    "boundaries": [
+      "Accessible ≠ indexed",
+      "Shown ≠ clicked"
+    ],
+    "nodes": [
+      {
+        "id": "need",
+        "label": "A real need",
+        "caption": "“I want 5 quiet minutes.”",
+        "explanation": "Start with a real need. The person does not know your page yet.",
+        "order": 1
+      },
+      {
+        "id": "search",
+        "label": "A search",
+        "caption": "“5 minute meditation timer”",
+        "explanation": "The person turns their need into a search query.",
+        "order": 2
+      },
+      {
+        "id": "result",
+        "label": "A result appears",
+        "caption": "Your page may be shown",
+        "explanation": "Indexing does not guarantee visibility or a particular position.",
+        "order": 3
+      },
+      {
+        "id": "visit",
+        "label": "A page visit",
+        "caption": "A good fit may earn a click",
+        "explanation": "The title and description help someone decide whether to open the page.",
+        "order": 4
+      },
+      {
+        "id": "finish",
+        "label": "A task completed",
+        "caption": "The 5-minute timer works",
+        "explanation": "After the click, the page still needs to deliver what the visitor came for.",
+        "order": 5
+      }
+    ]
+  }
+}

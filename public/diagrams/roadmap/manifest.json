@@ -1,0 +1,126 @@
+{
+  "title": "Awesome SEO Workflow: Six-step roadmap",
+  "version": 1,
+  "palette": {
+    "background": "#F5F6F2",
+    "ink": "#161C1A",
+    "accent": "#D7FA64"
+  },
+  "files": [
+    "roadmap-zh-desktop.svg",
+    "roadmap-zh-mobile.svg",
+    "roadmap-en-desktop.svg",
+    "roadmap-en-mobile.svg"
+  ],
+  "dimensions": {
+    "desktop": [
+      1100,
+      500
+    ],
+    "mobile": [
+      375,
+      850
+    ]
+  },
+  "nodes": [
+    {
+      "id": "01-search-opportunity",
+      "stage": 1,
+      "zh": {
+        "action": "帮谁解决什么",
+        "output": "问题句",
+        "detail": "明确读者，以及他们要解决的问题。"
+      },
+      "en": {
+        "action": "Pick a question",
+        "output": "A problem statement",
+        "detail": "Name the reader and the problem they need to solve."
+      }
+    },
+    {
+      "id": "02-page-plan",
+      "stage": 2,
+      "zh": {
+        "action": "画出页面",
+        "output": "页面草图",
+        "detail": "安排页面结构和读者的下一步。"
+      },
+      "en": {
+        "action": "Sketch the page",
+        "output": "A page sketch",
+        "detail": "Plan the page structure and the reader’s next step."
+      }
+    },
+    {
+      "id": "03-content-production",
+      "stage": 3,
+      "zh": {
+        "action": "做出页面",
+        "output": "可用网页",
+        "detail": "把草图变成能阅读、能使用的页面。"
+      },
+      "en": {
+        "action": "Build the page",
+        "output": "A working page",
+        "detail": "Turn the sketch into a page people can read and use."
+      }
+    },
+    {
+      "id": "04-publish-check",
+      "stage": 4,
+      "zh": {
+        "action": "检查发布",
+        "output": "检查记录",
+        "detail": "检查内容、链接和访问，再发布。"
+      },
+      "en": {
+        "action": "Check & publish",
+        "output": "A check log",
+        "detail": "Check content, links, and access before publishing."
+      }
+    },
+    {
+      "id": "05-discovery-promotion",
+      "stage": 5,
+      "zh": {
+        "action": "让人找到",
+        "output": "入口记录",
+        "detail": "记录搜索与相关渠道中的页面入口。"
+      },
+      "en": {
+        "action": "Add entry points",
+        "output": "An entry-point log",
+        "detail": "Record page entry points in search and relevant channels."
+      }
+    },
+    {
+      "id": "06-measure-iterate",
+      "stage": 6,
+      "zh": {
+        "action": "看结果再改",
+        "output": "下一次改动",
+        "detail": "从实际结果中选择下一次改动。"
+      },
+      "en": {
+        "action": "Review & improve",
+        "output": "The next change",
+        "detail": "Use observed results to choose the next change."
+      }
+    }
+  ],
+  "interaction_contract": {
+    "implemented": "Static SVG only. No script, navigation, or expand/collapse behavior is implemented.",
+    "mapping": "Use data-node-id (identical to group id) to map stages to actual page sections.",
+    "suggested_behavior": "Click a stage to expand its real content and concrete output. Do not display invented completion or traffic claims.",
+    "frontend_responsibility": [
+      "For interactive use, embed inline SVG in an accessible container; replace root image semantics as appropriate and provide semantic keyboard-operable buttons for stages.",
+      "Provide visible focus and Enter/Space activation; reflect expansion with aria-expanded and aria-controls.",
+      "Provide an equivalent text list. IDs should be prefixed per instance if desktop/mobile SVGs coexist inline. Preserve data-node-id for mapping.",
+      "No motion is built in. Honor prefers-reduced-motion for any frontend transitions."
+    ]
+  },
+  "caveat": {
+    "zh": "这是一条工作路线，不保证自动获得流量。",
+    "en": "This is a working process. It does not guarantee traffic."
+  }
+}
