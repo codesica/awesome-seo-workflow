@@ -18,7 +18,7 @@
       {
         "id": "search",
         "label": "发起搜索",
-        "caption": "搜索「5 分钟冥想计时」",
+        "caption": "不用下载的冥想计时器",
         "explanation": "用户把需要变成搜索词。",
         "order": 2
       },
@@ -64,7 +64,7 @@
       {
         "id": "search",
         "label": "A search",
-        "caption": "“5 minute meditation timer”",
+        "caption": "“meditation timer no download”",
         "explanation": "The person turns their need into a search query.",
         "order": 2
       },

@@ -36,7 +36,7 @@
 <circle cx="640" cy="254" r="23" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
 <text x="640" y="260" font-size="18" font-weight="700" text-anchor="middle" fill="#161C1A">04</text>
 <text x="640" y="313" font-size="19" font-weight="700" text-anchor="middle" fill="#161C1A">Check access</text>
-<text x="640" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">A check plan</text>
+<text x="640" y="363" font-size="16" font-weight="400" text-anchor="middle" fill="#161C1A">A check log</text>
 </g>
 <path d="M730 250L737 254L730 258" fill="none" stroke="#161C1A" stroke-width="1.5"/>
 <g id="05-discovery-promotion" data-node-id="05-discovery-promotion" data-stage="5"><title>Add entry points · An entry plan</title>

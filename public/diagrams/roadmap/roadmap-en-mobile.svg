@@ -31,7 +31,7 @@
 <circle cx="49" cy="486" r="20" fill="#F5F6F2" stroke="#161C1A" stroke-width="2"/>
 <text x="49" y="492" font-size="17" font-weight="700" text-anchor="middle" fill="#161C1A">04</text>
 <text x="86" y="483" font-size="18" font-weight="700" text-anchor="start" fill="#161C1A">Check access</text>
-<text x="86" y="511" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">A check plan</text>
+<text x="86" y="511" font-size="16" font-weight="400" text-anchor="start" fill="#161C1A">A check log</text>
 <g transform="translate(325 492) scale(0.6)" fill="none" stroke="#161C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M-18-23H18V26H-18Z"/><rect x="-8" y="-27" width="16" height="9" rx="2" fill="#D7FA64"/><path d="M-10-7L-7-4L-2-10 M3-7H11 M-10 5L-7 8L-2 2 M3 5H11 M-10 17L-7 20L-2 14 M3 17H11"/></g>
 </g>
 <g id="05-discovery-promotion" data-node-id="05-discovery-promotion" data-stage="5"><title>Add entry points · An entry plan</title>

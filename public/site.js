@@ -89,7 +89,7 @@ for (const diagram of document.querySelectorAll('[data-teaching-diagram]')) {
       button.type = 'button';
       button.className = 'diagram-hotspot';
       button.dataset.diagramTarget = node.dataset.diagramNode;
-      button.setAttribute('aria-label', node.querySelector('summary').textContent.trim());
+      button.setAttribute('aria-label', node.querySelector('summary').textContent.trim().replace(/^(\d{2})/, '$1 '));
       button.setAttribute('aria-controls', node.querySelector('.diagram-example').id);
       const plus = document.createElement('span');
       plus.className = 'node-affordance';

@@ -28,11 +28,12 @@ function inlineSVG(topic,lang,size,instance) {
 
 function diagram(topic,lang,instance,nodes,{context='',firstOpen=true}={}) {
  const zh=lang==='zh';
+ const label={'search-journey':zh?'搜索如何带来访客':'How search brings visitors',roadmap:zh?'六堂课的学习路线':'The six-lesson roadmap','agent-workflow':zh?'Agent 的输入、操作、产物与用户核验':'Agent input, operation, output, and your review'}[topic];
  const panels=nodes.map((node,i)=>{
   const id=`${instance}-${node.id}-example`;
   return `<details class="diagram-node" data-diagram-node="${esc(node.id)}"${firstOpen&&i===0?' open':''}><summary id="${id}-label"><span class="diagram-text-number">${String(i+1).padStart(2,'0')}</span>${esc(node.label)}</summary><div class="diagram-example" id="${id}" role="region" aria-labelledby="${id}-heading"><h3 id="${id}-heading"><span>${String(i+1).padStart(2,'0')}</span> ${esc(node.label)}</h3>${node.body}</div></details>`;
  }).join('');
- return `<figure class="teaching-diagram diagram-${topic}" id="${instance}" data-teaching-diagram><figcaption><span class="diagram-kind">${zh?'教学图解':'Teaching diagram'}</span><span data-diagram-hint data-interactive-hint="${zh?'点图中节点，看对应例子':'Select a node in the diagram to see its example'}">${zh?'展开下方文字节点，看对应例子':'Open the text steps below to see the examples'}</span></figcaption>${['desktop','mobile'].map(size=>`<div class="diagram-visual diagram-${size}">${inlineSVG(topic,lang,size,instance)}<div class="diagram-hotspots"></div></div>`).join('')}${context?`<p class="diagram-context">${context}</p>`:''}<div class="diagram-examples">${panels}</div></figure>`;
+ return `<figure class="teaching-diagram diagram-${topic}" id="${instance}" aria-label="${esc(label)}" data-teaching-diagram><figcaption><span class="diagram-kind">${zh?'教学图解':'Teaching diagram'}</span><span data-diagram-hint data-interactive-hint="${zh?'点图中节点，看对应例子':'Select a node in the diagram to see its example'}">${zh?'展开下方文字节点，看对应例子':'Open the text steps below to see the examples'}</span></figcaption>${['desktop','mobile'].map(size=>`<div class="diagram-visual diagram-${size}">${inlineSVG(topic,lang,size,instance)}<div class="diagram-hotspots"></div></div>`).join('')}${context?`<p class="diagram-context">${context}</p>`:''}<div class="diagram-examples">${panels}</div></figure>`;
 }
 
 const searchNodes={
