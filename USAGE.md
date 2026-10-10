@@ -1,4 +1,4 @@
-# Use a First Crawl Skill
+# Use a Awesome SEO Workflow Skill
 
 English · [简体中文](USAGE.zh-CN.md) · [Project README](README.md)
 
@@ -23,7 +23,7 @@ There is no dedicated page-building Skill or automatic outreach Skill. Browser p
 - English source: `skills/en/browser/<name>/` or `skills/en/workflow/<name>/`.
 - Chinese source: `skills/browser/<name>/` or `skills/workflow/<name>/`.
 - [English downloads](https://skills.yangluotong.top/en/skills/) and [Chinese downloads](https://skills.yangluotong.top/zh/skills/) label the package language explicitly; either page also links the other version.
-- Each ZIP extracts to `<name>/SKILL.md` with its required relative references and assets. Combined ZIPs contain the seven named folders. Review the whole package, including references and the MIT license.
+- Each ZIP extracts to `<name>/SKILL.md` with its required relative references and assets. Combined ZIPs contain the seven named folders. The `first-crawl-execution-skills.zip` filenames remain stable after the repository rename to `awesome-seo-workflow`. Review the whole package, including references and the MIT license.
 
 Use one language per Skill name in one installation. The entry filename stays `SKILL.md`, and the frontmatter `name` is the same. A second language copy is an alternative, not an additional same-named installation. Other hosts have their own Skill discovery rules; broad host compatibility has not been executed or certified.
 

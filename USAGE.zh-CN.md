@@ -1,4 +1,4 @@
-# 使用 First Crawl Skill
+# 使用 Awesome SEO Workflow Skill
 
 简体中文 · [English](USAGE.md) · [项目说明](README.zh-CN.md)
 
@@ -65,3 +65,5 @@ cp -R skills/browser/research-search-results ~/.codex/skills/
 ## 构建或参与贡献
 
 本地预览与发布见 [项目说明](README.zh-CN.md)，双语维护见 [贡献说明](CONTRIBUTING.zh-CN.md)，可选外部项目见 [第三方归属](THIRD_PARTY.zh-CN.md)。七个原创下载包不包含第三方 Skill 的代码或说明。
+
+仓库现名为 `awesome-seo-workflow`。现有 `first-crawl-execution-skills.zip` 下载文件名保留，用于兼容旧地址；页面明确区分中文与英文完整包。

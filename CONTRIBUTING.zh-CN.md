@@ -19,3 +19,5 @@
 中文 Skill 入口继续位于 skills/browser 与 skills/workflow；完整英文对应版本位于 skills/en/browser 与 skills/en/workflow。每个语言文件夹都有可发现的 SKILL.md 和全部必要相对引用。保留 Skill 名称、机器字段、枚举、null 和真实网站 NOT_RUN 的证据状态。翻译不等于实际执行验证。原始运行/案例证据保持原样，不能把翻译后的内容说成另一次观察。
 
 改动 Skill 或打包后，运行 `python3 scripts/validate-skill-locales.py` 和 `npm run build:release`。检查两种语言完整 ZIP、相对引用、许可、原始说明下载及网站语言入口。旧中文下载地址继续可用；新链接优先使用明确的 /downloads/skills/zh/ 和 /en/ 路径。同时更新目录、网页说明和字段解释。
+
+使用 `npm run check` 完成统一离线校验：合成案例、内容 ID、内部链接/锚点、中英完整包，以及发布版本、提交和校验和。PR CI 只有 `contents: read`，没有部署凭据、`pull_request_target` 或发布步骤。私密会话 ID、交接记录和个人本机路径不得进入公开源码或 Release。新发布先更新 `site.config.mjs` 的版本，再创建新 tag；不要覆盖既有固定版本附件。

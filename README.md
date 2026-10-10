@@ -1,6 +1,8 @@
-# First Crawl
+# Awesome SEO Workflow
 
 English · [简体中文](README.zh-CN.md)
+
+[Public repository: codesica/awesome-seo-workflow](https://github.com/codesica/awesome-seo-workflow). This is the existing repository under its new name; Git history, issues and stars are retained. Existing `first-crawl` download filenames and stable lesson IDs remain compatible.
 
 A beginner SEO course and seven original Agent Skills. Follow one fictional five-minute timer example to understand how search can lead to a useful page, then complete one small task at a time. The examples do not establish real demand, indexing, rankings, traffic, or income.
 
@@ -28,6 +30,47 @@ The [introduction](https://skills.yangluotong.top/en/start/) is separate from le
 The [six lessons](https://skills.yangluotong.top/en/roadmap/) cover needs, page planning, content production, publication checks, discovery/promotion, and evidence-led improvement. The existing-site route uses pages you manage that are intended to be public. Keep private pages private. A draft is not a working tool or a published site.
 
 Each lesson puts the small task, completed fictional example, your path, and completion criteria first. Open detailed technical checklists and optional Skills when needed. All six stable stage IDs and 25 original actions remain available.
+
+## Six clickable steps
+
+Complete your own small task first. The paper route works without a website.
+
+| Step | Keep this output |
+| --- | --- |
+| [01 · Decide whom to help](https://skills.yangluotong.top/en/stages/01-search-opportunity/) | Four lines about the audience and task |
+| [02 · Sketch the page](https://skills.yangluotong.top/en/stages/02-page-plan/) | One page sketch |
+| [03 · Write and make the page](https://skills.yangluotong.top/en/stages/03-content-production/) | A readable draft or usable page |
+| [04 · Check the published page](https://skills.yangluotong.top/en/stages/04-publish-check/) | A publication check record |
+| [05 · Help people find a way in](https://skills.yangluotong.top/en/stages/05-discovery-promotion/) | A discovery and sharing record |
+| [06 · Check what happened, then improve](https://skills.yangluotong.top/en/stages/06-measure-iterate/) | One change with review conditions |
+
+## Seven original Skills: task → input → output
+
+Understand the task before choosing a bounded helper. Three browser packages require existing access; all seven remain live-site `NOT_RUN`.
+
+| Skill / task | Input | Output |
+| --- | --- | --- |
+| [Research public search results](https://skills.yangluotong.top/en/skills/research-search-results/) · `research-search-results` | Question, audience, region and bounded scope | Observed-evidence JSON with unknowns |
+| [Search opportunity evidence](https://skills.yangluotong.top/en/skills/seo-opportunity-evidence/) · `seo-opportunity-evidence` | Audience problems, existing pages, search observations or feedback | Opportunity cards and a next validation step |
+| [Page brief and search intent](https://skills.yangluotong.top/en/skills/seo-page-brief/) · `seo-page-brief` | Opportunity card, reader task, original evidence and existing pages | Page brief and a production handoff |
+| [Publication technical audit](https://skills.yangluotong.top/en/skills/seo-publish-audit/) · `seo-publish-audit` | URL, indexing intent, HTML, headers, robots, sitemap and links | Seven evidence checks, blockers, unknowns and proposed fixes |
+| [Read Google reports](https://skills.yangluotong.top/en/skills/inspect-search-console/) · `inspect-search-console` | Exact property, dates/URL and existing read access | Result JSON with filters, context and limits |
+| [Read Bing reports](https://skills.yangluotong.top/en/skills/inspect-bing-webmaster/) · `inspect-bing-webmaster` | Exact site, URL/sitemap and existing read access | Index/discovery evidence JSON; no submissions |
+| [Evidence-led iteration](https://skills.yangluotong.top/en/skills/seo-measure-decide/) · `seo-measure-decide` | Data export, change log, comparable baseline and observation window | Decision card, review conditions and stopping rules |
+
+Stage 3 has no dedicated production Skill; stage 5 does not automate outreach. See [usage](USAGE.md).
+
+## Optional third-party sources
+
+These are separate from the seven original packages. License and cost limits remain project-specific; their code is not bundled.
+
+- [SEO Skill · Local CLI](https://skills.yangluotong.top/en/skills/local-seo/)
+- [Claude SEO · Sitemap](https://skills.yangluotong.top/en/skills/seo-sitemap/)
+- [Firecrawl Scrape](https://skills.yangluotong.top/en/skills/firecrawl-scrape/)
+
+## Pinned versions and download verification
+
+Use [GitHub Releases](https://github.com/codesica/awesome-seo-workflow/releases) for a fixed version. Each release links the version, source commit, Chinese/English ZIPs and SHA-256 checksums; the website [download manifest](https://skills.yangluotong.top/downloads/skills/manifest.json) supplies the same mapping. Checksums establish file identity, not live SEO execution.
 
 ## Run locally
 
@@ -63,10 +106,7 @@ The four offline fixtures are synthetic. One fixed-version `seo 0.2.41 audit-pag
 Stage 3 has no dedicated production Skill. Stage 5 has read-only Bing inspection, not automated promotion. The paper route teaches planning and evidence interpretation; it does not build the example timer. Editorial review and browser QA are not a real beginner usability test.
 
 ```sh
-python3 examples/verify.py
-python3 content/workflow/validate.py
-python3 scripts/validate-skill-locales.py
-npm run build:release
+npm run check
 ```
 
 These checks validate the stated local scope, not indexing, rankings, growth, or end-to-end agent execution.
