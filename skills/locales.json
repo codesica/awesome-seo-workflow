@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0",
+  "instructionLanguages": [
+    "zh-CN",
+    "en"
+  ],
+  "installOneLanguagePerSkillName": true,
+  "machineKeysAndStatuses": "unchanged English keys and values",
+  "legacyDownloadsLanguage": "zh-CN",
+  "bundleDownloads": {
+    "zh": "/downloads/skills/zh/first-crawl-execution-skills.zip",
+    "en": "/downloads/skills/en/first-crawl-execution-skills.zip"
+  },
+  "skills": [
+    {
+      "id": "inspect-bing-webmaster",
+      "category": "browser",
+      "skillName": "inspect-bing-webmaster",
+      "liveExecution": "NOT_RUN",
+      "languages": {
+        "zh": {
+          "instructionLanguage": "zh-CN",
+          "sourceDirectory": "skills/browser/inspect-bing-webmaster",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/zh/inspect-bing-webmaster.zip",
+          "rawEntrypoint": "/downloads/skills/zh/inspect-bing-webmaster/SKILL.md"
+        },
+        "en": {
+          "instructionLanguage": "en",
+          "sourceDirectory": "skills/en/browser/inspect-bing-webmaster",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/en/inspect-bing-webmaster.zip",
+          "rawEntrypoint": "/downloads/skills/en/inspect-bing-webmaster/SKILL.md"
+        }
+      }
+    },
+    {
+      "id": "inspect-search-console",
+      "category": "browser",
+      "skillName": "inspect-search-console",
+      "liveExecution": "NOT_RUN",
+      "languages": {
+        "zh": {
+          "instructionLanguage": "zh-CN",
+          "sourceDirectory": "skills/browser/inspect-search-console",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/zh/inspect-search-console.zip",
+          "rawEntrypoint": "/downloads/skills/zh/inspect-search-console/SKILL.md"
+        },
+        "en": {
+          "instructionLanguage": "en",
+          "sourceDirectory": "skills/en/browser/inspect-search-console",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/en/inspect-search-console.zip",
+          "rawEntrypoint": "/downloads/skills/en/inspect-search-console/SKILL.md"
+        }
+      }
+    },
+    {
+      "id": "research-search-results",
+      "category": "browser",
+      "skillName": "research-search-results",
+      "liveExecution": "NOT_RUN",
+      "languages": {
+        "zh": {
+          "instructionLanguage": "zh-CN",
+          "sourceDirectory": "skills/browser/research-search-results",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/zh/research-search-results.zip",
+          "rawEntrypoint": "/downloads/skills/zh/research-search-results/SKILL.md"
+        },
+        "en": {
+          "instructionLanguage": "en",
+          "sourceDirectory": "skills/en/browser/research-search-results",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/en/research-search-results.zip",
+          "rawEntrypoint": "/downloads/skills/en/research-search-results/SKILL.md"
+        }
+      }
+    },
+    {
+      "id": "seo-measure-decide",
+      "category": "workflow",
+      "skillName": "seo-measure-decide",
+      "liveExecution": "NOT_RUN",
+      "languages": {
+        "zh": {
+          "instructionLanguage": "zh-CN",
+          "sourceDirectory": "skills/workflow/seo-measure-decide",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/zh/seo-measure-decide.zip",
+          "rawEntrypoint": "/downloads/skills/zh/seo-measure-decide/SKILL.md"
+        },
+        "en": {
+          "instructionLanguage": "en",
+          "sourceDirectory": "skills/en/workflow/seo-measure-decide",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/en/seo-measure-decide.zip",
+          "rawEntrypoint": "/downloads/skills/en/seo-measure-decide/SKILL.md"
+        }
+      }
+    },
+    {
+      "id": "seo-opportunity-evidence",
+      "category": "workflow",
+      "skillName": "seo-opportunity-evidence",
+      "liveExecution": "NOT_RUN",
+      "languages": {
+        "zh": {
+          "instructionLanguage": "zh-CN",
+          "sourceDirectory": "skills/workflow/seo-opportunity-evidence",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/zh/seo-opportunity-evidence.zip",
+          "rawEntrypoint": "/downloads/skills/zh/seo-opportunity-evidence/SKILL.md"
+        },
+        "en": {
+          "instructionLanguage": "en",
+          "sourceDirectory": "skills/en/workflow/seo-opportunity-evidence",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/en/seo-opportunity-evidence.zip",
+          "rawEntrypoint": "/downloads/skills/en/seo-opportunity-evidence/SKILL.md"
+        }
+      }
+    },
+    {
+      "id": "seo-page-brief",
+      "category": "workflow",
+      "skillName": "seo-page-brief",
+      "liveExecution": "NOT_RUN",
+      "languages": {
+        "zh": {
+          "instructionLanguage": "zh-CN",
+          "sourceDirectory": "skills/workflow/seo-page-brief",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/zh/seo-page-brief.zip",
+          "rawEntrypoint": "/downloads/skills/zh/seo-page-brief/SKILL.md"
+        },
+        "en": {
+          "instructionLanguage": "en",
+          "sourceDirectory": "skills/en/workflow/seo-page-brief",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/en/seo-page-brief.zip",
+          "rawEntrypoint": "/downloads/skills/en/seo-page-brief/SKILL.md"
+        }
+      }
+    },
+    {
+      "id": "seo-publish-audit",
+      "category": "workflow",
+      "skillName": "seo-publish-audit",
+      "liveExecution": "NOT_RUN",
+      "languages": {
+        "zh": {
+          "instructionLanguage": "zh-CN",
+          "sourceDirectory": "skills/workflow/seo-publish-audit",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/zh/seo-publish-audit.zip",
+          "rawEntrypoint": "/downloads/skills/zh/seo-publish-audit/SKILL.md"
+        },
+        "en": {
+          "instructionLanguage": "en",
+          "sourceDirectory": "skills/en/workflow/seo-publish-audit",
+          "entrypoint": "SKILL.md",
+          "zip": "/downloads/skills/en/seo-publish-audit.zip",
+          "rawEntrypoint": "/downloads/skills/en/seo-publish-audit/SKILL.md"
+        }
+      }
+    }
+  ]
+}

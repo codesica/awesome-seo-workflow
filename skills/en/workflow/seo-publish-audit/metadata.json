@@ -1,0 +1,45 @@
+{
+  "id": "seo-publish-audit",
+  "slug": "seo-publish-audit",
+  "stage_id": "04-publish-check",
+  "type": "original-execution-skill",
+  "status": "source-reviewed",
+  "production_status": "NOT_RUN",
+  "validation_status": "synthetic-structure-tested",
+  "version": "0.1.0",
+  "last_reviewed": "2026-10-10",
+  "title": {
+    "zh-CN": "发布技术检查",
+    "en": "Publication technical audit"
+  },
+  "summary": {
+    "zh-CN": "逐项检查 robots、noindex、canonical、sitemap、语言和内链，分清本地与线上。",
+    "en": "Check crawl directives, canonical, sitemap, language and links while separating local and live evidence."
+  },
+  "inputs": {
+    "zh-CN": "URL、公开索引意图、HTML/响应头/robots/sitemap/内链",
+    "en": "URL, indexing intent, HTML, headers, robots, sitemap and links"
+  },
+  "outputs": {
+    "zh-CN": "七项证据审计；阻塞、未知与修复建议",
+    "en": "Seven evidence checks, blockers, unknowns and proposed fixes"
+  },
+  "safety": {
+    "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+    "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+  },
+  "skill_path": "seo-publish-audit/SKILL.md",
+  "download_path": "downloads/seo-publish-audit.zip",
+  "source_ids": [
+    "robots",
+    "noindex",
+    "canonical",
+    "sitemap",
+    "links",
+    "languages"
+  ],
+  "prompt": {
+    "zh-CN": "请使用 $seo-publish-audit，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+    "en": "Use $seo-publish-audit to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+  }
+}

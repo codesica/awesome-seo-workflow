@@ -1,12 +1,37 @@
 # First Crawl
 
-从一个想法，到看懂网站的搜索流量。A bilingual beginner workflow for learning SEO, doing the work, and delegating bounded tasks to an agent.
+English · [简体中文](README.zh-CN.md)
 
-The bilingual redesign was visually approved for publication on 10 October 2026. The production origin remains https://skills.yangluotong.top, served by the existing `lab-seo-starter-skills` Cloudflare Worker.
+A beginner SEO course and seven original Agent Skills. Follow one fictional five-minute timer example to understand how search can lead to a useful page, then complete one small task at a time. The examples do not establish real demand, indexing, rankings, traffic, or income.
+
+[English website](https://skills.yangluotong.top/en/) · [中文网站](https://skills.yangluotong.top/zh/) · [Using the Skills](USAGE.md) · [Contributing](CONTRIBUTING.md)
+
+## Choose your language
+
+The website, beginner lessons, three full technical guides, and project usage/contribution documents are available in Chinese and English. Each of the seven original Skills has a complete instruction entry and required references in both languages. JSON machine keys and status values stay the same across languages.
+
+| Material | English | 简体中文 |
+| --- | --- | --- |
+| Project introduction | This README | [README.zh-CN.md](README.zh-CN.md) |
+| Use and install a Skill | [USAGE.md](USAGE.md) | [USAGE.zh-CN.md](USAGE.zh-CN.md) |
+| Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md) |
+| Original Skill sources | [skills/en/](skills/en/) | [skills/browser/](skills/browser/), [skills/workflow/](skills/workflow/) |
+| Download all seven | [English ZIP](https://skills.yangluotong.top/downloads/skills/en/first-crawl-execution-skills.zip) | [中文 ZIP](https://skills.yangluotong.top/downloads/skills/zh/first-crawl-execution-skills.zip) |
+| Attribution | [THIRD_PARTY.md](THIRD_PARTY.md) | [THIRD_PARTY.zh-CN.md](THIRD_PARTY.zh-CN.md) |
+
+Choose one language version of each Skill. Its directory still contains a discoverable `SKILL.md`; the name, machine schema, and scope are unchanged. Do not install both same-named versions in one assistant's Skill directory. The older `/downloads/skills/<id>.zip` and combined ZIP addresses remain Chinese-compatible aliases.
+
+## Learn, then use a helper
+
+The [introduction](https://skills.yangluotong.top/en/start/) is separate from lesson 1. Write four lines on your own paper or in your document: whom the page helps, the task, possible help, and unknowns. No website, account, or upload is needed for that exercise.
+
+The [six lessons](https://skills.yangluotong.top/en/roadmap/) cover needs, page planning, content production, publication checks, discovery/promotion, and evidence-led improvement. The existing-site route uses pages you manage that are intended to be public. Keep private pages private. A draft is not a working tool or a published site.
+
+Each lesson puts the small task, completed fictional example, your path, and completion criteria first. Open detailed technical checklists and optional Skills when needed. All six stable stage IDs and 25 original actions remain available.
 
 ## Run locally
 
-Requires Node.js 22+ and Python 3 (standard library only for packaging original Skills).
+Requires Node.js 22+ and Python 3. Skill packaging uses the Python standard library.
 
 ```sh
 npm ci --ignore-scripts
@@ -14,33 +39,40 @@ npm run build
 PORT=4180 npm run preview
 ```
 
-Open `http://127.0.0.1:4180/zh/` or `http://127.0.0.1:4180/en/`. Normal development can use `npm run dev`, which serves port 4173. The preview for this task uses 4180 to avoid sharing the original site’s port.
+Open `http://127.0.0.1:4180/en/` or `/zh/`. `npm run dev` uses port 4173. The build creates `dist/`; it does not install or execute any Skill.
 
-## Bilingual routes and content
+## Source layout and routes
 
-Every page has a stable `/zh/` and `/en/` URL, corresponding language links, its own canonical, and reciprocal hreflang. Unprefixed legacy addresses lead to the Chinese equivalent and are outside the sitemap. Evidence downloads remain under `/downloads/`, independent of page language.
+- `content/beginner/`: the bilingual homepage, introduction, and one-task teaching layer.
+- `content/workflow/`: six bilingual stages, 25 actions, official sources, and six blank templates.
+- `content/concepts/`: 23 bilingual concept explanations.
+- `content/` and `content/zh/`: the three original English and Chinese technical guides.
+- `skills/browser/` and `skills/workflow/`: retained Chinese Skill entrypoints.
+- `skills/en/browser/` and `skills/en/workflow/`: self-contained English entrypoints and required resources.
+- `scripts/content-routes.mjs`: stable content IDs and language routes.
+- `scripts/package-skills.py`: builds both language download sets and compatibility aliases.
 
-- `/{locale}/roadmap/`: choose a starting point, with six progress states.
-- `/{locale}/stages/01-search-opportunity/` through `06-measure-iterate/`: six complete stages, 25 actions, official sources, related concepts, Skills, outputs and acceptance.
-- `/{locale}/concepts/`: 23 bilingual concepts, stage filtering, and a conceptual discovery-to-use sequence without invented metrics.
-- `/{locale}/templates/`: six blank deliverables in each language. Unknown values remain `null`, not zero.
-- `/{locale}/skills/`: seven original execution packages inside their matching stages; complete ZIP downloads and original Chinese instructions. Website descriptions and prompts are bilingual. Three third-party source directories remain optional references.
-- `/{locale}/guides/`: the three original technical tutorials, in full Chinese and English, supporting stage 4.
-- `/{locale}/examples/`: four synthetic before-and-after examples and one real fixed-version local CLI execution record.
-- `/{locale}/sources/`, `/contribute/`: sources, scope, licenses and contribution.
+Every page has corresponding `/en/` and `/zh/` routes, its own canonical, and reciprocal hreflang. Unprefixed legacy routes lead to Chinese equivalents and remain outside the sitemap. Raw evidence downloads are language-independent; translated instructions have explicit language paths.
 
-`content/workflow/` contains the supplied native bilingual curriculum. `content/concepts/` contains bilingual definitions. `content/zh/` contains full native Chinese technical guides; English originals remain in `content/`. `skills/browser/` and `skills/workflow/` contain original execution instructions and references. `scripts/content-routes.mjs` separates stable content IDs, localized page URLs and raw downloads. The static build ships no browser framework or analytics.
+## Evidence and limits
 
-## Interaction and evidence
+All seven original Skills remain source-reviewed and **live-site NOT_RUN**. Synthetic structure and arithmetic checks are separate from actual SEO execution. Browser Skills use an existing authorized session. A translated package does not grant login, data access, submission, publishing, messaging, or paid-tool permissions.
 
-The homepage’s before/after workbench shows the unchanged canonical-conflict fixture and supports pointer, arrow keys, Home and End. It makes no network request to a user website. The CLI section excerpts actual `runs/local-seo/{before,after}.json`: after still reports `canonical_mismatch` because its canonical target differs from the loopback serving URL. It is not an all-clear or indexing result.
+The four offline fixtures are synthetic. One fixed-version `seo 0.2.41 audit-page` CLI path was actually run against synthetic HTML over loopback HTTP. The after report still contains `canonical_mismatch`; it is not an indexing result or an all-clear. Read [runs/local-seo/README.md](runs/local-seo/README.md).
 
-All seven new Skills are source-reviewed and **live-site NOT_RUN**. Synthetic output-shape validation is separate from actual SEO work. Browser Skills require an existing authorized session and prohibit unauthorized submissions or settings changes. The instruction packages are primarily Chinese; machine keys remain English. Stage 3 has no dedicated production Skill; stage 5 includes read-only Bing inspection but no automated promotion package. Full curriculum coverage is a beginner loop, not exhaustive SEO-specialty coverage.
+Stage 3 has no dedicated production Skill. Stage 5 has read-only Bing inspection, not automated promotion. The paper route teaches planning and evidence interpretation; it does not build the example timer. Editorial review and browser QA are not a real beginner usability test.
 
-Run offline fixture checks with `python3 examples/verify.py`. The eight expected outcomes do not prove indexing, rankings or traffic. No site-wide growth, private dashboard data or end-to-end agent execution has been claimed.
+```sh
+python3 examples/verify.py
+python3 content/workflow/validate.py
+python3 scripts/validate-skill-locales.py
+npm run build:release
+```
 
-## Publishing
+These checks validate the stated local scope, not indexing, rankings, growth, or end-to-end agent execution.
 
-`site.config.mjs` retains the confirmed formal origin and records visual approval with `releaseReady: true`. `npm run deploy` makes a release build and deploys to the existing Worker. Release metadata at `/build-info.json` records version `2.0.0`, the source commit and all 60 indexable routes. The existing Worker name, custom domain, routes, secrets and account permissions are preserved.
+## Publishing and licensing
 
-Original project code, guides and examples are MIT licensed. Third-party dependencies and linked projects keep their own licenses. See LICENSE, THIRD_PARTY.md and CONTRIBUTING.md.
+The confirmed origin is `https://skills.yangluotong.top`, served by the existing `lab-seo-starter-skills` Cloudflare Worker. `npm run deploy` builds a release and updates that Worker. `/build-info.json` records the release version, source commit, and 60 indexable routes. Publishing uses the existing configuration and permissions.
+
+Original code, tutorials, examples, and the seven original bilingual Skills are [MIT licensed](LICENSE). Linked third-party projects retain their own licenses and are not included in these seven-Skill downloads. See [attribution](THIRD_PARTY.md).

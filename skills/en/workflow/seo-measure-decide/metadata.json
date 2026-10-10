@@ -1,0 +1,43 @@
+{
+  "id": "seo-measure-decide",
+  "slug": "seo-measure-decide",
+  "stage_id": "06-measure-iterate",
+  "type": "original-execution-skill",
+  "status": "source-reviewed",
+  "production_status": "NOT_RUN",
+  "validation_status": "synthetic-structure-tested",
+  "version": "0.1.0",
+  "last_reviewed": "2026-10-10",
+  "title": {
+    "zh-CN": "数据驱动迭代决策",
+    "en": "Evidence-led iteration"
+  },
+  "summary": {
+    "zh-CN": "比较口径一致的数据，识别缺失基线，只建议一个有证据的下一步。",
+    "en": "Compare compatible observations, preserve missing baselines and choose one evidence-backed next step."
+  },
+  "inputs": {
+    "zh-CN": "数据导出、改动记录、可比基线、观察窗口",
+    "en": "Data export, change log, comparable baseline and observation window"
+  },
+  "outputs": {
+    "zh-CN": "迭代决策卡；复查与停止条件",
+    "en": "Decision card, review conditions and stopping rules"
+  },
+  "safety": {
+    "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+    "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+  },
+  "skill_path": "seo-measure-decide/SKILL.md",
+  "download_path": "downloads/seo-measure-decide.zip",
+  "source_ids": [
+    "performance",
+    "helpful-content",
+    "performance-data",
+    "performance-discrepancies"
+  ],
+  "prompt": {
+    "zh-CN": "请使用 $seo-measure-decide，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+    "en": "Use $seo-measure-decide to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+  }
+}

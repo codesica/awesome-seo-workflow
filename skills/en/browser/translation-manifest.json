@@ -1,0 +1,146 @@
+{
+  "package": "First Crawl English browser skills",
+  "language": "en",
+  "source_package": "first-crawl-v2/skills-browser",
+  "output_package": "first-crawl-en-skills/browser",
+  "created_on": "2026-10-10",
+  "changes_allowed": [
+    "English translation of human-readable text",
+    "language metadata set to en",
+    "English text in legacy catalog zh display slots with keys retained",
+    "distribution README and translation checks"
+  ],
+  "skill_ids_unchanged": [
+    "inspect-search-console",
+    "inspect-bing-webmaster",
+    "research-search-results"
+  ],
+  "live_execution": "NOT_RUN",
+  "files": [
+    {
+      "source": "first-crawl-v2/skills-browser/catalog.json",
+      "english": "first-crawl-en-skills/browser/catalog.json",
+      "source_sha256": "6da6fc5fed88ac17fa424942491a38612233ba109aa113f2b7afe6e267974dda",
+      "english_sha256": "d67a6a297ee01a50bd6db2ed5a993bfdf8b5a88949740863abc46b8d5a72b85f",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-bing-webmaster/SKILL.md",
+      "english": "first-crawl-en-skills/browser/inspect-bing-webmaster/SKILL.md",
+      "source_sha256": "2e095c04114910dff870e38b05f4d11b81973a451b95b3b6ef086c4a7d3bfd17",
+      "english_sha256": "f9d08b7c9debb1112b84fd1f0cd4e488d7df518751362127f93ef5d2ebe65002",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-bing-webmaster/assets/result-template.json",
+      "english": "first-crawl-en-skills/browser/inspect-bing-webmaster/assets/result-template.json",
+      "source_sha256": "4b0833b44c56fb0f93ce5d549ada4a4b62c58ac46ad46cf9730061498093a05d",
+      "english_sha256": "17cc11931629be697ea7566f472a535f5401985577a653af134793a4178b610a",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-bing-webmaster/references/interpretation.md",
+      "english": "first-crawl-en-skills/browser/inspect-bing-webmaster/references/interpretation.md",
+      "source_sha256": "8cdb3fa330b019c6c03be887a191738afd7f5ce462bf35be471c9414ecb2ac15",
+      "english_sha256": "3d06ad0c1f30c936274e0a253f75841bbed89840dfcd0b48d787ea95317556fa",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-bing-webmaster/references/output-contract.md",
+      "english": "first-crawl-en-skills/browser/inspect-bing-webmaster/references/output-contract.md",
+      "source_sha256": "e2457986b40386a711f05ae5c5531a75823b38645bde61bc7ca28259eebd09cd",
+      "english_sha256": "3fc56619e875f63ca8407669531f6b46fe98f49f97f61d411f0174372796a715",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-bing-webmaster/references/sources.md",
+      "english": "first-crawl-en-skills/browser/inspect-bing-webmaster/references/sources.md",
+      "source_sha256": "333ad7120f878697124275ec35b80ba88b8afe0bca77945e78d96798bc2e5dcc",
+      "english_sha256": "bae5d1082837724b67f81d227eeb54bbf36b2a5bad6af46e0fa3dd87249e79c1",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-search-console/SKILL.md",
+      "english": "first-crawl-en-skills/browser/inspect-search-console/SKILL.md",
+      "source_sha256": "8dfe0cb02d7d1ef837209b29df290920f2109a6d39a06408d530acb311bf2d3f",
+      "english_sha256": "463dd95cf14f9548c6b2bf258fa30c7c735bd44b0a0998b02d5c3685645b9f56",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-search-console/assets/result-template.json",
+      "english": "first-crawl-en-skills/browser/inspect-search-console/assets/result-template.json",
+      "source_sha256": "901e5726cc6ad8058808c97336cf7d532cfd9ac2b55e1ed633fc1693cd684d6e",
+      "english_sha256": "25d53957c2926104ef052486b71051af0172403eb8fe6a9dbe76557c441d82bc",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-search-console/references/interpretation.md",
+      "english": "first-crawl-en-skills/browser/inspect-search-console/references/interpretation.md",
+      "source_sha256": "5e43bb3976f389f8cb96213f10e4d7aa8763fbe84e54b9e71def0e1c0bc531f5",
+      "english_sha256": "ae5ca79810d86bc3f8079bdb6a21340aa7896f28b106961691f6f94e8e43b1c4",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-search-console/references/output-contract.md",
+      "english": "first-crawl-en-skills/browser/inspect-search-console/references/output-contract.md",
+      "source_sha256": "736d9a35f7d2ce2f8453d441babf1b0c1dbb0e7ff4b49aeb91db0f15de356d4a",
+      "english_sha256": "d8dd81bcef9473292818994492d7b30389f5276dcec24de5ace9ad129128b3e9",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/inspect-search-console/references/sources.md",
+      "english": "first-crawl-en-skills/browser/inspect-search-console/references/sources.md",
+      "source_sha256": "b929334f5a4e25a0a63285f50fe92d437f2e4543efbea70aac8682beec0e677f",
+      "english_sha256": "ea674acd976a042dfd1c576b098af65c0e531d38b243bc19d47728d54f9ba603",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/research-search-results/SKILL.md",
+      "english": "first-crawl-en-skills/browser/research-search-results/SKILL.md",
+      "source_sha256": "62b63777095f24235c689649c3eaa3be71875c99e3973498624a2f6ed8c2f1a4",
+      "english_sha256": "ebeade77b07e01e884ecdfe59714a4aa25c14248da530094b4c9c840aa58b59e",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/research-search-results/assets/result-template.json",
+      "english": "first-crawl-en-skills/browser/research-search-results/assets/result-template.json",
+      "source_sha256": "6e0c567a0d6e3d8426b1e311c3ff27f8d825d05dae17aba2352113669d24a61b",
+      "english_sha256": "3641f9520c067602f66a675ae5b4da11c1538b3ab4c8f01b5481e9ae8dabddd2",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/research-search-results/references/interpretation.md",
+      "english": "first-crawl-en-skills/browser/research-search-results/references/interpretation.md",
+      "source_sha256": "65ba8a89bf1acb98427ddf053bd654d6cc5a5b036572a6f4ec82a0aad57bbf28",
+      "english_sha256": "256e21009b4663c99d435abc2172914c4e2f1dc0f69108e05e0ceb907b22d59c",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/research-search-results/references/output-contract.md",
+      "english": "first-crawl-en-skills/browser/research-search-results/references/output-contract.md",
+      "source_sha256": "b2c421a20b9b112079b502d00ccc291f4c00319d6c6943691659ffcc4109edcd",
+      "english_sha256": "41c6fc692c233c763e57ad65c1f6866a03c4d5012b998f5299f6236cf4aab209",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/research-search-results/references/sources.md",
+      "english": "first-crawl-en-skills/browser/research-search-results/references/sources.md",
+      "source_sha256": "c04d0bbf93eff00c8a158f62a98990eb8442a690230baf7c2a33c1932b422b4e",
+      "english_sha256": "8793363d01f6ee14028c56f8416af364b1fecb195da302780909019fcc3c6369",
+      "handling": "English translation; structure preserved"
+    },
+    {
+      "source": "first-crawl-v2/skills-browser/validation.json",
+      "english": "first-crawl-en-skills/browser/validation.json",
+      "source_sha256": "9c6bb7bd6904a1f7a9d53111c63f1d11e778982958616b8bf74200c5beeb046e",
+      "english_sha256": "9c6bb7bd6904a1f7a9d53111c63f1d11e778982958616b8bf74200c5beeb046e",
+      "handling": "copied unchanged; source verification provenance"
+    }
+  ],
+  "additional_files": [
+    "README.md",
+    "translation-manifest.json",
+    "translation-validation.json",
+    "LANGUAGE-COVERAGE.md"
+  ]
+}

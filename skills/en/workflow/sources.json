@@ -1,0 +1,90 @@
+[
+  {
+    "id": "helpful-content",
+    "title": "Helpful, reliable, people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Plan content around real reader tasks, original information and verifiable facts; do not promise a fixed word count or rankings."
+  },
+  {
+    "id": "starter-guide",
+    "title": "SEO Starter Guide",
+    "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Titles, content organization and on-site discoverability."
+  },
+  {
+    "id": "robots",
+    "title": "Robots.txt introduction",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "robots.txt controls crawling; it is not a privacy mechanism or a reliable way to remove a URL from the index."
+  },
+  {
+    "id": "noindex",
+    "title": "Block indexing with noindex",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Check both meta directives and X-Robots-Tag; crawlers must be able to fetch the page to see noindex."
+  },
+  {
+    "id": "canonical",
+    "title": "Canonical URLs",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Canonical is a preference signal; keep it consistent with internal links and the sitemap."
+  },
+  {
+    "id": "sitemap",
+    "title": "Build and submit a sitemap",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Include absolute URLs intended as canonical versions; submission does not guarantee crawling or indexing."
+  },
+  {
+    "id": "links",
+    "title": "Crawlable links",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Prefer a href links and descriptive anchor text."
+  },
+  {
+    "id": "languages",
+    "title": "Multilingual sites",
+    "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Google determines language from visible content, not the lang attribute; translated versions need clear links and hreflang where appropriate."
+  },
+  {
+    "id": "performance",
+    "title": "Search Console Performance report",
+    "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Clicks, impressions, CTR and average position have different definitions; use completed periods with consistent filters and retain data limitations."
+  },
+  {
+    "id": "performance-data",
+    "title": "Performance report: About the data",
+    "url": "https://support.google.com/webmasters/answer/17011364?hl=en",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Preliminary data, aggregation levels, missing-value export behavior."
+  },
+  {
+    "id": "performance-discrepancies",
+    "title": "Performance report: Troubleshooting data discrepancies",
+    "url": "https://support.google.com/webmasters/answer/17010575?hl=en",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Anonymized queries, table limits and daily Pacific Time reporting."
+  }
+]

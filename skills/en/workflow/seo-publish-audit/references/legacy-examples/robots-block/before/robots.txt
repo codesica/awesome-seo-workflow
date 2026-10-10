@@ -1,0 +1,3 @@
+# SYNTHETIC fixture: accidental launch block
+User-agent: *
+Disallow: /

@@ -1,0 +1,327 @@
+{
+  "source_root": "../../workflow",
+  "target_root": ".",
+  "translation_date": "2026-10-10",
+  "status": "source-reviewed",
+  "production_status": "NOT_RUN",
+  "source_review_date_inherited": "2026-10-10",
+  "new_live_source_review": "NOT_RUN",
+  "live_site_test": "NOT_RUN",
+  "policy": "Translation only; machine identifiers, keys, enums, nulls, values, source URLs, dates, permissions and failure boundaries preserved. English content_language label is a declared metadata-description update. Old ZIPs and stale manifests excluded.",
+  "files": [
+    {
+      "source": "downloads/first-crawl-workflow-skills.zip",
+      "target": null,
+      "action": "excluded-stale-archive-or-manifest",
+      "source_sha256": "d2d4fa1cb1c02787aef83823235ec75b0a5b59a68f9dbfdfb9f66ee9921d3c9a",
+      "target_sha256": null
+    },
+    {
+      "source": "downloads/seo-measure-decide.zip",
+      "target": null,
+      "action": "excluded-stale-archive-or-manifest",
+      "source_sha256": "a03a6ab7dde707132fe5b1c783ed657e9bc38a5b1e6b8efbf22bd8039327f51b",
+      "target_sha256": null
+    },
+    {
+      "source": "downloads/seo-opportunity-evidence.zip",
+      "target": null,
+      "action": "excluded-stale-archive-or-manifest",
+      "source_sha256": "4fea44393bb0b1a879d81330567b904109de37729b1b977c774a75fd8761d90e",
+      "target_sha256": null
+    },
+    {
+      "source": "downloads/seo-page-brief.zip",
+      "target": null,
+      "action": "excluded-stale-archive-or-manifest",
+      "source_sha256": "e12152742aad8e3dab94f5737a2811ffecc6375392b8a0837e593ab3780bb505",
+      "target_sha256": null
+    },
+    {
+      "source": "downloads/seo-publish-audit.zip",
+      "target": null,
+      "action": "excluded-stale-archive-or-manifest",
+      "source_sha256": "0edef68f1c7af08247cb30ee6f7361efb6a10f3a5bbdbc889a2f2238bee894c9",
+      "target_sha256": null
+    },
+    {
+      "source": "examples/EXAMPLE.md",
+      "target": "examples/EXAMPLE.md",
+      "action": "translated",
+      "source_sha256": "dd926bfa33c65471729ac5781a4fb8a730c8a5660608f0337be755ea0574a578",
+      "target_sha256": "66c8a1762824eb08fdbf160b0b54bca26d081e414f68a35658c9337ad74bb121"
+    },
+    {
+      "source": "examples/synthetic-input.json",
+      "target": "examples/synthetic-input.json",
+      "action": "translated",
+      "source_sha256": "47eaa681f9d588e6b12acf035d2fb8edc12470d88798b420c7192d6f02ec864e",
+      "target_sha256": "10fc8df8789f0e13eca6cc532bac5a6f7982cc1f8fabf42dcf013544064cfa2c"
+    },
+    {
+      "source": "examples/synthetic-output.json",
+      "target": "examples/synthetic-output.json",
+      "action": "translated",
+      "source_sha256": "4dbfcc4c68554c9db95f1cb9a2aa6ec9507480ba109f708b26ed7a13e7534a84",
+      "target_sha256": "d0aa71f13421ee6a1e14308e106626f0f3af1717a4aae8cd3c101042acd6b2e4"
+    },
+    {
+      "source": "index.json",
+      "target": "index.json",
+      "action": "translated",
+      "source_sha256": "f8728d5760f75b345f4cb520a0ccd7db740976223b0c93e98cc57d3b2762a959",
+      "target_sha256": "ef99111167e03795867fa600ac57b5efcf9b2cce8e3615f925d821e12eed57c7"
+    },
+    {
+      "source": "qa/download-manifest.json",
+      "target": null,
+      "action": "excluded-stale-archive-or-manifest",
+      "source_sha256": "851fc1a6a1e5947632f99b864eb0fe7cb811b82985c449144d4cf3e96633f903",
+      "target_sha256": null
+    },
+    {
+      "source": "qa/validate.py",
+      "target": "qa/validate.py",
+      "action": "translated",
+      "source_sha256": "785a42309796d926d570e406cf0120f1b31b6fda419dcf330578aa57e4671dd6",
+      "target_sha256": "650b682cf56a5bff0ffe72d803d19b3a356144592d8ef235d09bb0d5572829af"
+    },
+    {
+      "source": "qa/validation.json",
+      "target": "qa/validation.json",
+      "action": "regenerated-local-validation",
+      "source_sha256": "e47cbb0c4bda1ad916983e46e7c21fca59a311f113c07f4f869e8ca9241f912c",
+      "target_sha256": "380e00c69dfc78086580d6d50cec5c8bdc4c12c407e12c77551403204abea2bc"
+    },
+    {
+      "source": "seo-measure-decide/SKILL.md",
+      "target": "seo-measure-decide/SKILL.md",
+      "action": "translated",
+      "source_sha256": "18fd7d43f3ce1a761a1e2077411fca6f6d3e22ea949871992928d90f6758e276",
+      "target_sha256": "8e695d8af7dc328973179b544c5fc61b0ae4f09968c3e0ed342704bd3dd75bc1"
+    },
+    {
+      "source": "seo-measure-decide/metadata.json",
+      "target": "seo-measure-decide/metadata.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "435293dbfaf5a3e47f845ed63bb0dbadf72242fd99449284fc912e8ecd561f40",
+      "target_sha256": "435293dbfaf5a3e47f845ed63bb0dbadf72242fd99449284fc912e8ecd561f40"
+    },
+    {
+      "source": "seo-opportunity-evidence/SKILL.md",
+      "target": "seo-opportunity-evidence/SKILL.md",
+      "action": "translated",
+      "source_sha256": "eaec831f3c1028e5565c5fcaa761e9ee5501232d8e0bd21fc8541e707b4bf57e",
+      "target_sha256": "dfe608de98da44fbda1179be634c86551d110c38fa0b77bd99ab2e2777a4f328"
+    },
+    {
+      "source": "seo-opportunity-evidence/metadata.json",
+      "target": "seo-opportunity-evidence/metadata.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "505b51b60c2799be4d86a01f4a7d38b3fc833cc71b9f11a0f75b0b931148c12a",
+      "target_sha256": "505b51b60c2799be4d86a01f4a7d38b3fc833cc71b9f11a0f75b0b931148c12a"
+    },
+    {
+      "source": "seo-page-brief/SKILL.md",
+      "target": "seo-page-brief/SKILL.md",
+      "action": "translated",
+      "source_sha256": "c6801047321fae86be549f829cf43c5ff688c1d86ff8c3dbe71bb571a9246db2",
+      "target_sha256": "a7b608ada8ecad0e2e599d1ff2ed36e69d74c58caad9ad722001f1c96035d4b7"
+    },
+    {
+      "source": "seo-page-brief/metadata.json",
+      "target": "seo-page-brief/metadata.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "7e2216d99d05b22556427b69149fad2078462b8d111afba4d541eb59d8f0ca3a",
+      "target_sha256": "7e2216d99d05b22556427b69149fad2078462b8d111afba4d541eb59d8f0ca3a"
+    },
+    {
+      "source": "seo-publish-audit/SKILL.md",
+      "target": "seo-publish-audit/SKILL.md",
+      "action": "translated",
+      "source_sha256": "0412d1502d05485e9d78e69e46d64e4d22ad3d1136f9dcc75e6737f7ffb68563",
+      "target_sha256": "5e3bb64b01fc680b5bcfa58b8ad83e24d6f19b89c6582bb147ac4820e52ed423"
+    },
+    {
+      "source": "seo-publish-audit/metadata.json",
+      "target": "seo-publish-audit/metadata.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "170c5bf40755585a913ec049db18a74cebd2d42712d7aaee313ede18492e1a50",
+      "target_sha256": "170c5bf40755585a913ec049db18a74cebd2d42712d7aaee313ede18492e1a50"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/PROVENANCE.md",
+      "target": "seo-publish-audit/references/legacy-examples/PROVENANCE.md",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "656e1f942f099af9e93e2a68772c04f632041057695e34ff15704fd33150ab58",
+      "target_sha256": "656e1f942f099af9e93e2a68772c04f632041057695e34ff15704fd33150ab58"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/canonical-conflict/README.md",
+      "target": "seo-publish-audit/references/legacy-examples/canonical-conflict/README.md",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "1660a0516fd68e149aa58eddb7cf6f1a50740384f6bf48bfea357075794f3e7e",
+      "target_sha256": "1660a0516fd68e149aa58eddb7cf6f1a50740384f6bf48bfea357075794f3e7e"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/canonical-conflict/README.zh.md",
+      "target": "seo-publish-audit/references/legacy-examples/canonical-conflict/README.zh.md",
+      "action": "retained-optional-chinese-companion",
+      "source_sha256": "6570bd31a3f7019f27012369542b86b1253771342dbbd15460692ad7ed679567",
+      "target_sha256": "6570bd31a3f7019f27012369542b86b1253771342dbbd15460692ad7ed679567"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/canonical-conflict/after/page.html",
+      "target": "seo-publish-audit/references/legacy-examples/canonical-conflict/after/page.html",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "d5afd874e0eab2bd9bc0f86eb4dedb5d814b4e5ef4ee7d0f7b996f7a4de07ced",
+      "target_sha256": "d5afd874e0eab2bd9bc0f86eb4dedb5d814b4e5ef4ee7d0f7b996f7a4de07ced"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/canonical-conflict/after/sitemap.xml",
+      "target": "seo-publish-audit/references/legacy-examples/canonical-conflict/after/sitemap.xml",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "610fb9784517b3c9b51ef4e61848c276429532493d5360b212978788789d00f0",
+      "target_sha256": "610fb9784517b3c9b51ef4e61848c276429532493d5360b212978788789d00f0"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/canonical-conflict/before/page.html",
+      "target": "seo-publish-audit/references/legacy-examples/canonical-conflict/before/page.html",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "efd0a5039353381bc5b60bda632ea0a7779f25a4ea1474c515bd3d1ba7358216",
+      "target_sha256": "efd0a5039353381bc5b60bda632ea0a7779f25a4ea1474c515bd3d1ba7358216"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/canonical-conflict/before/sitemap.xml",
+      "target": "seo-publish-audit/references/legacy-examples/canonical-conflict/before/sitemap.xml",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "610fb9784517b3c9b51ef4e61848c276429532493d5360b212978788789d00f0",
+      "target_sha256": "610fb9784517b3c9b51ef4e61848c276429532493d5360b212978788789d00f0"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/noindex/README.md",
+      "target": "seo-publish-audit/references/legacy-examples/noindex/README.md",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "f5384923c9b8159049ae3894ff6aa8a267c20cbd95fa8564b5f9ed7b318e3774",
+      "target_sha256": "f5384923c9b8159049ae3894ff6aa8a267c20cbd95fa8564b5f9ed7b318e3774"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/noindex/README.zh.md",
+      "target": "seo-publish-audit/references/legacy-examples/noindex/README.zh.md",
+      "action": "retained-optional-chinese-companion",
+      "source_sha256": "110e3792564c147edb8bf78333cc1c68566814720b59a99f195dfa18c9e71921",
+      "target_sha256": "110e3792564c147edb8bf78333cc1c68566814720b59a99f195dfa18c9e71921"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/noindex/after/page.html",
+      "target": "seo-publish-audit/references/legacy-examples/noindex/after/page.html",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "ad1386403ac6bd213877fa4d19a5aef24adc687364e9a676ad91fb0a1a8117f1",
+      "target_sha256": "ad1386403ac6bd213877fa4d19a5aef24adc687364e9a676ad91fb0a1a8117f1"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/noindex/after/response.json",
+      "target": "seo-publish-audit/references/legacy-examples/noindex/after/response.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "8768a950dca9146f5ff49d52e68d4f3b88051eebe6a68d6988c04ff29b8330b8",
+      "target_sha256": "8768a950dca9146f5ff49d52e68d4f3b88051eebe6a68d6988c04ff29b8330b8"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/noindex/before/page.html",
+      "target": "seo-publish-audit/references/legacy-examples/noindex/before/page.html",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "bf3e1844d9a7248575a9395d24c7a11294ca1eea467d234c0e43bbed239f2a6a",
+      "target_sha256": "bf3e1844d9a7248575a9395d24c7a11294ca1eea467d234c0e43bbed239f2a6a"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/noindex/before/response.json",
+      "target": "seo-publish-audit/references/legacy-examples/noindex/before/response.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "8768a950dca9146f5ff49d52e68d4f3b88051eebe6a68d6988c04ff29b8330b8",
+      "target_sha256": "8768a950dca9146f5ff49d52e68d4f3b88051eebe6a68d6988c04ff29b8330b8"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/robots-block/README.md",
+      "target": "seo-publish-audit/references/legacy-examples/robots-block/README.md",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "395ff2e1482aad451de220e5693488610821eb4a512945e041a6187e3151cc23",
+      "target_sha256": "395ff2e1482aad451de220e5693488610821eb4a512945e041a6187e3151cc23"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/robots-block/README.zh.md",
+      "target": "seo-publish-audit/references/legacy-examples/robots-block/README.zh.md",
+      "action": "retained-optional-chinese-companion",
+      "source_sha256": "25637973667128855f095e32c2dfc93b26ba77e4ac9dcb522f14494e0dc6b934",
+      "target_sha256": "25637973667128855f095e32c2dfc93b26ba77e4ac9dcb522f14494e0dc6b934"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/robots-block/after/robots.txt",
+      "target": "seo-publish-audit/references/legacy-examples/robots-block/after/robots.txt",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "a93ecba9bf0787b6c2997d952b819eb77a1f5ea06b1ad0f550af34fc7152b3b0",
+      "target_sha256": "a93ecba9bf0787b6c2997d952b819eb77a1f5ea06b1ad0f550af34fc7152b3b0"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/robots-block/before/robots.txt",
+      "target": "seo-publish-audit/references/legacy-examples/robots-block/before/robots.txt",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "81b11aab3e19052d2b2b0773ae70b1e59f10b31a8a7b45b09a6c01ff71f2b38d",
+      "target_sha256": "81b11aab3e19052d2b2b0773ae70b1e59f10b31a8a7b45b09a6c01ff71f2b38d"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/sitemap-html/README.md",
+      "target": "seo-publish-audit/references/legacy-examples/sitemap-html/README.md",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "96c5c9e45d9ab27120c3a36f3c5f0630602e53ee1666ccd1b54e1b3546f3228e",
+      "target_sha256": "96c5c9e45d9ab27120c3a36f3c5f0630602e53ee1666ccd1b54e1b3546f3228e"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/sitemap-html/README.zh.md",
+      "target": "seo-publish-audit/references/legacy-examples/sitemap-html/README.zh.md",
+      "action": "retained-optional-chinese-companion",
+      "source_sha256": "68089be014d1524893d569a847b2c5168167ae6ade817914ab2234a1c1e95936",
+      "target_sha256": "68089be014d1524893d569a847b2c5168167ae6ade817914ab2234a1c1e95936"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/sitemap-html/after/response.json",
+      "target": "seo-publish-audit/references/legacy-examples/sitemap-html/after/response.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "db60dd23a858679076d409f73417cf207115128912c8c15ae6ce0dafc6cd3d80",
+      "target_sha256": "db60dd23a858679076d409f73417cf207115128912c8c15ae6ce0dafc6cd3d80"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/sitemap-html/after/sitemap.xml",
+      "target": "seo-publish-audit/references/legacy-examples/sitemap-html/after/sitemap.xml",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "610fb9784517b3c9b51ef4e61848c276429532493d5360b212978788789d00f0",
+      "target_sha256": "610fb9784517b3c9b51ef4e61848c276429532493d5360b212978788789d00f0"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/sitemap-html/before/response.json",
+      "target": "seo-publish-audit/references/legacy-examples/sitemap-html/before/response.json",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "cdda8ebf3f5651f7c6accb2d42cfd3c95fc70d108180e9cd456968c382a6dd45",
+      "target_sha256": "cdda8ebf3f5651f7c6accb2d42cfd3c95fc70d108180e9cd456968c382a6dd45"
+    },
+    {
+      "source": "seo-publish-audit/references/legacy-examples/sitemap-html/before/sitemap.xml",
+      "target": "seo-publish-audit/references/legacy-examples/sitemap-html/before/sitemap.xml",
+      "action": "retained-compatible-metadata-or-existing-english-fixture",
+      "source_sha256": "ad1386403ac6bd213877fa4d19a5aef24adc687364e9a676ad91fb0a1a8117f1",
+      "target_sha256": "ad1386403ac6bd213877fa4d19a5aef24adc687364e9a676ad91fb0a1a8117f1"
+    },
+    {
+      "source": "sources.json",
+      "target": "sources.json",
+      "action": "translated",
+      "source_sha256": "b80d083fb12b1fbde808ea22e2b491e76bc3129724fae6815ebd807e4c654a05",
+      "target_sha256": "7feb03e556c23fae338ba8851042b55d2ec8ef1dca242c9b6621e10e6d91378a"
+    }
+  ],
+  "added_files": [
+    "README.md",
+    "qa/check-translation.py",
+    "qa/translation-manifest.json",
+    "qa/translation-validation.json"
+  ]
+}

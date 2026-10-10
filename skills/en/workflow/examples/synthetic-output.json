@@ -1,0 +1,263 @@
+{
+  "evidence_type": "synthetic",
+  "production_status": "NOT_RUN",
+  "indexing_status": "UNKNOWN",
+  "business_success_claim": false,
+  "opportunity": {
+    "id": "op-001",
+    "stage_id": "01-search-opportunity",
+    "audience": "Beginners using a static site for the first time",
+    "locale": "zh-CN",
+    "reader_task": "Determine whether a public page has crawl or indexing blockers",
+    "query_cluster": [
+      "Published page cannot be found in search",
+      "Difference between robots and noindex"
+    ],
+    "evidence": [
+      {
+        "type": "provided",
+        "source": "synthetic:feedback-01",
+        "observed_at": null,
+        "finding": "One fictional feedback item describing crawl/indexing confusion, for demonstration only"
+      }
+    ],
+    "serp_status": "SERP_NOT_OBSERVED",
+    "intent": {
+      "label": "learn",
+      "basis": "Inferred from a fictional reader question; search results were not observed"
+    },
+    "search_volume": null,
+    "volume_status": "unknown",
+    "volume_source": null,
+    "fit": {
+      "audience_fit": "high",
+      "evidence_strength": "low",
+      "ability_to_help": "medium",
+      "effort": "low",
+      "rationale": "The task is clear, but the material is fictional and does not establish real demand"
+    },
+    "existing_page": null,
+    "recommendation": "validate",
+    "next_validation": "Reassess after obtaining real reader questions or authorized search observations",
+    "unknowns": [
+      "Real demand",
+      "Search volume",
+      "Search-result intent"
+    ]
+  },
+  "page": {
+    "stage_id": "02-page-plan",
+    "opportunity_id": "op-001",
+    "locale": "zh-CN",
+    "reader_job": "Distinguish crawling from indexing and find evidence of one blocker",
+    "reader_success": "Can record separate evidence and unknowns for robots and noindex in their own audit notes",
+    "decision": "new_page",
+    "existing_page_review": "The synthetic input is empty; this does not establish that a real site has no page on the topic",
+    "proposed_url": "https://example.com/first-page/",
+    "page_type": "guide",
+    "intent_hypothesis": {
+      "label": "learn",
+      "evidence": [
+        "synthetic:feedback-01"
+      ],
+      "status": "inferred"
+    },
+    "title": "After publishing your first page: check crawl and indexing blockers",
+    "h1": "Distinguish crawling from indexing before investigating why a page is missing from search",
+    "description": "Use explicit evidence to check access, robots and noindex for a public page, and record unverified states.",
+    "sections": [
+      {
+        "heading": "First confirm whether the page should be public",
+        "reader_question": "May this page be publicly accessible?",
+        "required_evidence": [
+          "The owner’s intent for public indexing"
+        ],
+        "format": "checklist",
+        "evidence_status": "provided"
+      },
+      {
+        "heading": "Check crawl and indexing directives separately",
+        "reader_question": "How do robots and noindex differ?",
+        "required_evidence": [
+          "Official documentation",
+          "HTML and response headers"
+        ],
+        "format": "steps",
+        "evidence_status": "unknown"
+      },
+      {
+        "heading": "Record one issue and the unknowns",
+        "reader_question": "What can I confirm, and what evidence should I gather next?",
+        "required_evidence": [
+          "Audit records"
+        ],
+        "format": "template",
+        "evidence_status": "unknown"
+      }
+    ],
+    "original_contribution": "A comparison exercise explicitly labeled synthetic, with no claim of firsthand business results",
+    "internal_links": [
+      {
+        "target": "https://example.com/sitemap-guide/",
+        "anchor": "Sitemap-check guide",
+        "purpose": "Link to the discovery stage once the target is confirmed to exist"
+      }
+    ],
+    "language_plan": "The fixture body is Chinese, with html lang=zh-CN; no English page version is supplied, so do not generate hreflang",
+    "evidence_needed": [
+      "Real reader questions",
+      "Real page inputs",
+      "Evidence that the internal-link target exists"
+    ],
+    "reviewer": null,
+    "next_action": "Gather missing evidence first, then obtain authorization to produce the body content",
+    "content_acceptance": [
+      "Distinguish crawling/indexing",
+      "Source every judgment",
+      "Keep synthetic labels"
+    ],
+    "handoff_stage_id": "03-content-production",
+    "publish_status": "NOT_RUN"
+  },
+  "audit": {
+    "stage_id": "04-publish-check",
+    "target_url": "https://example.com/first-page/",
+    "expected_public_indexable": true,
+    "environment": "local",
+    "observed_at": null,
+    "artifact_version": "synthetic-input-v1",
+    "checks": [
+      {
+        "id": "http",
+        "status": "UNKNOWN",
+        "severity": "warning",
+        "evidence": [],
+        "finding": "No real HTTP response is available",
+        "next_action": "After authorization, retrieve live responses and the redirect chain"
+      },
+      {
+        "id": "robots",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.robots_txt: User-agent: *; Allow: /"
+        ],
+        "finding": "This simple local fixture allows crawling",
+        "next_action": "Verify actual robots rules at publication"
+      },
+      {
+        "id": "noindex",
+        "status": "FAIL",
+        "severity": "blocker",
+        "evidence": [
+          "synthetic-input.json audit.html: meta robots=noindex"
+        ],
+        "finding": "Conflicts with the intended public-indexable status; response headers are unknown",
+        "next_action": "After owner confirmation, propose removing the unintended noindex, then check response headers"
+      },
+      {
+        "id": "canonical",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.html canonical matches target"
+        ],
+        "finding": "The local declaration is unique and matches the supplied sitemap",
+        "next_action": "Live headers and the final URL still need verification"
+      },
+      {
+        "id": "sitemap",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.sitemap contains target URL"
+        ],
+        "finding": "The local structure aligns with the canonical URL; the live response is unknown",
+        "next_action": "Check that the actual sitemap is not a login page"
+      },
+      {
+        "id": "lang",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.html: lang=zh-CN; Chinese body"
+        ],
+        "finding": "The static body matches lang",
+        "next_action": "Do not interpret this as a ranking improvement"
+      },
+      {
+        "id": "internal-links",
+        "status": "UNKNOWN",
+        "severity": "warning",
+        "evidence": [
+          "synthetic-input.json audit.parent_html: a href points to target"
+        ],
+        "finding": "A local link fragment exists, but parent-page accessibility and target availability have not been checked",
+        "next_action": "Obtain actual responses for the parent page and target"
+      }
+    ],
+    "required_check_ids": [
+      "http",
+      "robots",
+      "noindex",
+      "canonical",
+      "sitemap",
+      "lang",
+      "internal-links"
+    ],
+    "technical_decision": "blocked",
+    "proposed_fixes": [
+      "Remove unintended noindex only after owner confirmation; this example made no production changes"
+    ],
+    "rollback": "Keep copies of original files; the example was not deployed and needs no production rollback",
+    "production_status": "NOT_RUN",
+    "indexing_status": "UNKNOWN",
+    "traffic_outcome": "UNKNOWN"
+  },
+  "measure": {
+    "stage_id": "06-measure-iterate",
+    "page_scope": [
+      "https://example.com/first-page/"
+    ],
+    "data_source": "synthetic:search-console-export",
+    "filters": {
+      "page": "https://example.com/first-page/",
+      "search_type": "web",
+      "country": "all",
+      "device": "all"
+    },
+    "timezone": "America/Los_Angeles",
+    "baseline": {
+      "start": null,
+      "end": null,
+      "clicks": null,
+      "impressions": null
+    },
+    "observation": {
+      "start": "2026-09-01",
+      "end": "2026-09-28",
+      "clicks": 6,
+      "impressions": 200
+    },
+    "comparison_status": "baseline_missing",
+    "ctr": 0.03,
+    "click_delta": null,
+    "relative_click_change": null,
+    "observed_change": "Only a fictional observation window of 6 clicks/200 impressions is available; change cannot be determined",
+    "causal_claim": "NOT_ESTABLISHED",
+    "hypotheses": [],
+    "alternative_explanations": [
+      "Without a baseline, changes and causes cannot be identified"
+    ],
+    "decision": "collect_baseline",
+    "next_action": "First establish a real baseline with the same pages, filters and a complete period",
+    "review_when": "When a complete, comparable window is available and the data has finished updating",
+    "rollback_or_stop": "If metric definitions change or data remains incomplete, stop comparing and rebuild the baseline",
+    "limitations": [
+      "All figures are synthetic",
+      "No real Search Console access",
+      "No baseline",
+      "No technical-change or business outcomes established"
+    ]
+  }
+}

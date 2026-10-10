@@ -1,5 +1,7 @@
 # Third-party attribution
 
+English · [简体中文](THIRD_PARTY.zh-CN.md) · [Project README](README.md)
+
 The static build uses markdown-it 15.0.2 (MIT), with its npm dependencies recorded in package-lock.json. It is a build-time dependency. Dependency licenses remain in their distributed packages.
 
 The Skill directory links pinned sources and does not bundle their Skill instructions or code:

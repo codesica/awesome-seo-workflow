@@ -1,0 +1,647 @@
+{
+  "result": "PASS",
+  "scope": "Translation coverage, source-file hashes, JSON compatibility, templates and source links only",
+  "live_site_test": "NOT_RUN",
+  "validation_record_timestamp_policy": "Compare QA scope/checks/statuses; its local checked_at timestamp may differ from the translator snapshot. Chinese source records are not modified.",
+  "checks": [
+    {
+      "check": "No unexplained Chinese in English instructions or human-readable outputs",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: downloads/first-crawl-workflow-skills.zip",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: downloads/seo-measure-decide.zip",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: downloads/seo-opportunity-evidence.zip",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: downloads/seo-page-brief.zip",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: downloads/seo-publish-audit.zip",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: examples/EXAMPLE.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: examples/synthetic-input.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: examples/synthetic-input.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: examples/synthetic-input.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: examples/synthetic-output.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: examples/synthetic-output.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: examples/synthetic-output.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: index.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: index.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: index.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: qa/download-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: qa/validate.py",
+      "pass": true
+    },
+    {
+      "check": "QA checks, scope and statuses preserved; local run timestamp may differ",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-measure-decide/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Frontmatter preserved: seo-measure-decide/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "JSON template unchanged: seo-measure-decide/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source URLs preserved: seo-measure-decide/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Status and no-live-run boundary retained: seo-measure-decide/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-measure-decide/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-measure-decide/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-measure-decide/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-opportunity-evidence/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Frontmatter preserved: seo-opportunity-evidence/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "JSON template unchanged: seo-opportunity-evidence/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source URLs preserved: seo-opportunity-evidence/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Status and no-live-run boundary retained: seo-opportunity-evidence/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-opportunity-evidence/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-opportunity-evidence/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-opportunity-evidence/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-page-brief/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Frontmatter preserved: seo-page-brief/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "JSON template unchanged: seo-page-brief/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source URLs preserved: seo-page-brief/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Status and no-live-run boundary retained: seo-page-brief/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-page-brief/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-page-brief/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-page-brief/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Frontmatter preserved: seo-publish-audit/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "JSON template unchanged: seo-publish-audit/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source URLs preserved: seo-publish-audit/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Status and no-live-run boundary retained: seo-publish-audit/SKILL.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-publish-audit/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-publish-audit/metadata.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/PROVENANCE.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/canonical-conflict/README.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/canonical-conflict/README.zh.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/canonical-conflict/after/page.html",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/canonical-conflict/after/sitemap.xml",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/canonical-conflict/before/page.html",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/canonical-conflict/before/sitemap.xml",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/noindex/README.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/noindex/README.zh.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/noindex/after/page.html",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/noindex/after/response.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-publish-audit/references/legacy-examples/noindex/after/response.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-publish-audit/references/legacy-examples/noindex/after/response.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/noindex/before/page.html",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/noindex/before/response.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-publish-audit/references/legacy-examples/noindex/before/response.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-publish-audit/references/legacy-examples/noindex/before/response.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/robots-block/README.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/robots-block/README.zh.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/robots-block/after/robots.txt",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/robots-block/before/robots.txt",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/sitemap-html/README.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/sitemap-html/README.zh.md",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/sitemap-html/after/response.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-publish-audit/references/legacy-examples/sitemap-html/after/response.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-publish-audit/references/legacy-examples/sitemap-html/after/response.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/sitemap-html/after/sitemap.xml",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/sitemap-html/before/response.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: seo-publish-audit/references/legacy-examples/sitemap-html/before/response.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: seo-publish-audit/references/legacy-examples/sitemap-html/before/response.json",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: seo-publish-audit/references/legacy-examples/sitemap-html/before/sitemap.xml",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: sources.json",
+      "pass": true
+    },
+    {
+      "check": "JSON structure preserved: sources.json",
+      "pass": true
+    },
+    {
+      "check": "Machine values, dates, URLs, numbers and null preserved: sources.json",
+      "pass": true
+    }
+  ],
+  "declared_language_exceptions": [
+    {
+      "file": "examples/synthetic-input.json",
+      "field": "audit.html",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "examples/synthetic-input.json",
+      "field": "audit.parent_html",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "stages.0.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "stages.1.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "stages.2.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "stages.3.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "stages.4.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "stages.5.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.0.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.0.summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.0.inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.0.outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.0.safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.0.prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.1.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.1.summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.1.inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.1.outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.1.safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.1.prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.2.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.2.summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.2.inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.2.outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.2.safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.2.prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.3.title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.3.summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.3.inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.3.outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.3.safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "index.json",
+      "field": "skills.3.prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-measure-decide/metadata.json",
+      "field": "title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-measure-decide/metadata.json",
+      "field": "summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-measure-decide/metadata.json",
+      "field": "inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-measure-decide/metadata.json",
+      "field": "outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-measure-decide/metadata.json",
+      "field": "safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-measure-decide/metadata.json",
+      "field": "prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-opportunity-evidence/metadata.json",
+      "field": "title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-opportunity-evidence/metadata.json",
+      "field": "summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-opportunity-evidence/metadata.json",
+      "field": "inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-opportunity-evidence/metadata.json",
+      "field": "outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-opportunity-evidence/metadata.json",
+      "field": "safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-opportunity-evidence/metadata.json",
+      "field": "prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-page-brief/metadata.json",
+      "field": "title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-page-brief/metadata.json",
+      "field": "summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-page-brief/metadata.json",
+      "field": "inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-page-brief/metadata.json",
+      "field": "outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-page-brief/metadata.json",
+      "field": "safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-page-brief/metadata.json",
+      "field": "prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-publish-audit/metadata.json",
+      "field": "title.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-publish-audit/metadata.json",
+      "field": "summary.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-publish-audit/metadata.json",
+      "field": "inputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-publish-audit/metadata.json",
+      "field": "outputs.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-publish-audit/metadata.json",
+      "field": "safety.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-publish-audit/metadata.json",
+      "field": "prompt.zh-CN",
+      "reason": "Preserved bilingual metadata or original zh-CN raw fixture evidence"
+    },
+    {
+      "file": "seo-publish-audit/references/legacy-examples/canonical-conflict/README.zh.md",
+      "reason": "Preserved optional Chinese reference companion"
+    },
+    {
+      "file": "seo-publish-audit/references/legacy-examples/noindex/README.zh.md",
+      "reason": "Preserved optional Chinese reference companion"
+    },
+    {
+      "file": "seo-publish-audit/references/legacy-examples/robots-block/README.zh.md",
+      "reason": "Preserved optional Chinese reference companion"
+    },
+    {
+      "file": "seo-publish-audit/references/legacy-examples/sitemap-html/README.zh.md",
+      "reason": "Preserved optional Chinese reference companion"
+    }
+  ],
+  "unexpected_language_findings": []
+}

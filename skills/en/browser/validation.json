@@ -1,0 +1,25 @@
+{
+  "reviewed_on": "2026-10-10",
+  "skills": 3,
+  "files_per_skill": 5,
+  "source_structure": "PASS",
+  "json_parse": "PASS",
+  "relative_reference_links": "PASS",
+  "live_execution": "NOT_RUN",
+  "private_accounts_accessed": false,
+  "installed_in_personal_skill_directory": false,
+  "offline_synthetic_boundary_review": {
+    "status": "PASS_WITH_REFINEMENTS",
+    "cases": [
+      "GSC clicks 5 vs 0 and conflicting CTR, missing-value export, indexed/live separation",
+      "Bing successful sitemap and 100 discovered do not prove indexing; 301 remains distinct",
+      "Five organic results excluding target and two ads do not prove deindexing"
+    ],
+    "refinements": [
+      "Check clicks/impressions/CTR consistency before using differences",
+      "Preserve supplied-artifact evidence provenance and null metadata",
+      "Distinguish completed artifact analysis from NOT_RUN live execution",
+      "Existing live test evidence is not permission for another live fetch"
+    ]
+  }
+}

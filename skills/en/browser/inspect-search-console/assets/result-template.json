@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "inspect-search-console",
+  "language": "en",
+  "execution_status": "NOT_RUN",
+  "source_reviewed_on": "2026-10-10",
+  "run_started_at": null,
+  "run_finished_at": null,
+  "browser_owner": null,
+  "context": {
+    "property": null,
+    "property_type": null,
+    "report_url": null,
+    "report_name": null,
+    "report_timezone": null,
+    "date_granularity": null,
+    "current_range": {
+      "start": null,
+      "end": null
+    },
+    "comparison_range": {
+      "start": null,
+      "end": null
+    },
+    "last_updated": null,
+    "preliminary_data": null,
+    "search_type": null,
+    "filters": []
+  },
+  "evidence": [],
+  "findings": [],
+  "limitations": [],
+  "blocker": null,
+  "recommended_next_steps": [],
+  "performance_totals": {
+    "current": {
+      "clicks": null,
+      "impressions": null,
+      "ctr_percent": null,
+      "average_position": null
+    },
+    "previous": {
+      "clicks": null,
+      "impressions": null,
+      "ctr_percent": null,
+      "average_position": null
+    },
+    "click_delta": null,
+    "click_relative_change_percent": null,
+    "ctr_delta_percentage_points": null,
+    "evidence_ids": []
+  },
+  "dimension_rows": [],
+  "indexed_url_checks": [],
+  "live_url_checks": [],
+  "indexing_summary": {
+    "indexed": null,
+    "not_indexed": null,
+    "scope": null,
+    "data_as_of": null,
+    "reasons": []
+  },
+  "exports": [],
+  "input_mode": null,
+  "artifact_analysis_status": "NOT_RUN"
+}

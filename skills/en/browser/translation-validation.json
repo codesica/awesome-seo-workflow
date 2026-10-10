@@ -1,0 +1,16 @@
+{
+  "source_files_unchanged": true,
+  "skill_count": 3,
+  "self_contained_relative_links": true,
+  "frontmatter_identical": true,
+  "template_structure_and_values_preserved_except_language": true,
+  "source_urls_and_review_dates_preserved": true,
+  "untranslated_cjk_files": [],
+  "json_parse": "PASS",
+  "live_execution": "NOT_RUN",
+  "private_accounts_accessed": false,
+  "user_computer_used": false,
+  "installed_in_personal_skill_directory": false,
+  "review_scope": "Local translation, structure, and compatibility checks only; no new official-source review or live-browser test.",
+  "checked_on": "2026-10-10"
+}

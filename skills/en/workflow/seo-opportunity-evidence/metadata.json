@@ -1,0 +1,41 @@
+{
+  "id": "seo-opportunity-evidence",
+  "slug": "seo-opportunity-evidence",
+  "stage_id": "01-search-opportunity",
+  "type": "original-execution-skill",
+  "status": "source-reviewed",
+  "production_status": "NOT_RUN",
+  "validation_status": "synthetic-structure-tested",
+  "version": "0.1.0",
+  "last_reviewed": "2026-10-10",
+  "title": {
+    "zh-CN": "搜索机会证据卡",
+    "en": "Search opportunity evidence"
+  },
+  "summary": {
+    "zh-CN": "把受众问题变成有出处、可验证的选题；未知搜索量保持未知。",
+    "en": "Turn audience problems into sourced opportunities without invented search volume."
+  },
+  "inputs": {
+    "zh-CN": "受众问题、已有页面、搜索观察或用户反馈",
+    "en": "Audience problems, existing pages, search observations or feedback"
+  },
+  "outputs": {
+    "zh-CN": "机会卡 JSON；推荐下一验证动作",
+    "en": "Opportunity cards and a next validation step"
+  },
+  "safety": {
+    "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+    "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+  },
+  "skill_path": "seo-opportunity-evidence/SKILL.md",
+  "download_path": "downloads/seo-opportunity-evidence.zip",
+  "source_ids": [
+    "helpful-content",
+    "starter-guide"
+  ],
+  "prompt": {
+    "zh-CN": "请使用 $seo-opportunity-evidence，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+    "en": "Use $seo-opportunity-evidence to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+  }
+}

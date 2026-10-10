@@ -1,0 +1,86 @@
+[
+  {
+    "id": "inspect-search-console",
+    "title": {
+      "zh": "Inspect Google Search Console",
+      "en": "Inspect Google Search Console"
+    },
+    "summary": {
+      "zh": "Read performance, indexed URL state, and indexing reasons after verifying property, dates, and filters.",
+      "en": "Read performance, indexed URL state, and indexing reasons after verifying property, dates, and filters."
+    },
+    "skillPath": "inspect-search-console/SKILL.md",
+    "instructionLanguage": "en",
+    "structuredOutputLanguage": "en",
+    "toolMode": "browser/computer-use",
+    "permissionMode": "read-only; optional authorized diagnostic live fetch",
+    "validation": {
+      "sources": "source-reviewed",
+      "sourceReviewedOn": "2026-10-10",
+      "liveExecution": "NOT_RUN"
+    },
+    "contains": [
+      "SKILL.md",
+      "references/interpretation.md",
+      "references/output-contract.md",
+      "references/sources.md",
+      "assets/result-template.json"
+    ]
+  },
+  {
+    "id": "inspect-bing-webmaster",
+    "title": {
+      "zh": "Inspect Bing Webmaster Tools",
+      "en": "Inspect Bing Webmaster Tools"
+    },
+    "summary": {
+      "zh": "Inspect Bing indexing, crawling, and existing sitemap processing without submitting or changing site settings.",
+      "en": "Inspect Bing indexing, crawling, and existing sitemap processing without submitting or changing site settings."
+    },
+    "skillPath": "inspect-bing-webmaster/SKILL.md",
+    "instructionLanguage": "en",
+    "structuredOutputLanguage": "en",
+    "toolMode": "browser/computer-use",
+    "permissionMode": "read-only; optional authorized diagnostic live fetch",
+    "validation": {
+      "sources": "source-reviewed",
+      "sourceReviewedOn": "2026-10-10",
+      "liveExecution": "NOT_RUN"
+    },
+    "contains": [
+      "SKILL.md",
+      "references/interpretation.md",
+      "references/output-contract.md",
+      "references/sources.md",
+      "assets/result-template.json"
+    ]
+  },
+  {
+    "id": "research-search-results",
+    "title": {
+      "zh": "Research Search Results",
+      "en": "Research Search Results"
+    },
+    "summary": {
+      "zh": "Browse actual search results and competing pages to identify intent, evidence gaps, and original content opportunities.",
+      "en": "Browse actual search results and competing pages to identify intent, evidence gaps, and original content opportunities."
+    },
+    "skillPath": "research-search-results/SKILL.md",
+    "instructionLanguage": "en",
+    "structuredOutputLanguage": "en",
+    "toolMode": "browser/computer-use",
+    "permissionMode": "read-only; optional authorized diagnostic live fetch",
+    "validation": {
+      "sources": "source-reviewed",
+      "sourceReviewedOn": "2026-10-10",
+      "liveExecution": "NOT_RUN"
+    },
+    "contains": [
+      "SKILL.md",
+      "references/interpretation.md",
+      "references/output-contract.md",
+      "references/sources.md",
+      "assets/result-template.json"
+    ]
+  }
+]
