@@ -1,6 +1,7 @@
 export default {
-  name: 'First Crawl',
+  name: 'Awesome SEO Workflow',
+  version: '2.4.0',
   origin: process.env.SITE_ORIGIN || 'https://skills.yangluotong.top',
-  repository: 'https://github.com/codesica/lab-seo-starter-skills',
-  releaseReady: true, // Visual approval and publication authorized on 10 October 2026.
+  repository: 'https://github.com/codesica/awesome-seo-workflow',
+  releaseReady: true, // Release publishing is enabled.
 };

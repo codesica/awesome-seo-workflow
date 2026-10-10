@@ -1,6 +1,8 @@
-# First Crawl
+# Awesome SEO Workflow
 
 简体中文 · [English](README.md)
+
+[公开仓库：codesica/awesome-seo-workflow](https://github.com/codesica/awesome-seo-workflow)。这是原仓库的直接改名，Git 历史、issues 和 stars 均保留。现有 `first-crawl` 下载文件名及稳定课程 ID 保持兼容。
 
 一套适合新手的 SEO 课程，以及七个原创 Agent Skills。用“免费五分钟冥想计时网页”的假设例子，理解搜索怎样把人带到有用的页面，再一次完成一件小事。示例不代表真实需求、收录、排名、流量或收入。
 
@@ -28,6 +30,47 @@
 [六堂课](https://skills.yangluotong.top/zh/roadmap/) 依次处理需要、页面规划、内容制作、上线检查、发现与推广、根据证据改进。已有网站时，选择你负责、原本就应公开的页面；私密页面继续保持私密。草稿不等于可用工具，也不等于网站已上线。
 
 每课先展示小动作、填好的假设示例、适合你的路径和完成标准。需要时再展开技术清单与可选 Skills。原有六个稳定阶段 ID 和 25 个动作均保留。
+
+## 六阶段可点速览
+
+先完成自己的小任务；没有网站也能走纸上练习路线。
+
+| 阶段 | 这次留下什么 |
+| --- | --- |
+| [01 · 想清楚要帮谁](https://skills.yangluotong.top/zh/stages/01-search-opportunity/) | 受众与任务四行记录 |
+| [02 · 画出这一页](https://skills.yangluotong.top/zh/stages/02-page-plan/) | 一张页面草图 |
+| [03 · 写出来、做出来](https://skills.yangluotong.top/zh/stages/03-content-production/) | 可读草稿或可用页面 |
+| [04 · 打开上线页面检查](https://skills.yangluotong.top/zh/stages/04-publish-check/) | 公开页面检查记录 |
+| [05 · 让需要的人找到入口](https://skills.yangluotong.top/zh/stages/05-discovery-promotion/) | 发现与分享入口记录 |
+| [06 · 看发生了什么，再改](https://skills.yangluotong.top/zh/stages/06-measure-iterate/) | 一项改动与复查条件 |
+
+## 七个原创 Skills：任务 → 输入 → 输出
+
+先理解任务，再选一个有界帮手。三个浏览器包需要已有授权；七个包都保持真实站点 `NOT_RUN`。
+
+| Skill / 任务 | 输入 | 输出 |
+| --- | --- | --- |
+| [公开搜索结果研究](https://skills.yangluotong.top/zh/skills/research-search-results/) · `research-search-results` | 问题、受众、地区和有界搜索范围 | 观察证据 JSON；保留未检查项 |
+| [搜索机会证据卡](https://skills.yangluotong.top/zh/skills/seo-opportunity-evidence/) · `seo-opportunity-evidence` | 受众问题、已有页面、搜索观察或用户反馈 | 机会卡 JSON；推荐下一验证动作 |
+| [单页规划与搜索意图](https://skills.yangluotong.top/zh/skills/seo-page-brief/) · `seo-page-brief` | 机会卡、读者任务、第一手材料、现有页面 | 页面 brief JSON；交给内容制作的清单 |
+| [发布技术检查](https://skills.yangluotong.top/zh/skills/seo-publish-audit/) · `seo-publish-audit` | URL、公开索引意图、HTML/响应头/robots/sitemap/内链 | 七项证据审计；阻塞、未知与修复建议 |
+| [读取 Google 报告](https://skills.yangluotong.top/zh/skills/inspect-search-console/) · `inspect-search-console` | 精确资源、日期/网址和已有读取权限 | 带筛选条件、页面及限制的结果 JSON |
+| [读取 Bing 后台](https://skills.yangluotong.top/zh/skills/inspect-bing-webmaster/) · `inspect-bing-webmaster` | 精确站点、网址/网站地图和已有读取权限 | 索引与发现证据 JSON；不提交索引 |
+| [数据驱动迭代决策](https://skills.yangluotong.top/zh/skills/seo-measure-decide/) · `seo-measure-decide` | 数据导出、改动记录、可比基线、观察窗口 | 迭代决策卡；复查与停止条件 |
+
+第 3 阶段没有专门的制作 Skill；第 5 阶段不提供自动对外推广。完整用法见 [使用说明](USAGE.zh-CN.md)。
+
+## 可选第三方来源
+
+这三个来源与七个原创包分开，许可和费用分别说明，不打包第三方代码。
+
+- [SEO Skill · Local CLI](https://skills.yangluotong.top/zh/skills/local-seo/)
+- [Claude SEO · Sitemap](https://skills.yangluotong.top/zh/skills/seo-sitemap/)
+- [Firecrawl Scrape](https://skills.yangluotong.top/zh/skills/firecrawl-scrape/)
+
+## 固定版本与下载校验
+
+使用 [GitHub Releases](https://github.com/codesica/awesome-seo-workflow/releases) 获取固定版本。每个发布将版本、源提交、中文/英文 ZIP 与 SHA-256 校验和关联；网站的 [下载清单](https://skills.yangluotong.top/downloads/skills/manifest.json) 也提供对应关系。校验和用于确认文件一致，不证明 Skill 在真实网站运行过。
 
 ## 本地运行
 
@@ -63,10 +106,7 @@ PORT=4180 npm run preview
 第 3 课没有专门制作网页的 Skill。第 5 课包含只读 Bing 检查，不包含自动推广。纸上路径学习规划与证据解释，不会做出示例中的计时器。编辑复核和浏览器检查不等于真实新手试读。
 
 ```sh
-python3 examples/verify.py
-python3 content/workflow/validate.py
-python3 scripts/validate-skill-locales.py
-npm run build:release
+npm run check
 ```
 
 上述检查只验证各自声明的本地范围，不验证收录、排名、增长或 Agent 端到端执行。
