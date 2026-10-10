@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "requestedUrl": "https://example.com/sitemap.xml",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/xml; charset=utf-8"
+  },
+  "bodyFile": "sitemap.xml"
+}

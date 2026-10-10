@@ -1,0 +1,44 @@
+{
+  "evidenceType": "synthetic",
+  "checkedOn": "2026-10-10",
+  "networkRequests": false,
+  "notice": "Invented teaching fixtures, not client results or Google indexing evidence.",
+  "cases": [
+    {
+      "id": "robots-block",
+      "title": "A launch page is blocked from crawling",
+      "input": "robots-block/before/robots.txt",
+      "finding": "The wildcard crawler group disallows every path, including /trail-guide/.",
+      "fix": "Remove the accidental site-wide disallow only after confirming the page is intended to be public.",
+      "acceptance": "The fixture rule allows Googlebot to fetch /trail-guide/. This checks crawl permission, not indexing.",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+    },
+    {
+      "id": "noindex",
+      "title": "An intended public page still has noindex",
+      "input": "noindex/before/page.html",
+      "finding": "The HTML robots meta tag contains noindex.",
+      "fix": "Remove the unintended directive at its source. Check both HTML metadata and response headers in production.",
+      "acceptance": "The fixed HTML and modeled headers contain no noindex directive. Google indexing remains unverified.",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/block-indexing"
+    },
+    {
+      "id": "sitemap-html",
+      "title": "The sitemap route returns an app shell",
+      "input": "sitemap-html/before/sitemap.xml",
+      "finding": "The modeled response is HTTP 200 with an HTML body, not the promised XML sitemap.",
+      "fix": "Serve the sitemap before a catch-all HTML route; return sitemap XML and an appropriate XML content type.",
+      "acceptance": "The fixed fixture parses as a sitemap urlset with one absolute URL. No submission or crawl is claimed.",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"
+    },
+    {
+      "id": "canonical-conflict",
+      "title": "Two canonical tags disagree",
+      "input": "canonical-conflict/before/page.html",
+      "finding": "Two canonical link elements point to different URLs for the same page.",
+      "fix": "Choose the intended representative page and emit one consistent canonical. Keep the sitemap aligned.",
+      "acceptance": "Exactly one canonical remains and matches the fixture sitemap URL. Google-selected canonical remains unverified.",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+    }
+  ]
+}

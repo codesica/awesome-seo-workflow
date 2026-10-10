@@ -1,0 +1,132 @@
+{
+  "url": "http://127.0.0.1:4174/after/trail-guide/",
+  "fetchedAt": "2026-10-10T12:09:48.438Z",
+  "page": {
+    "url": "http://127.0.0.1:4174/after/trail-guide/",
+    "finalUrl": "http://127.0.0.1:4174/after/trail-guide/",
+    "title": "Synthetic trail guide",
+    "canonical": "https://example.com/trail-guide/",
+    "canonicalEvidence": {
+      "status": "single",
+      "selectedRaw": "https://example.com/trail-guide/",
+      "selectedUrl": "https://example.com/trail-guide/",
+      "candidates": [
+        {
+          "source": "html-head",
+          "raw": "https://example.com/trail-guide/",
+          "resolved": "https://example.com/trail-guide/"
+        }
+      ]
+    },
+    "lang": "en",
+    "hasViewport": false,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Synthetic trail guide"
+      }
+    ],
+    "links": [],
+    "markdownAlternates": [],
+    "describedBy": [],
+    "hreflang": [],
+    "jsonLd": [],
+    "invalidJsonLdCount": 0,
+    "invalidJsonLdSamples": [],
+    "unrecognizedJsonLdTypes": [],
+    "structuredDataFormats": [],
+    "googleRichResults": [],
+    "schemaSameAsEvidence": [],
+    "invalidSchemaSameAs": [],
+    "schemaTypes": [],
+    "openGraph": {},
+    "twitter": {},
+    "hasAuthor": false,
+    "hasDate": false,
+    "imagesTotal": 0,
+    "imagesMissingAlt": 0,
+    "oversizedImageCandidates": [],
+    "mixedContentUrls": [],
+    "semanticHtml": true,
+    "questionHeadings": 0,
+    "listCount": 0,
+    "tableCount": 0,
+    "structuredBlocks": 0,
+    "answerable": false,
+    "contentText": "Invented content for an offline SEO exercise.",
+    "wordCount": 7,
+    "contentExtraction": {
+      "requested": "defuddle",
+      "used": "defuddle",
+      "fallback": false,
+      "wordCountSource": "defuddle",
+      "baseUrl": "http://127.0.0.1:4174/after/trail-guide/"
+    },
+    "warnings": []
+  },
+  "fetchDiagnostics": {
+    "source": "network",
+    "cache": "bypass",
+    "fetched": true,
+    "rendered": false,
+    "blocked": false,
+    "durationMs": 16,
+    "retries": 0,
+    "rateLimit": {
+      "host": "127.0.0.1:4174",
+      "concurrency": 4,
+      "intervalCap": 4,
+      "intervalMs": 1000
+    },
+    "backpressure": {
+      "host": "127.0.0.1:4174",
+      "status": "ok",
+      "delayMs": 0,
+      "consecutiveSlow": 0,
+      "consecutiveBlocked": 0,
+      "consecutiveErrors": 0,
+      "recentP95Ms": 16
+    },
+    "robotsTxt": {
+      "url": "http://127.0.0.1:4174/robots.txt",
+      "cache": "bypass",
+      "allowed": true,
+      "availability": "available",
+      "status": 200
+    },
+    "redirectChain": [],
+    "rendering": {
+      "mode": "off",
+      "status": "not-requested",
+      "raw": {
+        "source": "network",
+        "cache": "bypass",
+        "url": "http://127.0.0.1:4174/after/trail-guide/",
+        "finalUrl": "http://127.0.0.1:4174/after/trail-guide/",
+        "status": 200
+      }
+    }
+  },
+  "issues": [
+    {
+      "code": "canonical_mismatch",
+      "title": "Canonical differs from final URL",
+      "detail": "Canonical points to https://example.com/trail-guide/, fetched final URL is http://127.0.0.1:4174/after/trail-guide/.",
+      "principle": "C.7",
+      "evidenceRef": "Canonical https://example.com/trail-guide/ differs from final URL http://127.0.0.1:4174/after/trail-guide/.",
+      "severity": "medium"
+    }
+  ],
+  "recommendations": [],
+  "warnings": [],
+  "outputBudget": {
+    "schemaVersion": 1,
+    "maxBytes": 98304,
+    "originalBytes": 2555,
+    "returnedBytes": 2788,
+    "truncated": false,
+    "omissions": [],
+    "omissionsTruncated": false,
+    "detail": "The complete structured report fits within the agent output budget."
+  }
+}

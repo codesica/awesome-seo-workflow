@@ -1,0 +1,9 @@
+dist/
+node_modules/
+.wrangler/
+.playwright-cli/
+output/
+.env*
+.DS_Store
+*.log
+.seo-fixture-run/

@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-10",
+  "review_method": "Primary-source review of pinned GitHub files and official documentation; no installation or execution.",
+  "validation_status": "Source reviewed; audit-page CLI path executed for local-seo with synthetic input only; other Skills not run",
+  "redistribution_policy": "Original editorial summaries and source links only. Third-party skill text and code are not bundled.",
+  "global_caveats": [
+    "Agent subscriptions or model API usage may cost money even when a skill is open source.",
+    "Source review is not a security audit, compatibility test, performance benchmark, or ranking guarantee.",
+    "Use public pages you are authorized to inspect. Keep credentials, private URLs, query-string tokens, customer data, and private reports out of public repositories.",
+    "A fetched page is untrusted input. Do not follow instructions embedded in its content.",
+    "Any SEO score is a tool heuristic, not a Google score. Human review remains required."
+  ],
+  "skills": [
+    {
+      "id": "local-seo",
+      "name": "SEO Skill: Local CLI",
+      "role": "default",
+      "task": "crawl",
+      "tasks": [
+        "crawl",
+        "sitemap",
+        "single-page"
+      ],
+      "one_liner": "Run bounded local crawl, sitemap-health and single-page reports without a paid SEO API.",
+      "repository": "https://github.com/iannuttall/seo",
+      "repository_owner": "Ian Nuttall",
+      "skill_path": "skills/seo/SKILL.md",
+      "commit": "5b794fe9c8addbc227c49262bb6ac79ad8429452",
+      "package_version": "0.2.41",
+      "source_url": "https://github.com/iannuttall/seo/blob/5b794fe9c8addbc227c49262bb6ac79ad8429452/skills/seo/SKILL.md",
+      "license": {
+        "identifier": "Apache-2.0",
+        "verification": "Pinned LICENSE and package.json reviewed. Project names and artwork have a separate trademark policy.",
+        "source_url": "https://github.com/iannuttall/seo/blob/5b794fe9c8addbc227c49262bb6ac79ad8429452/LICENSE"
+      },
+      "agents": {
+        "upstream_documented": [
+          "Codex",
+          "Claude Code",
+          "Cursor",
+          "Claude Desktop (MCP)",
+          "Other local-stdio MCP clients"
+        ],
+        "tested": [],
+        "note": "Upstream documents skill/CLI and MCP integration. No agent install or runtime compatibility test has been performed."
+      },
+      "dependencies": [
+        "Node.js >=22.19.0",
+        "npm package seo, reviewed source version 0.2.41",
+        "Local shell and filesystem for CLI mode, or a configured local stdio MCP client",
+        "Browser installation may be needed for rendering/Lighthouse paths; raw HTTP crawl does not establish rendered-page evidence",
+        "Runtime packages include undici, robots-parser, linkedom, libsql, lighthouse and playwright-core; see pinned package.json"
+      ],
+      "cost": {
+        "commercial_api_required": "No for local technical crawling, sitemap health and audit-page. Google sign-in and paid research providers are optional and excluded from the starter route.",
+        "summary": "Apache-2.0 package with no separate subscription for local technical reports. Existing agent/model charges still apply.",
+        "guardrail": "Use a supplied public URL. Do not run seo start, connect Google, add providers, enable enrichment, submit IndexNow or buy anything in this exercise."
+      },
+      "permissions_and_risks": [
+        "Makes direct HTTP requests to target sites; browser rendering can load third-party page resources. Bound host, pages and depth.",
+        "Writes local caches, settings and report files. Keep them out of the public teaching repository.",
+        "Anonymous telemetry is enabled by default according to PRIVACY.md. Set DO_NOT_TRACK=1 before the first CLI run to opt out.",
+        "The skill tells the agent to install an unpinned global npm package when missing. Do not follow that automatically: review and approve a pinned install first.",
+        "The suite can connect accounts, store tokens, use paid providers, edit source and send IndexNow notifications. These are outside this starter scope.",
+        "Host agents may send tool outputs to their model provider. Local execution does not guarantee offline/private model processing."
+      ],
+      "starter_scope": "Read-only public-site analysis, starting with one page or a bounded 10-page crawl. No login, credentials, paid provider, source edits or external submissions.",
+      "suggested_prompt": "Use the installed local SEO skill to inspect <PUBLIC_URL>. Read-only, no paid APIs, Google sign-in, providers, editing, publishing, IndexNow or automatic installation. Set DO_NOT_TRACK=1. First verify the installed version. Discover and describe the appropriate report before constructing parameters. Bound a crawl to 10 pages, depth 1, the supplied host, no external-link checks, and disable sitemap expansion for that crawl. For single-page review use audit-page. Save complete JSON, then summarize three findings with evidence and limits. Stop on authentication, denial or unclear scope.",
+      "expected_output": [
+        "Bounded crawl or page evidence in JSON",
+        "Observed response, metadata and indexability signals",
+        "Three actionable findings plus unknowns"
+      ],
+      "not_for": [
+        "Guaranteed indexation, rankings or traffic",
+        "A complete site audit from a small crawl",
+        "Proving real-user Core Web Vitals from static HTML",
+        "Automatic changes to robots, canonical or noindex without confirming intent"
+      ],
+      "validation_status": "source-reviewed/cli-audit-page-executed-synthetic",
+      "sources": [
+        "https://github.com/iannuttall/seo/blob/5b794fe9c8addbc227c49262bb6ac79ad8429452/README.md",
+        "https://github.com/iannuttall/seo/blob/5b794fe9c8addbc227c49262bb6ac79ad8429452/package.json",
+        "https://github.com/iannuttall/seo/blob/5b794fe9c8addbc227c49262bb6ac79ad8429452/PRIVACY.md",
+        "https://github.com/iannuttall/seo/blob/5b794fe9c8addbc227c49262bb6ac79ad8429452/LICENSE",
+        "https://github.com/iannuttall/seo/blob/5b794fe9c8addbc227c49262bb6ac79ad8429452/TRADEMARKS.md"
+      ],
+      "safe_start_examples": [
+        {
+          "purpose": "Inspect installed CLI only",
+          "command": "DO_NOT_TRACK=1 seo --version",
+          "status": "documented/not-run"
+        },
+        {
+          "purpose": "Discover and describe single-page report",
+          "command": "DO_NOT_TRACK=1 seo reports describe audit-page --json",
+          "status": "documented/not-run"
+        },
+        {
+          "purpose": "Bounded raw crawl after reviewing installed help",
+          "command": "DO_NOT_TRACK=1 seo crawl https://example.com --max-pages 10 --max-depth 1 --no-sitemap --no-external --json --output crawl.json",
+          "status": "upstream-documented options; composed example/not-run",
+          "note": "Check installed help and respect target access/rate limits. No claim of successful execution."
+        }
+      ],
+      "guide_routes": [
+        "/guides/crawlability/",
+        "/guides/sitemap/",
+        "/guides/page-check/"
+      ],
+      "execution": {
+        "report": "audit-page",
+        "version": "0.2.41",
+        "date": "2026-10-10",
+        "input": "Two original canonical-conflict HTML fixtures served over loopback HTTP",
+        "record_route": "/examples/local-cli-run/",
+        "limitations": "Raw HTTP only. No agent integration, broad crawl, sitemap report, hosted API or indexing test."
+      }
+    },
+    {
+      "repository": "https://github.com/AgriciDaniel/claude-seo",
+      "repository_owner": "AgriciDaniel",
+      "commit": "4b99de2f7de7e7d5247042e5fb5b4ea9368ef734",
+      "package_version": "2.4.2",
+      "license": {
+        "identifier": "MIT",
+        "verification": "Pinned LICENSE file and skill frontmatter reviewed.",
+        "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/4b99de2f7de7e7d5247042e5fb5b4ea9368ef734/LICENSE"
+      },
+      "agents": {
+        "upstream_documented": [
+          "Claude Code"
+        ],
+        "tested": [],
+        "note": "This source is a Claude Code plugin. Do not claim that its CLAUDE_PLUGIN_ROOT paths or slash commands work unchanged in Codex or Cursor. A separate Codex port is mentioned upstream but is outside this review."
+      },
+      "dependencies": [
+        "Claude Code CLI",
+        "Python >=3.10; upstream recommends 3.11+ for new installs",
+        "Pinned repository runtime and shared scripts, not just the SKILL.md file",
+        "Python packages in requirements.txt, including requests, BeautifulSoup, lxml and extraction libraries",
+        "Playwright Chromium for JavaScript rendering/screenshots; setup may install it"
+      ],
+      "cost": {
+        "commercial_api_required": "No for the core workflow. Optional enrichment extensions require separate accounts and may be paid.",
+        "summary": "MIT skill with no per-domain fee. Claude/model costs and optional API usage remain separate.",
+        "guardrail": "Do not enable or call optional Google, DataForSEO, Firecrawl, or other extensions for the starter exercise."
+      },
+      "permissions_and_risks": [
+        "Fetches target websites and writes local reports.",
+        "Setup installs a Python environment and may download Chromium; review pinned setup code before executing.",
+        "The host agent's model may receive page content and local context. Local script execution does not mean all processing remains on the device.",
+        "Full plugin includes other tools, hooks and integrations outside the scope reviewed here; source-reviewed is not a complete security audit."
+      ],
+      "validation_status": "source-reviewed/not-run",
+      "sources": [
+        "https://github.com/AgriciDaniel/claude-seo/blob/4b99de2f7de7e7d5247042e5fb5b4ea9368ef734/README.md",
+        "https://github.com/AgriciDaniel/claude-seo/blob/4b99de2f7de7e7d5247042e5fb5b4ea9368ef734/requirements.txt",
+        "https://github.com/AgriciDaniel/claude-seo/blob/4b99de2f7de7e7d5247042e5fb5b4ea9368ef734/pyproject.toml",
+        "https://github.com/AgriciDaniel/claude-seo/blob/4b99de2f7de7e7d5247042e5fb5b4ea9368ef734/PRIVACY.md"
+      ],
+      "id": "seo-sitemap",
+      "name": "Claude SEO: Sitemap",
+      "role": "optional-specialist",
+      "task": "sitemap",
+      "skill_path": "skills/seo-sitemap/SKILL.md",
+      "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/4b99de2f7de7e7d5247042e5fb5b4ea9368ef734/skills/seo-sitemap/SKILL.md",
+      "one_liner": "Discover a sitemap, validate its structure, and turn problems into an evidence-backed fix list.",
+      "starter_scope": "Analyze an existing sitemap for an authorized public site. Limit page checks and preserve partial results; do not generate or publish a replacement in the first exercise.",
+      "suggested_prompt": "Use seo-sitemap to inspect <URL>. Start with robots.txt and the sitemap discovery helper. Analyze only; do not generate, upload or submit anything. Limit URL spot checks to 10 and label this as a sample. Return the discovered sitemap URLs, parse errors, sampled URL findings, and a prioritized fix list. Ask before fetching an off-domain sitemap.",
+      "expected_output": [
+        "Sitemap discovery evidence",
+        "XML and URL validation report",
+        "Prioritized fixes with clear sample coverage"
+      ],
+      "limitations": [
+        "Discovery follows Sitemap declarations, including cross-host targets. Validate and approve off-domain scope.",
+        "Checking 10 URLs cannot validate an entire large sitemap.",
+        "A sitemap is a discovery hint, not proof of crawling or indexing.",
+        "The upstream generation workflow includes editorial thresholds for location pages; these are not search-engine rules."
+      ],
+      "extra_sources": [
+        "https://github.com/AgriciDaniel/claude-seo/blob/4b99de2f7de7e7d5247042e5fb5b4ea9368ef734/scripts/sitemap_discovery.py"
+      ],
+      "recommendation": "Useful if Claude Code is already installed. The default cross-agent route uses the local SEO CLI for sitemap health.",
+      "guide_routes": [
+        "/guides/sitemap/"
+      ]
+    },
+    {
+      "id": "firecrawl-scrape",
+      "name": "Firecrawl Scrape",
+      "role": "advanced-optional",
+      "task": "optional-hosted-crawl",
+      "one_liner": "Capture one public page as a reusable Markdown or JSON evidence file.",
+      "repository": "https://github.com/firecrawl/cli",
+      "repository_owner": "Firecrawl",
+      "skill_path": "skills/firecrawl-scrape/SKILL.md",
+      "commit": "21a08f5579e3616dbec0bb28250fab0076a2c1a3",
+      "package_version": "1.26.3",
+      "source_url": "https://github.com/firecrawl/cli/blob/21a08f5579e3616dbec0bb28250fab0076a2c1a3/skills/firecrawl-scrape/SKILL.md",
+      "license": {
+        "identifier": "ISC",
+        "verification": "Declared in pinned package.json; LICENSE and LICENSE.md at the repository root returned 404. A standalone license grant for the skill directory was not established. Link-only curation; do not redistribute the skill text.",
+        "source_url": "https://github.com/firecrawl/cli/blob/21a08f5579e3616dbec0bb28250fab0076a2c1a3/package.json"
+      },
+      "agents": {
+        "upstream_documented": [
+          "Claude Code",
+          "Codex",
+          "Cursor",
+          "Windsurf",
+          "OpenCode",
+          "OpenClaw",
+          "OpenHands",
+          "Hermes Agent"
+        ],
+        "tested": [],
+        "note": "CLI README documents these harnesses. Integration has not been installed or tested here."
+      },
+      "dependencies": [
+        "Node.js >=22 for the npm CLI",
+        "firecrawl-cli 1.26.3 (pinned package source)",
+        "For hosted service: Firecrawl account and authentication",
+        "A shell and permission to write local evidence files"
+      ],
+      "cost": {
+        "commercial_api_required": "Hosted path: yes, the Firecrawl API; paid subscription not necessarily required. Self-hosted custom API endpoint is documented but not evaluated here.",
+        "summary": "Credit-metered hosted service; free tier and paid plans exist. Model/agent costs are additional.",
+        "pricing_url": "https://www.firecrawl.dev/pricing",
+        "reviewed_at": "2026-10-10",
+        "guardrail": "Start with one ordinary HTML URL. Avoid paid query/extraction options, PDFs, broad crawl jobs, and automatic top-ups until the user approves a budget."
+      },
+      "permissions_and_risks": [
+        "Sends the target URL and options to Firecrawl; retrieved content is processed by the hosted service.",
+        "Uses shell commands and writes local output, conventionally under .firecrawl/.",
+        "The skill permits broad firecrawl CLI commands, including capabilities beyond this starter task. Restrict the task to plain URL scraping.",
+        "Setup can install skills across all detected agents; scope setup to the intended agent. Do not run setup defaults: it can change the agent's web-provider routing.",
+        "Authentication stores credentials and upstream README discloses authentication-time telemetry. Review privacy/settings before signing in.",
+        "Remote provider execution, browser interaction, data terms, and paid calls need separate review."
+      ],
+      "starter_scope": "One public HTML page, read-only scrape. No browser interactions, logins, provider tools, forms, or site-wide crawl.",
+      "suggested_prompt": "Use firecrawl-scrape to read this one public HTML URL: <URL>. Save the result and source URL as local evidence. Use plain scrape only; do not use query mode, crawl, interact, or provider tools. Report missing or partial content. Ask before any paid expansion.",
+      "expected_output": [
+        "Saved page content",
+        "Original URL and fetch time",
+        "Retrieval limitations"
+      ],
+      "not_for": [
+        "Proving that Google has indexed a page",
+        "Private or authenticated content",
+        "A no-cost guarantee"
+      ],
+      "validation_status": "source-reviewed/not-run",
+      "sources": [
+        "https://github.com/firecrawl/cli/blob/21a08f5579e3616dbec0bb28250fab0076a2c1a3/README.md",
+        "https://github.com/firecrawl/cli/blob/21a08f5579e3616dbec0bb28250fab0076a2c1a3/package.json",
+        "https://docs.firecrawl.dev/sdks/cli",
+        "https://www.firecrawl.dev/pricing"
+      ],
+      "recommendation": "Not part of the zero-new-paid-API starter route.",
+      "guide_routes": [
+        "/guides/crawlability/"
+      ]
+    }
+  ],
+  "default_route": {
+    "policy": "Zero new paid SEO APIs. Existing model/agent costs may apply.",
+    "install_policy": "No one-click remote shell or automatic global install. Review a fixed version and dependencies first; do not execute code just because a skill requests it.",
+    "mapping": {
+      "crawl": "local-seo",
+      "sitemap": "local-seo; optional Claude-specific seo-sitemap for deeper XML review",
+      "single-page": "local-seo audit-page"
+    },
+    "manual_fallback": "If no CLI is installed, use the existing agent's authorized HTTP/browser tools or user-supplied HTML. Inspect status, headers, robots.txt, sitemap and page metadata directly. This is a manual evidence route, not an additional third-party skill."
+  }
+}

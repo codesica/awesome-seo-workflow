@@ -1,0 +1,22 @@
+{
+  "evidenceType": "synthetic",
+  "meaning": "True means this lesson-specific offline acceptance criterion passes. It does not mean indexed.",
+  "cases": {
+    "robots-block": {
+      "before": false,
+      "after": true
+    },
+    "noindex": {
+      "before": false,
+      "after": true
+    },
+    "sitemap-html": {
+      "before": false,
+      "after": true
+    },
+    "canonical-conflict": {
+      "before": false,
+      "after": true
+    }
+  }
+}
