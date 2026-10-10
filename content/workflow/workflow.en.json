@@ -1,0 +1,681 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2.0.0",
+  "locales": [
+    "zh-CN",
+    "en"
+  ],
+  "routeLocales": "en",
+  "reviewedAt": "2026-10-10",
+  "home": {
+    "id": "home",
+    "contentId": "page.home",
+    "brand": "First Crawl",
+    "title": "Learn the full SEO workflow, starting with one real question",
+    "description": "A beginner path through need, page planning, content, publication, discovery, and iteration. Understand the task, do the work, and leave a checkable output.",
+    "primaryCta": "Find my starting point",
+    "secondaryCta": "Explore the six-stage path",
+    "coreDistinction": "SEO helps search engines understand content and readers find pages through search. Social, community, and email distribution are promotion; this path connects them without treating them as organic search ranking.",
+    "promise": "Learn to choose a question, brief a page, create reliable content, check publication, plan distribution, and interpret data. No indexing, ranking, traffic, or revenue is promised.",
+    "noSiteYet": "No website yet? Complete stages 1–3 in documents and use public teaching examples for stage 4. Accounts, domains, and deployment are separate tasks.",
+    "learningAndSkills": "Tutorials explain why and how. Agent Skills assist with bounded repeatable work. Each skill should declare inputs, outputs, permissions, risks, and test evidence. Installation does not complete SEO or grant publication or account access.",
+    "evidenceBoundary": "This six-stage curriculum is checked against official sources, but has not been executed end-to-end on your site. The existing crawlability, sitemap, and page-check tutorials cover stage 4 only; new stages are not proven growth results.",
+    "navigation": [
+      {
+        "id": "nav.roadmap",
+        "label": "Learning path",
+        "path": "/{locale}/roadmap/"
+      },
+      {
+        "id": "nav.skills",
+        "label": "Agent Skills",
+        "path": "/{locale}/skills/"
+      },
+      {
+        "id": "nav.examples",
+        "label": "Exercises and outputs",
+        "path": "/{locale}/examples/"
+      },
+      {
+        "id": "nav.sources",
+        "label": "Sources and limits",
+        "path": "/{locale}/sources/"
+      }
+    ],
+    "entries": [
+      {
+        "id": "entry.new",
+        "label": "I do not know what to create",
+        "stageId": "01-search-opportunity",
+        "reason": "Start with real questions and search intent."
+      },
+      {
+        "id": "entry.idea",
+        "label": "I have a topic, but no page plan",
+        "stageId": "02-page-plan",
+        "reason": "Turn the reader task into a page brief."
+      },
+      {
+        "id": "entry.brief",
+        "label": "I have a brief and need content",
+        "stageId": "03-content-production",
+        "reason": "Turn evidence into usable content."
+      },
+      {
+        "id": "entry.live",
+        "label": "My page is live or ready to publish",
+        "stageId": "04-publish-check",
+        "reason": "Check the actual page without repeating earlier stages."
+      },
+      {
+        "id": "entry.promote",
+        "label": "My page works, but people do not know it",
+        "stageId": "05-discovery-promotion",
+        "reason": "Add discovery paths and choose relevant promotion."
+      },
+      {
+        "id": "entry.data",
+        "label": "I have pages and data; what should change?",
+        "stageId": "06-measure-iterate",
+        "reason": "Diagnose from evidence and return to the relevant stage."
+      }
+    ],
+    "stageIds": [
+      "01-search-opportunity",
+      "02-page-plan",
+      "03-content-production",
+      "04-publish-check",
+      "05-discovery-promotion",
+      "06-measure-iterate"
+    ],
+    "firstExercise": "Take one familiar question through a loop. Example: how a beginner can start basil seeds indoors. This demonstrates the method only; demand and search opportunity are not validated.",
+    "outcomes": [
+      "An opportunity card → a page brief → a content package",
+      "A release checklist → a discovery log → an improvement review"
+    ]
+  },
+  "ui": {
+    "goal": "Goal",
+    "prerequisites": "Concepts first",
+    "inputs": "Inputs",
+    "actions": "Actions",
+    "tools": "Tools",
+    "deliverables": "Deliverables",
+    "acceptance": "Acceptance criteria",
+    "stopConditions": "Stop conditions",
+    "nextStep": "Next step",
+    "entryRequirement": "Entry requirement",
+    "sources": "Official sources"
+  },
+  "stages": [
+    {
+      "id": "01-search-opportunity",
+      "contentId": "stage.01-search-opportunity",
+      "order": 1,
+      "title": "Need and search opportunity",
+      "summary": "Identify a real need before choosing a topic.",
+      "goal": "Choose one evidenced question you can credibly answer on a useful page.",
+      "prerequisites": [
+        "Query: words entered into search. Intent: the task behind them; a query can have several intents.",
+        "Evidence of need, search volume, and commercial value are different. One real question does not establish monthly demand or willingness to pay."
+      ],
+      "inputs": [
+        "One sentence describing your audience and the experience, material, or product you can offer.",
+        "Existing sites can bring a recent Search Console query export; new sites can start with interviews, support questions, or public discussions."
+      ],
+      "actions": [
+        {
+          "id": "01.1",
+          "title": "Collect real questions",
+          "instruction": "Collect 5–10 questions from accessible customer conversations, public communities, or your own practice notes. Record wording, source or traceable reference, date, audience, and context. Remove personal identifiers. Mark unsupported ideas as hypotheses.",
+          "output": "A question list separating observations from hypotheses."
+        },
+        {
+          "id": "01.2",
+          "title": "Inspect search results",
+          "instruction": "Search three candidate questions in the target language and region. Record the date, query, and the formats of several organic results: guide, tool, product, comparison, or local service. Open the pages to inspect their answers. Separate ads from organic results. Treat this as a small observation, not a comprehensive ranking study.",
+          "output": "An intent hypothesis, page format, and unmet question for each candidate."
+        },
+        {
+          "id": "01.3",
+          "title": "Choose one feasible question",
+          "instruction": "For each candidate ask: Does someone actually face this? Can I provide useful steps, examples, or evidence? Can one page deliver it? Does it fit my site? Mark yes/no/unknown and choose the clearest feasible opportunity rather than inventing a precision score.",
+          "output": "One primary question, rationale, and a deferred list."
+        },
+        {
+          "id": "01.4",
+          "title": "Record data limits",
+          "instruction": "If using Google Trends, record region, period, and relative interest; it is not an absolute query count. Keep provider, geography, period, and date for third-party estimates. Without reliable data, leave volume unknown, not zero, and never ask AI to fabricate it.",
+          "output": "An opportunity card containing evidence and unknowns."
+        }
+      ],
+      "tools": [
+        "A browser and notes or spreadsheet suffice. Google Trends is optional; Search Console needs property access and available data."
+      ],
+      "deliverables": [
+        "Opportunity card fields: audience, context, primary question, intent, sources, dates, region/language, distinctive help, volume with provenance or unknown, and next step."
+      ],
+      "acceptance": [
+        "At least one traceable need signal, a specific question, and a reason for your page to exist. Unsupported ideas can remain exploratory but cannot be labeled validated opportunities."
+      ],
+      "stopConditions": [
+        "No evidenced need or credible ability to answer: research further or find a qualified reviewer before producing pages. Stop on sensitive specialist topics beyond your competence."
+      ],
+      "nextStep": "Take the opportunity card to stage 2 and design one page.",
+      "sourceIds": [
+        "trends",
+        "helpful"
+      ],
+      "entryRequirement": "A website direction is enough; existing traffic and paid keyword tools are not required.",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/01-search-opportunity/",
+      "previousStageId": null,
+      "nextStageId": "02-page-plan",
+      "legacyTutorials": []
+    },
+    {
+      "id": "02-page-plan",
+      "contentId": "stage.02-page-plan",
+      "order": 2,
+      "title": "Page plan",
+      "summary": "Give one page a clear job.",
+      "goal": "Turn the need into a writable, testable brief without unnecessary overlap with existing pages.",
+      "prerequisites": [
+        "Page format: tutorials support action, comparisons support choice, product pages explain an offer, and tools complete a task. Choose the format around the need.",
+        "Internal links connect pages on your site. A URL is a page address. Canonical signals a preferred URL for equivalent content; it does not delete duplicates."
+      ],
+      "inputs": [
+        "A stage 1 opportunity card or an existing page’s audience, question, and evidence.",
+        "Related existing URLs, site sections, and available source material."
+      ],
+      "actions": [
+        {
+          "id": "02.1",
+          "title": "Decide whether to create or update",
+          "instruction": "Check whether an existing page already serves the task. Consider updating it when the task is the same; use a new page for a distinct task and connect related pages. A keyword variation alone is not a new-page rationale. Record the decision; do not casually remove pages or change URLs.",
+          "output": "Create/update decision and target URL."
+        },
+        {
+          "id": "02.2",
+          "title": "Define reader success",
+          "instruction": "Write: “After this page, this reader can do this task.” List 3–5 essential questions in the order a reader would act. Put unrelated material in a backlog rather than writing an encyclopedia.",
+          "output": "Reader outcome, page format, working title, and outline."
+        },
+        {
+          "id": "02.3",
+          "title": "Assign evidence and assets",
+          "instruction": "Assign screenshots, demonstrations, data, experience, or primary sources to each section. Explain the practical value you will add. Remove or flag unsupported assertions. Plan one task-relevant next action, such as a checklist download.",
+          "output": "Section-to-evidence map and next-action plan."
+        },
+        {
+          "id": "02.4",
+          "title": "Plan links and languages",
+          "instruction": "Choose a relevant section or article that can link to the page and useful onward resources. For bilingual content, plan stable URLs and matching translations; language switching should preserve the current article. Validate needs separately in each language.",
+          "output": "Internal-link plan and, where relevant, locale URL pairs."
+        }
+      ],
+      "tools": [
+        "Notes/editor and current site navigation. Optional public-page extraction helps organize material but does not decide demand."
+      ],
+      "deliverables": [
+        "Page brief: audience, outcome, primary question, format, target URL, create/update rationale, title, outline, evidence, inbound link, next step, and acceptance criteria."
+      ],
+      "acceptance": [
+        "Another writer could use the brief; every section has a purpose; related existing pages have been reviewed; bilingual scope is explicit."
+      ],
+      "stopConditions": [
+        "If the page does not connect to a real need, return to stage 1. For URL migrations or merges, prepare a separate redirect and traffic-risk plan rather than making blind changes."
+      ],
+      "nextStep": "Take the brief and evidence list to stage 3.",
+      "sourceIds": [
+        "canonical",
+        "localized",
+        "links"
+      ],
+      "entryRequirement": "Enter with a clear audience and question; an existing page can also be re-briefed here.",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/02-page-plan/",
+      "previousStageId": "01-search-opportunity",
+      "nextStageId": "03-content-production",
+      "legacyTutorials": []
+    },
+    {
+      "id": "03-content-production",
+      "contentId": "stage.03-content-production",
+      "order": 3,
+      "title": "Content production",
+      "summary": "Help readers finish a task, not just find keywords.",
+      "goal": "Produce a verifiable, useful content package ready for a publisher.",
+      "prerequisites": [
+        "Original value can be tested steps, clear examples, a comparison method, or a tool; it need not be a new discovery. Citation is not permission to rewrite someone’s whole article.",
+        "The title must match the page’s promise. A meta description summarizes the page; Google may generate a different snippet from the content."
+      ],
+      "inputs": [
+        "A page brief, reliable sources, licensed assets, and any necessary qualified reviewer."
+      ],
+      "actions": [
+        {
+          "id": "03.1",
+          "title": "Draft around the task",
+          "instruction": "State who the page is for, what they will achieve, and what they need. For each step include input, action, and expected result. Add troubleshooting to fragile steps. Use verifiable examples, never invented customer outcomes.",
+          "output": "A complete draft with demonstrations explicitly labeled as examples."
+        },
+        {
+          "id": "03.2",
+          "title": "Check facts and sources",
+          "instruction": "Check numbers, product steps, dates, and causal claims against primary sources. Test actions you claim to have tested and record the environment and result; otherwise say untested. AI may help organize, but generated references are not evidence.",
+          "output": "Fact log: claim, source, review date, and test status."
+        },
+        {
+          "id": "03.3",
+          "title": "Prepare the page package",
+          "instruction": "Prepare an accurate page title, short description, readable headings, and descriptive links; explain necessary terms. Place images near relevant text and supply useful text alternatives. Identify authors/reviewers and substantive update dates without faking freshness.",
+          "output": "Publishable body, metadata, assets, and annotations."
+        },
+        {
+          "id": "03.4",
+          "title": "Run a beginner walkthrough",
+          "instruction": "Ask a target reader or someone unfamiliar with the project to follow the page and record where they get stuck. Review terminology, links, and examples separately in each language rather than translating labels only. Fix major gaps before handoff; do not pad to a word-count target.",
+          "output": "Walkthrough findings, fixes, and unresolved questions."
+        }
+      ],
+      "tools": [
+        "Text editor/CMS draft and browser. AI is an optional assistant, not a fact source."
+      ],
+      "deliverables": [
+        "Content package: body, title, description, assets/rights, links, fact log, locale versions, and reader-test notes."
+      ],
+      "acceptance": [
+        "The promised task is achievable, important facts are traceable, no metrics or reviews are fabricated, assets are usable, and both languages contain substantive content."
+      ],
+      "stopConditions": [
+        "Pause publication if core steps fail, sources are insufficient, or rights are unclear. SEO presentation cannot remedy unreviewed high-risk medical, legal, or financial advice."
+      ],
+      "nextStep": "Once accepted, proceed to stage 4. A finished draft is not a live page.",
+      "sourceIds": [
+        "helpful",
+        "snippet",
+        "starter",
+        "spam"
+      ],
+      "entryRequirement": "Enter with a brief; existing content can enter with a specific improvement goal.",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/03-content-production/",
+      "previousStageId": "02-page-plan",
+      "nextStageId": "04-publish-check",
+      "legacyTutorials": []
+    },
+    {
+      "id": "04-publish-check",
+      "contentId": "stage.04-publish-check",
+      "order": 4,
+      "title": "Publish and technical checks",
+      "summary": "Separate being live, crawlable, indexed, and ranked.",
+      "goal": "Publish an authorized public page and retain evidence of access, indexing directives, and the deployed result.",
+      "prerequisites": [
+        "Crawling reads a page; indexing stores it in an index; ranking orders results for a query. These are distinct.",
+        "robots.txt controls crawling. noindex excludes indexing and must be readable by the crawler. Authentication protects private content; do not remove it for SEO.",
+        "A sitemap helps discover URLs; successful submission is not indexing. Canonical is a preference signal and search engines may select differently."
+      ],
+      "inputs": [
+        "An accepted content package, permission for the target site and publication, and a rollback method.",
+        "Existing sites can enter with one public URL to diagnose. Keep required privacy protection and use a public practice page instead."
+      ],
+      "actions": [
+        {
+          "id": "04.1",
+          "title": "Confirm the publication boundary",
+          "instruction": "Confirm whether the page should be public or private, its domain and locale URLs, and publication approval. Save a recoverable version. Check content, key actions, and mobile layout in preview; a preview pass only covers the preview environment.",
+          "output": "Publication scope, rollback point, and preview check log."
+        },
+        {
+          "id": "04.2",
+          "title": "Check the actual live page",
+          "instruction": "After publishing through your established process, open the final URL while signed out. Check successful delivery, readable content, required resources, and working links. Record redirects and the final address. Ask for technical help rather than guessing HTTP status from a screenshot.",
+          "output": "Live URL, check time, status/content/mobile evidence."
+        },
+        {
+          "id": "04.3",
+          "title": "Inspect crawl and index signals",
+          "instruction": "Inspect applicable robots.txt rules, robots meta, and X-Robots-Tag headers for unintended restrictions. Check canonical, title, description, and an internal entry link. An allowed crawl is not indexing. Stop bulk changes when canonical targets or sitewide rules are unexpected.",
+          "output": "One-page technical checklist with pass/fail/not checked per item."
+        },
+        {
+          "id": "04.4",
+          "title": "Check sitemap and language signals",
+          "instruction": "If the site has a sitemap, verify public preferred URLs and exclude private/test pages; use lastmod only when accurate. For translations, check reciprocal hreflang and visible language links; do not canonicalize every English page to Chinese.",
+          "output": "Sitemap check and locale-pair verification."
+        },
+        {
+          "id": "04.5",
+          "title": "Use Search Console with authorization",
+          "instruction": "In the correct property, record stored index information separately from the live test. An authorized owner can submit a sitemap or request indexing where appropriate. Without access, mark not checked. Retain submission time and result; waiting is not success.",
+          "output": "Deployment checklist and index-status record with evidence scope."
+        }
+      ],
+      "tools": [
+        "Browser/devtools and the established CMS/deployment process. Search Console requires access to the relevant property.",
+        "Existing tutorials: crawlability, sitemap submission, and one-page check. They support this stage only and do not demonstrate tests of the other stages."
+      ],
+      "deliverables": [
+        "Release record: version, final URL, time, rollback point, checks, evidence, unverified account-only items, and recheck trigger."
+      ],
+      "acceptance": [
+        "The intended public page works, its task is usable, and no unintended index blocker is known. Private access stays unchanged. Live and preview evidence are separate. Unknown indexing may move to observation, never to an indexed-success badge."
+      ],
+      "stopConditions": [
+        "Stop wider publication on intentional privacy gates, missing authorization, broken delivery, unintended noindex, wrong canonical, or missing rollback. Resolve or escalate first."
+      ],
+      "nextStep": "After blockers are addressed, help the right audience discover the page in stage 5 while retaining index observation.",
+      "sourceIds": [
+        "technical",
+        "robots",
+        "noindex",
+        "canonical",
+        "sitemap",
+        "inspection",
+        "localized"
+      ],
+      "entryRequirement": "A page is ready to publish or an existing public page needs inspection; repeating stages 1–3 is not required.",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/04-publish-check/",
+      "previousStageId": "03-content-production",
+      "nextStageId": "05-discovery-promotion",
+      "legacyTutorials": [
+        {
+          "id": "tutorial.crawlability",
+          "slug": "crawlability",
+          "sourceFile": "check-crawlability.md"
+        },
+        {
+          "id": "tutorial.sitemap",
+          "slug": "sitemap",
+          "sourceFile": "submit-sitemap.md"
+        },
+        {
+          "id": "tutorial.page-check",
+          "slug": "page-check",
+          "sourceFile": "one-page-seo-check.md"
+        }
+      ]
+    },
+    {
+      "id": "05-discovery-promotion",
+      "contentId": "stage.05-discovery-promotion",
+      "order": 5,
+      "title": "Discovery and promotion",
+      "summary": "Bring a useful page to the right people and distinguish traffic sources.",
+      "goal": "Complete a bounded discovery plan: reachable internally, appropriately shared externally, with search and referral traffic distinguished.",
+      "prerequisites": [
+        "SEO improves search understanding and discovery. Community, social, email, and ads are promotion. They can complement SEO, but a social visit is not an organic search click.",
+        "A backlink is another site linking to yours. Genuine relevant references can aid discovery; ranking-manipulation links and spam are risky."
+      ],
+      "inputs": [
+        "A checked public URL, intended audience, available channels, and their rules.",
+        "Explicit scope: drafts only or approval to send to specified destinations. Preparing copy does not authorize mass outreach."
+      ],
+      "actions": [
+        {
+          "id": "05.1",
+          "title": "Add an internal discovery route",
+          "instruction": "Add a useful link from a relevant section or existing article with descriptive text. Walk the path to the page; do not rely solely on a sitemap or site search. Use your normal publishing process for changes.",
+          "output": "Entry page, anchor text, target URL, and verification."
+        },
+        {
+          "id": "05.2",
+          "title": "Pick one relevant external context",
+          "instruction": "Choose one community, subscribed audience, or collaborator already interested in the problem. Read sharing rules. Explain what the page answers and disclose your relationship. If no suitable context exists, retain a draft rather than chasing a link count.",
+          "output": "One channel rationale and a contextual sharing draft."
+        },
+        {
+          "id": "05.3",
+          "title": "Review before sharing",
+          "instruction": "Confirm destination, wording, platform rules, and permission. Send only within authorization. Avoid guaranteed-ranking link packages, unnatural exchanges, and unsolicited automated blasts. Separate sent items from drafts.",
+          "output": "Approved distribution record or clearly unsent draft."
+        },
+        {
+          "id": "05.4",
+          "title": "Separate channel outcomes",
+          "instruction": "Use available analytics or channel evidence for visits and feedback. If using UTM tags, consistently tag external campaigns, not internal navigation, and never include personal data. Without analytics access, state not measurable rather than inventing numbers.",
+          "output": "Channel log: date, destination, draft/sent, tags, observable feedback, and unknowns."
+        }
+      ],
+      "tools": [
+        "Site editor, browser, and authorized distribution channels. Existing analytics are optional; new tracking must respect privacy and consent requirements."
+      ],
+      "deliverables": [
+        "Discovery log with one verified internal entry and one external plan, accurately labeled by execution status. Sending is not mandatory."
+      ],
+      "acceptance": [
+        "The page is reachable from relevant internal content, external plans fit the audience and rules, and organic search, referral/social visits, and business outcomes are recorded separately."
+      ],
+      "stopConditions": [
+        "Do not send when promotion is prohibited, authorization is absent, or the page fails its promise. Investigate and correct misleading claims before expanding distribution."
+      ],
+      "nextStep": "Bring release dates, channel records, and feedback to stage 6.",
+      "sourceIds": [
+        "starter",
+        "links",
+        "spam",
+        "campaign"
+      ],
+      "entryRequirement": "Enter with a functioning public page; do not broaden private-content access as a promotion tactic.",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/05-discovery-promotion/",
+      "previousStageId": "04-publish-check",
+      "nextStageId": "06-measure-iterate",
+      "legacyTutorials": []
+    },
+    {
+      "id": "06-measure-iterate",
+      "contentId": "stage.06-measure-iterate",
+      "order": 6,
+      "title": "Measurement and iteration",
+      "summary": "Locate the problem, then change one worthwhile thing.",
+      "goal": "Complete one documented improvement loop using real data and reader feedback, preserving uncertainty when data are insufficient.",
+      "prerequisites": [
+        "Impressions count search appearances; clicks count result clicks; CTR is clicks divided by impressions. Average position is an aggregate, not one fixed rank seen by everyone.",
+        "A conversion is a predefined valuable action, such as completing a tool task or submitting an inquiry. Traffic, conversions, and revenue are not interchangeable.",
+        "Missing data are not zero, and correlation is not causation. Seasonality, query mix, country, device, result formats, and updates may change outcomes."
+      ],
+      "inputs": [
+        "Page URL, release/change log, authorized Search Console data, and optional existing analytics or user feedback.",
+        "One primary outcome and an observation window chosen in advance; new sites can first check technical readiness and real reader feedback."
+      ],
+      "actions": [
+        {
+          "id": "06.1",
+          "title": "Save a comparable baseline",
+          "instruction": "In Search Console Performance, choose a page, search type, filters, and complete date range. Record clicks, impressions, CTR, position, and queries with export time and missing fields. A new page may have no baseline; do not manufacture one.",
+          "output": "A dated, filtered baseline or an explicit no-baseline statement."
+        },
+        {
+          "id": "06.2",
+          "title": "Diagnose in layers",
+          "instruction": "Check page availability, then index status, then impressions/clicks, then task completion. Index problems go to stage 4; indexed pages with little visibility prompt stages 1–2; impressions with few clicks call for query, position, and title review; visits without completion prompt stage 3. Avoid conclusions from tiny samples.",
+          "output": "One evidence-based diagnosis rather than a generic “SEO failed” label."
+        },
+        {
+          "id": "06.3",
+          "title": "Make one interpretable change",
+          "instruction": "Choose a specific hypothesis, such as a missing input example blocking completion. Write the change, expected observation, rollback point, and review date, then publish within authorization. Avoid changing everything and claiming causality. Fix urgent defects promptly and log them.",
+          "output": "An improvement card and deployment verification."
+        },
+        {
+          "id": "06.4",
+          "title": "Compare and choose the next loop",
+          "instruction": "After the observation window, compare complete equal-length periods using the same filters and note concurrent changes and seasonality. If data are sparse, state insufficient evidence, revise observation, or seek reader feedback. Report observations without guaranteed-growth claims. Decide to keep, roll back, observe further, or return to a prior stage.",
+          "output": "Review card: observations, limitations, decision, owner, and next step."
+        }
+      ],
+      "tools": [
+        "Google Search Console plus optional existing analytics, user interviews, and version history. Paid rank tracking is not required."
+      ],
+      "deliverables": [
+        "A baseline, improvement card, and review with source, time range, filters, and unknowns for every metric."
+      ],
+      "acceptance": [
+        "You can explain the change, observation, limits, and next owner/trigger. A truthful, well-reasoned loop is complete even without growth."
+      ],
+      "stopConditions": [
+        "Do not access private reports without permission, draw impact conclusions from incomplete data, or continue changes that harm usability or privacy; use the rollback plan."
+      ],
+      "nextStep": "Return to the relevant stage with evidence; every iteration need not restart all six stages.",
+      "sourceIds": [
+        "performance",
+        "console",
+        "inspection"
+      ],
+      "entryRequirement": "Enter with a live page, a question, and available evidence. Without search data, start with technical checks and reader feedback.",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/06-measure-iterate/",
+      "previousStageId": "05-discovery-promotion",
+      "nextStageId": null,
+      "legacyTutorials": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "starter",
+      "title": "SEO Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "SEO purpose, no ranking guarantee, and promotion."
+    },
+    {
+      "id": "helpful",
+      "title": "Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "People-first content, original value, and reliability."
+    },
+    {
+      "id": "trends",
+      "title": "FAQ about Google Trends data",
+      "url": "https://support.google.com/trends/answer/4365533",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Trends uses normalized relative interest, not absolute search volume."
+    },
+    {
+      "id": "technical",
+      "title": "Google Search technical requirements",
+      "url": "https://developers.google.com/search/docs/essentials/technical",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Crawl access, HTTP 200, indexable content, and no indexing guarantee."
+    },
+    {
+      "id": "spam",
+      "title": "Spam policies for Google web search",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Link spam, keyword stuffing, and scaled low-value content boundaries."
+    },
+    {
+      "id": "performance",
+      "title": "Performance report: Search results",
+      "url": "https://support.google.com/webmasters/answer/7576553",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Clicks, impressions, CTR, position, and filters."
+    },
+    {
+      "id": "console",
+      "title": "Get started with Search Console",
+      "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Site-owner reports for monitoring search performance."
+    },
+    {
+      "id": "inspection",
+      "title": "URL Inspection tool",
+      "url": "https://support.google.com/webmasters/answer/9012289",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Stored index information, live tests, and property access."
+    },
+    {
+      "id": "robots",
+      "title": "Introduction to robots.txt",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "robots.txt controls crawling, not privacy."
+    },
+    {
+      "id": "noindex",
+      "title": "Block indexing with noindex",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "The crawler needs page access to discover noindex."
+    },
+    {
+      "id": "canonical",
+      "title": "Canonical URL methods",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Canonical signals and consistency with links and sitemaps."
+    },
+    {
+      "id": "sitemap",
+      "title": "Build and submit a sitemap",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Preferred URLs, accurate lastmod, and discovery rather than guaranteed indexing."
+    },
+    {
+      "id": "localized",
+      "title": "Tell Google about localized versions",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Locale-specific URLs and reciprocal hreflang."
+    },
+    {
+      "id": "snippet",
+      "title": "Control your snippets in search results",
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Search snippets may come from body content; meta descriptions are not mandatory display copy."
+    },
+    {
+      "id": "links",
+      "title": "Link best practices for Google",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Crawlable links and descriptive anchors."
+    },
+    {
+      "id": "campaign",
+      "title": "Collect campaign data with custom URLs",
+      "url": "https://support.google.com/analytics/answer/10917952",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "UTM parameters and campaign attribution."
+    }
+  ],
+  "evidenceStates": [
+    "not-checked",
+    "hypothesis",
+    "documented",
+    "tested-locally",
+    "verified-live"
+  ],
+  "editorialNote": "Stage structure, checklists, output templates, and diagnostic sequence are original First Crawl teaching design, not a Google-certified curriculum or ranking formula."
+}

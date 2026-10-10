@@ -1,0 +1,49 @@
+{
+  "evidence_type": "synthetic",
+  "purpose": "Template and arithmetic checks only. Fictional scenario, not business evidence.",
+  "opportunity": {
+    "audience": "首次使用静态站点的小白",
+    "locale": "zh-CN",
+    "provided_feedback": [
+      {
+        "source": "synthetic:feedback-01",
+        "text": "我发布了页面但不知道是否允许搜索引擎访问。"
+      }
+    ],
+    "paid_volume_data": null,
+    "serp_observations": [],
+    "existing_pages": []
+  },
+  "page": {
+    "reader_job": "区分抓取与索引，并找到一个阻塞证据",
+    "available_original_material": "synthetic robots/noindex fixtures only"
+  },
+  "audit": {
+    "target_url": "https://example.com/first-page/",
+    "environment": "local",
+    "expected_public_indexable": true,
+    "html": "<html lang=\"zh-CN\"><head><meta name=\"robots\" content=\"noindex\"><link rel=\"canonical\" href=\"https://example.com/first-page/\"></head><body>第一张页面</body></html>",
+    "robots_txt": "User-agent: *\nAllow: /\n",
+    "sitemap": "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><url><loc>https://example.com/first-page/</loc></url></urlset>",
+    "headers": null,
+    "parent_html": "<a href=\"https://example.com/first-page/\">检查第一张页面</a>"
+  },
+  "measure": {
+    "baseline": null,
+    "observation": {
+      "start": "2026-09-01",
+      "end": "2026-09-28",
+      "clicks": 6,
+      "impressions": 200
+    },
+    "data_source": "synthetic:search-console-export",
+    "filters": {
+      "page": "https://example.com/first-page/",
+      "search_type": "web",
+      "country": "all",
+      "device": "all"
+    },
+    "timezone": "America/Los_Angeles",
+    "note": "Fictional completed data window; no real export or site inspected."
+  }
+}

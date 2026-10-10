@@ -1,0 +1,86 @@
+[
+  {
+    "id": "inspect-search-console",
+    "title": {
+      "zh": "读懂 Google 搜索数据",
+      "en": "Inspect Google Search Console"
+    },
+    "summary": {
+      "zh": "确认站点与日期后，读取绩效、URL 索引状态和页面索引原因，输出证据化诊断。",
+      "en": "Read performance, indexed URL state, and indexing reasons after verifying property, dates, and filters."
+    },
+    "skillPath": "inspect-search-console/SKILL.md",
+    "instructionLanguage": "zh-CN",
+    "structuredOutputLanguage": "en",
+    "toolMode": "browser/computer-use",
+    "permissionMode": "read-only; optional authorized diagnostic live fetch",
+    "validation": {
+      "sources": "source-reviewed",
+      "sourceReviewedOn": "2026-10-10",
+      "liveExecution": "NOT_RUN"
+    },
+    "contains": [
+      "SKILL.md",
+      "references/interpretation.md",
+      "references/output-contract.md",
+      "references/sources.md",
+      "assets/result-template.json"
+    ]
+  },
+  {
+    "id": "inspect-bing-webmaster",
+    "title": {
+      "zh": "检查 Bing 收录与网站地图",
+      "en": "Inspect Bing Webmaster Tools"
+    },
+    "summary": {
+      "zh": "通过浏览器核查 Bing 索引、抓取与已有网站地图处理，区分发现、抓取和索引。",
+      "en": "Inspect Bing indexing, crawling, and existing sitemap processing without submitting or changing site settings."
+    },
+    "skillPath": "inspect-bing-webmaster/SKILL.md",
+    "instructionLanguage": "zh-CN",
+    "structuredOutputLanguage": "en",
+    "toolMode": "browser/computer-use",
+    "permissionMode": "read-only; optional authorized diagnostic live fetch",
+    "validation": {
+      "sources": "source-reviewed",
+      "sourceReviewedOn": "2026-10-10",
+      "liveExecution": "NOT_RUN"
+    },
+    "contains": [
+      "SKILL.md",
+      "references/interpretation.md",
+      "references/output-contract.md",
+      "references/sources.md",
+      "assets/result-template.json"
+    ]
+  },
+  {
+    "id": "research-search-results",
+    "title": {
+      "zh": "浏览搜索结果与竞争页面",
+      "en": "Research Search Results"
+    },
+    "summary": {
+      "zh": "真实打开搜索结果与代表竞争页，识别意图、内容缺口和可验证的原创机会。",
+      "en": "Browse actual search results and competing pages to identify intent, evidence gaps, and original content opportunities."
+    },
+    "skillPath": "research-search-results/SKILL.md",
+    "instructionLanguage": "zh-CN",
+    "structuredOutputLanguage": "en",
+    "toolMode": "browser/computer-use",
+    "permissionMode": "read-only; optional authorized diagnostic live fetch",
+    "validation": {
+      "sources": "source-reviewed",
+      "sourceReviewedOn": "2026-10-10",
+      "liveExecution": "NOT_RUN"
+    },
+    "contains": [
+      "SKILL.md",
+      "references/interpretation.md",
+      "references/output-contract.md",
+      "references/sources.md",
+      "assets/result-template.json"
+    ]
+  }
+]

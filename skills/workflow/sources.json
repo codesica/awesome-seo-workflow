@@ -1,0 +1,90 @@
+[
+  {
+    "id": "helpful-content",
+    "title": "Helpful, reliable, people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "以真实读者任务、原创信息与可核对事实规划内容；不承诺固定字数或排名。"
+  },
+  {
+    "id": "starter-guide",
+    "title": "SEO Starter Guide",
+    "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "标题、正文组织与站内可发现性。"
+  },
+  {
+    "id": "robots",
+    "title": "Robots.txt introduction",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "robots.txt 控制抓取，不是保密或可靠移除索引的方法。"
+  },
+  {
+    "id": "noindex",
+    "title": "Block indexing with noindex",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "检查 meta 与 X-Robots-Tag；爬虫需能抓取才能看到 noindex。"
+  },
+  {
+    "id": "canonical",
+    "title": "Canonical URLs",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "canonical 为偏好信号；与站内链接和 sitemap 保持一致。"
+  },
+  {
+    "id": "sitemap",
+    "title": "Build and submit a sitemap",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "列入希望作为规范版本的完整 URL；提交不保证抓取或收录。"
+  },
+  {
+    "id": "links",
+    "title": "Crawlable links",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "优先使用 a href 和描述性锚文本。"
+  },
+  {
+    "id": "languages",
+    "title": "Multilingual sites",
+    "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Google 以可见内容判断语言；lang 不是 Google 判断语言的依据；翻译版本需明确链接和按需 hreflang。"
+  },
+  {
+    "id": "performance",
+    "title": "Search Console Performance report",
+    "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "点击、展示、CTR 与平均排名有不同口径；使用筛选一致的已完成时段，保留数据限制。"
+  },
+  {
+    "id": "performance-data",
+    "title": "Performance report: About the data",
+    "url": "https://support.google.com/webmasters/answer/17011364?hl=en",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Preliminary data, aggregation levels, missing-value export behavior."
+  },
+  {
+    "id": "performance-discrepancies",
+    "title": "Performance report: Troubleshooting data discrepancies",
+    "url": "https://support.google.com/webmasters/answer/17010575?hl=en",
+    "checked_at": "2026-10-10",
+    "check_method": "Official page opened and reviewed with web tool",
+    "supports": "Anonymized queries, table limits and daily Pacific Time reporting."
+  }
+]

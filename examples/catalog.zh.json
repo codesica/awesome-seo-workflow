@@ -1,0 +1,49 @@
+{
+  "evidenceType": "synthetic",
+  "checkedOn": "2026-10-10",
+  "networkRequests": false,
+  "notice": "虚构教学样例，不是真实客户成果，也不是 Google 收录证据。",
+  "cases": [
+    {
+      "id": "robots-block",
+      "title": "准备公开的页面被禁止抓取",
+      "input": "robots-block/before/robots.txt",
+      "finding": "通配爬虫组禁止所有路径，包括 /trail-guide/。",
+      "fix": "先确认页面确实应当公开，再移除误设的全站禁止抓取规则。",
+      "acceptance": "样例规则允许 Googlebot 获取 /trail-guide/。只验证抓取许可，不验证收录。",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "guide_zh": "robots-block/README.zh.md"
+    },
+    {
+      "id": "noindex",
+      "title": "应当公开参与搜索的页面仍带有 noindex",
+      "input": "noindex/before/page.html",
+      "finding": "HTML 的 robots meta 标签包含 noindex。",
+      "fix": "从源头移除意外的指令。真实网站的 HTML 元数据与响应头都要检查。",
+      "acceptance": "修正后的 HTML 和模拟响应头中没有 noindex 指令。Google 是否收录仍未验证。",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "guide_zh": "noindex/README.zh.md"
+    },
+    {
+      "id": "sitemap-html",
+      "title": "站点地图地址返回了应用页面外壳",
+      "input": "sitemap-html/before/sitemap.xml",
+      "finding": "模拟响应为 HTTP 200，正文却是 HTML，不是预期的 XML 站点地图。",
+      "fix": "让地图路由在兜底 HTML 路由之前生效，返回地图 XML 和适当的 XML 内容类型。",
+      "acceptance": "修正后的样例能解析成一个含有一个绝对网址的 sitemap urlset。未声称已经提交或抓取。",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "guide_zh": "sitemap-html/README.zh.md"
+    },
+    {
+      "id": "canonical-conflict",
+      "title": "两个 canonical 标签指向不同网址",
+      "input": "canonical-conflict/before/page.html",
+      "finding": "同一页面的两个 canonical link 元素指向不同网址。",
+      "fix": "确认预期的代表页面，只输出一条一致的 canonical，并保持地图一致。",
+      "acceptance": "只保留一条 canonical，且与样例地图网址一致。Google 实际选择的规范网址仍未验证。",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "guide_zh": "canonical-conflict/README.zh.md"
+    }
+  ],
+  "locale": "zh-CN"
+}

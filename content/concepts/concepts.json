@@ -1,0 +1,1020 @@
+{
+  "schemaVersion": "1.0",
+  "verifiedAt": "2026-10-10",
+  "title": {
+    "zh": "概念与指标速查",
+    "en": "Concepts and metrics"
+  },
+  "intro": {
+    "zh": "先分清发生在哪一层，再决定改什么。所有例子均为假设，不是本站成绩。",
+    "en": "Identify the layer before deciding what to change. All examples are hypothetical, not this site’s results."
+  },
+  "disclaimer": {
+    "zh": "SEO 不能保证收录或排名。这里的技术规则以 Google 官方说明为准；其他引擎需另行核对。",
+    "en": "SEO guarantees neither indexing nor rankings. Technical rules here refer to Google documentation; verify other engines separately."
+  },
+  "stageIds": [
+    "01-search-opportunity",
+    "02-page-plan",
+    "03-content-production",
+    "04-publish-check",
+    "05-discovery-promotion",
+    "06-measure-iterate"
+  ],
+  "categories": [
+    {
+      "id": "plan",
+      "label": {
+        "zh": "需求与规划",
+        "en": "Demand and planning"
+      }
+    },
+    {
+      "id": "technical",
+      "label": {
+        "zh": "技术与收录",
+        "en": "Technical and indexing"
+      }
+    },
+    {
+      "id": "content",
+      "label": {
+        "zh": "内容与链接",
+        "en": "Content and links"
+      }
+    },
+    {
+      "id": "measure",
+      "label": {
+        "zh": "效果与指标",
+        "en": "Performance and metrics"
+      }
+    }
+  ],
+  "funnel": [
+    {
+      "conceptId": "discovery",
+      "label": {
+        "zh": "发现",
+        "en": "Discovered"
+      },
+      "meaning": {
+        "zh": "引擎知道网址存在。",
+        "en": "The engine knows the URL exists."
+      },
+      "notEquivalentToNext": {
+        "zh": "不代表已经抓取。",
+        "en": "Does not prove crawling."
+      }
+    },
+    {
+      "conceptId": "crawl",
+      "label": {
+        "zh": "抓取",
+        "en": "Crawled"
+      },
+      "meaning": {
+        "zh": "爬虫取回页面。",
+        "en": "A crawler fetched the page."
+      },
+      "notEquivalentToNext": {
+        "zh": "不代表已正确渲染或收录。",
+        "en": "Does not prove correct rendering or indexing."
+      }
+    },
+    {
+      "conceptId": "index",
+      "label": {
+        "zh": "索引",
+        "en": "Indexed"
+      },
+      "meaning": {
+        "zh": "页面进入搜索索引。",
+        "en": "The page entered the search index."
+      },
+      "notEquivalentToNext": {
+        "zh": "不保证有曝光。",
+        "en": "Does not guarantee impressions."
+      }
+    },
+    {
+      "conceptId": "impressions",
+      "label": {
+        "zh": "曝光",
+        "en": "Impressions"
+      },
+      "meaning": {
+        "zh": "结果出现被记录。",
+        "en": "A qualifying appearance was recorded."
+      },
+      "notEquivalentToNext": {
+        "zh": "不保证有人点击。",
+        "en": "Does not guarantee clicks."
+      }
+    },
+    {
+      "conceptId": "clicks",
+      "label": {
+        "zh": "点击",
+        "en": "Clicks"
+      },
+      "meaning": {
+        "zh": "来自结果的点击被记录。",
+        "en": "A result click was recorded."
+      },
+      "notEquivalentToNext": {
+        "zh": "不保证用户完成任务。",
+        "en": "Does not guarantee task completion."
+      }
+    },
+    {
+      "conceptId": "conversion",
+      "label": {
+        "zh": "实际使用 / 转化",
+        "en": "Usage / conversion"
+      },
+      "meaning": {
+        "zh": "目标动作发生并被可靠验证。",
+        "en": "A target action occurred and was reliably verified."
+      },
+      "notEquivalentToNext": {
+        "zh": "不是所有使用行为都等于收入。",
+        "en": "Not every use generates revenue."
+      }
+    }
+  ],
+  "funnelNote": {
+    "zh": "这是概念顺序，不是一张能直接相除的统计报表：URL 数、曝光次数、点击次数和转化事件不是同一单位。没有填入虚构流量或转化率。",
+    "en": "This is a conceptual sequence, not a directly divisible analytics report: URLs, impressions, clicks, and conversion events use different units. No traffic or conversion data is invented."
+  },
+  "items": [
+    {
+      "id": "search-intent",
+      "term": {
+        "zh": "搜索意图",
+        "en": "Search intent"
+      },
+      "category": "plan",
+      "stageIds": [
+        "01-search-opportunity",
+        "02-page-plan"
+      ],
+      "plain": {
+        "zh": "一个人搜索这句话时，真正想完成的事。",
+        "en": "The task someone wants to complete with a search."
+      },
+      "example": {
+        "zh": "假设搜索“压缩图片不损画质”，可能想马上用工具，而非读格式历史。",
+        "en": "Suppose someone searches “compress images without losing quality”: they may want a tool now."
+      },
+      "dontConfuse": {
+        "zh": "你希望卖什么，不一定是对方想找什么；意图是待验证判断。",
+        "en": "Your sales goal is not necessarily their goal; intent is a hypothesis."
+      },
+      "evidence": {
+        "zh": "实际结果页的页面类型、用户原话、试用反馈。",
+        "en": "Result-page formats, users’ own words, and usability feedback."
+      },
+      "sourceIds": [
+        "starter"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "editorial-framework-with-official-background"
+    },
+    {
+      "id": "keyword",
+      "term": {
+        "zh": "关键词与查询",
+        "en": "Keyword / query"
+      },
+      "category": "plan",
+      "stageIds": [
+        "01-search-opportunity",
+        "02-page-plan"
+      ],
+      "plain": {
+        "zh": "查询是用户实际输入的话；关键词是你研究和组织主题时用的词。",
+        "en": "A query is what someone searches; a keyword is a term you use to plan content."
+      },
+      "example": {
+        "zh": "假设用户输入“png 怎么变小”，你把它归到“PNG 压缩”主题。",
+        "en": "Suppose the query is “make png smaller”; you group it under PNG compression."
+      },
+      "dontConfuse": {
+        "zh": "不必给每个近义词各做一页，也不是重复越多越好。",
+        "en": "Synonyms need not each get a page; repetition is not the goal."
+      },
+      "evidence": {
+        "zh": "GSC 查询、访谈用词、同主题结果页。",
+        "en": "Search Console queries, interview language, and related search results."
+      },
+      "sourceIds": [
+        "starter"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "editorial-framework-with-official-background"
+    },
+    {
+      "id": "long-tail",
+      "term": {
+        "zh": "长尾词",
+        "en": "Long-tail keyword"
+      },
+      "category": "plan",
+      "stageIds": [
+        "01-search-opportunity",
+        "02-page-plan"
+      ],
+      "plain": {
+        "zh": "需求分布里较少被单独搜索、通常更具体的一类查询。",
+        "en": "A less frequently searched query, often expressing a more specific need."
+      },
+      "example": {
+        "zh": "假设“批量压缩透明 PNG”比“图片”需求更具体；真实搜索量仍要查。",
+        "en": "“Batch compress transparent PNGs” is more specific than “images”; volume still needs evidence."
+      },
+      "dontConfuse": {
+        "zh": "长尾不是单纯字数多，也不保证低竞争或高转化。",
+        "en": "Long-tail does not just mean more words, or guarantee easy rankings or conversions."
+      },
+      "evidence": {
+        "zh": "查询细节与需求证据；工具搜索量只作估计。",
+        "en": "Query detail and demand evidence; tool volumes are estimates."
+      },
+      "sourceIds": [
+        "starter"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "editorial-framework-with-official-background"
+    },
+    {
+      "id": "serp",
+      "term": {
+        "zh": "搜索结果页",
+        "en": "SERP"
+      },
+      "category": "plan",
+      "stageIds": [
+        "01-search-opportunity",
+        "02-page-plan",
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "搜索后出现的整页结果，可能包含自然结果、广告与其他模块。",
+        "en": "The full results page, which can include organic results, ads, and other features."
+      },
+      "example": {
+        "zh": "假设搜“图片压缩”，记录前排是工具、教程还是产品对比。",
+        "en": "For “image compression”, note whether leading results are tools, guides, or comparisons."
+      },
+      "dontConfuse": {
+        "zh": "广告位不等于自然排名；一次截图不是所有人的结果。",
+        "en": "An ad is not an organic ranking; one screenshot is not everyone’s result."
+      },
+      "evidence": {
+        "zh": "记录查询、时间、地区、设备、结果类型。",
+        "en": "Record query, time, region, device, and result formats."
+      },
+      "sourceIds": [
+        "search"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "discovery",
+      "term": {
+        "zh": "发现 URL",
+        "en": "URL discovery"
+      },
+      "category": "technical",
+      "stageIds": [
+        "04-publish-check",
+        "05-discovery-promotion"
+      ],
+      "plain": {
+        "zh": "搜索引擎知道这个网址存在。",
+        "en": "The search engine learns that a URL exists."
+      },
+      "example": {
+        "zh": "假设旧教程链接到新工具页，爬虫可从链接发现新网址。",
+        "en": "An existing guide links to a new tool, providing a discovery path."
+      },
+      "dontConfuse": {
+        "zh": "被发现不等于已经访问或收录。",
+        "en": "Discovery does not mean the URL was crawled or indexed."
+      },
+      "evidence": {
+        "zh": "URL 检查中的已知状态、引用页或站点地图信息。",
+        "en": "URL Inspection status and available referring-page or sitemap information."
+      },
+      "sourceIds": [
+        "search"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "crawl",
+      "term": {
+        "zh": "抓取",
+        "en": "Crawling"
+      },
+      "category": "technical",
+      "stageIds": [
+        "04-publish-check",
+        "05-discovery-promotion"
+      ],
+      "plain": {
+        "zh": "爬虫向服务器请求页面和资源。",
+        "en": "A crawler requests a page and its resources from the server."
+      },
+      "example": {
+        "zh": "假设 Googlebot 请求 /compress，服务器返回网页。",
+        "en": "Suppose Googlebot requests /compress and the server returns a page."
+      },
+      "dontConfuse": {
+        "zh": "返回成功不等于内容已被索引。",
+        "en": "A successful response does not prove indexing."
+      },
+      "evidence": {
+        "zh": "URL 检查的上次抓取与获取状态；必要时核验服务器日志。",
+        "en": "Last crawl and fetch status in URL Inspection; verified server logs when needed."
+      },
+      "sourceIds": [
+        "search"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "render",
+      "term": {
+        "zh": "渲染",
+        "en": "Rendering"
+      },
+      "category": "technical",
+      "stageIds": [
+        "03-content-production",
+        "04-publish-check"
+      ],
+      "plain": {
+        "zh": "运行页面代码，把页面组装成可读取的内容。",
+        "en": "Running page code to assemble the readable page."
+      },
+      "example": {
+        "zh": "假设说明文字由 JavaScript 加载，检查渲染后是否真的出现。",
+        "en": "If JavaScript loads instructions, check that rendered content contains them."
+      },
+      "dontConfuse": {
+        "zh": "自己浏览器看得见，不证明爬虫也能得到相同内容。",
+        "en": "Working in your browser does not prove equivalent crawler access."
+      },
+      "evidence": {
+        "zh": "URL 检查的渲染 HTML、截图与资源加载结果。",
+        "en": "Rendered HTML, screenshots, and resource-loading results in URL Inspection."
+      },
+      "sourceIds": [
+        "js"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "index",
+      "term": {
+        "zh": "索引 / 收录",
+        "en": "Indexing"
+      },
+      "category": "technical",
+      "stageIds": [
+        "04-publish-check",
+        "05-discovery-promotion",
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "搜索引擎处理页面，并将相关信息存入搜索索引。",
+        "en": "The engine processes a page and stores information in its search index."
+      },
+      "example": {
+        "zh": "假设 URL 检查报告该页面已编入索引，它才具备被检索的基础。",
+        "en": "Suppose URL Inspection reports the page indexed: it has entered the searchable index."
+      },
+      "dontConfuse": {
+        "zh": "已收录不保证会在某个查询下展示。",
+        "en": "Being indexed does not guarantee appearance for a particular query."
+      },
+      "evidence": {
+        "zh": "URL 检查与网页索引报告；不要只依赖 site: 搜索计数。",
+        "en": "URL Inspection and Page indexing reports, not just site: result counts."
+      },
+      "sourceIds": [
+        "search"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "ranking",
+      "term": {
+        "zh": "排名",
+        "en": "Ranking"
+      },
+      "category": "measure",
+      "stageIds": [
+        "01-search-opportunity",
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "搜索引擎针对一次查询选择和排列结果。",
+        "en": "How the engine selects and orders results for a query."
+      },
+      "example": {
+        "zh": "假设同一工具在“PNG 压缩”和“缩小 JPG”中位置不同。",
+        "en": "A tool may rank differently for “PNG compression” and “shrink JPG”."
+      },
+      "dontConfuse": {
+        "zh": "没有一个永久、适用于所有查询和地区的站点排名。",
+        "en": "There is no permanent site-wide rank across all queries and regions."
+      },
+      "evidence": {
+        "zh": "按查询、页面、国家、设备拆分观察 GSC。",
+        "en": "Inspect Search Console by query, page, country, and device."
+      },
+      "sourceIds": [
+        "search"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "impressions",
+      "term": {
+        "zh": "曝光",
+        "en": "Impressions"
+      },
+      "category": "measure",
+      "stageIds": [
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "搜索结果按相应统计规则记录了你的链接展示。",
+        "en": "Your link received a recorded search-result impression under that result type’s rules."
+      },
+      "example": {
+        "zh": "假设报告显示 100 次曝光，只说明被记录了 100 次展示。",
+        "en": "Suppose the report shows 100 impressions: it records 100 qualifying appearances."
+      },
+      "dontConfuse": {
+        "zh": "曝光不是 100 个独立访客，也不是 100 次点击。",
+        "en": "Impressions are neither unique people nor clicks."
+      },
+      "evidence": {
+        "zh": "GSC 曝光；保持搜索类型、日期和筛选条件一致。",
+        "en": "Search Console impressions with consistent search type, dates, and filters."
+      },
+      "sourceIds": [
+        "metrics"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "clicks",
+      "term": {
+        "zh": "点击",
+        "en": "Clicks"
+      },
+      "category": "measure",
+      "stageIds": [
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "搜索结果中通往你站点的点击，按报告规则统计。",
+        "en": "Recorded clicks from search results to your site."
+      },
+      "example": {
+        "zh": "假设 GSC 有 10 次点击，继续查看这些访问是否完成任务。",
+        "en": "Suppose Search Console records 10 clicks; next check whether visitors completed their task."
+      },
+      "dontConfuse": {
+        "zh": "点击不等于会话数、独立人数或购买。",
+        "en": "Clicks are not sessions, unique people, or purchases."
+      },
+      "evidence": {
+        "zh": "GSC 点击与站内分析分开看，口径不必完全一致。",
+        "en": "Read Search Console clicks and site analytics separately; their definitions differ."
+      },
+      "sourceIds": [
+        "metrics"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "ctr",
+      "term": {
+        "zh": "点击率",
+        "en": "CTR"
+      },
+      "category": "measure",
+      "stageIds": [
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "同一统计范围内，点击次数除以曝光次数。",
+        "en": "Clicks divided by impressions within the same reporting scope."
+      },
+      "example": {
+        "zh": "假设 100 次曝光、5 次点击，CTR 是 5%；这是算例。",
+        "en": "Hypothetical: 5 clicks / 100 impressions = 5% CTR."
+      },
+      "dontConfuse": {
+        "zh": "没有适用于所有位置、查询和结果样式的好 CTR。",
+        "en": "No single good CTR applies to all positions, queries, and result formats."
+      },
+      "evidence": {
+        "zh": "同类查询与设备下比较；零曝光时不能计算有意义的 CTR。",
+        "en": "Compare like queries and devices; zero impressions give no meaningful CTR."
+      },
+      "sourceIds": [
+        "performance"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "average-position",
+      "term": {
+        "zh": "平均位置",
+        "en": "Average position"
+      },
+      "category": "measure",
+      "stageIds": [
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "GSC 对曝光时所记录位置的平均值；站点聚合通常取最靠前的结果。",
+        "en": "GSC’s mean recorded position across impressions; property aggregation uses the topmost result."
+      },
+      "example": {
+        "zh": "假设两次曝光位置为 2 和 8，简化算例的平均值为 5。",
+        "en": "Simplified example: positions 2 and 8 across two impressions average to 5."
+      },
+      "dontConfuse": {
+        "zh": "平均位置 5 不代表每个人都看到你排第五。",
+        "en": "An average of 5 does not mean everyone saw you fifth."
+      },
+      "evidence": {
+        "zh": "先固定查询、页面、国家和设备，再结合曝光与点击看。",
+        "en": "Hold query, page, country, and device steady; read alongside impressions and clicks."
+      },
+      "sourceIds": [
+        "metrics"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "conversion",
+      "term": {
+        "zh": "实际使用与转化",
+        "en": "Usage / conversion"
+      },
+      "category": "measure",
+      "stageIds": [
+        "02-page-plan",
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "访问者完成你事先定义的有价值动作。",
+        "en": "A visitor completes a valuable action you defined in advance."
+      },
+      "example": {
+        "zh": "假设工具页的目标是成功导出压缩图片，记录导出成功事件。",
+        "en": "Suppose the tool’s goal is a successful compressed-file export; track that success event."
+      },
+      "dontConfuse": {
+        "zh": "打开页面不是自动完成转化；GA4 关键事件也不自动等于收入。",
+        "en": "A page visit is not automatically a conversion; a GA4 key event is not automatically revenue."
+      },
+      "evidence": {
+        "zh": "先测试事件是否正确触发，再查实际使用、线索或订单。",
+        "en": "Validate event firing, then inspect real usage, leads, or orders."
+      },
+      "sourceIds": [
+        "conversion"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "robots-txt",
+      "term": {
+        "zh": "抓取规则文件",
+        "en": "robots.txt"
+      },
+      "category": "technical",
+      "stageIds": [
+        "04-publish-check"
+      ],
+      "plain": {
+        "zh": "放在网站根目录、告诉守规矩爬虫哪些路径可以抓取的文件。",
+        "en": "A root-level file giving compliant crawlers rules about which paths they may crawl."
+      },
+      "example": {
+        "zh": "假设禁止抓取 /drafts/，爬虫可能仍从外链知道那些网址。",
+        "en": "If crawling /drafts/ is disallowed, external links can still reveal those URLs."
+      },
+      "dontConfuse": {
+        "zh": "robots.txt 不是可靠的去索引或隐私保护手段。",
+        "en": "robots.txt is not a reliable deindexing or privacy mechanism."
+      },
+      "evidence": {
+        "zh": "查看真实 /robots.txt 与 URL 检查的抓取允许状态。",
+        "en": "Inspect the live /robots.txt and crawl-allowed status in URL Inspection."
+      },
+      "sourceIds": [
+        "robots"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "noindex",
+      "term": {
+        "zh": "不索引指令",
+        "en": "noindex"
+      },
+      "category": "technical",
+      "stageIds": [
+        "04-publish-check"
+      ],
+      "plain": {
+        "zh": "告诉支持它的搜索引擎不要把这个页面放进搜索结果。",
+        "en": "A directive asking supporting engines to exclude the page from search results."
+      },
+      "example": {
+        "zh": "假设公开测试页带 noindex；发布正式页前检查是否误保留。",
+        "en": "Suppose a public test page has noindex; check it was removed from the intended live page."
+      },
+      "dontConfuse": {
+        "zh": "Google 必须能抓取页面才能读取 noindex；它也不是登录保护。",
+        "en": "Google must crawl the page to read noindex; it is not access control."
+      },
+      "evidence": {
+        "zh": "检查 robots meta、X-Robots-Tag 与抓取权限。",
+        "en": "Inspect robots meta, X-Robots-Tag, and crawl access."
+      },
+      "sourceIds": [
+        "noindex"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "canonical",
+      "term": {
+        "zh": "规范网址",
+        "en": "Canonical URL"
+      },
+      "category": "technical",
+      "stageIds": [
+        "02-page-plan",
+        "04-publish-check"
+      ],
+      "plain": {
+        "zh": "相似或重复内容里，你建议搜索引擎优先认定的代表网址。",
+        "en": "The representative URL you recommend for duplicate or very similar content."
+      },
+      "example": {
+        "zh": "假设 /compress?ref=news 与 /compress 内容相同，建议后者为 canonical。",
+        "en": "If /compress?ref=news duplicates /compress, recommend the clean URL."
+      },
+      "dontConfuse": {
+        "zh": "canonical 是信号，不是强制命令、跳转或删页。",
+        "en": "Canonical is a signal, not a command, redirect, or deletion."
+      },
+      "evidence": {
+        "zh": "核对声明的 canonical 与 Google 选择的 canonical。",
+        "en": "Compare declared and Google-selected canonical URLs."
+      },
+      "sourceIds": [
+        "canonical"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "sitemap",
+      "term": {
+        "zh": "站点地图",
+        "en": "Sitemap"
+      },
+      "category": "technical",
+      "stageIds": [
+        "04-publish-check",
+        "05-discovery-promotion"
+      ],
+      "plain": {
+        "zh": "列出你希望搜索引擎发现的重要网址的文件。",
+        "en": "A file listing important URLs you want search engines to discover."
+      },
+      "example": {
+        "zh": "假设新增工具页，把正式网址加入 sitemap 并检查读取情况。",
+        "en": "Suppose you add a tool: include its preferred URL and check sitemap processing."
+      },
+      "dontConfuse": {
+        "zh": "提交成功不保证抓取或收录，也替代不了页面间导航。",
+        "en": "Successful submission guarantees neither crawling nor indexing and does not replace navigation."
+      },
+      "evidence": {
+        "zh": "站点地图是否可访问、报告是否成功读取、网址是否正确。",
+        "en": "Check accessibility, processing status, and correctness of listed URLs."
+      },
+      "sourceIds": [
+        "sitemap"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "internal-link",
+      "term": {
+        "zh": "内链",
+        "en": "Internal link"
+      },
+      "category": "content",
+      "stageIds": [
+        "02-page-plan",
+        "03-content-production",
+        "05-discovery-promotion"
+      ],
+      "plain": {
+        "zh": "你网站上的一个页面链接到同一网站的另一个页面。",
+        "en": "A link from one page of your site to another."
+      },
+      "example": {
+        "zh": "假设 PNG 教程用“批量压缩 PNG”链接到对应工具页。",
+        "en": "A PNG guide links to its tool using “batch compress PNGs”."
+      },
+      "dontConfuse": {
+        "zh": "内链不是只把页面塞进 sitemap；关键链接要真的能点击和被识别。",
+        "en": "A sitemap entry is not an internal link; important links should be usable and crawlable."
+      },
+      "evidence": {
+        "zh": "检查 a 元素的 href、目标响应和锚文本是否清楚。",
+        "en": "Check anchor hrefs, destination responses, and descriptive link text."
+      },
+      "sourceIds": [
+        "links"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "backlink",
+      "term": {
+        "zh": "外链 / 反向链接",
+        "en": "Backlink"
+      },
+      "category": "content",
+      "stageIds": [
+        "05-discovery-promotion"
+      ],
+      "plain": {
+        "zh": "其他网站指向你页面的链接；你引用外站则是出站链接。",
+        "en": "A link from another website to yours; your link to another site is outbound."
+      },
+      "example": {
+        "zh": "假设设计教程作者自然引用你的压缩工具。",
+        "en": "Suppose a design tutorial independently references your compression tool."
+      },
+      "dontConfuse": {
+        "zh": "外链数量不等于质量；为操纵排名买卖链接有风险。",
+        "en": "Link count is not quality; buying or selling links to manipulate rankings is risky."
+      },
+      "evidence": {
+        "zh": "查看真实来源页、上下文、相关性及带来的访问。",
+        "en": "Inspect the source page, context, relevance, and referral visits."
+      },
+      "sourceIds": [
+        "spam",
+        "links"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "hreflang",
+      "term": {
+        "zh": "语言 / 地区版本标注",
+        "en": "hreflang"
+      },
+      "category": "technical",
+      "stageIds": [
+        "02-page-plan",
+        "04-publish-check"
+      ],
+      "plain": {
+        "zh": "告诉 Google 哪些网址是同一内容的不同语言或地区版本。",
+        "en": "An annotation identifying equivalent language or regional versions for Google."
+      },
+      "example": {
+        "zh": "假设 /zh/compress 与 /en/compress 相互标注 zh 与 en，并各自标注自己。",
+        "en": "Suppose /zh/compress and /en/compress list both themselves and each other as zh/en alternatives."
+      },
+      "dontConfuse": {
+        "zh": "它不会翻译页面，也不应把无关页面强行配成语言版本。",
+        "en": "It does not translate pages or make unrelated pages equivalents."
+      },
+      "evidence": {
+        "zh": "检查双向与自引用、完整网址、语言代码及真实内容对应。",
+        "en": "Check reciprocal/self references, full URLs, language codes, and equivalent content."
+      },
+      "sourceIds": [
+        "hreflang"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "title-link",
+      "term": {
+        "zh": "页面标题与结果标题",
+        "en": "Page title / title link"
+      },
+      "category": "content",
+      "stageIds": [
+        "02-page-plan",
+        "03-content-production",
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "页面 title 描述主题；搜索结果标题可能由 Google 综合生成。",
+        "en": "Your title describes the page; Google may generate the result’s title from multiple sources."
+      },
+      "example": {
+        "zh": "假设标题是“透明 PNG 批量压缩工具”，正文确实支持这个功能。",
+        "en": "Suppose the title promises a transparent-PNG batch compressor, and the page supports it."
+      },
+      "dontConfuse": {
+        "zh": "HTML title、正文 H1 与搜索结果标题不是同一个字段。",
+        "en": "HTML title, visible H1, and search-result title are distinct."
+      },
+      "evidence": {
+        "zh": "核对 title、可见主标题、实际结果与页面能力。",
+        "en": "Compare title, visible heading, actual results, and page capabilities."
+      },
+      "sourceIds": [
+        "title"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    },
+    {
+      "id": "meta-description",
+      "term": {
+        "zh": "页面描述与摘要",
+        "en": "Meta description / snippet"
+      },
+      "category": "content",
+      "stageIds": [
+        "03-content-production",
+        "06-measure-iterate"
+      ],
+      "plain": {
+        "zh": "你可写页面描述；Google 的结果摘要也可能取自正文。",
+        "en": "You can provide a description; Google may instead build the snippet from page content."
+      },
+      "example": {
+        "zh": "假设写明“保留透明背景，支持批量处理”，并确保页面能兑现。",
+        "en": "Suppose the description says “preserves transparency and supports batches”; verify both."
+      },
+      "dontConfuse": {
+        "zh": "写了描述不代表 Google 必须原样展示。",
+        "en": "Providing a description does not guarantee it appears verbatim."
+      },
+      "evidence": {
+        "zh": "比较 meta description、正文和不同查询下的实际摘要。",
+        "en": "Compare the description, page text, and snippets for different queries."
+      },
+      "sourceIds": [
+        "snippet"
+      ],
+      "exampleIsHypothetical": true,
+      "sourceScope": "official-guidance-and-original-hypothetical-example"
+    }
+  ],
+  "sources": [
+    {
+      "id": "starter",
+      "title": "Google SEO Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "search",
+      "title": "How Google Search works",
+      "url": "https://developers.google.com/search/docs/fundamentals/how-search-works",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "js",
+      "title": "JavaScript SEO basics",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "metrics",
+      "title": "Search Console metric definitions",
+      "url": "https://support.google.com/webmasters/answer/7042828?hl=en",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "performance",
+      "title": "Search Console Performance report",
+      "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "robots",
+      "title": "Introduction to robots.txt",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "noindex",
+      "title": "Block indexing with noindex",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "canonical",
+      "title": "Specify a canonical URL",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "sitemap",
+      "title": "Sitemap overview",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "links",
+      "title": "Link best practices",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "spam",
+      "title": "Google Search spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "hreflang",
+      "title": "Localized versions of pages",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "title",
+      "title": "Influencing title links",
+      "url": "https://developers.google.com/search/docs/appearance/title-link",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "snippet",
+      "title": "Search snippets and meta descriptions",
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "conversion",
+      "title": "Analytics key events and conversions",
+      "url": "https://support.google.com/analytics/answer/13965727?hl=en",
+      "publisher": "Google",
+      "accessedAt": "2026-10-10"
+    }
+  ],
+  "sourcesNote": {
+    "zh": "搜索意图、关键词分组和长尾词为本教程的工作定义；所链 Google 指南提供相关背景，不宣称这些分类是 Google 的官方指标。",
+    "en": "Search intent, keyword grouping, and long-tail are working definitions for this guide. Linked Google guidance supplies background, not an official Google taxonomy or metric."
+  }
+}

@@ -1,0 +1,1 @@
+Reused unchanged First Crawl synthetic teaching fixtures from the existing Chinese content package, copied 2026-10-10. These examples were not run against a live site. Before/after files illustrate individual defects, not a complete audit or indexing success.

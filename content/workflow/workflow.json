@@ -1,0 +1,1317 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2.0.0",
+  "locales": [
+    "zh-CN",
+    "en"
+  ],
+  "routeLocales": {
+    "zh-CN": "zh",
+    "en": "en"
+  },
+  "reviewedAt": "2026-10-10",
+  "home": {
+    "id": "home",
+    "contentId": "page.home",
+    "brand": "First Crawl",
+    "title": {
+      "zh-CN": "从一个真实问题，学会完整 SEO 流程",
+      "en": "Learn the full SEO workflow, starting with one real question"
+    },
+    "description": {
+      "zh-CN": "为第一次做 SEO 的人准备：六步完成需求、页面、内容、发布、发现与迭代。先看懂，再动手；每步留下一份可检查的产物。",
+      "en": "A beginner path through need, page planning, content, publication, discovery, and iteration. Understand the task, do the work, and leave a checkable output."
+    },
+    "primaryCta": {
+      "zh-CN": "找到我的起点",
+      "en": "Find my starting point"
+    },
+    "secondaryCta": {
+      "zh-CN": "查看完整六步路线",
+      "en": "Explore the six-stage path"
+    },
+    "coreDistinction": {
+      "zh-CN": "SEO 是帮助搜索引擎理解内容、帮助读者通过搜索找到页面。社交、社区和邮件引流属于推广；本路线会讲如何配合，但不把它们当成自然搜索排名。",
+      "en": "SEO helps search engines understand content and readers find pages through search. Social, community, and email distribution are promotion; this path connects them without treating them as organic search ranking."
+    },
+    "promise": {
+      "zh-CN": "你将学会选择问题、写页面简报、制作可信内容、检查发布、规划推广、读懂数据。不会承诺收录、排名、流量或收入。",
+      "en": "Learn to choose a question, brief a page, create reliable content, check publication, plan distribution, and interpret data. No indexing, ranking, traffic, or revenue is promised."
+    },
+    "noSiteYet": {
+      "zh-CN": "还没有网站？前 3 步可以在文档里完成，第 4 步用公开教学样例练习；创建账号、域名和部署是另一项任务。",
+      "en": "No website yet? Complete stages 1–3 in documents and use public teaching examples for stage 4. Accounts, domains, and deployment are separate tasks."
+    },
+    "learningAndSkills": {
+      "zh-CN": "教程告诉你为什么和怎么做；Agent Skills 帮助执行有边界的重复任务。每个 Skill 应标清输入、输出、权限、风险和测试证据。安装不等于完成 SEO，也不自动授予发布或账号访问权限。",
+      "en": "Tutorials explain why and how. Agent Skills assist with bounded repeatable work. Each skill should declare inputs, outputs, permissions, risks, and test evidence. Installation does not complete SEO or grant publication or account access."
+    },
+    "evidenceBoundary": {
+      "zh-CN": "这套六步内容经过官方资料核对，但未在你的站点端到端执行。原有抓取、sitemap、单页检查三篇教程只覆盖第 4 步；新阶段不能标成“已验证增长”。",
+      "en": "This six-stage curriculum is checked against official sources, but has not been executed end-to-end on your site. The existing crawlability, sitemap, and page-check tutorials cover stage 4 only; new stages are not proven growth results."
+    },
+    "navigation": [
+      {
+        "id": "nav.roadmap",
+        "label": {
+          "zh-CN": "学习路线",
+          "en": "Learning path"
+        },
+        "path": "/{locale}/roadmap/"
+      },
+      {
+        "id": "nav.skills",
+        "label": {
+          "zh-CN": "Agent Skills",
+          "en": "Agent Skills"
+        },
+        "path": "/{locale}/skills/"
+      },
+      {
+        "id": "nav.examples",
+        "label": {
+          "zh-CN": "练习与产物",
+          "en": "Exercises and outputs"
+        },
+        "path": "/{locale}/examples/"
+      },
+      {
+        "id": "nav.sources",
+        "label": {
+          "zh-CN": "来源与边界",
+          "en": "Sources and limits"
+        },
+        "path": "/{locale}/sources/"
+      }
+    ],
+    "entries": [
+      {
+        "id": "entry.new",
+        "label": {
+          "zh-CN": "还不知道该写什么",
+          "en": "I do not know what to create"
+        },
+        "stageId": "01-search-opportunity",
+        "reason": {
+          "zh-CN": "从真实问题和搜索意图开始。",
+          "en": "Start with real questions and search intent."
+        }
+      },
+      {
+        "id": "entry.idea",
+        "label": {
+          "zh-CN": "有选题，还没有页面方案",
+          "en": "I have a topic, but no page plan"
+        },
+        "stageId": "02-page-plan",
+        "reason": {
+          "zh-CN": "先把读者任务变成页面简报。",
+          "en": "Turn the reader task into a page brief."
+        }
+      },
+      {
+        "id": "entry.brief",
+        "label": {
+          "zh-CN": "已有简报，准备写内容",
+          "en": "I have a brief and need content"
+        },
+        "stageId": "03-content-production",
+        "reason": {
+          "zh-CN": "把证据写成可执行内容。",
+          "en": "Turn evidence into usable content."
+        }
+      },
+      {
+        "id": "entry.live",
+        "label": {
+          "zh-CN": "页面已上线或马上发布",
+          "en": "My page is live or ready to publish"
+        },
+        "stageId": "04-publish-check",
+        "reason": {
+          "zh-CN": "先核查线上页面，不必重走前面阶段。",
+          "en": "Check the actual page without repeating earlier stages."
+        }
+      },
+      {
+        "id": "entry.promote",
+        "label": {
+          "zh-CN": "页面正常，但还没人知道",
+          "en": "My page works, but people do not know it"
+        },
+        "stageId": "05-discovery-promotion",
+        "reason": {
+          "zh-CN": "补站内发现路径，选择相关推广场景。",
+          "en": "Add discovery paths and choose relevant promotion."
+        }
+      },
+      {
+        "id": "entry.data",
+        "label": {
+          "zh-CN": "有页面和数据，想知道改哪里",
+          "en": "I have pages and data; what should change?"
+        },
+        "stageId": "06-measure-iterate",
+        "reason": {
+          "zh-CN": "用真实证据定位问题，回到对应阶段。",
+          "en": "Diagnose from evidence and return to the relevant stage."
+        }
+      }
+    ],
+    "stageIds": [
+      "01-search-opportunity",
+      "02-page-plan",
+      "03-content-production",
+      "04-publish-check",
+      "05-discovery-promotion",
+      "06-measure-iterate"
+    ],
+    "firstExercise": {
+      "zh-CN": "用一个你熟悉的问题走完一轮。示例：新手如何在室内播种罗勒。它只演示方法，没有经过需求验证，也不代表已验证的搜索机会。",
+      "en": "Take one familiar question through a loop. Example: how a beginner can start basil seeds indoors. This demonstrates the method only; demand and search opportunity are not validated."
+    },
+    "outcomes": [
+      {
+        "zh-CN": "一张机会卡 → 一份页面简报 → 一个内容包",
+        "en": "An opportunity card → a page brief → a content package"
+      },
+      {
+        "zh-CN": "一份发布检查单 → 一份发现日志 → 一张改进复盘卡",
+        "en": "A release checklist → a discovery log → an improvement review"
+      }
+    ]
+  },
+  "ui": {
+    "goal": {
+      "zh-CN": "本步目标",
+      "en": "Goal"
+    },
+    "prerequisites": {
+      "zh-CN": "先弄懂这些概念",
+      "en": "Concepts first"
+    },
+    "inputs": {
+      "zh-CN": "开始前准备",
+      "en": "Inputs"
+    },
+    "actions": {
+      "zh-CN": "跟着做",
+      "en": "Actions"
+    },
+    "tools": {
+      "zh-CN": "可用工具",
+      "en": "Tools"
+    },
+    "deliverables": {
+      "zh-CN": "你要交付什么",
+      "en": "Deliverables"
+    },
+    "acceptance": {
+      "zh-CN": "完成标准",
+      "en": "Acceptance criteria"
+    },
+    "stopConditions": {
+      "zh-CN": "遇到这些情况先停下",
+      "en": "Stop conditions"
+    },
+    "nextStep": {
+      "zh-CN": "下一步",
+      "en": "Next step"
+    },
+    "entryRequirement": {
+      "zh-CN": "从这里开始的条件",
+      "en": "Entry requirement"
+    },
+    "sources": {
+      "zh-CN": "官方来源",
+      "en": "Official sources"
+    }
+  },
+  "stages": [
+    {
+      "id": "01-search-opportunity",
+      "contentId": "stage.01-search-opportunity",
+      "order": 1,
+      "title": {
+        "zh-CN": "需求与搜索机会",
+        "en": "Need and search opportunity"
+      },
+      "summary": {
+        "zh-CN": "先确认谁需要什么，再决定写什么。",
+        "en": "Identify a real need before choosing a topic."
+      },
+      "goal": {
+        "zh-CN": "选出一个有证据、你有能力回答、值得用一页解决的问题。",
+        "en": "Choose one evidenced question you can credibly answer on a useful page."
+      },
+      "prerequisites": [
+        {
+          "zh-CN": "搜索词：人们输入搜索框的文字。搜索意图：他们想完成的任务；同一个词可能有多种意图。",
+          "en": "Query: words entered into search. Intent: the task behind them; a query can have several intents."
+        },
+        {
+          "zh-CN": "需求证据、搜索量和商业价值不是同一回事。一个真实提问只能证明有人问过，不能证明每月有多少搜索或一定会付费。",
+          "en": "Evidence of need, search volume, and commercial value are different. One real question does not establish monthly demand or willingness to pay."
+        }
+      ],
+      "inputs": [
+        {
+          "zh-CN": "一句话描述你帮助的人，以及你能提供的经验、资料或产品。",
+          "en": "One sentence describing your audience and the experience, material, or product you can offer."
+        },
+        {
+          "zh-CN": "已有站可带最近的 Search Console 查询导出；新站没有数据也可从访谈、客服问题或公开讨论起步。",
+          "en": "Existing sites can bring a recent Search Console query export; new sites can start with interviews, support questions, or public discussions."
+        }
+      ],
+      "actions": [
+        {
+          "id": "01.1",
+          "title": {
+            "zh-CN": "收集真实问题",
+            "en": "Collect real questions"
+          },
+          "instruction": {
+            "zh-CN": "从你有权查看的客户问题、社区讨论或自己的实践笔记中收集 5–10 个问题。逐条记录原话、来源链接或可追溯记录、日期、读者和情境；涉及私人信息时先去标识化。没有来源就标为假设。",
+            "en": "Collect 5–10 questions from accessible customer conversations, public communities, or your own practice notes. Record wording, source or traceable reference, date, audience, and context. Remove personal identifiers. Mark unsupported ideas as hypotheses."
+          },
+          "output": {
+            "zh-CN": "一份问题清单，每条区分观察与假设。",
+            "en": "A question list separating observations from hypotheses."
+          }
+        },
+        {
+          "id": "01.2",
+          "title": {
+            "zh-CN": "查看搜索结果",
+            "en": "Inspect search results"
+          },
+          "instruction": {
+            "zh-CN": "选择 3 个候选问题，用目标语言、地区搜索。记录检查日期、查询词，以及前几个自然结果的类型：教程、工具、产品、对比或本地服务。打开页面查看实际回答了什么；不要只看标题，也不要把广告算自然结果。这里是小样本观察，不是完整排名研究。",
+            "en": "Search three candidate questions in the target language and region. Record the date, query, and the formats of several organic results: guide, tool, product, comparison, or local service. Open the pages to inspect their answers. Separate ads from organic results. Treat this as a small observation, not a comprehensive ranking study."
+          },
+          "output": {
+            "zh-CN": "每个候选问题的意图判断、页面类型、未解决的问题。",
+            "en": "An intent hypothesis, page format, and unmet question for each candidate."
+          }
+        },
+        {
+          "id": "01.3",
+          "title": {
+            "zh-CN": "选择一个可做的问题",
+            "en": "Choose one feasible question"
+          },
+          "instruction": {
+            "zh-CN": "逐个问：确实有人遇到吗？我能给出别人难以直接复制的步骤、例子或数据吗？我能在一个页面交付吗？与网站目标相关吗？标注“是/否/未知”，选证据最清楚且能完成的一个，不使用伪精确机会分数。",
+            "en": "For each candidate ask: Does someone actually face this? Can I provide useful steps, examples, or evidence? Can one page deliver it? Does it fit my site? Mark yes/no/unknown and choose the clearest feasible opportunity rather than inventing a precision score."
+          },
+          "output": {
+            "zh-CN": "一个主问题、选择理由和暂不做的问题。",
+            "en": "One primary question, rationale, and a deferred list."
+          }
+        },
+        {
+          "id": "01.4",
+          "title": {
+            "zh-CN": "明确数据边界",
+            "en": "Record data limits"
+          },
+          "instruction": {
+            "zh-CN": "如使用 Google Trends，只写所选地区、时间和相对趋势；它不是绝对搜索次数。第三方关键词估算需保留工具、地区、周期与日期。没有可靠数据时把搜索量留为未知，不填 0，不让 AI 猜。",
+            "en": "If using Google Trends, record region, period, and relative interest; it is not an absolute query count. Keep provider, geography, period, and date for third-party estimates. Without reliable data, leave volume unknown, not zero, and never ask AI to fabricate it."
+          },
+          "output": {
+            "zh-CN": "机会卡，包含证据与未知项。",
+            "en": "An opportunity card containing evidence and unknowns."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "zh-CN": "浏览器、笔记或表格即可；Google Trends 可选，Search Console 仅在有站点权限和数据时使用。",
+          "en": "A browser and notes or spreadsheet suffice. Google Trends is optional; Search Console needs property access and available data."
+        }
+      ],
+      "deliverables": [
+        {
+          "zh-CN": "机会卡字段：读者、情境、主问题、意图、来源、日期、目标地区/语言、拟提供的独特帮助、搜索量及其来源或“未知”、下一步。",
+          "en": "Opportunity card fields: audience, context, primary question, intent, sources, dates, region/language, distinctive help, volume with provenance or unknown, and next step."
+        }
+      ],
+      "acceptance": [
+        {
+          "zh-CN": "至少一条可追溯需求证据；问题足够具体；能解释为何自己的页面值得存在。没有证据可保留为探索，但不能标记“已验证机会”。",
+          "en": "At least one traceable need signal, a specific question, and a reason for your page to exist. Unsupported ideas can remain exploratory but cannot be labeled validated opportunities."
+        }
+      ],
+      "stopConditions": [
+        {
+          "zh-CN": "没有真实需求或没有可信回答能力：先补研究/找专业审阅者，不批量生产页面。敏感专业话题超出能力时停止。",
+          "en": "No evidenced need or credible ability to answer: research further or find a qualified reviewer before producing pages. Stop on sensitive specialist topics beyond your competence."
+        }
+      ],
+      "nextStep": {
+        "zh-CN": "把机会卡交给第 2 步，设计一页解决方案。",
+        "en": "Take the opportunity card to stage 2 and design one page."
+      },
+      "sourceIds": [
+        "trends",
+        "helpful"
+      ],
+      "entryRequirement": {
+        "zh-CN": "有一个网站方向即可；不需要已有流量或付费关键词工具。",
+        "en": "A website direction is enough; existing traffic and paid keyword tools are not required."
+      },
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/01-search-opportunity/",
+      "previousStageId": null,
+      "nextStageId": "02-page-plan",
+      "legacyTutorials": []
+    },
+    {
+      "id": "02-page-plan",
+      "contentId": "stage.02-page-plan",
+      "order": 2,
+      "title": {
+        "zh-CN": "页面方案",
+        "en": "Page plan"
+      },
+      "summary": {
+        "zh-CN": "让一个页面承担一个清楚的任务。",
+        "en": "Give one page a clear job."
+      },
+      "goal": {
+        "zh-CN": "把需求变成能写、能检查、不会与已有页面无谓重复的页面简报。",
+        "en": "Turn the need into a writable, testable brief without unnecessary overlap with existing pages."
+      },
+      "prerequisites": [
+        {
+          "zh-CN": "页面类型：教程帮助操作，比较页帮助选择，产品页帮助了解和购买，工具页帮助直接完成任务。类型取决于需求。",
+          "en": "Page format: tutorials support action, comparisons support choice, product pages explain an offer, and tools complete a task. Choose the format around the need."
+        },
+        {
+          "zh-CN": "站内链接连接同站页面；URL 是页面地址；canonical 是等价内容的首选网址信号，不是删除重复内容的按钮。",
+          "en": "Internal links connect pages on your site. A URL is a page address. Canonical signals a preferred URL for equivalent content; it does not delete duplicates."
+        }
+      ],
+      "inputs": [
+        {
+          "zh-CN": "第 1 步机会卡，或已有页面的读者/问题/来源。",
+          "en": "A stage 1 opportunity card or an existing page’s audience, question, and evidence."
+        },
+        {
+          "zh-CN": "相关现有页面地址清单、网站栏目和可用素材。",
+          "en": "Related existing URLs, site sections, and available source material."
+        }
+      ],
+      "actions": [
+        {
+          "id": "02.1",
+          "title": {
+            "zh-CN": "决定新建还是更新",
+            "en": "Decide whether to create or update"
+          },
+          "instruction": {
+            "zh-CN": "查看已有页面是否已承担这个问题。相同任务优先评估更新现页；不同任务可新建并相互链接。仅仅换一个关键词不够成为新页理由。记录决定，不贸然删除旧页或改 URL。",
+            "en": "Check whether an existing page already serves the task. Consider updating it when the task is the same; use a new page for a distinct task and connect related pages. A keyword variation alone is not a new-page rationale. Record the decision; do not casually remove pages or change URLs."
+          },
+          "output": {
+            "zh-CN": "新建/更新决定及目标 URL。",
+            "en": "Create/update decision and target URL."
+          }
+        },
+        {
+          "id": "02.2",
+          "title": {
+            "zh-CN": "定义读者完成标准",
+            "en": "Define reader success"
+          },
+          "instruction": {
+            "zh-CN": "写一句“读完后，某类读者能完成某件事”。再列 3–5 个必须回答的问题，按实际行动顺序排列。把与主任务无关的内容移入待办，不写百科全书。",
+            "en": "Write: “After this page, this reader can do this task.” List 3–5 essential questions in the order a reader would act. Put unrelated material in a backlog rather than writing an encyclopedia."
+          },
+          "output": {
+            "zh-CN": "读者目标、页面类型、标题和章节草案。",
+            "en": "Reader outcome, page format, working title, and outline."
+          }
+        },
+        {
+          "id": "02.3",
+          "title": {
+            "zh-CN": "为每节配置证据和素材",
+            "en": "Assign evidence and assets"
+          },
+          "instruction": {
+            "zh-CN": "每节注明需要的截图、演示、数据、操作经验或一手来源。解释你会增加什么实际帮助。无法支持的断言删掉或标待核实。安排一个与任务相关的下一步，例如下载检查单，而不是随处弹窗。",
+            "en": "Assign screenshots, demonstrations, data, experience, or primary sources to each section. Explain the practical value you will add. Remove or flag unsupported assertions. Plan one task-relevant next action, such as a checklist download."
+          },
+          "output": {
+            "zh-CN": "章节—证据对应表与下一步设计。",
+            "en": "Section-to-evidence map and next-action plan."
+          }
+        },
+        {
+          "id": "02.4",
+          "title": {
+            "zh-CN": "规划链接与语言",
+            "en": "Plan links and languages"
+          },
+          "instruction": {
+            "zh-CN": "选择一个能链接到新页的栏目或相关文章，以及本页确实需要链接的资源。若做双语，给中英文各自的稳定地址和对应关系；使用者应能切换到同一篇内容，不是跳回另一语言首页。不同语言的需求要分别核实。",
+            "en": "Choose a relevant section or article that can link to the page and useful onward resources. For bilingual content, plan stable URLs and matching translations; language switching should preserve the current article. Validate needs separately in each language."
+          },
+          "output": {
+            "zh-CN": "站内链接计划；适用时附语言对照 URL。",
+            "en": "Internal-link plan and, where relevant, locale URL pairs."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "zh-CN": "笔记/编辑器、已有网站导航；可选公开页面抓取工具仅帮助整理，不能代替需求判断。",
+          "en": "Notes/editor and current site navigation. Optional public-page extraction helps organize material but does not decide demand."
+        }
+      ],
+      "deliverables": [
+        {
+          "zh-CN": "页面简报：目标读者、主任务、主问题、页面类型、目标 URL、新建/更新理由、标题、章节、证据、入口链接、下一步、验收标准。",
+          "en": "Page brief: audience, outcome, primary question, format, target URL, create/update rationale, title, outline, evidence, inbound link, next step, and acceptance criteria."
+        }
+      ],
+      "acceptance": [
+        {
+          "zh-CN": "另一位作者能按简报写作；每节有用途；已有同类页面已检查；双语范围明确。",
+          "en": "Another writer could use the brief; every section has a purpose; related existing pages have been reviewed; bilingual scope is explicit."
+        }
+      ],
+      "stopConditions": [
+        {
+          "zh-CN": "找不到页面与真实需求的关系：回第 1 步。要迁移/合并多个现有 URL：先另做重定向和流量风险计划，不在新手练习中盲改。",
+          "en": "If the page does not connect to a real need, return to stage 1. For URL migrations or merges, prepare a separate redirect and traffic-risk plan rather than making blind changes."
+        }
+      ],
+      "nextStep": {
+        "zh-CN": "把简报与证据清单交给第 3 步写成可用内容。",
+        "en": "Take the brief and evidence list to stage 3."
+      },
+      "sourceIds": [
+        "canonical",
+        "localized",
+        "links"
+      ],
+      "entryRequirement": {
+        "zh-CN": "已有清楚问题和读者即可进入；已有页面也可以直接重做简报。",
+        "en": "Enter with a clear audience and question; an existing page can also be re-briefed here."
+      },
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/02-page-plan/",
+      "previousStageId": "01-search-opportunity",
+      "nextStageId": "03-content-production",
+      "legacyTutorials": []
+    },
+    {
+      "id": "03-content-production",
+      "contentId": "stage.03-content-production",
+      "order": 3,
+      "title": {
+        "zh-CN": "内容制作",
+        "en": "Content production"
+      },
+      "summary": {
+        "zh-CN": "让读者真的完成任务，而不只是看到关键词。",
+        "en": "Help readers finish a task, not just find keywords."
+      },
+      "goal": {
+        "zh-CN": "完成可核实、有独立价值、能交给发布人员的页面内容包。",
+        "en": "Produce a verifiable, useful content package ready for a publisher."
+      },
+      "prerequisites": [
+        {
+          "zh-CN": "原创价值可以是亲自测试的步骤、清楚的示例、对比方法或工具；不必发明新知识。引用不等于把别人的整篇文章重写。",
+          "en": "Original value can be tested steps, clear examples, a comparison method, or a tool; it need not be a new discovery. Citation is not permission to rewrite someone’s whole article."
+        },
+        {
+          "zh-CN": "标题承诺要与正文相符；摘要是页面简介，Google 可能使用正文生成不同摘要。",
+          "en": "The title must match the page’s promise. A meta description summarizes the page; Google may generate a different snippet from the content."
+        }
+      ],
+      "inputs": [
+        {
+          "zh-CN": "页面简报、可靠来源、拥有使用权的素材、必要的专业审阅者。",
+          "en": "A page brief, reliable sources, licensed assets, and any necessary qualified reviewer."
+        }
+      ],
+      "actions": [
+        {
+          "id": "03.1",
+          "title": {
+            "zh-CN": "按用户任务写初稿",
+            "en": "Draft around the task"
+          },
+          "instruction": {
+            "zh-CN": "开头明确适用对象、能得到什么、开始前要准备什么。按简报逐节写，每个操作包含输入、动作、预期结果；给容易失败的步骤加排错。用你能核实的例子，不用虚构客户成绩。",
+            "en": "State who the page is for, what they will achieve, and what they need. For each step include input, action, and expected result. Add troubleshooting to fragile steps. Use verifiable examples, never invented customer outcomes."
+          },
+          "output": {
+            "zh-CN": "完整初稿，演示内容明确标“示例”。",
+            "en": "A complete draft with demonstrations explicitly labeled as examples."
+          }
+        },
+        {
+          "id": "03.2",
+          "title": {
+            "zh-CN": "核实事实与来源",
+            "en": "Check facts and sources"
+          },
+          "instruction": {
+            "zh-CN": "逐条检查数字、产品操作、日期和因果承诺，打开一手来源。测试你声称测试过的操作，记录环境与结果；没测试就写“未测试”。AI 可整理结构，但你负责核实，不能把生成的参考文献当证据。",
+            "en": "Check numbers, product steps, dates, and causal claims against primary sources. Test actions you claim to have tested and record the environment and result; otherwise say untested. AI may help organize, but generated references are not evidence."
+          },
+          "output": {
+            "zh-CN": "事实核验记录：断言、来源、核验日、测试状态。",
+            "en": "Fact log: claim, source, review date, and test status."
+          }
+        },
+        {
+          "id": "03.3",
+          "title": {
+            "zh-CN": "完成页面包装",
+            "en": "Prepare the page package"
+          },
+          "instruction": {
+            "zh-CN": "准备准确的页面标题、简短描述、易扫读的标题层级、描述性链接文字；解释必要术语。图片靠近相关文字，信息图提供有意义的替代文本。注明作者/审阅者和实质性更新日期，不改日期伪装新鲜。",
+            "en": "Prepare an accurate page title, short description, readable headings, and descriptive links; explain necessary terms. Place images near relevant text and supply useful text alternatives. Identify authors/reviewers and substantive update dates without faking freshness."
+          },
+          "output": {
+            "zh-CN": "可发布正文、元信息、素材与说明。",
+            "en": "Publishable body, metadata, assets, and annotations."
+          }
+        },
+        {
+          "id": "03.4",
+          "title": {
+            "zh-CN": "找新手实走一遍",
+            "en": "Run a beginner walkthrough"
+          },
+          "instruction": {
+            "zh-CN": "请目标读者或不了解项目的人按页面操作，记下卡住的地方。双语页面分别检查术语、链接和例子是否自然，不能只替换界面标签。修复关键缺口后再交付，不为了字数堆内容。",
+            "en": "Ask a target reader or someone unfamiliar with the project to follow the page and record where they get stuck. Review terminology, links, and examples separately in each language rather than translating labels only. Fix major gaps before handoff; do not pad to a word-count target."
+          },
+          "output": {
+            "zh-CN": "试读问题、修复记录、待确认项。",
+            "en": "Walkthrough findings, fixes, and unresolved questions."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "zh-CN": "文本编辑器/CMS 草稿、浏览器；AI 为可选辅助，不是事实来源。",
+          "en": "Text editor/CMS draft and browser. AI is an optional assistant, not a fact source."
+        }
+      ],
+      "deliverables": [
+        {
+          "zh-CN": "内容包：正文、title、description、素材/权利说明、内部外部链接、事实记录、语言版本、读者测试记录。",
+          "en": "Content package: body, title, description, assets/rights, links, fact log, locale versions, and reader-test notes."
+        }
+      ],
+      "acceptance": [
+        {
+          "zh-CN": "读者能完成承诺任务；重要事实可追溯；没有虚构数据/评价；图片可合法使用；双语正文都有实际内容。",
+          "en": "The promised task is achievable, important facts are traceable, no metrics or reviews are fabricated, assets are usable, and both languages contain substantive content."
+        }
+      ],
+      "stopConditions": [
+        {
+          "zh-CN": "核心操作无法复现、来源不足或素材权利不明：暂停发布。健康/法律/财务等高风险建议未经合格审阅，不靠 SEO 包装补救。",
+          "en": "Pause publication if core steps fail, sources are insufficient, or rights are unclear. SEO presentation cannot remedy unreviewed high-risk medical, legal, or financial advice."
+        }
+      ],
+      "nextStep": {
+        "zh-CN": "内容通过验收后进入第 4 步；完成草稿不等于已发布。",
+        "en": "Once accepted, proceed to stage 4. A finished draft is not a live page."
+      },
+      "sourceIds": [
+        "helpful",
+        "snippet",
+        "starter",
+        "spam"
+      ],
+      "entryRequirement": {
+        "zh-CN": "已有页面简报即可；旧内容可带着具体问题进入更新。",
+        "en": "Enter with a brief; existing content can enter with a specific improvement goal."
+      },
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/03-content-production/",
+      "previousStageId": "02-page-plan",
+      "nextStageId": "04-publish-check",
+      "legacyTutorials": []
+    },
+    {
+      "id": "04-publish-check",
+      "contentId": "stage.04-publish-check",
+      "order": 4,
+      "title": {
+        "zh-CN": "发布与技术检查",
+        "en": "Publish and technical checks"
+      },
+      "summary": {
+        "zh-CN": "区分页面上线、可抓取、被收录和获得排名。",
+        "en": "Separate being live, crawlable, indexed, and ranked."
+      },
+      "goal": {
+        "zh-CN": "发布一个有权公开的页面，并留下可访问性、索引指令和实际部署的检查证据。",
+        "en": "Publish an authorized public page and retain evidence of access, indexing directives, and the deployed result."
+      },
+      "prerequisites": [
+        {
+          "zh-CN": "抓取是搜索引擎读取页面；收录是进入索引；排名是特定查询下的展示顺序。三者不能互相代替。",
+          "en": "Crawling reads a page; indexing stores it in an index; ranking orders results for a query. These are distinct."
+        },
+        {
+          "zh-CN": "robots.txt 管抓取；noindex 用来排除收录且需被爬虫读到；登录保护用于真正私密的内容。不要为了 SEO 去掉隐私保护。",
+          "en": "robots.txt controls crawling. noindex excludes indexing and must be readable by the crawler. Authentication protects private content; do not remove it for SEO."
+        },
+        {
+          "zh-CN": "sitemap 是供发现网址的清单；提交成功不代表收录。canonical 是偏好信号，搜索引擎可能另选代表网址。",
+          "en": "A sitemap helps discover URLs; successful submission is not indexing. Canonical is a preference signal and search engines may select differently."
+        }
+      ],
+      "inputs": [
+        {
+          "zh-CN": "已验收内容包；对目标站点和发布操作的权限；备份/回滚方式。",
+          "en": "An accepted content package, permission for the target site and publication, and a rollback method."
+        },
+        {
+          "zh-CN": "已有站可以直接带一个需要排查的公开 URL 进入；站点应保密时选择公开练习页，保持现有保护。",
+          "en": "Existing sites can enter with one public URL to diagnose. Keep required privacy protection and use a public practice page instead."
+        }
+      ],
+      "actions": [
+        {
+          "id": "04.1",
+          "title": {
+            "zh-CN": "先确定发布边界",
+            "en": "Confirm the publication boundary"
+          },
+          "instruction": {
+            "zh-CN": "明确页面应该公开还是私密、目标域名、语言地址和谁批准发布。保存当前版本或可恢复提交。先在预览中检查正文、主要按钮和手机布局；预览通过仅代表预览环境。",
+            "en": "Confirm whether the page should be public or private, its domain and locale URLs, and publication approval. Save a recoverable version. Check content, key actions, and mobile layout in preview; a preview pass only covers the preview environment."
+          },
+          "output": {
+            "zh-CN": "发布范围、回滚点、预览检查记录。",
+            "en": "Publication scope, rollback point, and preview check log."
+          }
+        },
+        {
+          "id": "04.2",
+          "title": {
+            "zh-CN": "检查真实线上页面",
+            "en": "Check the actual live page"
+          },
+          "instruction": {
+            "zh-CN": "通过既有流程发布后，在未登录浏览器打开最终 URL。确认最终页面正常返回、正文可读、关键资源可用、链接可点击。记录重定向和最终地址。需要开发工具时让有经验的人协助，不凭截图猜 HTTP 状态。",
+            "en": "After publishing through your established process, open the final URL while signed out. Check successful delivery, readable content, required resources, and working links. Record redirects and the final address. Ask for technical help rather than guessing HTTP status from a screenshot."
+          },
+          "output": {
+            "zh-CN": "线上地址、检查时间、状态/正文/移动端证据。",
+            "en": "Live URL, check time, status/content/mobile evidence."
+          }
+        },
+        {
+          "id": "04.3",
+          "title": {
+            "zh-CN": "检查抓取和索引信号",
+            "en": "Inspect crawl and index signals"
+          },
+          "instruction": {
+            "zh-CN": "检查适用的 robots.txt 规则、HTML robots meta 和响应头 X-Robots-Tag，确认没有意外阻止；再看 canonical、title、description 与站内入口链接。不要把 robots.txt 放行当作已收录。发现指向错误域名的 canonical 或大范围规则时停止批量修改。",
+            "en": "Inspect applicable robots.txt rules, robots meta, and X-Robots-Tag headers for unintended restrictions. Check canonical, title, description, and an internal entry link. An allowed crawl is not indexing. Stop bulk changes when canonical targets or sitewide rules are unexpected."
+          },
+          "output": {
+            "zh-CN": "单页技术检查表，每项为通过/失败/未检查。",
+            "en": "One-page technical checklist with pass/fail/not checked per item."
+          }
+        },
+        {
+          "id": "04.4",
+          "title": {
+            "zh-CN": "整理 sitemap 和语言信号",
+            "en": "Check sitemap and language signals"
+          },
+          "instruction": {
+            "zh-CN": "如站点有 sitemap，确认列出应公开的规范 URL，没有混入私密页/测试页；lastmod 只在能准确提供时使用。双语页面检查互相对应的 hreflang 和可点击语言切换；不要把英文版统一 canonical 到中文。",
+            "en": "If the site has a sitemap, verify public preferred URLs and exclude private/test pages; use lastmod only when accurate. For translations, check reciprocal hreflang and visible language links; do not canonicalize every English page to Chinese."
+          },
+          "output": {
+            "zh-CN": "sitemap 检查记录；双语对应检查记录。",
+            "en": "Sitemap check and locale-pair verification."
+          }
+        },
+        {
+          "id": "04.5",
+          "title": {
+            "zh-CN": "由有权限的人检查 Search Console",
+            "en": "Use Search Console with authorization"
+          },
+          "instruction": {
+            "zh-CN": "在正确资源中检查 URL，分别记录已保存的索引信息与实时测试结果；必要时由有权限的人提交 sitemap 或请求编入索引。没有账号权限写“未检查”，不能编造截图或状态。提交后保留时间与结果，等待不等于成功。",
+            "en": "In the correct property, record stored index information separately from the live test. An authorized owner can submit a sitemap or request indexing where appropriate. Without access, mark not checked. Retain submission time and result; waiting is not success."
+          },
+          "output": {
+            "zh-CN": "部署检查单与索引状态记录，明确证据范围。",
+            "en": "Deployment checklist and index-status record with evidence scope."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "zh-CN": "浏览器和开发者工具、已有 CMS/部署流程；Search Console 需要对应站点权限。",
+          "en": "Browser/devtools and the established CMS/deployment process. Search Console requires access to the relevant property."
+        },
+        {
+          "zh-CN": "本站旧教程：抓取检查、提交 sitemap、单页检查。这三篇仅支持本阶段，不证明其他阶段已实测。",
+          "en": "Existing tutorials: crawlability, sitemap submission, and one-page check. They support this stage only and do not demonstrate tests of the other stages."
+        }
+      ],
+      "deliverables": [
+        {
+          "zh-CN": "发布记录：版本、最终 URL、时间、回滚点、各检查结果、证据链接、账号内未检查项、下一次复查条件。",
+          "en": "Release record: version, final URL, time, rollback point, checks, evidence, unverified account-only items, and recheck trigger."
+        }
+      ],
+      "acceptance": [
+        {
+          "zh-CN": "目标公开页可正常访问，关键任务可用，无已知意外索引阻碍；私密保护未更改；线上与预览结果分开；收录未知可进入观察，但不能标记收录成功。",
+          "en": "The intended public page works, its task is usable, and no unintended index blocker is known. Private access stays unchanged. Live and preview evidence are separate. Unknown indexing may move to observation, never to an indexed-success badge."
+        }
+      ],
+      "stopConditions": [
+        {
+          "zh-CN": "登录保护有意存在、无发布权限、页面错误、意外 noindex、错误 canonical 或无法回滚：先修复或交给负责人，暂停扩大发布。",
+          "en": "Stop wider publication on intentional privacy gates, missing authorization, broken delivery, unintended noindex, wrong canonical, or missing rollback. Resolve or escalate first."
+        }
+      ],
+      "nextStep": {
+        "zh-CN": "技术阻碍解决后，进入第 5 步帮助合适的人发现页面；同时保留索引观察。",
+        "en": "After blockers are addressed, help the right audience discover the page in stage 5 while retaining index observation."
+      },
+      "sourceIds": [
+        "technical",
+        "robots",
+        "noindex",
+        "canonical",
+        "sitemap",
+        "inspection",
+        "localized"
+      ],
+      "entryRequirement": {
+        "zh-CN": "页面已准备发布，或已有公开页面需要检查；不要求先重做第 1–3 步。",
+        "en": "A page is ready to publish or an existing public page needs inspection; repeating stages 1–3 is not required."
+      },
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/04-publish-check/",
+      "previousStageId": "03-content-production",
+      "nextStageId": "05-discovery-promotion",
+      "legacyTutorials": [
+        {
+          "id": "tutorial.crawlability",
+          "slug": "crawlability",
+          "sourceFile": "check-crawlability.md"
+        },
+        {
+          "id": "tutorial.sitemap",
+          "slug": "sitemap",
+          "sourceFile": "submit-sitemap.md"
+        },
+        {
+          "id": "tutorial.page-check",
+          "slug": "page-check",
+          "sourceFile": "one-page-seo-check.md"
+        }
+      ]
+    },
+    {
+      "id": "05-discovery-promotion",
+      "contentId": "stage.05-discovery-promotion",
+      "order": 5,
+      "title": {
+        "zh-CN": "发现与推广",
+        "en": "Discovery and promotion"
+      },
+      "summary": {
+        "zh-CN": "把有用页面带到合适的人面前，并分清流量来源。",
+        "en": "Bring a useful page to the right people and distinguish traffic sources."
+      },
+      "goal": {
+        "zh-CN": "完成一次有边界的发现计划：站内可找到，站外在合适场景分享，并能区分自然搜索与外部引流。",
+        "en": "Complete a bounded discovery plan: reachable internally, appropriately shared externally, with search and referral traffic distinguished."
+      },
+      "prerequisites": [
+        {
+          "zh-CN": "SEO 改善搜索中的可理解性与可发现性；社区、社交、邮件和广告引流是推广。它们可以协同，但社交点击不是自然搜索点击。",
+          "en": "SEO improves search understanding and discovery. Community, social, email, and ads are promotion. They can complement SEO, but a social visit is not an organic search click."
+        },
+        {
+          "zh-CN": "外链是其他网站指向你的链接；相关真实引用可能帮助发现，购买操纵排名的链接或群发垃圾内容有风险。",
+          "en": "A backlink is another site linking to yours. Genuine relevant references can aid discovery; ranking-manipulation links and spam are risky."
+        }
+      ],
+      "inputs": [
+        {
+          "zh-CN": "已检查的公开 URL、目标读者、可用分享渠道及各渠道规则。",
+          "en": "A checked public URL, intended audience, available channels, and their rules."
+        },
+        {
+          "zh-CN": "明确是否仅拟稿，或已批准向哪些地方发送。准备文案不代表授权群发。",
+          "en": "Explicit scope: drafts only or approval to send to specified destinations. Preparing copy does not authorize mass outreach."
+        }
+      ],
+      "actions": [
+        {
+          "id": "05.1",
+          "title": {
+            "zh-CN": "补上站内发现路径",
+            "en": "Add an internal discovery route"
+          },
+          "instruction": {
+            "zh-CN": "从相关栏目或已有文章加入对读者有用的链接，使用能说明目标的链接文字。实际从入口走到目标页；不要只靠 sitemap 或站内搜索。改页面仍遵循你的发布流程。",
+            "en": "Add a useful link from a relevant section or existing article with descriptive text. Walk the path to the page; do not rely solely on a sitemap or site search. Use your normal publishing process for changes."
+          },
+          "output": {
+            "zh-CN": "入口页面、链接文字、目标 URL 和验证记录。",
+            "en": "Entry page, anchor text, target URL, and verification."
+          }
+        },
+        {
+          "id": "05.2",
+          "title": {
+            "zh-CN": "只选一个相关外部场景",
+            "en": "Pick one relevant external context"
+          },
+          "instruction": {
+            "zh-CN": "找一个已经讨论这个问题的社区、读者订阅渠道或合作对象。先读规则，确认允许分享；写出这页具体回答了什么，说明与你的关系。没有合适渠道就先保留草稿，不为了“外链数”到处发。",
+            "en": "Choose one community, subscribed audience, or collaborator already interested in the problem. Read sharing rules. Explain what the page answers and disclose your relationship. If no suitable context exists, retain a draft rather than chasing a link count."
+          },
+          "output": {
+            "zh-CN": "一个渠道选择理由和有上下文的分享草稿。",
+            "en": "One channel rationale and a contextual sharing draft."
+          }
+        },
+        {
+          "id": "05.3",
+          "title": {
+            "zh-CN": "先审阅再分享",
+            "en": "Review before sharing"
+          },
+          "instruction": {
+            "zh-CN": "确认收件人/频道、内容、平台规则与权限。仅在获得相应授权后发送；不要买保证排名的链接包，不要求不自然交换链接，不自动向陌生人群发。记录已发送与仅草稿，不能混用。",
+            "en": "Confirm destination, wording, platform rules, and permission. Send only within authorization. Avoid guaranteed-ranking link packages, unnatural exchanges, and unsolicited automated blasts. Separate sent items from drafts."
+          },
+          "output": {
+            "zh-CN": "已批准的分享记录，或明确标记的未发送草稿。",
+            "en": "Approved distribution record or clearly unsent draft."
+          }
+        },
+        {
+          "id": "05.4",
+          "title": {
+            "zh-CN": "分开记录渠道结果",
+            "en": "Separate channel outcomes"
+          },
+          "instruction": {
+            "zh-CN": "用现有统计或渠道可用的记录观察访问和反馈。若使用 UTM，仅给外部活动链接添加一致的 source/medium/campaign，不给站内链接乱加；不把私人数据放进参数。没有统计权限时写不可测，而不是猜数字。",
+            "en": "Use available analytics or channel evidence for visits and feedback. If using UTM tags, consistently tag external campaigns, not internal navigation, and never include personal data. Without analytics access, state not measurable rather than inventing numbers."
+          },
+          "output": {
+            "zh-CN": "渠道日志：时间、地址、草稿/已发、标签、可观察反馈、未知项。",
+            "en": "Channel log: date, destination, draft/sent, tags, observable feedback, and unknowns."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "zh-CN": "网站编辑器、浏览器、获得授权的发布渠道；现有分析工具可选，新增追踪需遵守隐私与同意要求。",
+          "en": "Site editor, browser, and authorized distribution channels. Existing analytics are optional; new tracking must respect privacy and consent requirements."
+        }
+      ],
+      "deliverables": [
+        {
+          "zh-CN": "发现与推广日志，至少包含一个已验证站内入口和一个站外方案；执行状态准确，不强制必须发出。",
+          "en": "Discovery log with one verified internal entry and one external plan, accurately labeled by execution status. Sending is not mandatory."
+        }
+      ],
+      "acceptance": [
+        {
+          "zh-CN": "读者能通过相关站内页面找到内容；推广对象相关且符合规则；自然搜索、社交/推荐访问和业务结果分开记录。",
+          "en": "The page is reachable from relevant internal content, external plans fit the audience and rules, and organic search, referral/social visits, and business outcomes are recorded separately."
+        }
+      ],
+      "stopConditions": [
+        {
+          "zh-CN": "渠道禁止推广、未获发送授权、页面不能解决所承诺问题：停止发送。被质疑误导时先检查与修正，不扩大分发。",
+          "en": "Do not send when promotion is prohibited, authorization is absent, or the page fails its promise. Investigate and correct misleading claims before expanding distribution."
+        }
+      ],
+      "nextStep": {
+        "zh-CN": "把发布日期、渠道记录与反馈交给第 6 步，观察不同来源的效果。",
+        "en": "Bring release dates, channel records, and feedback to stage 6."
+      },
+      "sourceIds": [
+        "starter",
+        "links",
+        "spam",
+        "campaign"
+      ],
+      "entryRequirement": {
+        "zh-CN": "有正常可用的公开页面即可进入；私密内容不要靠改变访问范围来推广。",
+        "en": "Enter with a functioning public page; do not broaden private-content access as a promotion tactic."
+      },
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/05-discovery-promotion/",
+      "previousStageId": "04-publish-check",
+      "nextStageId": "06-measure-iterate",
+      "legacyTutorials": []
+    },
+    {
+      "id": "06-measure-iterate",
+      "contentId": "stage.06-measure-iterate",
+      "order": 6,
+      "title": {
+        "zh-CN": "数据与迭代",
+        "en": "Measurement and iteration"
+      },
+      "summary": {
+        "zh-CN": "先判断问题在哪一层，再只改最值得改的一件事。",
+        "en": "Locate the problem, then change one worthwhile thing."
+      },
+      "goal": {
+        "zh-CN": "用真实数据和读者反馈完成一次有记录的改进循环；没有足够数据时保留未知。",
+        "en": "Complete one documented improvement loop using real data and reader feedback, preserving uncertainty when data are insufficient."
+      },
+      "prerequisites": [
+        {
+          "zh-CN": "展示是搜索结果被展示的次数，点击是从结果进入的点击；CTR 是点击/展示。平均排名是聚合指标，不能当成每个人看到的固定名次。",
+          "en": "Impressions count search appearances; clicks count result clicks; CTR is clicks divided by impressions. Average position is an aggregate, not one fixed rank seen by everyone."
+        },
+        {
+          "zh-CN": "转化是你预先定义的有价值动作，例如完成工具任务或提交咨询。流量、转化与收入不能划等号。",
+          "en": "A conversion is a predefined valuable action, such as completing a tool task or submitting an inquiry. Traffic, conversions, and revenue are not interchangeable."
+        },
+        {
+          "zh-CN": "数据缺失不是 0；相关变化不是因果证明。季节、查询组合、地区、设备、搜索展示形式与更新都可能影响结果。",
+          "en": "Missing data are not zero, and correlation is not causation. Seasonality, query mix, country, device, result formats, and updates may change outcomes."
+        }
+      ],
+      "inputs": [
+        {
+          "zh-CN": "公开页面 URL、发布/修改日志、有权限的 Search Console 数据；已有分析或用户反馈可选。",
+          "en": "Page URL, release/change log, authorized Search Console data, and optional existing analytics or user feedback."
+        },
+        {
+          "zh-CN": "事先选定一个主要目标与观察时间；新站先关注技术可用性和实际读者反馈。",
+          "en": "One primary outcome and an observation window chosen in advance; new sites can first check technical readiness and real reader feedback."
+        }
+      ],
+      "actions": [
+        {
+          "id": "06.1",
+          "title": {
+            "zh-CN": "保存可比较的基线",
+            "en": "Save a comparable baseline"
+          },
+          "instruction": {
+            "zh-CN": "在 Search Console 性能报告中选定页面、搜索类型、地区/设备等筛选和完整日期范围，记录点击、展示、CTR、平均排名及查询。保留导出时间、筛选和缺失项。新页无历史时写“无基线”，不填虚拟数字。",
+            "en": "In Search Console Performance, choose a page, search type, filters, and complete date range. Record clicks, impressions, CTR, position, and queries with export time and missing fields. A new page may have no baseline; do not manufacture one."
+          },
+          "output": {
+            "zh-CN": "带筛选与日期范围的基线，或无基线说明。",
+            "en": "A dated, filtered baseline or an explicit no-baseline statement."
+          }
+        },
+        {
+          "id": "06.2",
+          "title": {
+            "zh-CN": "按层排查问题",
+            "en": "Diagnose in layers"
+          },
+          "instruction": {
+            "zh-CN": "先看页面是否正常，再看索引状态，再看展示/点击，再看读者是否完成任务。未收录回第 4 步查原因；已收录但少展示回第 1–2 步核查需求与页面匹配；有展示少点击先看查询、位置和标题是否匹配；有访问没完成任务回第 3 步检查内容与操作。少量数据先不下结论。",
+            "en": "Check page availability, then index status, then impressions/clicks, then task completion. Index problems go to stage 4; indexed pages with little visibility prompt stages 1–2; impressions with few clicks call for query, position, and title review; visits without completion prompt stage 3. Avoid conclusions from tiny samples."
+          },
+          "output": {
+            "zh-CN": "一个带证据的问题定位，不把所有问题都叫“SEO 不行”。",
+            "en": "One evidence-based diagnosis rather than a generic “SEO failed” label."
+          }
+        },
+        {
+          "id": "06.3",
+          "title": {
+            "zh-CN": "只做一个可解释的改进",
+            "en": "Make one interpretable change"
+          },
+          "instruction": {
+            "zh-CN": "选择一个具体假设，例如“步骤缺少输入样例让读者卡住”。写下拟改动、预期观察、回滚点和复查日期，按权限发布。不要同时改标题、URL、正文与导航再宣称找到了原因；急迫错误应立即修，仍记录。",
+            "en": "Choose a specific hypothesis, such as a missing input example blocking completion. Write the change, expected observation, rollback point, and review date, then publish within authorization. Avoid changing everything and claiming causality. Fix urgent defects promptly and log them."
+          },
+          "output": {
+            "zh-CN": "改进实验卡与上线验证。",
+            "en": "An improvement card and deployment verification."
+          }
+        },
+        {
+          "id": "06.4",
+          "title": {
+            "zh-CN": "比较并选择下一轮",
+            "en": "Compare and choose the next loop"
+          },
+          "instruction": {
+            "zh-CN": "到观察期后比较一致筛选、相同长度且完整的日期范围，记录期间其他改动和季节因素。数据太少就写“证据不足”，调整观察计划或收集读者反馈。结果写“观察到”，不要宣称改动保证增长；决定保留、回滚、继续观察或回前面某一步。",
+            "en": "After the observation window, compare complete equal-length periods using the same filters and note concurrent changes and seasonality. If data are sparse, state insufficient evidence, revise observation, or seek reader feedback. Report observations without guaranteed-growth claims. Decide to keep, roll back, observe further, or return to a prior stage."
+          },
+          "output": {
+            "zh-CN": "复盘卡：观察、限制、决定、负责人、下一步。",
+            "en": "Review card: observations, limitations, decision, owner, and next step."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "zh-CN": "Google Search Console；可选已有网站分析、用户访谈和版本记录。不强制购买排名追踪器。",
+          "en": "Google Search Console plus optional existing analytics, user interviews, and version history. Paid rank tracking is not required."
+        }
+      ],
+      "deliverables": [
+        {
+          "zh-CN": "一份基线、一张改进卡、一份复盘；所有指标有真实来源、时间、筛选和未知项。",
+          "en": "A baseline, improvement card, and review with source, time range, filters, and unknowns for every metric."
+        }
+      ],
+      "acceptance": [
+        {
+          "zh-CN": "能解释改了什么、观察到了什么、不能断言什么；下一步有负责人和触发条件。即使没有增长，只要记录真实且判断合理，也完成了一次学习循环。",
+          "en": "You can explain the change, observation, limits, and next owner/trigger. A truthful, well-reasoned loop is complete even without growth."
+        }
+      ],
+      "stopConditions": [
+        {
+          "zh-CN": "无账号权限不读取私密报告；数据不完整不下效果结论；改动损害可用性或隐私时停止并按回滚计划处理。",
+          "en": "Do not access private reports without permission, draw impact conclusions from incomplete data, or continue changes that harm usability or privacy; use the rollback plan."
+        }
+      ],
+      "nextStep": {
+        "zh-CN": "带着证据回到相关阶段，逐轮改进；不需要每次从头走六步。",
+        "en": "Return to the relevant stage with evidence; every iteration need not restart all six stages."
+      },
+      "sourceIds": [
+        "performance",
+        "console",
+        "inspection"
+      ],
+      "entryRequirement": {
+        "zh-CN": "已有上线页面、具体问题和可用证据即可进入；没有搜索数据先做技术与读者反馈检查。",
+        "en": "Enter with a live page, a question, and available evidence. Without search data, start with technical checks and reader feedback."
+      },
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/06-measure-iterate/",
+      "previousStageId": "05-discovery-promotion",
+      "nextStageId": null,
+      "legacyTutorials": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "starter",
+      "title": "SEO Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "SEO 的目的、无排名保证、站点推广。",
+        "en": "SEO purpose, no ranking guarantee, and promotion."
+      }
+    },
+    {
+      "id": "helpful",
+      "title": "Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "面向读者、原创价值与可信内容。",
+        "en": "People-first content, original value, and reliability."
+      }
+    },
+    {
+      "id": "trends",
+      "title": "FAQ about Google Trends data",
+      "url": "https://support.google.com/trends/answer/4365533",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "Trends 是标准化相对兴趣，不是绝对搜索量。",
+        "en": "Trends uses normalized relative interest, not absolute search volume."
+      }
+    },
+    {
+      "id": "technical",
+      "title": "Google Search technical requirements",
+      "url": "https://developers.google.com/search/docs/essentials/technical",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "抓取可访问性、HTTP 200、可索引内容与不保证收录。",
+        "en": "Crawl access, HTTP 200, indexable content, and no indexing guarantee."
+      }
+    },
+    {
+      "id": "spam",
+      "title": "Spam policies for Google web search",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "链接垃圾、关键词堆砌与规模化低价值内容的边界。",
+        "en": "Link spam, keyword stuffing, and scaled low-value content boundaries."
+      }
+    },
+    {
+      "id": "performance",
+      "title": "Performance report: Search results",
+      "url": "https://support.google.com/webmasters/answer/7576553",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "点击、展示、CTR、平均排名与筛选。",
+        "en": "Clicks, impressions, CTR, position, and filters."
+      }
+    },
+    {
+      "id": "console",
+      "title": "Get started with Search Console",
+      "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "站点所有者使用报告监测搜索表现。",
+        "en": "Site-owner reports for monitoring search performance."
+      }
+    },
+    {
+      "id": "inspection",
+      "title": "URL Inspection tool",
+      "url": "https://support.google.com/webmasters/answer/9012289",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "已保存索引信息、实时测试和权限边界。",
+        "en": "Stored index information, live tests, and property access."
+      }
+    },
+    {
+      "id": "robots",
+      "title": "Introduction to robots.txt",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "robots.txt 控制抓取，不是隐私保护。",
+        "en": "robots.txt controls crawling, not privacy."
+      }
+    },
+    {
+      "id": "noindex",
+      "title": "Block indexing with noindex",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "爬虫必须能访问页面才能发现 noindex。",
+        "en": "The crawler needs page access to discover noindex."
+      }
+    },
+    {
+      "id": "canonical",
+      "title": "Canonical URL methods",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "规范网址信号及与 sitemap/站内链接的一致性。",
+        "en": "Canonical signals and consistency with links and sitemaps."
+      }
+    },
+    {
+      "id": "sitemap",
+      "title": "Build and submit a sitemap",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "规范 URL、准确 lastmod、发现线索而非收录保证。",
+        "en": "Preferred URLs, accurate lastmod, and discovery rather than guaranteed indexing."
+      }
+    },
+    {
+      "id": "localized",
+      "title": "Tell Google about localized versions",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "独立语言网址与互相对应的 hreflang。",
+        "en": "Locale-specific URLs and reciprocal hreflang."
+      }
+    },
+    {
+      "id": "snippet",
+      "title": "Control your snippets in search results",
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "搜索摘要可能由正文生成；描述不是强制展示文案。",
+        "en": "Search snippets may come from body content; meta descriptions are not mandatory display copy."
+      }
+    },
+    {
+      "id": "links",
+      "title": "Link best practices for Google",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "可抓取链接和描述性链接文字。",
+        "en": "Crawlable links and descriptive anchors."
+      }
+    },
+    {
+      "id": "campaign",
+      "title": "Collect campaign data with custom URLs",
+      "url": "https://support.google.com/analytics/answer/10917952",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": {
+        "zh-CN": "UTM 参数与活动来源分析。",
+        "en": "UTM parameters and campaign attribution."
+      }
+    }
+  ],
+  "evidenceStates": [
+    "not-checked",
+    "hypothesis",
+    "documented",
+    "tested-locally",
+    "verified-live"
+  ],
+  "editorialNote": {
+    "zh-CN": "阶段拆分、清单、产物模板与诊断顺序是 First Crawl 的原创教学设计，不是 Google 的官方认证课程或排名公式。",
+    "en": "Stage structure, checklists, output templates, and diagnostic sequence are original First Crawl teaching design, not a Google-certified curriculum or ranking formula."
+  }
+}

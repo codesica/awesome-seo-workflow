@@ -18,7 +18,7 @@ createServer(async (req, res) => {
       res.end(req.method === 'HEAD' ? undefined : body);
     } catch {
       res.writeHead(404, { 'Content-Type': mime['.html'] });
-      res.end(req.method === 'HEAD' ? undefined : await readFile(resolve(root, '404.html')));
+      res.end(req.method === 'HEAD' ? undefined : await readFile(resolve(root, url.pathname.startsWith('/en/')?'en/404.html':'zh/404.html')));
     }
   } catch { res.writeHead(400); res.end('Bad request'); }
 }).listen(Number(process.env.PORT || 4173), '127.0.0.1', () => console.log('Preview: http://127.0.0.1:' + (process.env.PORT || 4173)));

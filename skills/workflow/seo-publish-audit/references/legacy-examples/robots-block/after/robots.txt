@@ -1,0 +1,4 @@
+# SYNTHETIC fixture: intended public launch
+User-agent: *
+Disallow:
+Sitemap: https://example.com/sitemap.xml

@@ -1,0 +1,681 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2.0.0",
+  "locales": [
+    "zh-CN",
+    "en"
+  ],
+  "routeLocales": "zh",
+  "reviewedAt": "2026-10-10",
+  "home": {
+    "id": "home",
+    "contentId": "page.home",
+    "brand": "First Crawl",
+    "title": "从一个真实问题，学会完整 SEO 流程",
+    "description": "为第一次做 SEO 的人准备：六步完成需求、页面、内容、发布、发现与迭代。先看懂，再动手；每步留下一份可检查的产物。",
+    "primaryCta": "找到我的起点",
+    "secondaryCta": "查看完整六步路线",
+    "coreDistinction": "SEO 是帮助搜索引擎理解内容、帮助读者通过搜索找到页面。社交、社区和邮件引流属于推广；本路线会讲如何配合，但不把它们当成自然搜索排名。",
+    "promise": "你将学会选择问题、写页面简报、制作可信内容、检查发布、规划推广、读懂数据。不会承诺收录、排名、流量或收入。",
+    "noSiteYet": "还没有网站？前 3 步可以在文档里完成，第 4 步用公开教学样例练习；创建账号、域名和部署是另一项任务。",
+    "learningAndSkills": "教程告诉你为什么和怎么做；Agent Skills 帮助执行有边界的重复任务。每个 Skill 应标清输入、输出、权限、风险和测试证据。安装不等于完成 SEO，也不自动授予发布或账号访问权限。",
+    "evidenceBoundary": "这套六步内容经过官方资料核对，但未在你的站点端到端执行。原有抓取、sitemap、单页检查三篇教程只覆盖第 4 步；新阶段不能标成“已验证增长”。",
+    "navigation": [
+      {
+        "id": "nav.roadmap",
+        "label": "学习路线",
+        "path": "/{locale}/roadmap/"
+      },
+      {
+        "id": "nav.skills",
+        "label": "Agent Skills",
+        "path": "/{locale}/skills/"
+      },
+      {
+        "id": "nav.examples",
+        "label": "练习与产物",
+        "path": "/{locale}/examples/"
+      },
+      {
+        "id": "nav.sources",
+        "label": "来源与边界",
+        "path": "/{locale}/sources/"
+      }
+    ],
+    "entries": [
+      {
+        "id": "entry.new",
+        "label": "还不知道该写什么",
+        "stageId": "01-search-opportunity",
+        "reason": "从真实问题和搜索意图开始。"
+      },
+      {
+        "id": "entry.idea",
+        "label": "有选题，还没有页面方案",
+        "stageId": "02-page-plan",
+        "reason": "先把读者任务变成页面简报。"
+      },
+      {
+        "id": "entry.brief",
+        "label": "已有简报，准备写内容",
+        "stageId": "03-content-production",
+        "reason": "把证据写成可执行内容。"
+      },
+      {
+        "id": "entry.live",
+        "label": "页面已上线或马上发布",
+        "stageId": "04-publish-check",
+        "reason": "先核查线上页面，不必重走前面阶段。"
+      },
+      {
+        "id": "entry.promote",
+        "label": "页面正常，但还没人知道",
+        "stageId": "05-discovery-promotion",
+        "reason": "补站内发现路径，选择相关推广场景。"
+      },
+      {
+        "id": "entry.data",
+        "label": "有页面和数据，想知道改哪里",
+        "stageId": "06-measure-iterate",
+        "reason": "用真实证据定位问题，回到对应阶段。"
+      }
+    ],
+    "stageIds": [
+      "01-search-opportunity",
+      "02-page-plan",
+      "03-content-production",
+      "04-publish-check",
+      "05-discovery-promotion",
+      "06-measure-iterate"
+    ],
+    "firstExercise": "用一个你熟悉的问题走完一轮。示例：新手如何在室内播种罗勒。它只演示方法，没有经过需求验证，也不代表已验证的搜索机会。",
+    "outcomes": [
+      "一张机会卡 → 一份页面简报 → 一个内容包",
+      "一份发布检查单 → 一份发现日志 → 一张改进复盘卡"
+    ]
+  },
+  "ui": {
+    "goal": "本步目标",
+    "prerequisites": "先弄懂这些概念",
+    "inputs": "开始前准备",
+    "actions": "跟着做",
+    "tools": "可用工具",
+    "deliverables": "你要交付什么",
+    "acceptance": "完成标准",
+    "stopConditions": "遇到这些情况先停下",
+    "nextStep": "下一步",
+    "entryRequirement": "从这里开始的条件",
+    "sources": "官方来源"
+  },
+  "stages": [
+    {
+      "id": "01-search-opportunity",
+      "contentId": "stage.01-search-opportunity",
+      "order": 1,
+      "title": "需求与搜索机会",
+      "summary": "先确认谁需要什么，再决定写什么。",
+      "goal": "选出一个有证据、你有能力回答、值得用一页解决的问题。",
+      "prerequisites": [
+        "搜索词：人们输入搜索框的文字。搜索意图：他们想完成的任务；同一个词可能有多种意图。",
+        "需求证据、搜索量和商业价值不是同一回事。一个真实提问只能证明有人问过，不能证明每月有多少搜索或一定会付费。"
+      ],
+      "inputs": [
+        "一句话描述你帮助的人，以及你能提供的经验、资料或产品。",
+        "已有站可带最近的 Search Console 查询导出；新站没有数据也可从访谈、客服问题或公开讨论起步。"
+      ],
+      "actions": [
+        {
+          "id": "01.1",
+          "title": "收集真实问题",
+          "instruction": "从你有权查看的客户问题、社区讨论或自己的实践笔记中收集 5–10 个问题。逐条记录原话、来源链接或可追溯记录、日期、读者和情境；涉及私人信息时先去标识化。没有来源就标为假设。",
+          "output": "一份问题清单，每条区分观察与假设。"
+        },
+        {
+          "id": "01.2",
+          "title": "查看搜索结果",
+          "instruction": "选择 3 个候选问题，用目标语言、地区搜索。记录检查日期、查询词，以及前几个自然结果的类型：教程、工具、产品、对比或本地服务。打开页面查看实际回答了什么；不要只看标题，也不要把广告算自然结果。这里是小样本观察，不是完整排名研究。",
+          "output": "每个候选问题的意图判断、页面类型、未解决的问题。"
+        },
+        {
+          "id": "01.3",
+          "title": "选择一个可做的问题",
+          "instruction": "逐个问：确实有人遇到吗？我能给出别人难以直接复制的步骤、例子或数据吗？我能在一个页面交付吗？与网站目标相关吗？标注“是/否/未知”，选证据最清楚且能完成的一个，不使用伪精确机会分数。",
+          "output": "一个主问题、选择理由和暂不做的问题。"
+        },
+        {
+          "id": "01.4",
+          "title": "明确数据边界",
+          "instruction": "如使用 Google Trends，只写所选地区、时间和相对趋势；它不是绝对搜索次数。第三方关键词估算需保留工具、地区、周期与日期。没有可靠数据时把搜索量留为未知，不填 0，不让 AI 猜。",
+          "output": "机会卡，包含证据与未知项。"
+        }
+      ],
+      "tools": [
+        "浏览器、笔记或表格即可；Google Trends 可选，Search Console 仅在有站点权限和数据时使用。"
+      ],
+      "deliverables": [
+        "机会卡字段：读者、情境、主问题、意图、来源、日期、目标地区/语言、拟提供的独特帮助、搜索量及其来源或“未知”、下一步。"
+      ],
+      "acceptance": [
+        "至少一条可追溯需求证据；问题足够具体；能解释为何自己的页面值得存在。没有证据可保留为探索，但不能标记“已验证机会”。"
+      ],
+      "stopConditions": [
+        "没有真实需求或没有可信回答能力：先补研究/找专业审阅者，不批量生产页面。敏感专业话题超出能力时停止。"
+      ],
+      "nextStep": "把机会卡交给第 2 步，设计一页解决方案。",
+      "sourceIds": [
+        "trends",
+        "helpful"
+      ],
+      "entryRequirement": "有一个网站方向即可；不需要已有流量或付费关键词工具。",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/01-search-opportunity/",
+      "previousStageId": null,
+      "nextStageId": "02-page-plan",
+      "legacyTutorials": []
+    },
+    {
+      "id": "02-page-plan",
+      "contentId": "stage.02-page-plan",
+      "order": 2,
+      "title": "页面方案",
+      "summary": "让一个页面承担一个清楚的任务。",
+      "goal": "把需求变成能写、能检查、不会与已有页面无谓重复的页面简报。",
+      "prerequisites": [
+        "页面类型：教程帮助操作，比较页帮助选择，产品页帮助了解和购买，工具页帮助直接完成任务。类型取决于需求。",
+        "站内链接连接同站页面；URL 是页面地址；canonical 是等价内容的首选网址信号，不是删除重复内容的按钮。"
+      ],
+      "inputs": [
+        "第 1 步机会卡，或已有页面的读者/问题/来源。",
+        "相关现有页面地址清单、网站栏目和可用素材。"
+      ],
+      "actions": [
+        {
+          "id": "02.1",
+          "title": "决定新建还是更新",
+          "instruction": "查看已有页面是否已承担这个问题。相同任务优先评估更新现页；不同任务可新建并相互链接。仅仅换一个关键词不够成为新页理由。记录决定，不贸然删除旧页或改 URL。",
+          "output": "新建/更新决定及目标 URL。"
+        },
+        {
+          "id": "02.2",
+          "title": "定义读者完成标准",
+          "instruction": "写一句“读完后，某类读者能完成某件事”。再列 3–5 个必须回答的问题，按实际行动顺序排列。把与主任务无关的内容移入待办，不写百科全书。",
+          "output": "读者目标、页面类型、标题和章节草案。"
+        },
+        {
+          "id": "02.3",
+          "title": "为每节配置证据和素材",
+          "instruction": "每节注明需要的截图、演示、数据、操作经验或一手来源。解释你会增加什么实际帮助。无法支持的断言删掉或标待核实。安排一个与任务相关的下一步，例如下载检查单，而不是随处弹窗。",
+          "output": "章节—证据对应表与下一步设计。"
+        },
+        {
+          "id": "02.4",
+          "title": "规划链接与语言",
+          "instruction": "选择一个能链接到新页的栏目或相关文章，以及本页确实需要链接的资源。若做双语，给中英文各自的稳定地址和对应关系；使用者应能切换到同一篇内容，不是跳回另一语言首页。不同语言的需求要分别核实。",
+          "output": "站内链接计划；适用时附语言对照 URL。"
+        }
+      ],
+      "tools": [
+        "笔记/编辑器、已有网站导航；可选公开页面抓取工具仅帮助整理，不能代替需求判断。"
+      ],
+      "deliverables": [
+        "页面简报：目标读者、主任务、主问题、页面类型、目标 URL、新建/更新理由、标题、章节、证据、入口链接、下一步、验收标准。"
+      ],
+      "acceptance": [
+        "另一位作者能按简报写作；每节有用途；已有同类页面已检查；双语范围明确。"
+      ],
+      "stopConditions": [
+        "找不到页面与真实需求的关系：回第 1 步。要迁移/合并多个现有 URL：先另做重定向和流量风险计划，不在新手练习中盲改。"
+      ],
+      "nextStep": "把简报与证据清单交给第 3 步写成可用内容。",
+      "sourceIds": [
+        "canonical",
+        "localized",
+        "links"
+      ],
+      "entryRequirement": "已有清楚问题和读者即可进入；已有页面也可以直接重做简报。",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/02-page-plan/",
+      "previousStageId": "01-search-opportunity",
+      "nextStageId": "03-content-production",
+      "legacyTutorials": []
+    },
+    {
+      "id": "03-content-production",
+      "contentId": "stage.03-content-production",
+      "order": 3,
+      "title": "内容制作",
+      "summary": "让读者真的完成任务，而不只是看到关键词。",
+      "goal": "完成可核实、有独立价值、能交给发布人员的页面内容包。",
+      "prerequisites": [
+        "原创价值可以是亲自测试的步骤、清楚的示例、对比方法或工具；不必发明新知识。引用不等于把别人的整篇文章重写。",
+        "标题承诺要与正文相符；摘要是页面简介，Google 可能使用正文生成不同摘要。"
+      ],
+      "inputs": [
+        "页面简报、可靠来源、拥有使用权的素材、必要的专业审阅者。"
+      ],
+      "actions": [
+        {
+          "id": "03.1",
+          "title": "按用户任务写初稿",
+          "instruction": "开头明确适用对象、能得到什么、开始前要准备什么。按简报逐节写，每个操作包含输入、动作、预期结果；给容易失败的步骤加排错。用你能核实的例子，不用虚构客户成绩。",
+          "output": "完整初稿，演示内容明确标“示例”。"
+        },
+        {
+          "id": "03.2",
+          "title": "核实事实与来源",
+          "instruction": "逐条检查数字、产品操作、日期和因果承诺，打开一手来源。测试你声称测试过的操作，记录环境与结果；没测试就写“未测试”。AI 可整理结构，但你负责核实，不能把生成的参考文献当证据。",
+          "output": "事实核验记录：断言、来源、核验日、测试状态。"
+        },
+        {
+          "id": "03.3",
+          "title": "完成页面包装",
+          "instruction": "准备准确的页面标题、简短描述、易扫读的标题层级、描述性链接文字；解释必要术语。图片靠近相关文字，信息图提供有意义的替代文本。注明作者/审阅者和实质性更新日期，不改日期伪装新鲜。",
+          "output": "可发布正文、元信息、素材与说明。"
+        },
+        {
+          "id": "03.4",
+          "title": "找新手实走一遍",
+          "instruction": "请目标读者或不了解项目的人按页面操作，记下卡住的地方。双语页面分别检查术语、链接和例子是否自然，不能只替换界面标签。修复关键缺口后再交付，不为了字数堆内容。",
+          "output": "试读问题、修复记录、待确认项。"
+        }
+      ],
+      "tools": [
+        "文本编辑器/CMS 草稿、浏览器；AI 为可选辅助，不是事实来源。"
+      ],
+      "deliverables": [
+        "内容包：正文、title、description、素材/权利说明、内部外部链接、事实记录、语言版本、读者测试记录。"
+      ],
+      "acceptance": [
+        "读者能完成承诺任务；重要事实可追溯；没有虚构数据/评价；图片可合法使用；双语正文都有实际内容。"
+      ],
+      "stopConditions": [
+        "核心操作无法复现、来源不足或素材权利不明：暂停发布。健康/法律/财务等高风险建议未经合格审阅，不靠 SEO 包装补救。"
+      ],
+      "nextStep": "内容通过验收后进入第 4 步；完成草稿不等于已发布。",
+      "sourceIds": [
+        "helpful",
+        "snippet",
+        "starter",
+        "spam"
+      ],
+      "entryRequirement": "已有页面简报即可；旧内容可带着具体问题进入更新。",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/03-content-production/",
+      "previousStageId": "02-page-plan",
+      "nextStageId": "04-publish-check",
+      "legacyTutorials": []
+    },
+    {
+      "id": "04-publish-check",
+      "contentId": "stage.04-publish-check",
+      "order": 4,
+      "title": "发布与技术检查",
+      "summary": "区分页面上线、可抓取、被收录和获得排名。",
+      "goal": "发布一个有权公开的页面，并留下可访问性、索引指令和实际部署的检查证据。",
+      "prerequisites": [
+        "抓取是搜索引擎读取页面；收录是进入索引；排名是特定查询下的展示顺序。三者不能互相代替。",
+        "robots.txt 管抓取；noindex 用来排除收录且需被爬虫读到；登录保护用于真正私密的内容。不要为了 SEO 去掉隐私保护。",
+        "sitemap 是供发现网址的清单；提交成功不代表收录。canonical 是偏好信号，搜索引擎可能另选代表网址。"
+      ],
+      "inputs": [
+        "已验收内容包；对目标站点和发布操作的权限；备份/回滚方式。",
+        "已有站可以直接带一个需要排查的公开 URL 进入；站点应保密时选择公开练习页，保持现有保护。"
+      ],
+      "actions": [
+        {
+          "id": "04.1",
+          "title": "先确定发布边界",
+          "instruction": "明确页面应该公开还是私密、目标域名、语言地址和谁批准发布。保存当前版本或可恢复提交。先在预览中检查正文、主要按钮和手机布局；预览通过仅代表预览环境。",
+          "output": "发布范围、回滚点、预览检查记录。"
+        },
+        {
+          "id": "04.2",
+          "title": "检查真实线上页面",
+          "instruction": "通过既有流程发布后，在未登录浏览器打开最终 URL。确认最终页面正常返回、正文可读、关键资源可用、链接可点击。记录重定向和最终地址。需要开发工具时让有经验的人协助，不凭截图猜 HTTP 状态。",
+          "output": "线上地址、检查时间、状态/正文/移动端证据。"
+        },
+        {
+          "id": "04.3",
+          "title": "检查抓取和索引信号",
+          "instruction": "检查适用的 robots.txt 规则、HTML robots meta 和响应头 X-Robots-Tag，确认没有意外阻止；再看 canonical、title、description 与站内入口链接。不要把 robots.txt 放行当作已收录。发现指向错误域名的 canonical 或大范围规则时停止批量修改。",
+          "output": "单页技术检查表，每项为通过/失败/未检查。"
+        },
+        {
+          "id": "04.4",
+          "title": "整理 sitemap 和语言信号",
+          "instruction": "如站点有 sitemap，确认列出应公开的规范 URL，没有混入私密页/测试页；lastmod 只在能准确提供时使用。双语页面检查互相对应的 hreflang 和可点击语言切换；不要把英文版统一 canonical 到中文。",
+          "output": "sitemap 检查记录；双语对应检查记录。"
+        },
+        {
+          "id": "04.5",
+          "title": "由有权限的人检查 Search Console",
+          "instruction": "在正确资源中检查 URL，分别记录已保存的索引信息与实时测试结果；必要时由有权限的人提交 sitemap 或请求编入索引。没有账号权限写“未检查”，不能编造截图或状态。提交后保留时间与结果，等待不等于成功。",
+          "output": "部署检查单与索引状态记录，明确证据范围。"
+        }
+      ],
+      "tools": [
+        "浏览器和开发者工具、已有 CMS/部署流程；Search Console 需要对应站点权限。",
+        "本站旧教程：抓取检查、提交 sitemap、单页检查。这三篇仅支持本阶段，不证明其他阶段已实测。"
+      ],
+      "deliverables": [
+        "发布记录：版本、最终 URL、时间、回滚点、各检查结果、证据链接、账号内未检查项、下一次复查条件。"
+      ],
+      "acceptance": [
+        "目标公开页可正常访问，关键任务可用，无已知意外索引阻碍；私密保护未更改；线上与预览结果分开；收录未知可进入观察，但不能标记收录成功。"
+      ],
+      "stopConditions": [
+        "登录保护有意存在、无发布权限、页面错误、意外 noindex、错误 canonical 或无法回滚：先修复或交给负责人，暂停扩大发布。"
+      ],
+      "nextStep": "技术阻碍解决后，进入第 5 步帮助合适的人发现页面；同时保留索引观察。",
+      "sourceIds": [
+        "technical",
+        "robots",
+        "noindex",
+        "canonical",
+        "sitemap",
+        "inspection",
+        "localized"
+      ],
+      "entryRequirement": "页面已准备发布，或已有公开页面需要检查；不要求先重做第 1–3 步。",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/04-publish-check/",
+      "previousStageId": "03-content-production",
+      "nextStageId": "05-discovery-promotion",
+      "legacyTutorials": [
+        {
+          "id": "tutorial.crawlability",
+          "slug": "crawlability",
+          "sourceFile": "check-crawlability.md"
+        },
+        {
+          "id": "tutorial.sitemap",
+          "slug": "sitemap",
+          "sourceFile": "submit-sitemap.md"
+        },
+        {
+          "id": "tutorial.page-check",
+          "slug": "page-check",
+          "sourceFile": "one-page-seo-check.md"
+        }
+      ]
+    },
+    {
+      "id": "05-discovery-promotion",
+      "contentId": "stage.05-discovery-promotion",
+      "order": 5,
+      "title": "发现与推广",
+      "summary": "把有用页面带到合适的人面前，并分清流量来源。",
+      "goal": "完成一次有边界的发现计划：站内可找到，站外在合适场景分享，并能区分自然搜索与外部引流。",
+      "prerequisites": [
+        "SEO 改善搜索中的可理解性与可发现性；社区、社交、邮件和广告引流是推广。它们可以协同，但社交点击不是自然搜索点击。",
+        "外链是其他网站指向你的链接；相关真实引用可能帮助发现，购买操纵排名的链接或群发垃圾内容有风险。"
+      ],
+      "inputs": [
+        "已检查的公开 URL、目标读者、可用分享渠道及各渠道规则。",
+        "明确是否仅拟稿，或已批准向哪些地方发送。准备文案不代表授权群发。"
+      ],
+      "actions": [
+        {
+          "id": "05.1",
+          "title": "补上站内发现路径",
+          "instruction": "从相关栏目或已有文章加入对读者有用的链接，使用能说明目标的链接文字。实际从入口走到目标页；不要只靠 sitemap 或站内搜索。改页面仍遵循你的发布流程。",
+          "output": "入口页面、链接文字、目标 URL 和验证记录。"
+        },
+        {
+          "id": "05.2",
+          "title": "只选一个相关外部场景",
+          "instruction": "找一个已经讨论这个问题的社区、读者订阅渠道或合作对象。先读规则，确认允许分享；写出这页具体回答了什么，说明与你的关系。没有合适渠道就先保留草稿，不为了“外链数”到处发。",
+          "output": "一个渠道选择理由和有上下文的分享草稿。"
+        },
+        {
+          "id": "05.3",
+          "title": "先审阅再分享",
+          "instruction": "确认收件人/频道、内容、平台规则与权限。仅在获得相应授权后发送；不要买保证排名的链接包，不要求不自然交换链接，不自动向陌生人群发。记录已发送与仅草稿，不能混用。",
+          "output": "已批准的分享记录，或明确标记的未发送草稿。"
+        },
+        {
+          "id": "05.4",
+          "title": "分开记录渠道结果",
+          "instruction": "用现有统计或渠道可用的记录观察访问和反馈。若使用 UTM，仅给外部活动链接添加一致的 source/medium/campaign，不给站内链接乱加；不把私人数据放进参数。没有统计权限时写不可测，而不是猜数字。",
+          "output": "渠道日志：时间、地址、草稿/已发、标签、可观察反馈、未知项。"
+        }
+      ],
+      "tools": [
+        "网站编辑器、浏览器、获得授权的发布渠道；现有分析工具可选，新增追踪需遵守隐私与同意要求。"
+      ],
+      "deliverables": [
+        "发现与推广日志，至少包含一个已验证站内入口和一个站外方案；执行状态准确，不强制必须发出。"
+      ],
+      "acceptance": [
+        "读者能通过相关站内页面找到内容；推广对象相关且符合规则；自然搜索、社交/推荐访问和业务结果分开记录。"
+      ],
+      "stopConditions": [
+        "渠道禁止推广、未获发送授权、页面不能解决所承诺问题：停止发送。被质疑误导时先检查与修正，不扩大分发。"
+      ],
+      "nextStep": "把发布日期、渠道记录与反馈交给第 6 步，观察不同来源的效果。",
+      "sourceIds": [
+        "starter",
+        "links",
+        "spam",
+        "campaign"
+      ],
+      "entryRequirement": "有正常可用的公开页面即可进入；私密内容不要靠改变访问范围来推广。",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/05-discovery-promotion/",
+      "previousStageId": "04-publish-check",
+      "nextStageId": "06-measure-iterate",
+      "legacyTutorials": []
+    },
+    {
+      "id": "06-measure-iterate",
+      "contentId": "stage.06-measure-iterate",
+      "order": 6,
+      "title": "数据与迭代",
+      "summary": "先判断问题在哪一层，再只改最值得改的一件事。",
+      "goal": "用真实数据和读者反馈完成一次有记录的改进循环；没有足够数据时保留未知。",
+      "prerequisites": [
+        "展示是搜索结果被展示的次数，点击是从结果进入的点击；CTR 是点击/展示。平均排名是聚合指标，不能当成每个人看到的固定名次。",
+        "转化是你预先定义的有价值动作，例如完成工具任务或提交咨询。流量、转化与收入不能划等号。",
+        "数据缺失不是 0；相关变化不是因果证明。季节、查询组合、地区、设备、搜索展示形式与更新都可能影响结果。"
+      ],
+      "inputs": [
+        "公开页面 URL、发布/修改日志、有权限的 Search Console 数据；已有分析或用户反馈可选。",
+        "事先选定一个主要目标与观察时间；新站先关注技术可用性和实际读者反馈。"
+      ],
+      "actions": [
+        {
+          "id": "06.1",
+          "title": "保存可比较的基线",
+          "instruction": "在 Search Console 性能报告中选定页面、搜索类型、地区/设备等筛选和完整日期范围，记录点击、展示、CTR、平均排名及查询。保留导出时间、筛选和缺失项。新页无历史时写“无基线”，不填虚拟数字。",
+          "output": "带筛选与日期范围的基线，或无基线说明。"
+        },
+        {
+          "id": "06.2",
+          "title": "按层排查问题",
+          "instruction": "先看页面是否正常，再看索引状态，再看展示/点击，再看读者是否完成任务。未收录回第 4 步查原因；已收录但少展示回第 1–2 步核查需求与页面匹配；有展示少点击先看查询、位置和标题是否匹配；有访问没完成任务回第 3 步检查内容与操作。少量数据先不下结论。",
+          "output": "一个带证据的问题定位，不把所有问题都叫“SEO 不行”。"
+        },
+        {
+          "id": "06.3",
+          "title": "只做一个可解释的改进",
+          "instruction": "选择一个具体假设，例如“步骤缺少输入样例让读者卡住”。写下拟改动、预期观察、回滚点和复查日期，按权限发布。不要同时改标题、URL、正文与导航再宣称找到了原因；急迫错误应立即修，仍记录。",
+          "output": "改进实验卡与上线验证。"
+        },
+        {
+          "id": "06.4",
+          "title": "比较并选择下一轮",
+          "instruction": "到观察期后比较一致筛选、相同长度且完整的日期范围，记录期间其他改动和季节因素。数据太少就写“证据不足”，调整观察计划或收集读者反馈。结果写“观察到”，不要宣称改动保证增长；决定保留、回滚、继续观察或回前面某一步。",
+          "output": "复盘卡：观察、限制、决定、负责人、下一步。"
+        }
+      ],
+      "tools": [
+        "Google Search Console；可选已有网站分析、用户访谈和版本记录。不强制购买排名追踪器。"
+      ],
+      "deliverables": [
+        "一份基线、一张改进卡、一份复盘；所有指标有真实来源、时间、筛选和未知项。"
+      ],
+      "acceptance": [
+        "能解释改了什么、观察到了什么、不能断言什么；下一步有负责人和触发条件。即使没有增长，只要记录真实且判断合理，也完成了一次学习循环。"
+      ],
+      "stopConditions": [
+        "无账号权限不读取私密报告；数据不完整不下效果结论；改动损害可用性或隐私时停止并按回滚计划处理。"
+      ],
+      "nextStep": "带着证据回到相关阶段，逐轮改进；不需要每次从头走六步。",
+      "sourceIds": [
+        "performance",
+        "console",
+        "inspection"
+      ],
+      "entryRequirement": "已有上线页面、具体问题和可用证据即可进入；没有搜索数据先做技术与读者反馈检查。",
+      "status": "editorially-reviewed-not-site-tested",
+      "reviewedAt": "2026-10-10",
+      "route": "/{locale}/stages/06-measure-iterate/",
+      "previousStageId": "05-discovery-promotion",
+      "nextStageId": null,
+      "legacyTutorials": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "starter",
+      "title": "SEO Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "SEO 的目的、无排名保证、站点推广。"
+    },
+    {
+      "id": "helpful",
+      "title": "Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "面向读者、原创价值与可信内容。"
+    },
+    {
+      "id": "trends",
+      "title": "FAQ about Google Trends data",
+      "url": "https://support.google.com/trends/answer/4365533",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "Trends 是标准化相对兴趣，不是绝对搜索量。"
+    },
+    {
+      "id": "technical",
+      "title": "Google Search technical requirements",
+      "url": "https://developers.google.com/search/docs/essentials/technical",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "抓取可访问性、HTTP 200、可索引内容与不保证收录。"
+    },
+    {
+      "id": "spam",
+      "title": "Spam policies for Google web search",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "链接垃圾、关键词堆砌与规模化低价值内容的边界。"
+    },
+    {
+      "id": "performance",
+      "title": "Performance report: Search results",
+      "url": "https://support.google.com/webmasters/answer/7576553",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "点击、展示、CTR、平均排名与筛选。"
+    },
+    {
+      "id": "console",
+      "title": "Get started with Search Console",
+      "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "站点所有者使用报告监测搜索表现。"
+    },
+    {
+      "id": "inspection",
+      "title": "URL Inspection tool",
+      "url": "https://support.google.com/webmasters/answer/9012289",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "已保存索引信息、实时测试和权限边界。"
+    },
+    {
+      "id": "robots",
+      "title": "Introduction to robots.txt",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "robots.txt 控制抓取，不是隐私保护。"
+    },
+    {
+      "id": "noindex",
+      "title": "Block indexing with noindex",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "爬虫必须能访问页面才能发现 noindex。"
+    },
+    {
+      "id": "canonical",
+      "title": "Canonical URL methods",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "规范网址信号及与 sitemap/站内链接的一致性。"
+    },
+    {
+      "id": "sitemap",
+      "title": "Build and submit a sitemap",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "规范 URL、准确 lastmod、发现线索而非收录保证。"
+    },
+    {
+      "id": "localized",
+      "title": "Tell Google about localized versions",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "独立语言网址与互相对应的 hreflang。"
+    },
+    {
+      "id": "snippet",
+      "title": "Control your snippets in search results",
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "搜索摘要可能由正文生成；描述不是强制展示文案。"
+    },
+    {
+      "id": "links",
+      "title": "Link best practices for Google",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "可抓取链接和描述性链接文字。"
+    },
+    {
+      "id": "campaign",
+      "title": "Collect campaign data with custom URLs",
+      "url": "https://support.google.com/analytics/answer/10917952",
+      "checkedAt": "2026-10-10",
+      "verification": "official-page-opened",
+      "supports": "UTM 参数与活动来源分析。"
+    }
+  ],
+  "evidenceStates": [
+    "not-checked",
+    "hypothesis",
+    "documented",
+    "tested-locally",
+    "verified-live"
+  ],
+  "editorialNote": "阶段拆分、清单、产物模板与诊断顺序是 First Crawl 的原创教学设计，不是 Google 的官方认证课程或排名公式。"
+}

@@ -1,0 +1,602 @@
+{
+  "schemaVersion": "1.0.0",
+  "templates": [
+    {
+      "id": "template.opportunity-card",
+      "stageId": "01-search-opportunity",
+      "title": {
+        "zh-CN": "机会卡",
+        "en": "Opportunity card"
+      },
+      "instruction": {
+        "zh-CN": "复制这张空白模板；没有证据时保留“未知/未检查”，不要填演示成绩。",
+        "en": "Copy this blank template. Keep unknown/not checked where evidence is missing; do not insert demonstration outcomes."
+      },
+      "fields": [
+        {
+          "id": "opportunity-card.audience",
+          "label": {
+            "zh-CN": "目标读者",
+            "en": "Audience"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.context",
+          "label": {
+            "zh-CN": "发生问题的情境",
+            "en": "Problem context"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.question",
+          "label": {
+            "zh-CN": "原始问题",
+            "en": "Original question"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.intent",
+          "label": {
+            "zh-CN": "希望完成的任务",
+            "en": "Intended task"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.evidence",
+          "label": {
+            "zh-CN": "需求证据：来源、日期、原话或摘要",
+            "en": "Need evidence: source, date, quote or summary"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.regionLanguage",
+          "label": {
+            "zh-CN": "地区与语言",
+            "en": "Region and language"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.resultReview",
+          "label": {
+            "zh-CN": "查询、检查日期、结果类型与未解决的问题",
+            "en": "Query, review date, result formats, and unmet question"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.distinctiveHelp",
+          "label": {
+            "zh-CN": "我能提供的具体帮助",
+            "en": "Distinctive help I can provide"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.volume",
+          "label": {
+            "zh-CN": "搜索量：数值及来源，或未知",
+            "en": "Volume: number and provenance, or unknown"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "opportunity-card.decision",
+          "label": {
+            "zh-CN": "选择/暂缓及理由",
+            "en": "Choose/defer and rationale"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        }
+      ]
+    },
+    {
+      "id": "template.page-brief",
+      "stageId": "02-page-plan",
+      "title": {
+        "zh-CN": "页面简报",
+        "en": "Page brief"
+      },
+      "instruction": {
+        "zh-CN": "复制这张空白模板；没有证据时保留“未知/未检查”，不要填演示成绩。",
+        "en": "Copy this blank template. Keep unknown/not checked where evidence is missing; do not insert demonstration outcomes."
+      },
+      "fields": [
+        {
+          "id": "page-brief.readerOutcome",
+          "label": {
+            "zh-CN": "读者完成标准",
+            "en": "Reader outcome"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.format",
+          "label": {
+            "zh-CN": "页面类型与理由",
+            "en": "Format and rationale"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.targetUrl",
+          "label": {
+            "zh-CN": "目标 URL 或计划路径",
+            "en": "Target URL or planned path"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.createOrUpdate",
+          "label": {
+            "zh-CN": "新建/更新及与现页关系",
+            "en": "Create/update and existing-page relationship"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.title",
+          "label": {
+            "zh-CN": "工作标题",
+            "en": "Working title"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.outline",
+          "label": {
+            "zh-CN": "章节与每节要解决的问题",
+            "en": "Sections and questions answered"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.evidenceMap",
+          "label": {
+            "zh-CN": "每节证据与素材",
+            "en": "Evidence and assets per section"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.internalLinks",
+          "label": {
+            "zh-CN": "从哪里进入、链接到哪里",
+            "en": "Inbound and onward internal links"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.locales",
+          "label": {
+            "zh-CN": "语言版本对应关系",
+            "en": "Locale mapping"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "page-brief.nextAction",
+          "label": {
+            "zh-CN": "读者下一步",
+            "en": "Reader next action"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        }
+      ]
+    },
+    {
+      "id": "template.content-package",
+      "stageId": "03-content-production",
+      "title": {
+        "zh-CN": "内容包",
+        "en": "Content package"
+      },
+      "instruction": {
+        "zh-CN": "复制这张空白模板；没有证据时保留“未知/未检查”，不要填演示成绩。",
+        "en": "Copy this blank template. Keep unknown/not checked where evidence is missing; do not insert demonstration outcomes."
+      },
+      "fields": [
+        {
+          "id": "content-package.body",
+          "label": {
+            "zh-CN": "正文文件或草稿链接",
+            "en": "Body file or draft link"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.metadata",
+          "label": {
+            "zh-CN": "title 与 description",
+            "en": "Title and description"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.facts",
+          "label": {
+            "zh-CN": "事实—来源—核查日—测试状态",
+            "en": "Claim-source-date-test status"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.assets",
+          "label": {
+            "zh-CN": "素材、权利说明、替代文本",
+            "en": "Assets, rights, and alt text"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.links",
+          "label": {
+            "zh-CN": "站内与外部来源链接",
+            "en": "Internal links and external sources"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.reviewer",
+          "label": {
+            "zh-CN": "作者/审阅者与范围",
+            "en": "Author/reviewer and scope"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.locales",
+          "label": {
+            "zh-CN": "中英文内容位置",
+            "en": "Locale content locations"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.walkthrough",
+          "label": {
+            "zh-CN": "试读问题与修复",
+            "en": "Reader walkthrough and fixes"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "content-package.unresolved",
+          "label": {
+            "zh-CN": "仍未解决的问题",
+            "en": "Unresolved issues"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        }
+      ]
+    },
+    {
+      "id": "template.release-checklist",
+      "stageId": "04-publish-check",
+      "title": {
+        "zh-CN": "发布检查单",
+        "en": "Release checklist"
+      },
+      "instruction": {
+        "zh-CN": "复制这张空白模板；没有证据时保留“未知/未检查”，不要填演示成绩。",
+        "en": "Copy this blank template. Keep unknown/not checked where evidence is missing; do not insert demonstration outcomes."
+      },
+      "fields": [
+        {
+          "id": "release-checklist.authorization",
+          "label": {
+            "zh-CN": "发布范围与权限",
+            "en": "Publication scope and permission"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.version",
+          "label": {
+            "zh-CN": "版本与回滚点",
+            "en": "Version and rollback point"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.url",
+          "label": {
+            "zh-CN": "最终线上 URL 与检查时间",
+            "en": "Final live URL and check time"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.delivery",
+          "label": {
+            "zh-CN": "响应、跳转、正文、资源、手机端",
+            "en": "Response, redirects, body, resources, mobile"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.directives",
+          "label": {
+            "zh-CN": "robots.txt、robots meta、X-Robots-Tag",
+            "en": "robots.txt, robots meta, X-Robots-Tag"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.canonical",
+          "label": {
+            "zh-CN": "声明 canonical 与适用的索引证据",
+            "en": "Declared canonical and available index evidence"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.sitemap",
+          "label": {
+            "zh-CN": "sitemap 网址、内容检查、提交状态",
+            "en": "Sitemap URL, content check, submission status"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.locales",
+          "label": {
+            "zh-CN": "语言切换与 hreflang",
+            "en": "Language switch and hreflang"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.inspection",
+          "label": {
+            "zh-CN": "已保存索引信息与实时测试分列",
+            "en": "Stored index information and live test separately"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "release-checklist.unverified",
+          "label": {
+            "zh-CN": "未检查项与复查条件",
+            "en": "Unchecked items and recheck trigger"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        }
+      ]
+    },
+    {
+      "id": "template.discovery-log",
+      "stageId": "05-discovery-promotion",
+      "title": {
+        "zh-CN": "发现与推广日志",
+        "en": "Discovery log"
+      },
+      "instruction": {
+        "zh-CN": "复制这张空白模板；没有证据时保留“未知/未检查”，不要填演示成绩。",
+        "en": "Copy this blank template. Keep unknown/not checked where evidence is missing; do not insert demonstration outcomes."
+      },
+      "fields": [
+        {
+          "id": "discovery-log.internalEntry",
+          "label": {
+            "zh-CN": "站内入口、链接文字和验证",
+            "en": "Internal entry, anchor text, verification"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "discovery-log.channel",
+          "label": {
+            "zh-CN": "外部渠道、受众与规则",
+            "en": "External channel, audience, and rules"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "discovery-log.copy",
+          "label": {
+            "zh-CN": "有上下文的草稿",
+            "en": "Contextual draft"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "discovery-log.permission",
+          "label": {
+            "zh-CN": "发送范围与批准记录",
+            "en": "Sending scope and approval"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "discovery-log.status",
+          "label": {
+            "zh-CN": "未发送/已发送及时间",
+            "en": "Draft/sent and timestamp"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "discovery-log.campaign",
+          "label": {
+            "zh-CN": "如适用：source/medium/campaign",
+            "en": "If applicable: source/medium/campaign"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "discovery-log.observations",
+          "label": {
+            "zh-CN": "实际访问/反馈及证据",
+            "en": "Observed visits/feedback and evidence"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "discovery-log.unknowns",
+          "label": {
+            "zh-CN": "无法测量或确认的事项",
+            "en": "Unmeasurable or unverified items"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        }
+      ]
+    },
+    {
+      "id": "template.iteration-card",
+      "stageId": "06-measure-iterate",
+      "title": {
+        "zh-CN": "改进与复盘卡",
+        "en": "Iteration and review card"
+      },
+      "instruction": {
+        "zh-CN": "复制这张空白模板；没有证据时保留“未知/未检查”，不要填演示成绩。",
+        "en": "Copy this blank template. Keep unknown/not checked where evidence is missing; do not insert demonstration outcomes."
+      },
+      "fields": [
+        {
+          "id": "iteration-card.goal",
+          "label": {
+            "zh-CN": "主要目标与页面",
+            "en": "Primary outcome and page"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.baseline",
+          "label": {
+            "zh-CN": "基线来源、周期、筛选、缺失项",
+            "en": "Baseline source, period, filters, gaps"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.metrics",
+          "label": {
+            "zh-CN": "点击/展示/CTR/位置及业务目标分列",
+            "en": "Clicks/impressions/CTR/position and business outcomes separately"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.hypothesis",
+          "label": {
+            "zh-CN": "问题与证据",
+            "en": "Problem and evidence"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.change",
+          "label": {
+            "zh-CN": "改动、上线时间与回滚点",
+            "en": "Change, release time, rollback point"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.reviewWindow",
+          "label": {
+            "zh-CN": "复查时间与比较范围",
+            "en": "Review date and comparison range"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.confounders",
+          "label": {
+            "zh-CN": "同期变化、季节与数据限制",
+            "en": "Concurrent changes, seasonality, limitations"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.observation",
+          "label": {
+            "zh-CN": "实际观察，不作无证据因果断言",
+            "en": "Observations, without unsupported causality"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.decision",
+          "label": {
+            "zh-CN": "保留/回滚/继续观察/返回阶段",
+            "en": "Keep/rollback/observe/return to stage"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        },
+        {
+          "id": "iteration-card.ownerNext",
+          "label": {
+            "zh-CN": "负责人、下一步和触发条件",
+            "en": "Owner, next step, and trigger"
+          },
+          "value": null,
+          "evidenceStatus": "not-checked"
+        }
+      ]
+    }
+  ]
+}

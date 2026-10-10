@@ -1,0 +1,263 @@
+{
+  "evidence_type": "synthetic",
+  "production_status": "NOT_RUN",
+  "indexing_status": "UNKNOWN",
+  "business_success_claim": false,
+  "opportunity": {
+    "id": "op-001",
+    "stage_id": "01-search-opportunity",
+    "audience": "首次使用静态站点的小白",
+    "locale": "zh-CN",
+    "reader_task": "查明自己的公开页面是否有抓取或索引阻塞",
+    "query_cluster": [
+      "页面发布后搜不到",
+      "robots 和 noindex 区别"
+    ],
+    "evidence": [
+      {
+        "type": "provided",
+        "source": "synthetic:feedback-01",
+        "observed_at": null,
+        "finding": "一条虚构反馈描述抓取/索引困惑，仅供演示"
+      }
+    ],
+    "serp_status": "SERP_NOT_OBSERVED",
+    "intent": {
+      "label": "learn",
+      "basis": "由虚构读者问题推断，未观测搜索结果"
+    },
+    "search_volume": null,
+    "volume_status": "unknown",
+    "volume_source": null,
+    "fit": {
+      "audience_fit": "high",
+      "evidence_strength": "low",
+      "ability_to_help": "medium",
+      "effort": "low",
+      "rationale": "任务明确，但只有虚构资料，不证明现实需求"
+    },
+    "existing_page": null,
+    "recommendation": "validate",
+    "next_validation": "取得真实读者问题或授权搜索观察后重评",
+    "unknowns": [
+      "真实需求",
+      "搜索量",
+      "结果页意图"
+    ]
+  },
+  "page": {
+    "stage_id": "02-page-plan",
+    "opportunity_id": "op-001",
+    "locale": "zh-CN",
+    "reader_job": "区分抓取与索引并找到一个阻塞证据",
+    "reader_success": "能在自己的检查记录中注明 robots 与 noindex 各自证据及未知项",
+    "decision": "new_page",
+    "existing_page_review": "synthetic 输入为空，不代表真实站点无同题页面",
+    "proposed_url": "https://example.com/first-page/",
+    "page_type": "guide",
+    "intent_hypothesis": {
+      "label": "learn",
+      "evidence": [
+        "synthetic:feedback-01"
+      ],
+      "status": "inferred"
+    },
+    "title": "第一张网页发布后：检查抓取与索引阻塞",
+    "h1": "先分清抓取与索引，再查页面为什么搜不到",
+    "description": "用明确证据检查公开页面的访问、robots 与 noindex，并记录无法确认的状态。",
+    "sections": [
+      {
+        "heading": "先确认页面是否应该公开",
+        "reader_question": "这个页面能对外公开吗？",
+        "required_evidence": [
+          "所有者公开索引意图"
+        ],
+        "format": "checklist",
+        "evidence_status": "provided"
+      },
+      {
+        "heading": "分别检查抓取与索引指令",
+        "reader_question": "robots 与 noindex 有什么不同？",
+        "required_evidence": [
+          "官方文档",
+          "HTML 与响应头"
+        ],
+        "format": "steps",
+        "evidence_status": "unknown"
+      },
+      {
+        "heading": "写下一项问题与未知项",
+        "reader_question": "我能确认什么，下一步补什么？",
+        "required_evidence": [
+          "检查记录"
+        ],
+        "format": "template",
+        "evidence_status": "unknown"
+      }
+    ],
+    "original_contribution": "明确标为 synthetic 的对照练习，不声称亲测业务效果",
+    "internal_links": [
+      {
+        "target": "https://example.com/sitemap-guide/",
+        "anchor": "站点地图检查说明",
+        "purpose": "待确认存在后关联发现阶段"
+      }
+    ],
+    "language_plan": "正文中文，html lang=zh-CN；未提供英文版本，不生成 hreflang",
+    "evidence_needed": [
+      "真实读者问题",
+      "真实页面输入",
+      "内链目标存在证据"
+    ],
+    "reviewer": null,
+    "next_action": "先补证据，再授权制作正文",
+    "content_acceptance": [
+      "分清抓取/索引",
+      "每个判断有出处",
+      "synthetic 保持标注"
+    ],
+    "handoff_stage_id": "03-content-production",
+    "publish_status": "NOT_RUN"
+  },
+  "audit": {
+    "stage_id": "04-publish-check",
+    "target_url": "https://example.com/first-page/",
+    "expected_public_indexable": true,
+    "environment": "local",
+    "observed_at": null,
+    "artifact_version": "synthetic-input-v1",
+    "checks": [
+      {
+        "id": "http",
+        "status": "UNKNOWN",
+        "severity": "warning",
+        "evidence": [],
+        "finding": "没有真实 HTTP 响应",
+        "next_action": "获准后获取线上响应与重定向链"
+      },
+      {
+        "id": "robots",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.robots_txt: User-agent: *; Allow: /"
+        ],
+        "finding": "此简单本地 fixture 允许抓取",
+        "next_action": "上线时核对实际 robots"
+      },
+      {
+        "id": "noindex",
+        "status": "FAIL",
+        "severity": "blocker",
+        "evidence": [
+          "synthetic-input.json audit.html: meta robots=noindex"
+        ],
+        "finding": "与预期公开可索引意图冲突；响应头未知",
+        "next_action": "所有者确认后拟议去掉意外 noindex；再检查响应头"
+      },
+      {
+        "id": "canonical",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.html canonical matches target"
+        ],
+        "finding": "本地声明唯一且与提供的 sitemap 相符",
+        "next_action": "线上头部和最终 URL 尚待核对"
+      },
+      {
+        "id": "sitemap",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.sitemap contains target URL"
+        ],
+        "finding": "本地结构与规范 URL 对齐；线上响应未知",
+        "next_action": "检查实际 sitemap 不是登录页"
+      },
+      {
+        "id": "lang",
+        "status": "PASS",
+        "severity": "info",
+        "evidence": [
+          "synthetic-input.json audit.html: lang=zh-CN; Chinese body"
+        ],
+        "finding": "静态正文与 lang 一致",
+        "next_action": "不把此项解释为排名提升"
+      },
+      {
+        "id": "internal-links",
+        "status": "UNKNOWN",
+        "severity": "warning",
+        "evidence": [
+          "synthetic-input.json audit.parent_html: a href points to target"
+        ],
+        "finding": "存在本地链接片段，但父页可访问性和目标存活未检查",
+        "next_action": "获得实际父页和目标响应"
+      }
+    ],
+    "required_check_ids": [
+      "http",
+      "robots",
+      "noindex",
+      "canonical",
+      "sitemap",
+      "lang",
+      "internal-links"
+    ],
+    "technical_decision": "blocked",
+    "proposed_fixes": [
+      "仅在所有者确认后去掉意外 noindex；本示例未修改生产"
+    ],
+    "rollback": "保留原始文件副本；示例未部署无需生产回滚",
+    "production_status": "NOT_RUN",
+    "indexing_status": "UNKNOWN",
+    "traffic_outcome": "UNKNOWN"
+  },
+  "measure": {
+    "stage_id": "06-measure-iterate",
+    "page_scope": [
+      "https://example.com/first-page/"
+    ],
+    "data_source": "synthetic:search-console-export",
+    "filters": {
+      "page": "https://example.com/first-page/",
+      "search_type": "web",
+      "country": "all",
+      "device": "all"
+    },
+    "timezone": "America/Los_Angeles",
+    "baseline": {
+      "start": null,
+      "end": null,
+      "clicks": null,
+      "impressions": null
+    },
+    "observation": {
+      "start": "2026-09-01",
+      "end": "2026-09-28",
+      "clicks": 6,
+      "impressions": 200
+    },
+    "comparison_status": "baseline_missing",
+    "ctr": 0.03,
+    "click_delta": null,
+    "relative_click_change": null,
+    "observed_change": "仅有虚构观察窗 6 次点击/200 次展示；不能判断变化",
+    "causal_claim": "NOT_ESTABLISHED",
+    "hypotheses": [],
+    "alternative_explanations": [
+      "没有基线，无法识别变化或原因"
+    ],
+    "decision": "collect_baseline",
+    "next_action": "先建立同页面、同筛选、完整时段的真实基线",
+    "review_when": "取得完整可比窗口且数据已完成更新时",
+    "rollback_or_stop": "如口径改变或数据仍不完整，停止比较并重建基线",
+    "limitations": [
+      "所有数值是 synthetic",
+      "没有真实 Search Console 访问",
+      "无基线",
+      "未证明技术改动或业务成效"
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "checked_at": "2026-10-10T13:32:46.704055+00:00",
+  "result": "PASS",
+  "scope": "Local file structure, synthetic output fields and data invariants only",
+  "production_status": "NOT_RUN",
+  "live_site_test": "NOT_RUN",
+  "independent_agent_forward_test": "NOT_RUN",
+  "checks": [
+    {
+      "check": "Exactly six distinct workflow stages",
+      "pass": true
+    },
+    {
+      "check": "At least four original skills",
+      "pass": true
+    },
+    {
+      "check": "seo-opportunity-evidence: frontmatter and required sections",
+      "pass": true
+    },
+    {
+      "check": "seo-opportunity-evidence: bilingual web metadata",
+      "pass": true
+    },
+    {
+      "check": "seo-opportunity-evidence: truthful execution status",
+      "pass": true
+    },
+    {
+      "check": "seo-opportunity-evidence: template fields present in synthetic output",
+      "pass": true
+    },
+    {
+      "check": "seo-page-brief: frontmatter and required sections",
+      "pass": true
+    },
+    {
+      "check": "seo-page-brief: bilingual web metadata",
+      "pass": true
+    },
+    {
+      "check": "seo-page-brief: truthful execution status",
+      "pass": true
+    },
+    {
+      "check": "seo-page-brief: template fields present in synthetic output",
+      "pass": true
+    },
+    {
+      "check": "seo-publish-audit: frontmatter and required sections",
+      "pass": true
+    },
+    {
+      "check": "seo-publish-audit: bilingual web metadata",
+      "pass": true
+    },
+    {
+      "check": "seo-publish-audit: truthful execution status",
+      "pass": true
+    },
+    {
+      "check": "seo-publish-audit: template fields present in synthetic output",
+      "pass": true
+    },
+    {
+      "check": "seo-measure-decide: frontmatter and required sections",
+      "pass": true
+    },
+    {
+      "check": "seo-measure-decide: bilingual web metadata",
+      "pass": true
+    },
+    {
+      "check": "seo-measure-decide: truthful execution status",
+      "pass": true
+    },
+    {
+      "check": "seo-measure-decide: template fields present in synthetic output",
+      "pass": true
+    },
+    {
+      "check": "No invented volume",
+      "pass": true
+    },
+    {
+      "check": "No invented SERP observation",
+      "pass": true
+    },
+    {
+      "check": "All seven technical checks covered",
+      "pass": true
+    },
+    {
+      "check": "Local noindex blocker recognized",
+      "pass": true
+    },
+    {
+      "check": "Missing headers do not become HTTP pass",
+      "pass": true
+    },
+    {
+      "check": "Synthetic CTR arithmetic",
+      "pass": true
+    },
+    {
+      "check": "No baseline means no lift claim",
+      "pass": true
+    },
+    {
+      "check": "No causal or commercial success claim",
+      "pass": true
+    },
+    {
+      "check": "Production and indexing not fabricated",
+      "pass": true
+    }
+  ]
+}

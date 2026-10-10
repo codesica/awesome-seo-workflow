@@ -1,0 +1,43 @@
+{
+  "id": "seo-page-brief",
+  "slug": "seo-page-brief",
+  "stage_id": "02-page-plan",
+  "type": "original-execution-skill",
+  "status": "source-reviewed",
+  "production_status": "NOT_RUN",
+  "validation_status": "synthetic-structure-tested",
+  "version": "0.1.0",
+  "last_reviewed": "2026-10-10",
+  "title": {
+    "zh-CN": "单页规划与搜索意图",
+    "en": "Page brief and search intent"
+  },
+  "summary": {
+    "zh-CN": "从读者任务写出标题、提纲、证据需求与写作验收。",
+    "en": "Build a page brief with intent, outline, evidence needs and content acceptance."
+  },
+  "inputs": {
+    "zh-CN": "机会卡、读者任务、第一手材料、现有页面",
+    "en": "Opportunity card, reader task, original evidence and existing pages"
+  },
+  "outputs": {
+    "zh-CN": "页面 brief JSON；交给内容制作的清单",
+    "en": "Page brief and a production handoff"
+  },
+  "safety": {
+    "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+    "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+  },
+  "skill_path": "seo-page-brief/SKILL.md",
+  "download_path": "downloads/seo-page-brief.zip",
+  "source_ids": [
+    "helpful-content",
+    "starter-guide",
+    "links",
+    "languages"
+  ],
+  "prompt": {
+    "zh-CN": "请使用 $seo-page-brief，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+    "en": "Use $seo-page-brief to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+  }
+}

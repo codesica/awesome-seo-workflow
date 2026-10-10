@@ -1,0 +1,109 @@
+import {readFile} from 'node:fs/promises';
+import MarkdownIt from 'markdown-it';
+import {contentURL,route,stageIds} from './content-routes.mjs';
+import {esc} from './site-ui.mjs';
+const workflow={zh:JSON.parse(await readFile('content/workflow/workflow.zh.json','utf8')),en:JSON.parse(await readFile('content/workflow/workflow.en.json','utf8'))};
+const concepts=JSON.parse(await readFile('content/concepts/concepts.json','utf8'));
+const templates=JSON.parse(await readFile('content/workflow/templates.json','utf8')).templates;
+const browserSkills=JSON.parse(await readFile('skills/browser/catalog.json','utf8'));
+const skillIndex=JSON.parse(await readFile('skills/workflow/index.json','utf8'));
+const pick=(value,lang)=>typeof value==='string'?value:value?.[lang]??value?.[lang==='zh'?'zh-CN':'en'];
+const browserStages={'research-search-results':[stageIds[0]],'inspect-search-console':[stageIds[3],stageIds[5]],'inspect-bing-webmaster':[stageIds[3],stageIds[4]]};
+const browserInputs={
+ 'research-search-results':{zh:'目标问题、语言与地区、授权的浏览器，以及有界观察范围。',en:'A target question, language and region, authorized browser, and bounded review scope.'},
+ 'inspect-search-console':{zh:'精确网站资源、当前问题、网址或可比较日期，以及已有站点读取权限。',en:'An exact property, question, URL or comparable date ranges, and existing read access.'},
+ 'inspect-bing-webmaster':{zh:'精确网站、目标网址或已有网站地图，以及已有后台读取权限。',en:'An exact site, target URL or existing sitemap, and existing webmaster read access.'}
+};
+export const executionSkills=[...browserSkills.map(s=>({...s,title:s.title,summary:s.summary,stageIds:browserStages[s.id],type:'browser',inputs:browserInputs[s.id],outputs:{zh:'带时间、实际页面与限制的结果 JSON，保留证据和未知项。',en:'Evidence-linked JSON with timestamps, actual page context, limits and unknowns.'},safety:{zh:'只读导航、展开与筛选。后台需要用户已有授权；不提交索引、不修改站点或权限。',en:'Read-only navigation, expansion and filtering. Private reports require existing authorization; no indexing submissions, site or permission changes.'},prompt:{zh:`请使用 $${s.id}，仅在我已授权的网站与浏览会话中读取。先确认目标、日期和筛选条件，按输入契约执行本次范围，记录真实证据与未知，交付结果 JSON。不要修改、提交或发布。`,en:`Use $${s.id} only within my authorized site and browser session. Confirm the target, dates and filters, follow the input contract for this scope, preserve actual evidence and unknowns, and return result JSON. Do not modify, submit or publish.`},directory:'skills/browser/'+s.id})),...skillIndex.skills.map(s=>({...s,stageIds:[s.stage_id],type:'workflow',directory:'skills/workflow/'+s.id}))];
+export const executionSkillIds=executionSkills.map(s=>s.id);
+for(const s of executionSkills)s.raw=await readFile(s.directory+'/SKILL.md','utf8');
+let codeCounter=0;
+function code(text,lang,label='JSON'){
+ const id='artifact-code-'+(++codeCounter);
+ return `<div class="code-block"><div class="code-toolbar"><span>${esc(label)}</span><button class="copy-button" data-copy="${id}">${lang==='zh'?'复制':'Copy'}</button></div><pre><code id="${id}">${esc(text)}</code></pre></div>`;
+}
+const list=items=>`<ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+const external=(url,text)=>`<a href="${esc(url)}">${esc(text)} ↗</a>`;
+export function readingPage(path,title,description,body,lang,{eyebrow,toc=[],parent='roadmap'}={}){
+ const links=toc.map(([id,text])=>`<li><a href="#${id}">${esc(text)}</a></li>`).join('');
+ const tocTitle=lang==='zh'?'本页目录':'On this page';
+ return {title,description,body:`<div class="wrap"><div class="breadcrumb"><a href="${contentURL('home',lang)}">${lang==='zh'?'首页':'Home'}</a> / <a href="${contentURL(parent,lang)}">${lang==='zh'?{roadmap:'学习路线',skills:'执行 Skills',concepts:'概念速查',templates:'空白模板'}[parent]||'学习路线':{roadmap:'Roadmap',skills:'Execution Skills',concepts:'Concepts',templates:'Templates'}[parent]||'Roadmap'}</a></div><header class="page-head"><p class="eyebrow">${esc(eyebrow||'FIRST CRAWL')}</p><h1>${esc(title)}</h1><p class="lede">${esc(description)}</p></header><div class="article-layout"><aside class="toc desktop-toc"><strong>${tocTitle}</strong><ul>${links}</ul></aside><details class="mobile-toc"><summary>${tocTitle}</summary><ul>${links}</ul></details><article class="prose">${body}</article></div></div>`};
+}
+export function funnelHTML(lang){return `<div class="concept-funnel">${concepts.funnel.map(f=>`<a href="${contentURL('concepts',lang)}#${f.conceptId}"><strong>${pick(f.label,lang)}</strong><span>${pick(f.meaning,lang)}</span><small>${pick(f.notEquivalentToNext,lang)}</small></a>`).join('')}</div><p class="funnel-note">${pick(concepts.funnelNote,lang)}</p>`;}
+export function conceptPanel(stageId,lang){
+ const items=concepts.items.filter(c=>c.stageIds.includes(stageId));
+ return `<div class="concept-short-list">${items.map(c=>`<details><summary>${pick(c.term,lang)}</summary><p>${pick(c.plain,lang)}</p><p><strong>${lang==='zh'?'不要混淆：':'Do not confuse: '}</strong>${pick(c.dontConfuse,lang)}</p><a href="${contentURL('concepts',lang)}#${c.id}">${lang==='zh'?'查看例子与证据':'See examples and evidence'} →</a></details>`).join('')}</div>`;
+}
+function skillRows(skills,lang){return `<div class="stage-skills">${skills.map(s=>`<a href="${route('/skills/'+s.id+'/',lang)}"><div><strong>${pick(s.title,lang)}</strong><span>${pick(s.summary,lang)}</span></div><small>${s.type==='browser'?(lang==='zh'?'浏览器 / Computer use':'Browser / Computer use'):(lang==='zh'?'本地分析与产物':'Analysis and local output')}<br>${lang==='zh'?'来源已审阅 · 真实站点未运行':'Source reviewed · Live site NOT_RUN'}</small><span aria-hidden="true">↗</span></a>`).join('')}</div>`;}
+export function fullStagePage(id,lang){
+ codeCounter=0;
+ const w=workflow[lang],s=w.stages.find(s=>s.id===id),u=w.ui,selectedSkills=executionSkills.filter(x=>x.stageIds.includes(id));
+ const keys=['entryRequirement','goal','prerequisites','inputs','actions','tools','deliverables','acceptance','stopConditions','nextStep','sources'];
+ const sections=[];
+ const add=(key,body)=>sections.push(`<h2 id="${key}">${u[key]}</h2>${body}`);
+ add('entryRequirement',`<p>${s.entryRequirement}</p>`);
+ add('goal',`<p>${s.goal}</p>`);
+ add('prerequisites',list(s.prerequisites)+conceptPanel(id,lang));
+ add('inputs',list(s.inputs));
+ add('actions',s.actions.map(a=>`<section class="stage-action"><h3 id="action-${a.id.replace('.','-')}"><span>${a.id}</span>${esc(a.title)}</h3><p>${esc(a.instruction)}</p><p class="action-output"><strong>${lang==='zh'?'产物：':'Output: '}</strong>${esc(a.output)}</p></section>`).join(''));
+ let tools=list(s.tools);
+ if(s.legacyTutorials.length)tools+=`<div class="callout"><strong>${lang==='zh'?'第 4 步的完整技术教程':'Complete technical guides for stage 4'}</strong><ul>${s.legacyTutorials.map(t=>`<li><a href="${contentURL(t.slug,lang)}">${lang==='zh'?{crawlability:'搜索引擎能不能访问页面？',sitemap:'检查现有网站地图','page-check':'页面信息有没有写对？'}[t.slug]:{crawlability:'Check crawler access',sitemap:'Check the existing sitemap','page-check':'Review one page'}[t.slug]}</a></li>`).join('')}</ul></div>`;
+ tools+=`<h3 id="agent">${lang==='zh'?'交给 Agent 的步骤内任务':'Tasks to delegate within this stage'}</h3>${selectedSkills.length?skillRows(selectedSkills,lang):`<p>${lang==='zh'?'本阶段目前没有专门的执行 Skill，先按手动教程完成。不要把其他阶段的工具当作已实现的自动制作或对外推广。':'This stage currently has no dedicated execution Skill. Follow the manual guide; tools from other stages do not establish automated production or outreach.'}</p>`}`;
+ add('tools',tools);
+ const template=templates.find(t=>t.stageId===id);
+ add('deliverables',list(s.deliverables)+`<p><a href="${contentURL('templates',lang)}#${template.id.replace('template.','')}">${lang==='zh'?'复制本阶段空白模板':'Copy this stage’s blank template'} →</a></p>`);
+ add('acceptance',list(s.acceptance));
+ add('stopConditions',list(s.stopConditions));
+ add('nextStep',`<p>${s.nextStep}</p>`);
+ add('sources',`<ul>${s.sourceIds.map(id=>{const source=w.sources.find(x=>x.id===id);return `<li>${external(source.url,source.title)}<br><small>${esc(source.supports)} · ${source.checkedAt}</small></li>`;}).join('')}</ul><p class="editorial-note">${w.editorialNote}</p>`);
+ const previous=s.previousStageId?contentURL(s.previousStageId,lang):contentURL('roadmap',lang),next=s.nextStageId?contentURL(s.nextStageId,lang):contentURL(stageIds[0],lang);
+ const body=`<p class="evidence-note">${lang==='zh'?'内容依据已核对 · 未在真实网站端到端执行':'Editorial sources reviewed · Not tested end-to-end on a live site'}</p>`+sections.join('')+`<div class="page-next"><a href="${previous}">← ${lang==='zh'?'上一步 / 路线':'Previous / Roadmap'}</a><a href="${next}">${lang==='zh'?'继续下一步':'Continue'} →</a></div>`;
+ return readingPage('/stages/'+id+'/',s.title,s.summary,body,lang,{eyebrow:(lang==='zh'?'第':'STAGE')+' 0'+s.order+' / 06',toc:[...keys.map(k=>[k,u[k]]),['agent',lang==='zh'?'Agent 执行任务':'Agent tasks']]});
+}
+export function fullRoadmapPage(lang){
+ const w=workflow[lang],h=w.home;
+ const title=lang==='zh'?'找到起点，做完一轮。':'Find your starting point. Complete one loop.';
+ return {title,description:h.description,body:`<div class="wrap"><header class="page-head"><p class="eyebrow">${lang==='zh'?'SEO 全流程路线':'The SEO workflow'}</p><h1>${title}</h1><p class="lede">${h.description}</p><div class="usage-modes"><span>${lang==='zh'?'学：理解概念':'Learn the concepts'}</span><span>${lang==='zh'?'做：完成产物':'Do the work'}</span><span>${lang==='zh'?'用 Agent：有界执行':'Use an agent for bounded execution'}</span></div></header><div class="start-paths"><a class="start-path" href="${contentURL(stageIds[0],lang)}"><span class="eyebrow">01 → 06</span><h2>${lang==='zh'?'我还没有网站':'I don’t have a website yet'}</h2><p>${h.noSiteYet}</p><span class="text-link">→</span></a><section class="start-path" id="existing-site"><span class="eyebrow">04 / 05 / 06</span><h2>${lang==='zh'?'我已有网站，想获得流量':'I have a site. What’s next?'}</h2><p>${lang==='zh'?'从当前问题进入。已有输入时，不需要重走前面的阶段。':'Enter at the step that matches your current problem when its inputs exist.'}</p><div class="existing-links">${h.entries.slice(3).map(e=>`<a href="${contentURL(e.stageId,lang)}">${e.label} →</a>`).join('')}</div></section></div><section class="section"><div class="section-heading"><div><p class="eyebrow">${lang==='zh'?'你现在的进度':'Your current progress'}</p><h2>${lang==='zh'?'每一个起点，都能继续。':'Every starting point can move forward.'}</h2></div><p>${h.learningAndSkills}</p></div><div class="lesson-list">${w.stages.map((s,i)=>`<a class="lesson-row" href="${contentURL(s.id,lang)}"><span class="lesson-number">0${i+1}</span><span><span class="lesson-title">${h.entries[i].label}</span><span class="lesson-desc">${s.goal}</span></span><span class="lesson-output">${lang==='zh'?'本阶段':'Stage'}<strong>${s.title}</strong></span><span aria-hidden="true">↗</span></a>`).join('')}</div><div class="callout"><p>${h.coreDistinction}</p><p>${h.evidenceBoundary}</p></div><p><a href="${contentURL('concepts',lang)}">${lang==='zh'?'查一查概念与指标':'Look up concepts and metrics'}</a> · <a href="${contentURL('templates',lang)}">${lang==='zh'?'复制六份空白产物模板':'Copy six blank deliverable templates'}</a></p></section></div>`};
+}
+export function conceptsPage(lang){
+ const title=pick(concepts.title,lang),description=pick(concepts.intro,lang);
+ const body=funnelHTML(lang)+`<p>${pick(concepts.disclaimer,lang)}</p><label class="concept-filter">${lang==='zh'?'只看某一步的概念':'Concepts for a stage'}<select data-concept-filter><option value="all">${lang==='zh'?'全部 23 个概念':'All 23 concepts'}</option>${workflow[lang].stages.map(s=>`<option value="${s.id}">0${s.order} · ${s.title}</option>`).join('')}</select></label><p class="sr-only" id="concept-status" role="status"></p><div class="concept-list">${concepts.items.map(c=>`<section class="concept-entry" id="${c.id}" data-concept-stages="${c.stageIds.join(' ')}"><h2>${pick(c.term,lang)}</h2><p>${pick(c.plain,lang)}</p><p><strong>${lang==='zh'?'假设例子：':'Hypothetical example: '}</strong>${pick(c.example,lang)}</p><p><strong>${lang==='zh'?'不要混淆：':'Do not confuse: '}</strong>${pick(c.dontConfuse,lang)}</p><p><strong>${lang==='zh'?'看什么证据：':'Evidence to look for: '}</strong>${pick(c.evidence,lang)}</p><p class="concept-sources">${c.sourceIds.map(id=>{const s=concepts.sources.find(s=>s.id===id);return external(s.url,s.title);}).join(' · ')}</p></section>`).join('')}</div><p class="editorial-note">${pick(concepts.sourcesNote,lang)}</p>`;
+ return readingPage('/concepts/',title,description,body,lang,{parent:'concepts',eyebrow:lang==='zh'?'概念与指标':'Concepts and metrics',toc:concepts.items.map(c=>[c.id,pick(c.term,lang)])});
+}
+export function templatesPage(lang){
+ codeCounter=0;
+ const title=lang==='zh'?'每一步，留下可以检查的产物。':'Keep an output you can check at every step.';
+ const description=lang==='zh'?'六份空白模板。没有证据时保持 null / 未检查，不填写演示成绩。':'Six blank templates. Preserve null / not checked when evidence is missing; do not insert demonstration results.';
+ const body=templates.map(t=>{const localized={templateId:t.id,stageId:t.stageId,fields:t.fields.map(f=>({id:f.id,label:pick(f.label,lang),value:f.value,evidenceStatus:f.evidenceStatus}))};return `<section><h2 id="${t.id.replace('template.','')}">${pick(t.title,lang)}</h2><p>${pick(t.instruction,lang)}</p><p><a href="${contentURL(t.stageId,lang)}">${lang==='zh'?'回到对应阶段':'Open the matching stage'} →</a> · <a href="/downloads/templates/${lang}/${t.id.replace('template.','')}.json" download>${lang==='zh'?'下载空白 JSON':'Download blank JSON'}</a></p>${code(JSON.stringify(localized,null,2),lang,lang==='zh'?'空白产物模板 · 所有字段未填写':'Blank output template · Unfilled fields')}</section>`;}).join('');
+ return readingPage('/templates/',title,description,body,lang,{parent:'templates',eyebrow:lang==='zh'?'六份空白模板':'Six blank templates',toc:templates.map(t=>[t.id.replace('template.',''),pick(t.title,lang)])});
+}
+export function skillsPage(lang){
+ const title=lang==='zh'?'让 Agent 跟着步骤做事。':'Let the agent work within the steps.';
+ const description=lang==='zh'?'七个原创执行包，覆盖搜索观察、机会证据、页面方案、技术检查和数据解读。先看输入与边界，再交给兼容助手。':'Seven original execution packages for search observations, opportunity evidence, page planning, technical checks and data interpretation. Inspect inputs and scope first.';
+ let body=`<div class="callout"><strong>${lang==='zh'?'来源已审阅，真实网站未运行。':'Source reviewed. Live-site execution NOT_RUN.'}</strong><p>${lang==='zh'?'包内的合成结构测试只说明产物结构符合要求，不是业务实测。浏览器后台需要已有授权。所有说明主体为中文，网页元数据和任务提示提供中英版本。':'Synthetic structure checks validate output shape, not real SEO work. Private browser reports require existing authorization. Package instructions are in Chinese; website metadata and prompts are bilingual.'}</p><p><a href="/downloads/skills/first-crawl-execution-skills.zip" download>${lang==='zh'?'下载全部 7 个完整执行包':'Download all 7 complete execution packages'} ↓</a></p></div>`;
+ for(const stage of workflow[lang].stages){
+  const related=executionSkills.filter(s=>s.stageIds.includes(stage.id));
+  body+=`<h2 id="${stage.id}">0${stage.order} · ${stage.title}</h2><p><a href="${contentURL(stage.id,lang)}">${lang==='zh'?'先读这一步怎么做':'Read how to do this stage'} →</a></p>${related.length?skillRows(related,lang):`<p>${lang==='zh'?'目前按手动教程完成；本阶段没有独立执行 Skill。':'Follow the manual guide for now; this stage has no dedicated execution Skill.'}</p>`}`;
+ }
+ body+=`<h2 id="third-party">${lang==='zh'?'可选第三方工具来源':'Optional third-party tool sources'}</h2><p>${lang==='zh'?'原有三个第三方 Skill 保留来源、版本与许可边界。它们不是本原创执行包的一部分。':'The three existing third-party Skills retain their source, version and license limits. They are separate from the original execution packages.'}</p><ul>${['local-seo','seo-sitemap','firecrawl-scrape'].map((id,i)=>`<li><a href="${contentURL(id,lang)}">${lang==='zh'?['本地 SEO CLI','Claude SEO：网站地图','Firecrawl Scrape'][i]:['SEO Skill: Local CLI','Claude SEO: Sitemap','Firecrawl Scrape'][i]}</a></li>`).join('')}</ul>`;
+ return readingPage('/skills/',title,description,body,lang,{parent:'skills',eyebrow:'AGENT SKILLS',toc:[...workflow[lang].stages.map(s=>[s.id,'0'+s.order+' · '+s.title]),['third-party',lang==='zh'?'第三方工具':'Third-party tools']]});
+}
+export async function skillPage(id,lang){
+ codeCounter=0;
+ const s=executionSkills.find(s=>s.id===id),title=pick(s.title,lang),description=pick(s.summary,lang);
+ const zh=lang==='zh',d='/downloads/skills/'+id;
+ const rawSources=s.type==='browser'?await readFile(s.directory+'/references/sources.md','utf8'):JSON.stringify(JSON.parse(await readFile('skills/workflow/sources.json','utf8')).filter(source=>s.source_ids.includes(source.id)));
+ const urls=[...new Set(rawSources.match(/https:\/\/[^\s)"\\]+/g)||[])];
+ let body=`<p class="evidence-note">${zh?'来源已审阅 · 真实网站未运行（NOT_RUN）':'Source reviewed · Live-site execution NOT_RUN'}${s.type==='workflow'?(zh?' · 合成产物结构已测试':' · Synthetic output structure tested'):''}</p><h2 id="scope">${zh?'什么时候用它':'When to use it'}</h2><p>${description}</p><h2 id="input">${zh?'需要的输入':'Required inputs'}</h2><p>${pick(s.inputs,lang)}</p><h2 id="output">${zh?'应该留下什么':'Expected output'}</h2><p>${pick(s.outputs,lang)}</p><h2 id="boundaries">${zh?'权限与停止条件':'Permissions and stop conditions'}</h2><p>${pick(s.safety,lang)}</p><p>${zh?'需要登录、权限不足、验证码、付费扩展、目标不明确或数据冲突时，保留已有证据并报告阻塞。未知值保持 null，不能填 0。没有实际运行就保持 NOT_RUN。':'Preserve evidence and report a blocker for login, missing permission, challenges, paid expansion, unclear scope or conflicting data. Keep unknown values as null, not zero. Without actual execution, retain NOT_RUN.'}</p><h2 id="prompt">${zh?'交给助手的任务提示':'A prompt for your assistant'}</h2>${code(pick(s.prompt,lang),lang,zh?'任务模板 · 未实际运行':'Task template · Not executed')}<h2 id="package">${zh?'阅读与下载完整执行包':'Read and download the complete package'}</h2><p>${zh?'完整包包含 Skill.md 与所引用的材料。说明主体是中文，JSON 键与机器状态保留英文。它不是一张工具卡片，也不会自动安装或取得账号权限。':'The complete package includes SKILL.md and its referenced material. Instructions are in Chinese; JSON keys and machine states remain English. It does not auto-install or grant account access.'}</p><p><a class="button" href="${d}.zip" download>${zh?'下载完整 Skill ZIP':'Download complete Skill ZIP'} ↓</a></p><p><a href="${d}/SKILL.md" download>${zh?'下载原始中文 SKILL.md':'Download original Chinese SKILL.md'}</a></p><details><summary>${zh?'展开完整中文执行说明':'Read the complete Chinese execution instructions'}</summary>${code(s.raw,lang,'SKILL.md · Original instructions')}</details><h2 id="stages">${zh?'在哪一步使用':'Matching stages'}</h2><ul>${s.stageIds.map(id=>`<li><a href="${contentURL(id,lang)}">${workflow[lang].stages.find(s=>s.id===id).title} →</a></li>`).join('')}</ul><h2 id="sources">${zh?'官方依据':'Official references'}</h2><ul>${urls.map(u=>`<li>${external(u,new URL(u).hostname+' / '+new URL(u).pathname.split('/').at(-1))}</li>`).join('')}</ul>`;
+ return readingPage('/skills/'+id+'/',title,description,body,lang,{parent:'skills',eyebrow:s.type==='browser'?(zh?'浏览器与电脑操作':'BROWSER / COMPUTER USE'):(zh?'原创执行 Skill':'ORIGINAL EXECUTION SKILL'),toc:[['scope',zh?'用途':'Use'],['input',zh?'输入':'Inputs'],['output',zh?'产物':'Output'],['boundaries',zh?'边界':'Scope'],['prompt',zh?'任务提示':'Prompt'],['package',zh?'完整包':'Package'],['stages',zh?'对应阶段':'Stages'],['sources',zh?'来源':'Sources']]});
+}
+export function workflowSourcesHTML(lang){
+ const w=workflow[lang];
+ return `<section class="curriculum-sources"><h2 id="curriculum-sources">${lang==='zh'?'六阶段课程的官方依据':'Official sources for the six-stage curriculum'}</h2><p>${lang==='zh'?'内容包于 2026-10-10 核对官方资料。这是编辑来源核验，不是对你的站点执行检查。':'The content package checked official documentation on 2026-10-10. This is editorial source review, not execution against your site.'}</p><ul>${w.sources.map(s=>`<li>${external(s.url,s.title)}<br><small>${esc(s.supports)} · ${s.checkedAt}</small></li>`).join('')}</ul><p>${w.editorialNote}</p></section>`;
+}
+export function startPage(lang){
+ const h=workflow[lang].home;
+ const title=lang==='zh'?'我现在手里有什么？':'What do you already have?';
+ const description=lang==='zh'?'从已有的输入继续，不用先安装工具，也不必从头重做。选择最接近当前进度的一项。':'Continue from your existing inputs. You do not need to install tools first or repeat earlier work. Choose the option closest to your current progress.';
+ return {title,description,body:`<div class="wrap"><header class="page-head"><p class="eyebrow">${lang==='zh'?'选择起点':'Choose a starting point'}</p><h1>${title}</h1><p class="lede">${description}</p></header><div class="start-options">${h.entries.map((e,i)=>`<a href="${contentURL(e.stageId,lang)}"><span>0${i+1}</span><div><h2>${e.label}</h2><p>${e.reason}</p></div><span aria-hidden="true">↗</span></a>`).join('')}</div><div class="closing"><div><h2>${lang==='zh'?'想先看完整路线？':'See the full route first?'}</h2><p>${h.noSiteYet}</p></div><a class="button" href="${contentURL('roadmap',lang)}">${lang==='zh'?'查看全流程':'Explore the roadmap'} →</a></div></div>`};
+}

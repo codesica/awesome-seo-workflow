@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "research-search-results",
+  "language": "zh-CN",
+  "execution_status": "NOT_RUN",
+  "source_reviewed_on": "2026-10-10",
+  "run_started_at": null,
+  "run_finished_at": null,
+  "browser_owner": null,
+  "context": {
+    "topic": null,
+    "audience": null,
+    "language": null,
+    "engine": null,
+    "target_region": null,
+    "observed_region": null,
+    "device": null,
+    "viewport": null,
+    "signed_in": null,
+    "personalization_state": "unknown",
+    "scope_limits": {
+      "queries": 3,
+      "organic_results_per_query": 5,
+      "pages_read_per_query": 3
+    }
+  },
+  "evidence": [],
+  "findings": [],
+  "limitations": [],
+  "blocker": null,
+  "recommended_next_steps": [],
+  "queries": [],
+  "competitor_pages": [],
+  "opportunities": [],
+  "search_volume": null,
+  "keyword_difficulty": null,
+  "input_mode": null,
+  "artifact_analysis_status": "NOT_RUN"
+}

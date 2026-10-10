@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "collection": "First Crawl original execution skills",
+  "status": "source-reviewed",
+  "production_status": "NOT_RUN",
+  "last_reviewed": "2026-10-10",
+  "locales": [
+    "zh-CN",
+    "en"
+  ],
+  "content_language": "zh-CN with English field names and bilingual website metadata",
+  "stages": [
+    {
+      "id": "01-search-opportunity",
+      "title": {
+        "zh-CN": "寻找搜索机会",
+        "en": "Find search opportunities"
+      },
+      "skill_ids": [
+        "seo-opportunity-evidence"
+      ],
+      "execution_skill_available": true
+    },
+    {
+      "id": "02-page-plan",
+      "title": {
+        "zh-CN": "规划页面",
+        "en": "Plan a page"
+      },
+      "skill_ids": [
+        "seo-page-brief"
+      ],
+      "execution_skill_available": true
+    },
+    {
+      "id": "03-content-production",
+      "title": {
+        "zh-CN": "制作内容",
+        "en": "Produce content"
+      },
+      "skill_ids": [],
+      "execution_skill_available": false
+    },
+    {
+      "id": "04-publish-check",
+      "title": {
+        "zh-CN": "发布技术检查",
+        "en": "Check publication"
+      },
+      "skill_ids": [
+        "seo-publish-audit"
+      ],
+      "execution_skill_available": true
+    },
+    {
+      "id": "05-discovery-promotion",
+      "title": {
+        "zh-CN": "发现与推广",
+        "en": "Discovery and promotion"
+      },
+      "skill_ids": [],
+      "execution_skill_available": false
+    },
+    {
+      "id": "06-measure-iterate",
+      "title": {
+        "zh-CN": "衡量与迭代",
+        "en": "Measure and iterate"
+      },
+      "skill_ids": [
+        "seo-measure-decide"
+      ],
+      "execution_skill_available": true
+    }
+  ],
+  "skills": [
+    {
+      "id": "seo-opportunity-evidence",
+      "slug": "seo-opportunity-evidence",
+      "stage_id": "01-search-opportunity",
+      "type": "original-execution-skill",
+      "status": "source-reviewed",
+      "production_status": "NOT_RUN",
+      "validation_status": "synthetic-structure-tested",
+      "version": "0.1.0",
+      "last_reviewed": "2026-10-10",
+      "title": {
+        "zh-CN": "搜索机会证据卡",
+        "en": "Search opportunity evidence"
+      },
+      "summary": {
+        "zh-CN": "把受众问题变成有出处、可验证的选题；未知搜索量保持未知。",
+        "en": "Turn audience problems into sourced opportunities without invented search volume."
+      },
+      "inputs": {
+        "zh-CN": "受众问题、已有页面、搜索观察或用户反馈",
+        "en": "Audience problems, existing pages, search observations or feedback"
+      },
+      "outputs": {
+        "zh-CN": "机会卡 JSON；推荐下一验证动作",
+        "en": "Opportunity cards and a next validation step"
+      },
+      "safety": {
+        "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+        "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+      },
+      "skill_path": "seo-opportunity-evidence/SKILL.md",
+      "download_path": "downloads/seo-opportunity-evidence.zip",
+      "source_ids": [
+        "helpful-content",
+        "starter-guide"
+      ],
+      "prompt": {
+        "zh-CN": "请使用 $seo-opportunity-evidence，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+        "en": "Use $seo-opportunity-evidence to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+      }
+    },
+    {
+      "id": "seo-page-brief",
+      "slug": "seo-page-brief",
+      "stage_id": "02-page-plan",
+      "type": "original-execution-skill",
+      "status": "source-reviewed",
+      "production_status": "NOT_RUN",
+      "validation_status": "synthetic-structure-tested",
+      "version": "0.1.0",
+      "last_reviewed": "2026-10-10",
+      "title": {
+        "zh-CN": "单页规划与搜索意图",
+        "en": "Page brief and search intent"
+      },
+      "summary": {
+        "zh-CN": "从读者任务写出标题、提纲、证据需求与写作验收。",
+        "en": "Build a page brief with intent, outline, evidence needs and content acceptance."
+      },
+      "inputs": {
+        "zh-CN": "机会卡、读者任务、第一手材料、现有页面",
+        "en": "Opportunity card, reader task, original evidence and existing pages"
+      },
+      "outputs": {
+        "zh-CN": "页面 brief JSON；交给内容制作的清单",
+        "en": "Page brief and a production handoff"
+      },
+      "safety": {
+        "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+        "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+      },
+      "skill_path": "seo-page-brief/SKILL.md",
+      "download_path": "downloads/seo-page-brief.zip",
+      "source_ids": [
+        "helpful-content",
+        "starter-guide",
+        "links",
+        "languages"
+      ],
+      "prompt": {
+        "zh-CN": "请使用 $seo-page-brief，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+        "en": "Use $seo-page-brief to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+      }
+    },
+    {
+      "id": "seo-publish-audit",
+      "slug": "seo-publish-audit",
+      "stage_id": "04-publish-check",
+      "type": "original-execution-skill",
+      "status": "source-reviewed",
+      "production_status": "NOT_RUN",
+      "validation_status": "synthetic-structure-tested",
+      "version": "0.1.0",
+      "last_reviewed": "2026-10-10",
+      "title": {
+        "zh-CN": "发布技术检查",
+        "en": "Publication technical audit"
+      },
+      "summary": {
+        "zh-CN": "逐项检查 robots、noindex、canonical、sitemap、语言和内链，分清本地与线上。",
+        "en": "Check crawl directives, canonical, sitemap, language and links while separating local and live evidence."
+      },
+      "inputs": {
+        "zh-CN": "URL、公开索引意图、HTML/响应头/robots/sitemap/内链",
+        "en": "URL, indexing intent, HTML, headers, robots, sitemap and links"
+      },
+      "outputs": {
+        "zh-CN": "七项证据审计；阻塞、未知与修复建议",
+        "en": "Seven evidence checks, blockers, unknowns and proposed fixes"
+      },
+      "safety": {
+        "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+        "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+      },
+      "skill_path": "seo-publish-audit/SKILL.md",
+      "download_path": "downloads/seo-publish-audit.zip",
+      "source_ids": [
+        "robots",
+        "noindex",
+        "canonical",
+        "sitemap",
+        "links",
+        "languages"
+      ],
+      "prompt": {
+        "zh-CN": "请使用 $seo-publish-audit，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+        "en": "Use $seo-publish-audit to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+      }
+    },
+    {
+      "id": "seo-measure-decide",
+      "slug": "seo-measure-decide",
+      "stage_id": "06-measure-iterate",
+      "type": "original-execution-skill",
+      "status": "source-reviewed",
+      "production_status": "NOT_RUN",
+      "validation_status": "synthetic-structure-tested",
+      "version": "0.1.0",
+      "last_reviewed": "2026-10-10",
+      "title": {
+        "zh-CN": "数据驱动迭代决策",
+        "en": "Evidence-led iteration"
+      },
+      "summary": {
+        "zh-CN": "比较口径一致的数据，识别缺失基线，只建议一个有证据的下一步。",
+        "en": "Compare compatible observations, preserve missing baselines and choose one evidence-backed next step."
+      },
+      "inputs": {
+        "zh-CN": "数据导出、改动记录、可比基线、观察窗口",
+        "en": "Data export, change log, comparable baseline and observation window"
+      },
+      "outputs": {
+        "zh-CN": "迭代决策卡；复查与停止条件",
+        "en": "Decision card, review conditions and stopping rules"
+      },
+      "safety": {
+        "zh-CN": "默认只读与本地产物；不自动修改生产、提交索引或外发。",
+        "en": "Read-only analysis and local artifacts by default; no automatic production changes, indexing submission or outreach."
+      },
+      "skill_path": "seo-measure-decide/SKILL.md",
+      "download_path": "downloads/seo-measure-decide.zip",
+      "source_ids": [
+        "performance",
+        "helpful-content",
+        "performance-data",
+        "performance-discrepancies"
+      ],
+      "prompt": {
+        "zh-CN": "请使用 $seo-measure-decide，仅分析我提供或已授权读取的资料。先检查必要输入，未知数据保留未知，按 Skill 模板交付并列出验收结果；不要自动发布。",
+        "en": "Use $seo-measure-decide to analyze only supplied or authorized materials. Check required inputs, preserve unknowns, deliver the skill template and acceptance results, and do not publish automatically."
+      }
+    }
+  ],
+  "sources_path": "sources.json",
+  "example_input_path": "examples/synthetic-input.json",
+  "example_output_path": "examples/synthetic-output.json",
+  "validation_path": "qa/validation.json",
+  "bundle_download_path": "downloads/first-crawl-workflow-skills.zip"
+}
