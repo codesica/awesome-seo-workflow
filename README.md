@@ -4,7 +4,9 @@ Your website is live. Make it findable.
 
 An English, open-source field guide for someone making their first technical SEO checks. Three complete tutorials, a small source-reviewed Skill directory, and four original before-and-after teaching examples. No accounts, database, paid SEO API, or browser analytics.
 
-Site: https://lab-seo-starter-skills.yk3208724.workers.dev
+Site: https://skills.yangluotong.top
+
+The original Workers endpoint remains available at https://lab-seo-starter-skills.yk3208724.workers.dev; both publish canonical metadata for the custom domain.
 
 ## Run locally
 
@@ -37,13 +39,13 @@ One real fixed-version `seo` CLI `audit-page` path was executed on two local syn
 
 ## Deploy an isolated static Worker
 
-The configuration names only the new `lab-seo-starter-skills` Worker and uses Workers static assets. It does not configure a database, account secret, custom domain or existing production route.
+The configuration names the dedicated `lab-seo-starter-skills` Worker, uses Workers static assets, and binds `skills.yangluotong.top` as its custom domain. This is a subdomain of an existing owned domain; no new domain was purchased. No database, account secret or other project’s production route is configured.
 
 ```sh
 npm run deploy
 ```
 
-Deployment requires an existing authorized Cloudflare account. `site.config.mjs` holds the canonical origin. Set `SITE_ORIGIN` only for a confirmed alternate origin. The release command rejects draft content until the implementation's release flag has been set after actual checks. A custom domain requires a separate explicit decision; none is purchased by this project.
+Deployment requires an existing authorized Cloudflare account. `site.config.mjs` holds the canonical origin. Set `SITE_ORIGIN` only for a confirmed alternate origin. The release command rejects draft content until the implementation's release flag has been set after actual checks. The custom domain was authorized and its Workers changeset checked before binding: one addition, no updates, removals or DNS conflicts. Do not change the hostname or override an existing DNS record without checking ownership and conflicts first.
 
 ## Contribute and license
 
