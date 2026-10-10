@@ -1,0 +1,1 @@
+plan_version,planned_at,question,hypothesis,method,affected_url_or_version,primary_metric,numerator,denominator,cohort,exclusions,start_time,end_time,time_cap,cost_cap,guardrail,stop_condition,restart_evidence,measurement_check,deviations,result_status,evidence,next_decision

@@ -1,0 +1,137 @@
+{
+  "version": "1.0+editorial.1",
+  "kind": "PUBLIC_TEACHING_CONTENT_LOCAL_DRAFT",
+  "integration_status": "PAUSED_NOT_PUBLISHED",
+  "upstream_archive_sha256": "886a7535efc77f969f29e45e122734168db429bbd4f3979aa0702388f0c00711",
+  "changes": [
+    "Clarify robots.txt versus HTML/header robots rules in both languages; add S31.",
+    "Add proposed stage-route mapping and local handoff notes."
+  ],
+  "files": [
+    {
+      "path": "INTEGRATION.md",
+      "bytes": 2119,
+      "sha256": "1996a2051f096cbaf2303cd9fb5bc22f28ad7dae5eb34d64835b2213137c189c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4361,
+      "sha256": "4c9bebb29ce3e085eef461f8ea01e10302b77d2cb872aad2b40ae1accc85da7a"
+    },
+    {
+      "path": "en/01-opportunity-evidence.md",
+      "bytes": 5014,
+      "sha256": "e7455f425ed798e9a69bd74b4eb904fde15fc8f5afdd710df185d727574af3a5"
+    },
+    {
+      "path": "en/02-page-value.md",
+      "bytes": 4839,
+      "sha256": "05a65f5a0bdf304810d0d81a765813c4fea786b617ec13cb7e7e808e01f70697"
+    },
+    {
+      "path": "en/03-indexing-diagnosis.md",
+      "bytes": 6731,
+      "sha256": "3de1ef955fd493a26592f203f608ae0a7d5d220636dff4bc120b4140b0f1e8b9"
+    },
+    {
+      "path": "en/04-report-reconciliation.md",
+      "bytes": 4624,
+      "sha256": "d3809d4b8657eec5e4466c48c9139def093a7348527cf2a4415b1738b129e48e"
+    },
+    {
+      "path": "en/05-channel-fit.md",
+      "bytes": 4901,
+      "sha256": "03212b6674b791d67fe8c09d3e52229c9d85c9b8098866039ec8b3b1052d3669"
+    },
+    {
+      "path": "en/06-bounded-experiment.md",
+      "bytes": 5554,
+      "sha256": "64186b7ef02f4bff46495f8a8dd077631c963caca52afffda288eb81f3d5492b"
+    },
+    {
+      "path": "modules.json",
+      "bytes": 3237,
+      "sha256": "87c6977f37b06da8335611337ad685ee7600a6d9d2cc596c01a8c3652361b2a6"
+    },
+    {
+      "path": "publication-check.json",
+      "bytes": 896,
+      "sha256": "b6c6470abb0363384c38ffb3cf6ba3e51aa07bb2e27d220904cebd2648cb5c4b"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 15894,
+      "sha256": "f800f41dcb77d83c777beee9ab324634383d8edb53ea546dc13adca7899e4942"
+    },
+    {
+      "path": "stage-links.proposed.json",
+      "bytes": 1287,
+      "sha256": "1ca7e86c77567dd7624e262cd26e122f8c7f3238f1e8ea4f381039a3b2b1636c"
+    },
+    {
+      "path": "templates/01-opportunity.csv",
+      "bytes": 218,
+      "sha256": "bdbe698a551fb7b38adcf9c38d0936af8ad6990c57caab085fdaa96710c68b33"
+    },
+    {
+      "path": "templates/02-page-brief.csv",
+      "bytes": 192,
+      "sha256": "3c9ebb4f7d0324bbcad02d0f05e8226aec4a053da5273ebb813c6596c7a3c0be"
+    },
+    {
+      "path": "templates/03-diagnosis.csv",
+      "bytes": 302,
+      "sha256": "00174950c0a121eb4e95e33011dd8c04cb3fa590edd8ddd265486555055dd010"
+    },
+    {
+      "path": "templates/04-report-scope.csv",
+      "bytes": 242,
+      "sha256": "60add1e76a0c75b7fa229db9a4998c73238d9c614cc22a42c09abc35077f4a8a"
+    },
+    {
+      "path": "templates/05-channel.csv",
+      "bytes": 297,
+      "sha256": "a3458e68fa5dfa24245d0faa02cc2e8f30bc16f414f862507eccc021eead8ea7"
+    },
+    {
+      "path": "templates/06-experiment.csv",
+      "bytes": 277,
+      "sha256": "22ebb4bba7af8e567e4b59405f32c6ec5cbf433e8d7a4d4f0f9e6c9944c61fba"
+    },
+    {
+      "path": "upstream-manifest.json",
+      "bytes": 3625,
+      "sha256": "df486eb07a3f96432c64982f240042a09de1ed8399b8c97db9ded857d1c6b92b"
+    },
+    {
+      "path": "zh/01-opportunity-evidence.md",
+      "bytes": 4393,
+      "sha256": "cab0811dec0e820d66e83b45314560ce5beaf8f20eda873020c520c707055efa"
+    },
+    {
+      "path": "zh/02-page-value.md",
+      "bytes": 3989,
+      "sha256": "58aa732521b754d901ab53058525505735049a3ea5685cbc42d265b4eb35095c"
+    },
+    {
+      "path": "zh/03-indexing-diagnosis.md",
+      "bytes": 5503,
+      "sha256": "84deb682e7384f65e6ac01177fd7092165171877f34fa18267fdc38178dfb610"
+    },
+    {
+      "path": "zh/04-report-reconciliation.md",
+      "bytes": 3759,
+      "sha256": "163c95f418931563c3c12dcc95e63fb9d2d58421629cc4b768c2616a1a939853"
+    },
+    {
+      "path": "zh/05-channel-fit.md",
+      "bytes": 3985,
+      "sha256": "ef4f78dc372f34194710e994bd3779734f6311b62064eeef2046fe9122adafbb"
+    },
+    {
+      "path": "zh/06-bounded-experiment.md",
+      "bytes": 4342,
+      "sha256": "a1cbd49a2413e30ac296737fc5c44c65f04ef97c25dffecedfd2d7a2ba905783"
+    }
+  ]
+}

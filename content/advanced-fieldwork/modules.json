@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "01-opportunity-evidence",
+    "title_en": "Choose an opportunity you can defend",
+    "title_zh": "用证据决定一个搜索机会是否值得做",
+    "stage": 1,
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S07",
+      "S08"
+    ],
+    "status": {
+      "public_sources": "CHECKED_2026-10-10",
+      "teaching_design": "PROPOSED",
+      "worked_example": "SYNTHETIC",
+      "live_execution": "NOT_RUN",
+      "learner_validation": "NOT_RUN",
+      "seo_or_business_effect": "UNKNOWN"
+    }
+  },
+  {
+    "slug": "02-page-value",
+    "title_en": "Build a page that earns its own URL",
+    "title_zh": "让一个页面有资格拥有独立 URL",
+    "stage": 2,
+    "source_ids": [
+      "S04",
+      "S05",
+      "S06",
+      "S25",
+      "S26"
+    ],
+    "status": {
+      "public_sources": "CHECKED_2026-10-10",
+      "teaching_design": "PROPOSED",
+      "worked_example": "SYNTHETIC",
+      "live_execution": "NOT_RUN",
+      "learner_validation": "NOT_RUN",
+      "seo_or_business_effect": "UNKNOWN"
+    }
+  },
+  {
+    "slug": "03-indexing-diagnosis",
+    "title_en": "Diagnose the stage that blocks discovery",
+    "title_zh": "把搜不到定位到具体环节",
+    "stage": 3,
+    "source_ids": [
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S27",
+      "S28",
+      "S29",
+      "S30",
+      "S31"
+    ],
+    "status": {
+      "public_sources": "CHECKED_2026-10-10",
+      "teaching_design": "PROPOSED",
+      "worked_example": "SYNTHETIC",
+      "live_execution": "NOT_RUN",
+      "learner_validation": "NOT_RUN",
+      "seo_or_business_effect": "UNKNOWN"
+    }
+  },
+  {
+    "slug": "04-report-reconciliation",
+    "title_en": "Read search reports without inventing a story",
+    "title_zh": "先对齐口径，再解释搜索报表",
+    "stage": 4,
+    "source_ids": [
+      "S03",
+      "S14",
+      "S15",
+      "S16"
+    ],
+    "status": {
+      "public_sources": "CHECKED_2026-10-10",
+      "teaching_design": "PROPOSED",
+      "worked_example": "SYNTHETIC",
+      "live_execution": "NOT_RUN",
+      "learner_validation": "NOT_RUN",
+      "seo_or_business_effect": "UNKNOWN"
+    }
+  },
+  {
+    "slug": "05-channel-fit",
+    "title_en": "Find a channel before asking it for traffic",
+    "title_zh": "先核受众与规则，再做国外推广",
+    "stage": 5,
+    "source_ids": [
+      "S06",
+      "S17",
+      "S18",
+      "S19",
+      "S20",
+      "S21"
+    ],
+    "status": {
+      "public_sources": "CHECKED_2026-10-10",
+      "teaching_design": "PROPOSED",
+      "worked_example": "SYNTHETIC",
+      "live_execution": "NOT_RUN",
+      "learner_validation": "NOT_RUN",
+      "seo_or_business_effect": "UNKNOWN"
+    }
+  },
+  {
+    "slug": "06-bounded-experiment",
+    "title_en": "Run a test that can end without a winner",
+    "title_zh": "让一次实验能停止，也能保留失败",
+    "stage": 6,
+    "source_ids": [
+      "S02",
+      "S22",
+      "S23",
+      "S24"
+    ],
+    "status": {
+      "public_sources": "CHECKED_2026-10-10",
+      "teaching_design": "PROPOSED",
+      "worked_example": "SYNTHETIC",
+      "live_execution": "NOT_RUN",
+      "learner_validation": "NOT_RUN",
+      "seo_or_business_effect": "UNKNOWN"
+    }
+  }
+]

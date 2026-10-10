@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-10T15:28:59.038120+00:00",
+  "scope": "Only this original teaching-candidate package",
+  "checks": {
+    "private_markers": "NONE_FOUND",
+    "secret_or_email_patterns": "NONE_FOUND",
+    "external_urls": "PUBLIC_PRIMARY_SOURCE_ALLOWLIST_PLUS_EXPLICIT_EXAMPLE_COM",
+    "relative_markdown_links": "ALL_RESOLVE",
+    "six_modules_in_each_language": "PRESENT",
+    "blank_template_headers": "VALID",
+    "synthetic_examples": "EXPLICITLY_LABELLED",
+    "unrun_execution_and_unknown_effects": "EXPLICITLY_LABELLED",
+    "manual_editorial_review": "COMPLETED_FOR_CANDIDATE_TEXT"
+  },
+  "limitations": [
+    "Pattern scanning does not establish absence of every possible sensitive string.",
+    "No learner review, live-site module execution, outreach, or SEO effect test was performed.",
+    "A source check is a bounded documentation check, not a result guarantee."
+  ]
+}

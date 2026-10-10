@@ -5,6 +5,7 @@ import argparse, hashlib, json, shutil
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--version',required=True)
+parser.add_argument('--preview',action='store_true')
 parser.add_argument('--commit',required=True)
 parser.add_argument('--repository',required=True)
 args=parser.parse_args()
@@ -27,7 +28,7 @@ def add_bytes(archive,name,data):
 def record(archive,lang,skill):
     filename=f'awesome-seo-workflow-v{args.version}-{lang}-{skill}.zip'
     shutil.copyfile(archive,release/filename)
-    downloads.append({'version':args.version,'sourceCommit':args.commit,'language':lang,'skillId':skill,'path':'/downloads/skills/'+lang+'/'+archive.name,'releaseAsset':filename,'fixedVersionURL':args.repository+'/releases/download/v'+args.version+'/'+filename,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'liveExecution':'NOT_RUN'})
+    downloads.append({'version':args.version,'sourceCommit':args.commit,'language':lang,'skillId':skill,'path':'/downloads/skills/'+lang+'/'+archive.name,'releaseAsset':filename,'fixedVersionURL':None if args.preview else args.repository+'/releases/download/v'+args.version+'/'+filename,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'liveExecution':'NOT_RUN'})
 
 def folder_files(folder):
     return [p for p in sorted(folder.rglob('*')) if p.is_file() and p.name!='.DS_Store']
@@ -65,7 +66,7 @@ for skill in manifest['skills']:
     shutil.copytree(out/'zh'/id,out/id,dirs_exist_ok=True)
     shutil.copyfile(out/'zh'/(id+'.zip'),out/(id+'.zip'))
 shutil.copyfile(out/'zh/first-crawl-execution-skills.zip',out/'first-crawl-execution-skills.zip')
-release_manifest={'version':args.version,'sourceCommit':args.commit,'repository':args.repository,'releaseTag':'v'+args.version,'releaseURL':args.repository+'/releases/tag/v'+args.version,'instructionLanguages':['zh-CN','en'],'legacyDownloadsLanguage':'zh-CN','downloads':downloads}
+release_manifest={'version':args.version,'sourceCommit':args.commit,'repository':args.repository,'releaseTag':'v'+args.version,'releaseURL':None if args.preview else args.repository+'/releases/tag/v'+args.version,'publicationStatus':'LOCAL_PREVIEW_NOT_PUBLISHED' if args.preview else 'RELEASE_BUILD','instructionLanguages':['zh-CN','en'],'legacyDownloadsLanguage':'zh-CN','downloads':downloads}
 manifest_text=json.dumps(release_manifest,ensure_ascii=False,indent=2)+'\n'
 (out/'manifest.json').write_text(manifest_text)
 (release/'manifest.json').write_text(manifest_text)

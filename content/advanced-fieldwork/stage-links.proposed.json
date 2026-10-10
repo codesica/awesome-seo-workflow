@@ -1,0 +1,51 @@
+{
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "note": "Original module stage numbers are exercise ordinals. Existing route IDs retain their current topics.",
+  "routes": {
+    "01-opportunity-evidence": "/advanced/01-opportunity-evidence/",
+    "02-page-value": "/advanced/02-page-value/",
+    "03-indexing-diagnosis": "/advanced/03-indexing-diagnosis/",
+    "04-report-reconciliation": "/advanced/04-report-reconciliation/",
+    "05-channel-fit": "/advanced/05-channel-fit/",
+    "06-bounded-experiment": "/advanced/06-bounded-experiment/"
+  },
+  "stage_links": [
+    {
+      "stage_id": "01-search-opportunity",
+      "module_slugs": [
+        "01-opportunity-evidence"
+      ]
+    },
+    {
+      "stage_id": "02-page-plan",
+      "module_slugs": [
+        "02-page-value"
+      ]
+    },
+    {
+      "stage_id": "03-content-production",
+      "module_slugs": [
+        "02-page-value"
+      ]
+    },
+    {
+      "stage_id": "04-publish-check",
+      "module_slugs": [
+        "03-indexing-diagnosis"
+      ]
+    },
+    {
+      "stage_id": "05-discovery-promotion",
+      "module_slugs": [
+        "05-channel-fit"
+      ]
+    },
+    {
+      "stage_id": "06-measure-iterate",
+      "module_slugs": [
+        "04-report-reconciliation",
+        "06-bounded-experiment"
+      ]
+    }
+  ]
+}

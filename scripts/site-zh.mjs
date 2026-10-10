@@ -1,11 +1,11 @@
 import {readFile,readdir} from 'node:fs/promises';
 import MarkdownIt from 'markdown-it';
 import config from '../site.config.mjs';
-import {esc} from './site-ui.mjs';
+import {esc,readableMarkdown} from './site-ui.mjs';
 import {referenceURL} from './content-routes.mjs';
 const catalog=JSON.parse(await readFile('catalog/skills.zh.json','utf8'));
 const fixtures=JSON.parse(await readFile('examples/catalog.zh.json','utf8'));
-const md=new MarkdownIt({html:false,linkify:false,typographer:false});
+const md=readableMarkdown(new MarkdownIt({html:false,linkify:false,typographer:false}));
 let codeId=0;
 const slug=text=>text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-|-$/g,'');
 md.renderer.rules.heading_open=(tokens,i)=>{

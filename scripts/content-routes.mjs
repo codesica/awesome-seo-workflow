@@ -1,7 +1,7 @@
 // Stable content IDs keep learning pages and original evidence downloads separate.
 export const stageIds=['01-search-opportunity','02-page-plan','03-content-production','04-publish-check','05-discovery-promotion','06-measure-iterate'];
 export const contentRoutes={
- home:'/',start:'/start/',roadmap:'/roadmap/',concepts:'/concepts/',templates:'/templates/',guides:'/guides/',
+ home:'/',start:'/start/',roadmap:'/roadmap/',resources:'/resources/',advanced:'/advanced/',concepts:'/concepts/',templates:'/templates/',guides:'/guides/',
  crawlability:'/guides/crawlability/',sitemap:'/guides/sitemap/','page-check':'/guides/page-check/',
  skills:'/skills/','local-seo':'/skills/local-seo/','seo-sitemap':'/skills/seo-sitemap/','firecrawl-scrape':'/skills/firecrawl-scrape/',
  examples:'/examples/','robots-block':'/examples/#robots-block',noindex:'/examples/#noindex',
@@ -10,6 +10,7 @@ export const contentRoutes={
 };
 for(const id of stageIds)contentRoutes[id]='/stages/'+id+'/';
 for(const id of ['inspect-search-console','inspect-bing-webmaster','research-search-results','seo-opportunity-evidence','seo-page-brief','seo-publish-audit','seo-measure-decide'])contentRoutes[id]='/skills/'+id+'/';
+for(const id of ['01-opportunity-evidence','02-page-value','03-indexing-diagnosis','04-report-reconciliation','05-channel-fit','06-bounded-experiment'])contentRoutes[id]='/advanced/'+id+'/';
 Object.freeze(contentRoutes);
 const aliases={
  'check-crawlability.md':'crawlability','submit-sitemap.md':'sitemap','one-page-seo-check.md':'page-check',

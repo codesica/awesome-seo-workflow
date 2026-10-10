@@ -1,0 +1,14 @@
+{
+  "status": "LOCAL_RENDERED_NOT_PUBLISHED",
+  "inputVersion": "1.0+editorial.1",
+  "upstreamArchiveSHA256": "886a7535efc77f969f29e45e122734168db429bbd4f3979aa0702388f0c00711",
+  "privateSourcesReadOrCopied": false,
+  "moduleCount": 6,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "templates": 6,
+  "learnerValidation": "NOT_RUN",
+  "liveExecution": "NOT_RUN"
+}
