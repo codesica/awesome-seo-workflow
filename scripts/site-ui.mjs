@@ -5,8 +5,8 @@ export function localLinks(html, lang) {
   return html.replace(/href="([^"]*)"/g, (all, path) => `href="${referenceURL(path, lang)}"`);
 }
 const i18n = {
-  zh: {home:'首页',start:'开始学习',guides:'全流程路线',skills:'辅助 Skills',examples:'案例',source:'来源与边界',concepts:'概念速查',templates:'空白模板',contribute:'参与贡献',footer:'从一个页面开始，让每一次检查都有依据。',skip:'跳到正文',nav:'主导航',language:'语言',preview:'本地设计预览 · 尚未上线'},
-  en: {home:'Home',start:'Start here',guides:'Roadmap',skills:'Skills',examples:'Examples',source:'Sources & scope',concepts:'Concepts',templates:'Templates',contribute:'Contribute',footer:'Start with one page. Keep the evidence for every check.',skip:'Skip to content',nav:'Main navigation',language:'Language',preview:'Local design preview · Not published'}
+  zh: {home:'首页',start:'入门说明',guides:'六堂动手课',skills:'辅助 Skills',examples:'案例',source:'来源与边界',concepts:'概念速查',templates:'空白模板',contribute:'参与贡献',footer:'从一个人的问题开始，让每一次检查都有依据。',skip:'跳到正文',nav:'主导航',language:'语言',preview:'本地设计预览 · 尚未上线'},
+  en: {home:'Home',start:'Introduction',guides:'Six lessons',skills:'Skills',examples:'Examples',source:'Sources & scope',concepts:'Concepts',templates:'Templates',contribute:'Contribute',footer:'Start with one person’s question. Keep the evidence for every check.',skip:'Skip to content',nav:'Main navigation',language:'Language',preview:'Local design preview · Not published'}
 };
 export function layout(page, {lang,origin,repository,preview=true}) {
   const t=i18n[lang], base=page.basePath || page.path, path=page.path;

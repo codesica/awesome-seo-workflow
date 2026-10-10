@@ -49,3 +49,16 @@ if (conceptFilter) conceptFilter.addEventListener('change', () => {
   }
   document.getElementById('concept-status').textContent = chinese ? `显示 ${count} 个概念。` : `${count} concepts shown.`;
 });
+// Existing deep links can point into the retained, collapsed technical checklist.
+function revealFragment() {
+  if (!location.hash) return;
+  let id;
+  try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+  const target = document.getElementById(id);
+  if (!target) return;
+  for (let parent = target; parent; parent = parent.parentElement) {
+    if (parent.tagName === 'DETAILS') parent.open = true;
+  }
+}
+revealFragment();
+window.addEventListener('hashchange', revealFragment);

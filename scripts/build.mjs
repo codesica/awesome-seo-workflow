@@ -3,9 +3,10 @@ import { resolve, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import MarkdownIt from 'markdown-it';
 import config from '../site.config.mjs';
-import {layout as siteLayout, home, localLinks, route} from './site-ui.mjs';
+import {layout as siteLayout, localLinks, route} from './site-ui.mjs';
 import {chinesePage} from './site-zh.mjs';
-import {fullRoadmapPage as roadmapPage,startPage,fullStagePage as stagePage,conceptsPage,templatesPage,skillsPage,skillPage,executionSkillIds,workflowSourcesHTML} from './content-ui.mjs';
+import {conceptsPage,templatesPage,skillsPage,skillPage,executionSkillIds,workflowSourcesHTML} from './content-ui.mjs';
+import {home,startPage,stagePage,roadmapPage} from './beginner-ui.mjs';
 import {stageIds} from './content-routes.mjs';
 
 const release = process.argv.includes('--release');
@@ -138,5 +139,5 @@ await writeFile(out+'/robots.txt',`User-agent: *\nAllow: /\nDisallow: /downloads
 await writeFile(out+'/_headers','/downloads/*\n  X-Robots-Tag: noindex\n  Content-Disposition: attachment\n/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Content-Security-Policy: default-src \'self\'; script-src \'self\'; style-src \'self\'; img-src \'self\'; connect-src \'self\'; object-src \'none\'; base-uri \'self\'; frame-ancestors \'none\'\n');
 let sourceCommit=null;
 try{sourceCommit=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8',stdio:['ignore','pipe','ignore']}).trim();}catch{}
-await writeFile(out+'/build-info.json',JSON.stringify({name:config.name,origin,version:release?'2.0.0':'2.0.0-preview',sourceCommit,pages:pages.map(p=>p.path)},null,2)+'\n');
+await writeFile(out+'/build-info.json',JSON.stringify({name:config.name,origin,version:release?'2.1.0':'2.1.0-preview',sourceCommit,pages:pages.map(p=>p.path)},null,2)+'\n');
 console.log(`Built ${pages.length} indexable pages, custom 404, sitemap, robots and teaching downloads.`);

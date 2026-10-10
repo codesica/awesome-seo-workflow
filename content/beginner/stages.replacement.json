@@ -1,0 +1,568 @@
+{
+  "schemaVersion": "beginner-copy-1.0",
+  "locales": [
+    "zh",
+    "en"
+  ],
+  "stageIdsPreserved": true,
+  "renderOrder": [
+    "firstScreen.question",
+    "firstScreen.explanation",
+    "firstScreen.oneAction",
+    "firstScreen.workedExample",
+    "task",
+    "firstScreen.doneWhen",
+    "firstScreen.notNeededYet",
+    "details (collapsed)",
+    "skills",
+    "next"
+  ],
+  "note": {
+    "zh": "这是六堂动手课。首页六节点讲搜索发生过程，两者不是同一张阶段表。",
+    "en": "These are six practical lessons. The six-node explanation on the homepage describes what happens in search; it is not the lesson sequence."
+  },
+  "stages": [
+    {
+      "id": "01-search-opportunity",
+      "order": 1,
+      "title": {
+        "zh": "想清楚要帮谁",
+        "en": "Decide whom to help"
+      },
+      "firstScreen": {
+        "question": {
+          "zh": "我到底该做什么样的网页？",
+          "en": "What should my page be about?"
+        },
+        "explanation": {
+          "zh": "先想一个人正在做什么。假设他只想冥想五分钟，又不愿下载应用。他搜索的那句话，是在请人帮他完成这件事。我们先把这个需要写明白，再看搜索里已经有什么。",
+          "en": "Start with someone trying to do something. Imagine they want to meditate for five minutes without downloading an app. Their search is a request for help with that task. Describe that need before looking at what search already offers."
+        },
+        "oneAction": {
+          "zh": "在自己的纸或文档写四行：写给谁、解决什么、准备怎么帮、还不知道什么。已做入门练习就直接使用那四行，不必重写。",
+          "en": "Write four lines on your own paper or in your own document: whom it is for, the task, possible help, and what is still unknown. If you completed the introductory exercise, reuse those four lines."
+        },
+        "workedExample": {
+          "label": {
+            "zh": "填好示例 · 全部是假设",
+            "en": "Completed example · entirely fictional"
+          },
+          "content": {
+            "zh": "写给谁：不想下载应用的人。\n解决什么：直接计时五分钟。\n准备怎么帮：做一个打开就能用的计时网页。\n还不知道：是否真有人这样搜索、现有结果是否已经满足他。",
+            "en": "For: People who do not want to download an app.\nTask: Time five minutes now.\nPossible help: A timer they can use in the browser.\nStill unknown: Whether people actually search this way and whether existing results already meet the need."
+          }
+        },
+        "doneWhen": {
+          "zh": "四行都能用自己的话解释；把未证实的需要标为假设，未知项如实写“还不知道”。没有网站或账号也能完成。",
+          "en": "You can explain all four lines in your own words, label the unverified need as a hypothesis, and honestly state what is unknown. No website or account is needed."
+        },
+        "notNeededYet": {
+          "zh": "现在不用查搜索量、买工具或做几十个选题。还没确定题目，就先照示例填写。",
+          "en": "You do not need search volumes, paid tools, or dozens of topics. If you have no idea yet, fill in the example first."
+        }
+      },
+      "task": {
+        "title": {
+          "zh": "这次只留下一份记录",
+          "en": "Make one record this time"
+        },
+        "ownerPath": {
+          "zh": "用你现有网页帮助的人替换示例。保存四行说明；有真实提问就附出处，没有就保留“假设”。不要把一次搜索结果当用户访谈。",
+          "en": "Replace the example with the person your existing page helps. Save the four lines. Add a source for a real question if you have one; otherwise keep the hypothesis label. A search result is not a user interview."
+        },
+        "noSitePath": {
+          "zh": "用假设计时网页完成同样四行。不必实际搜索；没搜索就写“搜索结果：未检查”。不需要任何账号。",
+          "en": "Use the fictional timer to write the same four lines. A real search is optional; without one, record “search results: not checked.” No account is needed."
+        },
+        "saveLocation": {
+          "zh": "保存在你自己的纸或文档里，不用上传。未做的项目写“未检查”，不要补猜测。",
+          "en": "Keep it on your own paper or in your own document. No upload is needed. Mark work you have not done “not checked”; do not guess."
+        }
+      },
+      "details": [
+        {
+          "title": {
+            "zh": "写好以后，想看看已经有哪些页面？",
+            "en": "After writing, want to see which pages already exist?"
+          },
+          "body": {
+            "zh": "可选：搜索你觉得他会输入的话，打开一条没有广告标记的普通网页结果。另记网址和它提供的帮助。一次观察不能证明搜索需求大小，也不等于用户访谈。",
+            "en": "Optional: search for the words you think they would use and open one ordinary result without an ad label. Separately record its address and what it offers. One observation does not establish demand or count as a user interview."
+          }
+        },
+        {
+          "title": {
+            "zh": "我写的搜索词，和真实需求有什么区别？",
+            "en": "How is my suggested search different from real demand?"
+          },
+          "body": {
+            "zh": "人实际输入的话叫“查询”；你用来整理主题的词常叫“关键词”。现在的句子是猜想。真实提问、访谈或你有权查看的搜索报告能补充证据，但一条提问仍不能说明每月多少人搜索。",
+            "en": "The words a person actually searches are a query. Terms you use to plan a topic are often called keywords. Your sentence is a guess for now. Real questions, interviews, or authorized search reports can add evidence, but one question still cannot tell you monthly search volume."
+          }
+        }
+      ],
+      "skills": {
+        "placement": "after-task-example-and-completion",
+        "label": {
+          "zh": "我已理解这一步，看看 AI 能帮什么",
+          "en": "I understand this step. See how AI can help."
+        },
+        "note": {
+          "zh": "可选。先确认输入和要检查的结果；安装不代表完成，也不授权发布、发消息或读账号。",
+          "en": "Optional. Check the required input and expected result first. Installing a Skill does not complete the work or authorize publishing, messaging, or account access."
+        }
+      },
+      "next": {
+        "zh": "下一课：把这个需要画成一张页面。",
+        "en": "Next: turn this need into a page plan."
+      },
+      "exampleIsHypothetical": true,
+      "validationStatus": "editorial-review-only-no-beginner-user-test"
+    },
+    {
+      "id": "02-page-plan",
+      "order": 2,
+      "title": {
+        "zh": "画出这一页",
+        "en": "Sketch the page"
+      },
+      "firstScreen": {
+        "question": {
+          "zh": "别人点进来，第一眼应该看到什么？",
+          "en": "What should someone see when they arrive?"
+        },
+        "explanation": {
+          "zh": "想象有人走进店里要买一瓶水。先让他找到水，比先介绍店的历史有用。我们的计时网页也一样：要计时的人应先看到时间和开始按钮。页面安排应跟着他的动作走。",
+          "en": "Imagine someone entering a shop for a bottle of water. Helping them find water matters before telling the shop’s history. A timer page works the same way: show the duration and Start button first. Arrange the page around the visitor’s task."
+        },
+        "oneAction": {
+          "zh": "在纸或文档里画三个方框：这页做什么 → 怎么开始 → 用到时再看的说明。每框只填一句话。",
+          "en": "Draw three boxes on paper or in a document: what this page does → how to start → help to read when needed. Put one sentence in each."
+        },
+        "workedExample": {
+          "label": {
+            "zh": "填好示例 · 全部是假设",
+            "en": "Completed example · entirely fictional"
+          },
+          "content": {
+            "zh": "框 1：免费冥想计时器，不用下载。\n框 2：选择 5 分钟 → 开始计时。\n框 3：怎样暂停；结束会发生什么。\n页面地址：还没有。这是草图，按钮尚不能使用。",
+            "en": "Box 1: Free meditation timer. No download.\nBox 2: Choose 5 minutes → Start timer.\nBox 3: How to pause; what happens at the end.\nPage address: None yet. This is a sketch; the buttons do not work."
+          }
+        },
+        "doneWhen": {
+          "zh": "三个方框按使用顺序排列；你能指出哪个位置让人开始做事。纸上计划的功能标“待制作”，只有现有网站中确实可用的功能才标“已有”。",
+          "en": "The boxes follow the user’s sequence. You can point to where someone starts. Mark paper-plan features “not built yet”; use “available” only for working features on an existing site."
+        },
+        "notNeededYet": {
+          "zh": "现在不用决定整个网站的栏目，也不用学网址技术。没有网页地址，写“还没有”即可。",
+          "en": "You do not need to plan the entire website or learn URL settings. If there is no page address, write “none yet.”"
+        }
+      },
+      "task": {
+        "title": {
+          "zh": "这次只留下一份记录",
+          "en": "Make one record this time"
+        },
+        "ownerPath": {
+          "zh": "先看现有页面是否已经解决这个需要。能更新就记“更新这页”及地址；确需不同帮助才记“新建”。此处只画计划，不删旧页、不改网址。",
+          "en": "Check whether an existing page already serves this task. Record “update this page” and its address where appropriate. Plan a new page only for a distinct need. This is planning, not deleting pages or changing addresses."
+        },
+        "noSitePath": {
+          "zh": "画三个框即可。你可以用文字代替绘画。不需要编辑器、网站或账号。",
+          "en": "Three boxes are enough, and plain text is fine. No site builder, website, or account is needed."
+        },
+        "saveLocation": {
+          "zh": "保存在你自己的纸或文档里，不用上传。未做的项目写“未检查”，不要补猜测。",
+          "en": "Keep it on your own paper or in your own document. No upload is needed. Mark work you have not done “not checked”; do not guess."
+        }
+      },
+      "details": [
+        {
+          "title": {
+            "zh": "这样的计划有什么用？",
+            "en": "Why make this plan?"
+          },
+          "body": {
+            "zh": "它让写作者知道要写什么，让制作网页的人知道先做什么。过去我们叫它“页面简报”；你不用记这个名称，三框草图就是最小版本。",
+            "en": "It tells the writer what to explain and the person building the page what to make first. This is a small page brief; the three-box sketch is enough to begin."
+          }
+        }
+      ],
+      "skills": {
+        "placement": "after-task-example-and-completion",
+        "label": {
+          "zh": "我已理解这一步，看看 AI 能帮什么",
+          "en": "I understand this step. See how AI can help."
+        },
+        "note": {
+          "zh": "可选。先确认输入和要检查的结果；安装不代表完成，也不授权发布、发消息或读账号。",
+          "en": "Optional. Check the required input and expected result first. Installing a Skill does not complete the work or authorize publishing, messaging, or account access."
+        }
+      },
+      "next": {
+        "zh": "下一课：把方框里的想法写成别人能照着做的内容。",
+        "en": "Next: turn the boxes into content someone can follow."
+      },
+      "exampleIsHypothetical": true,
+      "validationStatus": "editorial-review-only-no-beginner-user-test"
+    },
+    {
+      "id": "03-content-production",
+      "order": 3,
+      "title": {
+        "zh": "写出来、做出来",
+        "en": "Write and make the page"
+      },
+      "firstScreen": {
+        "question": {
+          "zh": "怎样才算一张真正有用的页面？",
+          "en": "What makes the page genuinely useful?"
+        },
+        "explanation": {
+          "zh": "写菜谱时，“把菜做好”不是可执行的一步；写清放什么、做什么、看到什么才有用。计时网页也要告诉人：选多久、按哪里、开始后看到什么。文字草稿写得再顺，如果页面工具还没做出来，也不能算功能已经完成。",
+          "en": "In a recipe, “make the dish” is not a usable instruction. Ingredients, actions, and expected results make it useful. A timer page should explain the duration, which button to press, and what happens next. Even the clearest written draft does not mean the tool itself is built and working."
+        },
+        "oneAction": {
+          "zh": "照上一课的草图，写一个标题和三句使用说明。每句含一个动作或可看到的结果；把没实现、没测过的功能单独标出来。",
+          "en": "Using your sketch, write a title and three lines of instructions. Each line should contain an action or a visible result. Separately label features that are not built or tested."
+        },
+        "workedExample": {
+          "label": {
+            "zh": "填好示例 · 全部是假设",
+            "en": "Completed example · entirely fictional"
+          },
+          "content": {
+            "zh": "标题：免费冥想计时器，不用下载\n1. 选择“5 分钟”。\n2. 点击“开始计时”，查看数字是否开始倒数。\n3. 倒数结束后，页面显示“计时结束”。\n制作备注：以上是计划中的行为，尚未实现和测试，不是可直接发布的功能承诺。",
+            "en": "Title: Free meditation timer, no download\n1. Choose “5 minutes.”\n2. Press “Start timer” and check that the numbers count down.\n3. At the end, the page displays “Timer finished.”\nBuild note: These are planned behaviors, not built or tested features and not ready-to-publish promises."
+          }
+        },
+        "doneWhen": {
+          "zh": "草稿让人知道从哪开始、接下来做什么；每个事实和功能都有依据或明确待核实。只有真实做过并记录结果，才能写“测试通过”。",
+          "en": "The draft explains where to start and what comes next. Facts and features are supported or marked for checking. Write “tested successfully” only after actually testing and recording the outcome."
+        },
+        "notNeededYet": {
+          "zh": "现在不用为了字数添加冥想历史，也不用承诺健康效果。只做纸上练习，可以停在草稿；真正的计时功能需要另行制作。",
+          "en": "Do not add meditation history just to make the page longer or promise health outcomes. Paper practice can stop at the draft. A real timer still has to be built."
+        }
+      },
+      "task": {
+        "title": {
+          "zh": "这次只留下一份记录",
+          "en": "Make one record this time"
+        },
+        "ownerPath": {
+          "zh": "在自己的文档写或修改说明，再亲自走一遍页面的主要任务。若你的页面是计时器，就选择时间、开始、等结束。记录实际看到什么和哪里失败。未实现的功能交给负责制作的人；发布遵循既有审批。",
+          "en": "Write or revise the instructions in your document, then try the main task on your page. For a timer, choose a duration, start, and wait for it to finish. Record what happened and any failure. Hand unbuilt features to the person responsible; follow your normal publishing approvals."
+        },
+        "noSitePath": {
+          "zh": "只写草稿，不必造出计时器。可以请愿意帮忙的人指出他会先按哪里；这只能检查说明是否清楚，不能证明计时功能可用。",
+          "en": "Write a draft without building a timer. You may ask someone willing to help to point to where they would start. That checks the instructions, not whether the timer works."
+        },
+        "saveLocation": {
+          "zh": "保存在你自己的纸或文档里，不用上传。未做的项目写“未检查”，不要补猜测。",
+          "en": "Keep it on your own paper or in your own document. No upload is needed. Mark work you have not done “not checked”; do not guess."
+        }
+      },
+      "details": [
+        {
+          "title": {
+            "zh": "用 AI 写内容，要检查什么？",
+            "en": "What should I check in AI-written content?"
+          },
+          "body": {
+            "zh": "核对操作、事实和来源，不保留编造的用户评价或效果数字。图片也要有使用权。写“免费”或“不用下载”之前，确认页面确实如此。",
+            "en": "Check steps, facts, and sources. Remove invented testimonials or performance numbers. Use images you have permission to use. Verify promises such as “free” or “no download.”"
+          }
+        }
+      ],
+      "skills": {
+        "placement": "after-task-example-and-completion",
+        "label": {
+          "zh": "我已理解这一步，看看 AI 能帮什么",
+          "en": "I understand this step. See how AI can help."
+        },
+        "note": {
+          "zh": "可选。先确认输入和要检查的结果；安装不代表完成，也不授权发布、发消息或读账号。",
+          "en": "Optional. Check the required input and expected result first. Installing a Skill does not complete the work or authorize publishing, messaging, or account access."
+        }
+      },
+      "next": {
+        "zh": "下一课：有公开网页才检查上线；没有网站，读检查示例继续学习。",
+        "en": "Next: check a live public page if you have one; otherwise learn from the inspection example."
+      },
+      "exampleIsHypothetical": true,
+      "validationStatus": "editorial-review-only-no-beginner-user-test"
+    },
+    {
+      "id": "04-publish-check",
+      "order": 4,
+      "title": {
+        "zh": "打开上线页面检查",
+        "en": "Check the published page"
+      },
+      "firstScreen": {
+        "question": {
+          "zh": "我能打开网页，Google 就一定能读到吗？",
+          "en": "If I can open it, can Google definitely read it?"
+        },
+        "explanation": {
+          "zh": "你用自己的钥匙进得了门，不代表访客也进得去。网页可能只有登录后才能看，也可能对搜索程序有不同规则。先做普通访客的三件检查，再由有权限的人确认搜索这边。两份结果分开记录。",
+          "en": "Your own key opening a door does not prove a visitor can enter. A page may require a login or have separate rules for search software. First check it as a visitor, then ask an authorized person to check search access. Keep those findings separate."
+        },
+        "oneAction": {
+          "zh": "仅对原本应公开的页面：在未登录的浏览器窗口打开最终地址，检查能否打开、主要文字和图片是否出现、主按钮能否完成它写明的动作。",
+          "en": "For a page already intended to be public, open its final address in a signed-out browser window. Check that it opens, essential text and images appear, and the main button performs its stated action."
+        },
+        "workedExample": {
+          "label": {
+            "zh": "填好示例 · 全部是假设",
+            "en": "Completed example · entirely fictional"
+          },
+          "content": {
+            "zh": "假设检查记录：\n普通访客：网页能打开；说明可见；点击开始后数字倒数。\nGoogle 是否能读到：未检查。\nGoogle 是否已收录：未检查。\n结论：访客检查通过，不能据此说 Google 已读到或已收录。",
+            "en": "Fictional inspection record:\nVisitor check: Page opens; instructions appear; pressing Start begins the countdown.\nCan Google retrieve it? Not checked.\nHas Google indexed it? Not checked.\nConclusion: Visitor checks passed. This does not prove Google access or indexing."
+          }
+        },
+        "doneWhen": {
+          "zh": "三项浏览器检查有真实结果，或你能正确解释示例的结论；Google 未查就保留未知。需要修复的问题已写清交给谁，不擅改私密保护。",
+          "en": "You have real results for the three browser checks, or can correctly explain the example. Unchecked Google status stays unknown. Record who should handle problems without changing privacy protection."
+        },
+        "notNeededYet": {
+          "zh": "没有公开页或管理权限，先读例子，不用注册 Search Console。网页本来就应私密，保留登录，不做公开搜索检查。",
+          "en": "Without a public page or management permission, read the example without registering for Search Console. Keep intentional login protection and skip public-search checks for private pages."
+        }
+      },
+      "task": {
+        "title": {
+          "zh": "这次只留下一份记录",
+          "en": "Make one record this time"
+        },
+        "ownerPath": {
+          "zh": "按三项做一次普通访问检查，保存地址、日期、观察。需要确认 Google 时再请有权限的管理者使用 Google Search Console：这是 Google 的免费站长工具，需要相应网站权限。",
+          "en": "Run the three visitor checks and save the address, date, and observations. For Google-specific checks, use an authorized site manager. Google Search Console is Google’s free webmaster tool and requires permission for the website."
+        },
+        "noSitePath": {
+          "zh": "先用上面的假设记录回答：哪些已检查，哪些还不知道？也可从第1课找到的公开页面练习普通浏览，只用无需注册、无需付款的功能。不拥有它就不查其站长报告。练习浏览不是你已发布网站。",
+          "en": "Use the fictional record to identify what was checked and what remains unknown. You can also browse the public result found in lesson 1, using only features that need no registration or payment. Do not try to access another site’s private reports. Browsing practice is not publishing your own site."
+        },
+        "saveLocation": {
+          "zh": "保存在你自己的纸或文档里，不用上传。未做的项目写“未检查”，不要补猜测。",
+          "en": "Keep it on your own paper or in your own document. No upload is needed. Mark work you have not done “not checked”; do not guess."
+        }
+      },
+      "details": [
+        {
+          "title": {
+            "zh": "需要维护者帮忙时，再展开",
+            "en": "Open this when a site maintainer is needed"
+          },
+          "body": {
+            "zh": "请维护者检查：Google 能否取得主要内容；是否有意外的抓取限制（robots.txt）；是否误留“不收录”指令（noindex）。这两类规则不是隐私保护。若有重复网址，还要查建议代表网址（canonical）；站点地图（sitemap）只是网址清单。双语标注等专项继续使用原详细教程。先报问题，不让新手直接改代码。",
+            "en": "Ask the maintainer to check whether Google can retrieve the main content, whether crawl rules (robots.txt) accidentally block it, and whether a no-index instruction (noindex) was left in place. These are not privacy protection. For duplicate addresses, check the suggested representative URL (canonical). A sitemap is a list of URLs. Keep the existing detailed tutorials for multilingual settings and specialist cases. Report the issue before asking a beginner to edit code."
+          }
+        },
+        {
+          "title": {
+            "zh": "Search Console 的两种检查不要混在一起",
+            "en": "Keep two Search Console checks separate"
+          },
+          "body": {
+            "zh": "“网址检查”显示 Google 已保存的索引信息；“实时测试”检查当前页面能否被访问和处理的部分条件。实时测试成功不等于页面已收录，也不保证展示。保存原报告文字、日期和是哪种检查；不要凭截图猜结论。",
+            "en": "URL Inspection reports saved indexing information. Its live test checks some conditions for accessing and processing the page now. A successful live test does not mean the page is indexed or guaranteed to appear. Save the report wording, date, and test type."
+          }
+        }
+      ],
+      "skills": {
+        "placement": "after-task-example-and-completion",
+        "label": {
+          "zh": "我已理解这一步，看看 AI 能帮什么",
+          "en": "I understand this step. See how AI can help."
+        },
+        "note": {
+          "zh": "可选。先确认输入和要检查的结果；安装不代表完成，也不授权发布、发消息或读账号。",
+          "en": "Optional. Check the required input and expected result first. Installing a Skill does not complete the work or authorize publishing, messaging, or account access."
+        }
+      },
+      "next": {
+        "zh": "下一课：给这张页面安排一个别人走得到的入口。",
+        "en": "Next: give the page an entry point people can reach."
+      },
+      "exampleIsHypothetical": true,
+      "validationStatus": "editorial-review-only-no-beginner-user-test"
+    },
+    {
+      "id": "05-discovery-promotion",
+      "order": 5,
+      "title": {
+        "zh": "让需要的人找到入口",
+        "en": "Help people find a way in"
+      },
+      "firstScreen": {
+        "question": {
+          "zh": "页面做好了，谁会知道它在那里？",
+          "en": "Who will know the page is there?"
+        },
+        "explanation": {
+          "zh": "把活动办好后，还要告诉合适的人从哪里进。网页也需要入口：站内一篇相关说明可以链接到计时器；合适的社群可能允许你分享。站内链接能让搜索引擎顺着找到页面，但知道存在不等于收录；从社群点进来的访问是推广带来的，不能算作搜索点击。",
+          "en": "A well-prepared event still needs directions to its entrance. A page needs a way in too: a related page on your site can link to the timer, and a relevant community may allow a useful share. Internal links also help search engines find the page, though discovery does not guarantee indexing. Visits from communities come from sharing, not search clicks."
+        },
+        "oneAction": {
+          "zh": "写一份两行入口计划：网站里从哪里能点到它；站外哪里适合介绍它。先写计划，不需要现在发送。",
+          "en": "Write a two-line entry plan: where someone can reach it from within the site, and where it would be relevant to introduce it elsewhere. Plan first; no sending is needed now."
+        },
+        "workedExample": {
+          "label": {
+            "zh": "填好示例 · 全部是假设",
+            "en": "Completed example · entirely fictional"
+          },
+          "content": {
+            "zh": "站内入口：从“怎样开始五分钟冥想”页面，用“打开五分钟计时器”链接到工具。状态：计划中。\n站外介绍：若某讨论区允许分享工具，先回答相关问题，再说明这是我做的计时器。状态：未确认规则、未发送。",
+            "en": "On-site entry: A “Getting started with five-minute meditation” page links to the tool with “Open the five-minute timer.” Status: planned.\nExternal introduction: If a relevant discussion permits tools, answer the question and disclose that I made the timer. Status: rules not checked; not sent."
+          }
+        },
+        "doneWhen": {
+          "zh": "计划写清入口位置和链接说明；站外计划有相关理由，发送状态真实。有网站且已获改页权限时，从入口亲自点到目标页。没有合适渠道，写“暂不分享”也可以。",
+          "en": "Your plan names an entry point and descriptive link text. External sharing has a relevant reason and an accurate send status. If you have a site and editing permission, test the entry link. “No suitable place to share yet” is a valid result."
+        },
+        "notNeededYet": {
+          "zh": "还没有公开页面时，只做计划。不要买链接、群发陌生人或为了推广取消登录保护。",
+          "en": "Without a public page, only plan. Do not buy links, mass-message strangers, or remove login protection to promote a page."
+        }
+      },
+      "task": {
+        "title": {
+          "zh": "这次只留下一份记录",
+          "en": "Make one record this time"
+        },
+        "ownerPath": {
+          "zh": "优先选一处真正相关的现有页面。按权限加入链接后，自己点击验证。站外分享先查规则和发送授权，没有授权就保留草稿。分别记录网站链接是否已改、分享是否已发。",
+          "en": "Choose a genuinely relevant existing page first. If authorized, add the link and test it. Check rules and sending permission before external sharing. Keep an unsent draft when permission is absent, and record editing and sending separately."
+        },
+        "noSitePath": {
+          "zh": "在草图旁写下计划中的入口和一段未发送的介绍即可。不需要去注册社群，更不用制造“已获得外链”的记录。",
+          "en": "Write the planned entry point and an unsent introduction beside your sketch. No community account is needed. Do not invent a record of a link you earned."
+        },
+        "saveLocation": {
+          "zh": "保存在你自己的纸或文档里，不用上传。未做的项目写“未检查”，不要补猜测。",
+          "en": "Keep it on your own paper or in your own document. No upload is needed. Mark work you have not done “not checked”; do not guess."
+        }
+      },
+      "details": [
+        {
+          "title": {
+            "zh": "自然搜索与推广，怎么看区别？",
+            "en": "How are search and promotion different?"
+          },
+          "body": {
+            "zh": "别人通过搜索引擎的非广告结果点来，才属于这里讨论的自然搜索访问。从社群、邮件或别的网站点来，是其他来源。两者都可能有用，但不能把分享后的访问增加写成“搜索排名上升”。",
+            "en": "Visits from non-ad search results are the organic search visits discussed here. Community posts, email, and other websites are different sources. Both may help, but a traffic increase after sharing is not evidence of higher search rankings."
+          }
+        }
+      ],
+      "skills": {
+        "placement": "after-task-example-and-completion",
+        "label": {
+          "zh": "我已理解这一步，看看 AI 能帮什么",
+          "en": "I understand this step. See how AI can help."
+        },
+        "note": {
+          "zh": "可选。先确认输入和要检查的结果；安装不代表完成，也不授权发布、发消息或读账号。",
+          "en": "Optional. Check the required input and expected result first. Installing a Skill does not complete the work or authorize publishing, messaging, or account access."
+        }
+      },
+      "next": {
+        "zh": "下一课：把已知和未知分开，决定先改哪一处。",
+        "en": "Next: separate what you know from what you do not, and choose one change."
+      },
+      "exampleIsHypothetical": true,
+      "validationStatus": "editorial-review-only-no-beginner-user-test"
+    },
+    {
+      "id": "06-measure-iterate",
+      "order": 6,
+      "title": {
+        "zh": "看发生了什么，再改",
+        "en": "Check what happened, then improve"
+      },
+      "firstScreen": {
+        "question": {
+          "zh": "没人用，是没找到，还是不会用？",
+          "en": "Did people miss it, or could they not use it?"
+        },
+        "explanation": {
+          "zh": "店门口没经过人、有人经过没进门、进门后找不到东西，是三个问题。网页也是：搜索里有没有出现，出现后有没有被点，点进来后能否完成计时。不能只看一个“访问数”就判断哪里坏了。",
+          "en": "No one passing a shop, passers-by not entering, and visitors unable to find an item are different problems. For a page, ask whether it appeared in search, whether anyone clicked, and whether visitors could finish the timer. One visit count cannot explain where things went wrong."
+        },
+        "oneAction": {
+          "zh": "写一张四行记录：我实际看到了什么（例如有人点开后找不到开始键）→ 还不知道什么 → 先改哪一处 → 怎样复查。没有数据就用示例判断，不填假数字。",
+          "en": "Write four lines: what I actually observed (for example, a visitor arrived but could not find Start) → what is still unknown → one specific change → how to recheck. Without data, interpret the example instead of inventing numbers."
+        },
+        "workedExample": {
+          "label": {
+            "zh": "填好示例 · 全部是假设",
+            "en": "Completed example · entirely fictional"
+          },
+          "content": {
+            "zh": "假设观察：一位试用者说“这个圆形图标是开始吗？”\n还不知道：有多少人从搜索来，其他人是否也卡住。\n先改一件：给开始图标加上“开始计时”文字。\n复查：请愿意帮忙的试用者再走一遍，记下能否找到开始。此记录是教学假设，不是实际试读结果。",
+            "en": "Fictional observation: One tester asks, “Is this round icon Start?”\nUnknown: How many visitors came from search, or whether others had the same problem.\nOne change: Add “Start timer” beside the icon.\nCheck: Ask a willing tester to try again and record whether they find Start. This is a teaching example, not an actual user test."
+          }
+        },
+        "doneWhen": {
+          "zh": "有网站：用真实证据解释为什么改这件事，记录改动和复查结果。没有网站：指出示例的问题，完成一处草稿改写并标为假设。证据不足就写“还不知道”；没有实际试读，不写“用户说”。",
+          "en": "With a site: explain one change using real evidence and record the change and recheck. Without a site: identify the example’s problem, rewrite one phrase in your draft, and label your concern as a hypothesis. State unknowns honestly; do not claim user feedback without a real reading session."
+        },
+        "notNeededYet": {
+          "zh": "新站没有搜索数据，不急着判断排名好坏。先查页面可用性和真实反馈。没有网站，可在草稿上练习，不装统计工具。",
+          "en": "With no search data, do not rush to judge rankings. Check usability and real feedback first. Without a site, practice on the draft without installing analytics."
+        }
+      },
+      "task": {
+        "title": {
+          "zh": "这次只留下一份记录",
+          "en": "Make one record this time"
+        },
+        "ownerPath": {
+          "zh": "有 Search Console 权限才查看自己网页的搜索效果报告，选同一页面和明确日期，记录展示与点击。“展示”是按报告规则记录的结果出现，不是人数；“点击”是从搜索结果点到站点。它们不证明计时成功。使用是否成功，要另用经过检查的站内记录或真实试用观察。先解决一个证据最明确的问题。",
+          "en": "Only with Search Console permission, inspect your page’s search performance using a stated page and date range. Impressions are recorded result appearances under the report’s rules, not people. Clicks are clicks from search results to the site; they do not prove the timer finished. Check successful use separately with validated site records or real observations. Start with the clearest supported problem."
+        },
+        "noSitePath": {
+          "zh": "用本课示例指出问题在“进入页面之后”。然后在自己的草稿中找一处可能让人不明白的文字，标为假设并重写。可以请人试读，但没请过就不要写“用户说”。",
+          "en": "Identify that the example’s problem happens after arrival. Find one potentially confusing phrase in your draft, label your concern as a hypothesis, and rewrite it. You may ask someone to read it, but do not write “a user said” unless that happened."
+        },
+        "saveLocation": {
+          "zh": "保存在你自己的纸或文档里，不用上传。未做的项目写“未检查”，不要补猜测。",
+          "en": "Keep it on your own paper or in your own document. No upload is needed. Mark work you have not done “not checked”; do not guess."
+        }
+      },
+      "details": [
+        {
+          "title": {
+            "zh": "已有数据时，怎样避免看错？",
+            "en": "How can I avoid misreading existing data?"
+          },
+          "body": {
+            "zh": "比较时保持同一页面、搜索类型、地区和设备等筛选，使用完整且等长日期范围；注明期间其他变化。展示少可能有多种原因，不立即归咎于标题。数据太少就继续观察，不保证多久见效。只有真实同口径数据才能计算点击率：点击次数÷展示次数；现在不用靠一个百分比打分。",
+            "en": "Compare the same page, search type, country, device, and other filters across complete equal-length periods, noting other changes. Low impressions can have several causes; do not immediately blame the title. With too little data, keep observing without promising a deadline for results. Click-through rate is clicks divided by impressions in the same scope; it is not a universal score."
+          }
+        }
+      ],
+      "skills": {
+        "placement": "after-task-example-and-completion",
+        "label": {
+          "zh": "我已理解这一步，看看 AI 能帮什么",
+          "en": "I understand this step. See how AI can help."
+        },
+        "note": {
+          "zh": "可选。先确认输入和要检查的结果；安装不代表完成，也不授权发布、发消息或读账号。",
+          "en": "Optional. Check the required input and expected result first. Installing a Skill does not complete the work or authorize publishing, messaging, or account access."
+        }
+      },
+      "next": {
+        "zh": "下一轮不用全部重做：需要不清回第1课；页面安排不清回第2课；不会用回第3课；访问或收录疑问回第4课；入口缺失回第5课。",
+        "en": "Do not restart everything: return to lesson 1 for unclear needs, 2 for page layout, 3 for usability, 4 for access or indexing questions, and 5 for missing entry points."
+      },
+      "exampleIsHypothetical": true,
+      "validationStatus": "editorial-review-only-no-beginner-user-test"
+    }
+  ]
+}
