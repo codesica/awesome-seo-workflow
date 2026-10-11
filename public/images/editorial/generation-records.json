@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "note": "Actual original generation parameters. Exact model and timestamps unavailable; no inferred values substituted. File paths are basenames only.",
+  "records": [
+    {
+      "asset": "seo-home-hero.png",
+      "tool": "image_gen",
+      "parameters": {
+        "prompt": "Use case: illustration-story. Create one high quality original website hero raster illustration, landscape 3:2 aspect ratio. For a bilingual beginner SEO learning site. A sophisticated editorial illustration with tactile matte paper and subtle ink grain, warm ivory background, deep forest green and charcoal, muted sage with tiny fresh lemon-lime accents. Visual narrative: a useful handmade webpage connects a real question to a helpful answer. The visual centerpiece is a beautifully large upright webpage panel with a clear illustrated plant-care guide (one botanical illustration and a few broad abstract editorial rules, no lettering). Behind-left a curious young adult examines a drooping small plant beside their laptop, one hand thoughtfully at chin. In front-left a focused creator at a small desk composes the useful illustrated webpage. Right foreground a different reader seated by a bright window looks at the guide on a tablet and confidently tends a healthy potted plant. Layer these three intimate scenes naturally in one coherent airy editorial studio-garden space, with the large webpage visually dominant. Storytelling through gaze, objects and spatial rhythm, not diagrams. Elegant hand-drawn forms with dimensional shading, natural human anatomy, sophisticated magazine cover aesthetic, generous negative space around edges, quiet detail. No writing, no numbers, no letters, no branding, no logos, no emoji, no arrows, no icon grids, no plastic 3D, no watermarks. Warm, useful and inviting, clear at website size.",
+        "transparent_background": false
+      },
+      "model": "unknown",
+      "exact_generated_at": "unknown"
+    },
+    {
+      "asset": "01-real-demand-research.png",
+      "tool": "image_gen",
+      "parameters": {
+        "prompt": "Use case: illustration-story. Create ONE original premium editorial illustration for an SEO beginner course, landscape 3:2. Scene: researching real human needs, not chasing keywords. A thoughtful adult researcher in dark forest green sits beside a large worktable observing several small everyday human situations on physical observation cards: a traveler comparing routes on an unlettered map; a person trying to understand a household object; a shopper comparing two plain products. In the foreground the researcher's hand holds a large magnifying glass above one specific problem card, and nearby an open notebook contains careful abstract handwritten marks, small pencil sketches, and selected paper tabs. The selected meaningful problem is subtly accented with fresh lime, while other notes recede. Clear visual hierarchy with one compelling focal point, realistic human proportions, elegant asymmetric editorial composition, not a process diagram. Style: refined hand-drawn print editorial illustration, sophisticated European magazine, matte warm ivory paper ground, deep charcoal ink lines, forest green and muted sage flat color, sparing fresh lemon-lime accents, subtle risograph grain and natural paper texture, beautifully observed hands and faces. No actual text, no letters, no numbers, no logos, no watermarks. No emoji, no cheap 3D, no rows of icons, no connector arrows, no saturated blue. Generous warm-paper breathing room, rich purposeful scene detail and excellent craftsmanship. High resolution, wide 3:2.",
+        "transparent_background": false
+      },
+      "model": "unknown",
+      "exact_generated_at": "unknown"
+    },
+    {
+      "asset": "02-create-useful-page.png",
+      "tool": "image_gen",
+      "parameters": {
+        "prompt": "Use case: illustration-story. ONE original premium editorial illustration for a beginner SEO course: creating a useful web page from messy source material. Landscape 3:2. A wide close-up editorial composition: a large elegant desktop monitor dominates the right two thirds, showing ONE beautifully ordered long-form how-to webpage about caring for a houseplant: large botanical photograph-like drawing at top, several clear illustrated practical steps below, plenty of well-aligned whitespace, abstract horizontal ink strokes instead of words. At left a thoughtful adult creator wearing a forest-green shirt is seen in three-quarter rear profile, editing this page with a pencil in one hand and the other at keyboard. On the left side of the desk raw scattered research notes, small photographs, loose botanical sketches and overlapping scraps give way to the calm disciplined webpage. The visual narrative is disorder becoming useful clarity, without arrows or an explicit split-screen. Website is visually the hero; human and raw materials support it. Style: beautifully crafted realistic hand-drawn editorial print illustration, mature European magazine, warm ivory matte paper ground, nuanced charcoal ink hatching and dry pencil texture, deep forest green and muted sage hues, very sparing fresh lemon-lime accents, subtle fine risograph grain. Natural human proportions and believable hands. Consistent restrained tactile printed-art look, not 3D or vector clipart. No legible text, letters, numbers, logos, or watermark. No emojis, icon rows, connector arrows, charts showing growth, or saturated blue. Excellent clear hierarchy and deliberate warm-paper negative space. Wide landscape 1536x1024.",
+        "transparent_background": false
+      },
+      "model": "unknown",
+      "exact_generated_at": "unknown"
+    },
+    {
+      "asset": "03-discoverable-page.png",
+      "tool": "image_gen",
+      "parameters": {
+        "prompt": "Use case: illustration-story. ONE original premium editorial illustration for beginner SEO learning, showing how an individual useful page becomes discoverable through scanning, organizing, and retrieving. Wide landscape 3:2. An imaginative but tangible beautiful library of webpages as physical paper folios. Composition viewed at a slight elevated angle across a wide librarian's table. In back-left, a refined slim optical scanning lamp sweeps a soft sage cone of light over several incoming loose illustrated webpage sheets. In the middle background, a beautifully crafted dark forest-green card-catalog cabinet with open shallow drawers holds many upright cream index cards organized by tabs, representing an index. In the right foreground, a human reader's hand has selected and opened one specific illustrated webpage folio: it contains a clear botanical houseplant care illustration and elegant abstract text rules. This selected page is large, bright, and sharp, with a single vivid lemon-lime bookmark; the surrounding catalog and stacks recede softly. Small correspondence details tie one incoming plant sheet, one plant thumbnail catalog card, and the opened page together. The visual tells collection, organization, finding the right page through spatial depth, NOT icon arrows or a flowchart. Sophisticated mature editorial metaphor, tactile and grounded, no claim of guaranteed rank or growth. Style: exquisitely rendered hand-drawn editorial print illustration with naturalistic object forms, nuanced charcoal hatching and dry pencil details, warm ivory paper background, dark forest green, muted sage, sparing fresh lemon-lime, subtle risograph grain and paper texture. Beautiful purposeful negative space. No legible text, letters, numbers, logos, watermark, emoji, cheap 3D, arrows, network nodes, ranking podiums, rising graphs, or saturated blue. High resolution 1536x1024.",
+        "transparent_background": false
+      },
+      "model": "unknown",
+      "exact_generated_at": "unknown"
+    },
+    {
+      "asset": "seo-targeted-promotion.png",
+      "tool": "image_gen",
+      "parameters": {
+        "prompt": "Create one premium editorial illustration for a serious SEO learning website. Landscape 3:2. Warm off-white paper background, deep ink green and charcoal, sage green with tiny vivid lemon green accents. Fine paper print grain, elegant sophisticated hand-drawn / cut-paper editorial art, restrained dimensionality, no cheap 3D, no emojis, no logos, no text or letters. Scene: thoughtful creator seated at the left edge of a sculptural oval communal table, personally presenting a carefully designed useful webpage printout to a small group of three genuinely interested people; each reader has a related problem represented by the same abstract distinctive leaf/shape visible on their notes and on the matching page. Human interaction and relevance are the visual focus. Two other distant figures carry unrelated shapes and are not being targeted. The page has abstract image blocks and thin rules, no readable text. Intimate, selective connection, not mass broadcast. Mature asymmetrical composition, substantial breathable paper space, convincing graceful human gestures and anatomy. Not an infographic, not a row of icons or arrows, no megaphone, no growth chart. Deliver an actual complete raster illustration."
+      },
+      "model": "unknown",
+      "exact_generated_at": "unknown"
+    },
+    {
+      "asset": "seo-evidence-iteration.png",
+      "tool": "image_gen",
+      "parameters": {
+        "prompt": "One premium editorial mixed-media illustration, wide landscape exactly 3:2, for a mature SEO evidence and iteration essay. Warm ivory paper, dark forest ink, charcoal, sage gray green, only tiny lemon green emphasis. Fine risograph grain and tactile paper texture. An overhead diagonal composition of an investigator's practical desk: two differently arranged website page printouts with abstract rectangular image blocks and simple thin blank rules, a third partially tucked-under revised page, magnifying glass revealing a real circled small layout detail, a neat handwritten observation notebook whose marks are abstract strokes not readable words, and a human hand carefully making one pencil correction to the revised sheet. Honest small-scale comparison and evidence-led revision, no upward revenue line, no charts claiming results, no money, no dashboards. Sophisticated restrained print illustration with believable object materials and gentle directional light, broad warm off-white breathing space, deep forest-green solid shadow shapes. No letters, no numbers, no logos, no emoji, no icon arrows, no decorative robots, no cheap 3D. Fully finished high-quality original raster art."
+      },
+      "model": "unknown",
+      "exact_generated_at": "unknown"
+    },
+    {
+      "asset": "seo-human-agent-review.png",
+      "tool": "image_gen",
+      "parameters": {
+        "prompt": "Create a premium mature editorial mixed-media print illustration, wide 3:2 for an essay on human judgment with AI agent assistance in SEO. Scene: a thoughtful human editor at a beautiful practical workbench, shown three-quarter side view at left, studying and annotating a webpage printout with pencil, one hand clearly holding the sheet and the other marking a decision. At the right a small precise elegant mechanical collaborative arm mounted to the table quietly organizes two stacks of page printouts and checks matching repetitive page layouts with a simple optical reader. The human is directing and reviewing; mechanical help is modest, subordinate and practical. No humanoid robot or robot face, no magic, no futuristic holograms. Warm off-white paper backdrop, deep ink forest green and charcoal, sage green, tiny vivid lemon-green accents on mechanical joints and pencil annotation. High-end editorial realism blended with fine tactile print grain, understated ink shadows, airy disciplined composition with visible negative space. The page designs are abstract image panels and rules, absolutely no readable text, letters, numbers, logo, watermark, emoji, arrows, cheap 3D, or charts. Graceful correct human anatomy. A cohesive literary magazine illustration with real material character."
+      },
+      "model": "unknown",
+      "exact_generated_at": "unknown"
+    }
+  ]
+}

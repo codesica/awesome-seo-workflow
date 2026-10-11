@@ -14,6 +14,7 @@ run('python3','content/workflow/validate.py')
 run('python3','scripts/validate-skill-locales.py')
 release='--release' in sys.argv
 run('npm','run','build:release' if release else 'build')
+run('python3','scripts/validate-standards.py')
 
 def unique(values,label):
     assert len(values)==len(set(values)),f'Duplicate {label}'

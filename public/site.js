@@ -1,5 +1,6 @@
 const chinese = document.documentElement.lang.startsWith('zh');
 for (const button of document.querySelectorAll('[data-copy]')) {
+  button.disabled=false;
   button.addEventListener('click', async () => {
     const source = document.getElementById(button.dataset.copy);
     try {
@@ -17,6 +18,7 @@ for (const button of document.querySelectorAll('[data-copy]')) {
 const tabs = [...document.querySelectorAll('[data-demo-tab]')];
 function selectTab(button, focus = false) {
   for (const tab of tabs) {
+  tab.disabled=false;
     const active = tab === button;
     tab.setAttribute('aria-selected', String(active)); tab.tabIndex = active ? 0 : -1;
     document.querySelector(`[data-demo-panel="${tab.dataset.demoTab}"]`).hidden = !active;
@@ -24,6 +26,7 @@ function selectTab(button, focus = false) {
   if (focus) button.focus();
 }
 for (const tab of tabs) {
+  tab.disabled=false;
   tab.addEventListener('click', () => selectTab(tab));
   tab.addEventListener('keydown', event => {
     const current = tabs.indexOf(tab);
@@ -37,6 +40,7 @@ for (const language of document.querySelectorAll('[data-language]')) {
   });
 }
 const conceptFilter = document.querySelector('[data-concept-filter]');
+if (conceptFilter) conceptFilter.disabled=false;
 if (conceptFilter) conceptFilter.addEventListener('change', () => {
   let count = 0;
   for (const entry of document.querySelectorAll('[data-concept-stages]')) {
@@ -144,4 +148,9 @@ for (const diagram of document.querySelectorAll('[data-teaching-diagram]')) {
   sync();
   arrange();
   window.addEventListener('resize', arrange);
+}
+
+// Native disclosure navigation remains available without JavaScript.
+for(const menu of document.querySelectorAll('.mobile-menu')){
+ menu.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.open){event.preventDefault();menu.open=false;menu.querySelector('summary').focus();}});
 }

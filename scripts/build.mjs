@@ -11,6 +11,11 @@ import {stageIds} from './content-routes.mjs';
 import {resourcesPage,advancedIndex,advancedPage,advancedModules} from './advanced-ui.mjs';
 
 const release = process.argv.includes('--release');
+if(release){
+ const art=JSON.parse(await readFile('public/images/editorial/manifest.json','utf8'));
+ if(art.images.length!==7)throw new Error('Release requires all seven actual editorial illustrations.');
+ for(const image of art.images)for(const variant of image.variants)await readFile('public/images/editorial/'+variant.file);
+}
 if (release && !config.releaseReady) throw new Error('Release blocked: the UI preview awaits user visual approval.');
 const origin = new URL(config.origin).origin;
 let sourceCommit=null;
@@ -49,7 +54,7 @@ const guides = [
   {path:'/guides/sitemap/', file:'submit-sitemap.md', short:'Does your sitemap point to the right pages?', description:'Find and check your sitemap, submit it through official tools when you have access, and record the result.', output:'A sitemap check and submission record', number:'02', example:'sitemap-html'},
   {path:'/guides/page-check/', file:'one-page-seo-check.md', short:'Is this page ready to share?', description:'Review its purpose, title, canonical URL, headings and links. Choose one useful change and verify it.', output:'A one-page review', number:'03', example:'canonical-conflict'},
 ];
-const link = (url, text) => `<a href="${esc(url)}">${esc(text)}${url.startsWith('https://')?' ↗':''}</a>`;
+const link = (url, text) => `<a href="${esc(url)}">${esc(text)}${url.startsWith('https://')?'':''}</a>`;
 const list = items => `<ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
 const statuses = (skill) => '<span class="status">Source reviewed</span> ' + (skill?.execution ? '<span class="status">CLI run · synthetic</span>' : '<span class="status pending">Not run</span>');
 async function emit(page) {
@@ -70,7 +75,7 @@ function article(path,title,description,body,{eyebrow='FIELD GUIDE',meta='',toc=
   const tocLinks=toc.map(([id,t])=>`<li><a href="#${id}">${esc(t)}</a></li>`).join('');
   return {path,title,description,body:`<div class="wrap"><div class="breadcrumb">${link('/',lang==='zh'?'首页':'Home')} / ${link(parent,parentTitle)}</div><header class="page-head"><div class="eyebrow">${eyebrow}</div><h1>${esc(displayTitle)}</h1><p class="lede">${esc(description)}</p>${meta?`<div class="page-meta">${meta}</div>`:''}</header><div class="article-layout"><aside class="toc desktop-toc" aria-label="${lang==='zh'?'本页目录':'On this page'}"><strong>${lang==='zh'?'本页目录':'On this page'}</strong><ul>${tocLinks}</ul></aside><details class="mobile-toc"><summary>${lang==='zh'?'本页目录':'On this page'}</summary><ul>${tocLinks}</ul></details><article class="prose">${body}</article></div></div>`};
 }
-const lessonRows = () => `<div class="lesson-list">${guides.map(g=>`<a class="lesson-row" href="${g.path}"><span class="lesson-number">${g.number}</span><span><span class="lesson-title">${g.short}</span><span class="lesson-desc">${g.description}</span></span><span class="lesson-output">You'll keep<strong>${g.output}</strong></span><span class="arrow" aria-hidden="true">↗</span></a>`).join('')}</div>`;
+const lessonRows = () => `<div class="lesson-list">${guides.map(g=>`<a class="lesson-row" href="${g.path}"><span class="lesson-number">${g.number}</span><span><span class="lesson-title">${g.short}</span><span class="lesson-desc">${g.description}</span></span><span class="lesson-output">You'll keep<strong>${g.output}</strong></span><span class="arrow" aria-hidden="true"></span></a>`).join('')}</div>`;
 const skillRows = () => catalog.skills.map(s=>`<div class="skill-row" id="${s.id}"><div><h3>${link('/skills/'+s.id+'/',s.name)}</h3><small>${s.role==='default'?'Default local route':s.role==='optional-specialist'?'Optional · Claude Code':'Advanced · hosted service'}</small></div><p>${esc(s.one_liner)}</p><div>${statuses(s)}</div></div>`).join('');
 await rm(out,{recursive:true,force:true}); await mkdir(out,{recursive:true}); await cp('public',out,{recursive:true});
 await emit({path:'/',...home('zh',homeData)});

@@ -121,3 +121,15 @@ These checks validate the stated local scope, not indexing, rankings, growth, or
 The confirmed origin is `https://skills.yangluotong.top`, served by the existing `lab-seo-starter-skills` Cloudflare Worker. `npm run deploy` builds a release and updates that Worker. `/build-info.json` records the release version, source commit, and 76 indexable routes. Publishing uses the existing configuration and permissions.
 
 Original code, tutorials, examples, and the seven original bilingual Skills are [MIT licensed](LICENSE). Linked third-party projects retain their own licenses and are not included in these seven-Skill downloads. See [attribution](THIRD_PARTY.md).
+
+## 项目规范 / Project standards
+
+修改前阅读相关规范，交付时记录实际本地检查结果；未测不等于通过。当前视觉为项目编辑式 v1。
+
+Read the relevant standard before making changes and record actual local verification at delivery. Untested does not mean passed. The current visual direction is project editorial v1.
+
+- [生图 / Image generation](docs/standards/image-generation.md)
+- [UI](docs/standards/ui.md)
+- [视觉交互 / Visual interaction](docs/standards/visual-interaction.md)
+- [内容 / Content](docs/standards/content-standard.md)
+- [调研 / Research](docs/standards/research-standard.md)

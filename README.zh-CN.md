@@ -121,3 +121,15 @@ npm run check
 正式地址为 `https://skills.yangluotong.top`，由现有 `lab-seo-starter-skills` Cloudflare Worker 提供。`npm run deploy` 构建发布版并更新这个 Worker。`/build-info.json` 记录发布版本、源提交与 76 个可索引路由。发布沿用现有配置和权限。
 
 原创代码、教程、示例和七个双语原创 Skill 使用 [MIT 许可](LICENSE)。链接的第三方项目保留各自许可，不包含在七个原创 Skill 下载中。见 [第三方归属说明](THIRD_PARTY.zh-CN.md)。
+
+## 项目规范 / Project standards
+
+修改前阅读相关规范，交付时记录实际本地检查结果；未测不等于通过。当前视觉为项目编辑式 v1。
+
+Read the relevant standard before making changes and record actual local verification at delivery. Untested does not mean passed. The current visual direction is project editorial v1.
+
+- [生图 / Image generation](docs/standards/image-generation.md)
+- [UI](docs/standards/ui.md)
+- [视觉交互 / Visual interaction](docs/standards/visual-interaction.md)
+- [内容 / Content](docs/standards/content-standard.md)
+- [调研 / Research](docs/standards/research-standard.md)

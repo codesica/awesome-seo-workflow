@@ -1,0 +1,229 @@
+{
+  "generation": "Built-in imagegen; conceptual editorial illustrations, not observed SEO evidence",
+  "images": [
+    {
+      "key": "hero",
+      "original": "seo-home-hero.png",
+      "id": "seo-editorial-hero-v1",
+      "original_path": "output/imagegen/originals/seo-home-hero.png",
+      "generation_record": "generation-records.json",
+      "original_sha256": "4b437ea861758bb4d37e66e061fc45bbc227784aff5772d503c8c9c9a100dc19",
+      "variants": [
+        {
+          "file": "hero-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 103910,
+          "sha256": "6d2a115c9222f775d3ea1f5d583b78a7b47dea5de90686f00bd268bf8c7a4cd6"
+        },
+        {
+          "file": "hero-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 215344,
+          "sha256": "a438b0ae877c119b239a5458d81398b55422a3f15e298d8169838e117362cce3"
+        },
+        {
+          "file": "hero-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 406856,
+          "sha256": "330b6ad6a696618657770c6cbcd8ee3b2bfe20b2c7da2a5009073040dacbd4ff"
+        }
+      ],
+      "conversion": "python3 scripts/prepare-editorial-art.py (Pillow LANCZOS, WebP quality 88, method 6)"
+    },
+    {
+      "key": "need",
+      "original": "01-real-demand-research.png",
+      "id": "seo-editorial-need-v1",
+      "original_path": "output/imagegen/originals/01-real-demand-research.png",
+      "generation_record": "generation-records.json",
+      "original_sha256": "ff81fbdfb753cabfbadf21954f78790667dd111ac0aaf80cb0533ba7c2783240",
+      "variants": [
+        {
+          "file": "need-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 97452,
+          "sha256": "6ae28b19eae07da6c2ed32c6cdc893bde02ec8c56d454bb1e473f27503ca9932"
+        },
+        {
+          "file": "need-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 219402,
+          "sha256": "280523e63318b4ca44818e8efa88ffdaa7c4318cce9a03e0d776f8c404973b96"
+        },
+        {
+          "file": "need-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 461342,
+          "sha256": "3d4108f5e57ce9ba6057fddb2f6c781af08836a39de88eb797f7cc74775d1b55"
+        }
+      ],
+      "conversion": "python3 scripts/prepare-editorial-art.py (Pillow LANCZOS, WebP quality 88, method 6)"
+    },
+    {
+      "key": "making",
+      "original": "02-create-useful-page.png",
+      "id": "seo-editorial-making-v1",
+      "original_path": "output/imagegen/originals/02-create-useful-page.png",
+      "generation_record": "generation-records.json",
+      "original_sha256": "ae5885b36ac76235cfa7553002d80ee7a9f1d64c1d0a9abadcfc9a0594b087ed",
+      "variants": [
+        {
+          "file": "making-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 91162,
+          "sha256": "5512dc2265b17c45afb868c5770f397de296d34cdb2132adfca511bcfafea494"
+        },
+        {
+          "file": "making-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 214628,
+          "sha256": "1bf3fcaf3cdb766f6bd3910dc3e52bec0175445a9a2e819c1e7f3f29866c8290"
+        },
+        {
+          "file": "making-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 456720,
+          "sha256": "2117df664968b25b60b8e0eba284fbda52aaa4ec2fd2d3cf4b586c7d33893624"
+        }
+      ],
+      "conversion": "python3 scripts/prepare-editorial-art.py (Pillow LANCZOS, WebP quality 88, method 6)"
+    },
+    {
+      "key": "discovery",
+      "original": "03-discoverable-page.png",
+      "id": "seo-editorial-discovery-v1",
+      "original_path": "output/imagegen/originals/03-discoverable-page.png",
+      "generation_record": "generation-records.json",
+      "original_sha256": "4a331e00b7191ae80d937ac816ca1aea0997a51c54bb5ac2988b7368934638fc",
+      "variants": [
+        {
+          "file": "discovery-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 89512,
+          "sha256": "873f869fcc7afac084730979b78ba6cfca7e0b2d127aa6193761a5507e707014"
+        },
+        {
+          "file": "discovery-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 194184,
+          "sha256": "fd1a76f129ece97cd73071b8d85b1265935ebc6e4ee8ada42389bd798fe84ea7"
+        },
+        {
+          "file": "discovery-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 407084,
+          "sha256": "3327f561cd3f637b0f46773f1783978b11c542c34ec187172121dbe542595b8a"
+        }
+      ],
+      "conversion": "python3 scripts/prepare-editorial-art.py (Pillow LANCZOS, WebP quality 88, method 6)"
+    },
+    {
+      "key": "promotion",
+      "original": "seo-targeted-promotion.png",
+      "id": "seo-editorial-promotion-v1",
+      "original_path": "output/imagegen/originals/seo-targeted-promotion.png",
+      "generation_record": "generation-records.json",
+      "original_sha256": "1d45476732b2fb63bcaa47fb83d5b69e0267769deb43cefc609cab45e0fb9b54",
+      "variants": [
+        {
+          "file": "promotion-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 73230,
+          "sha256": "2c5cf86e1561bc8dffcb25282d4bae1e4f1bd438c2671af797f4cebc032d8cae"
+        },
+        {
+          "file": "promotion-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 160300,
+          "sha256": "85aa5fc2f864911d19fba0bc60c3c3c81644c483a5b6976ea961217bd30c352f"
+        },
+        {
+          "file": "promotion-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 343980,
+          "sha256": "d664b0e236439ba416cb8bea7f33fbe50fc620a567a77026351b3674b5127c5a"
+        }
+      ],
+      "conversion": "python3 scripts/prepare-editorial-art.py (Pillow LANCZOS, WebP quality 88, method 6)"
+    },
+    {
+      "key": "experiment",
+      "original": "seo-evidence-iteration.png",
+      "id": "seo-editorial-experiment-v1",
+      "original_path": "output/imagegen/originals/seo-evidence-iteration.png",
+      "generation_record": "generation-records.json",
+      "original_sha256": "52b649a23d72bf3ac352e4fd0d52ccde30a35ba23b9049e3fb7671b146eea7cd",
+      "variants": [
+        {
+          "file": "experiment-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 87518,
+          "sha256": "7834a882795e93ec6a6b2d4e69e95543526f06de369bf9bcd63d7af45dcd7277"
+        },
+        {
+          "file": "experiment-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 203016,
+          "sha256": "6686935b12eb39af29fb0c8206a4e360de6bc332b0a42a4bf1c392d268ff0184"
+        },
+        {
+          "file": "experiment-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 462272,
+          "sha256": "92f7d510509bec7b0ecf930f8f36975f88cb97290ff2775f72405c8f09a3eed5"
+        }
+      ],
+      "conversion": "python3 scripts/prepare-editorial-art.py (Pillow LANCZOS, WebP quality 88, method 6)"
+    },
+    {
+      "key": "agent",
+      "original": "seo-human-agent-review.png",
+      "id": "seo-editorial-agent-v1",
+      "original_path": "output/imagegen/originals/seo-human-agent-review.png",
+      "generation_record": "generation-records.json",
+      "original_sha256": "02d377e6cf785af9033dade3b58cfc11790778e527dc3d2fbb1e5755aabb95c9",
+      "variants": [
+        {
+          "file": "agent-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 74054,
+          "sha256": "5154e93a0d1e57f35427da6b1b7a698adbecb810f687ef64f7b2beb4794292e0"
+        },
+        {
+          "file": "agent-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 155954,
+          "sha256": "8141db516832afd714d29187cd64694a7f9a41ae95d06dd37b4e532576b2158a"
+        },
+        {
+          "file": "agent-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 308098,
+          "sha256": "38fa795b1c2f847cee7d333a8636a45ff3e235ea11f26bd1caf2448a7e634d58"
+        }
+      ],
+      "conversion": "python3 scripts/prepare-editorial-art.py (Pillow LANCZOS, WebP quality 88, method 6)"
+    }
+  ]
+}

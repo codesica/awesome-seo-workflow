@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "template",
+  "page_id": "REPLACE_WITH_PAGE_ID",
+  "language_pair": {"zh": "", "en": ""},
+  "criteria_fixed_at": null,
+  "evidence_record_ids": [],
+  "checks": [
+    {"id": "C01", "mode": "local_and_human", "criterion_zh": "问题、一个动作、示例、验证、下一步齐全且顺序清楚", "criterion_en": "Question, one action, example, check, and next step are present and clear", "status": "NOT_RUN", "evidence": []},
+    {"id": "C02", "mode": "human", "criterion_zh": "新手能理解术语；必要风险和前置条件可见；深入内容可选", "criterion_en": "Terms are understandable; essential risks and prerequisites are visible; depth is optional", "status": "NOT_RUN", "evidence": []},
+    {"id": "C03", "mode": "local_and_human", "criterion_zh": "示例性质明确；事实有对应证据且没有夸大验证层级", "criterion_en": "Examples are labeled; factual claims have supporting evidence without overstating the verified level", "status": "NOT_RUN", "evidence": []},
+    {"id": "C04", "mode": "human", "criterion_zh": "中英文结论、限制、风险和下一步一致", "criterion_en": "Chinese and English agree on conclusions, limits, risks, and next steps", "status": "NOT_RUN", "evidence": []},
+    {"id": "C05", "mode": "local_and_human", "criterion_zh": "资源来源、许可、版本、核查日期及复核触发条件完整", "criterion_en": "Resources include provenance, license, version, check date, and recheck trigger", "status": "NOT_RUN", "evidence": []},
+    {"id": "C06", "mode": "local_and_human", "criterion_zh": "公开内容不含私有材料或可重识别信息；代码、技能和素材复用有许可", "criterion_en": "Public content excludes private or re-identifying material; code, skills, and assets have reuse permission", "status": "NOT_RUN", "evidence": []},
+    {"id": "C07", "mode": "human", "criterion_zh": "一个未被指导过答案的新手尝试了核心动作并记录困难及结果", "criterion_en": "A real novice attempted the core task without being coached to the answer, with difficulties and results recorded", "status": "NOT_RUN", "evidence": []},
+    {"id": "C08", "mode": "human", "criterion_zh": "声明的业务结果有实际观测，包含范围、时间窗口和限制", "criterion_en": "Claimed business outcomes have actual observations with scope, time window, and limits", "status": "NOT_RUN", "evidence": []}
+  ],
+  "failures": [],
+  "criteria_changes": []
+}

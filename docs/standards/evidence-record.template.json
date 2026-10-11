@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "template",
+  "id": "REPLACE_WITH_CLAIM_ID",
+  "question": {"zh": "", "en": ""},
+  "scope": {"audience": "", "context": "", "exclusions": []},
+  "prior_judgment": {"text": "", "basis": "NONE"},
+  "acceptance_criteria": [{"id": "AC-01", "criterion": "", "fixed_before_evaluation": true}],
+  "sources": [{
+    "id": "SRC-01",
+    "url": "",
+    "title": "",
+    "publisher": "",
+    "published_at": null,
+    "checked_at": null,
+    "version": null,
+    "locator": "",
+    "source_type": "original_documentation",
+    "access_status": "NOT_RUN",
+    "evidence_type": "documented_behavior",
+    "supports": "",
+    "limitations": "",
+    "independence_group": "",
+    "resource": null
+  }],
+  "new_evidence": [{"source_ids": [], "observation": "", "effect": "inconclusive"}],
+  "current_conclusion": {
+    "zh": "", "en": "", "claim_type": "hypothesis",
+    "change": "undetermined", "change_reason": "", "supported_level": "unverified"
+  },
+  "conflicting_evidence": [],
+  "unknowns": [{"question": "", "consequence": ""}],
+  "next_experiment": {
+    "decision": "defer", "action": "", "acceptance_criteria_ids": [],
+    "observations_needed": [], "observation_window": "", "stop_condition": "",
+    "permission_needed": "", "recheck_trigger": ""
+  },
+  "validation": {
+    "local_checks": {"status": "NOT_RUN", "evidence": []},
+    "human_source_review": {"status": "NOT_RUN", "evidence": []},
+    "privacy_rights_review": {"status": "NOT_RUN", "evidence": []},
+    "real_novice_test": {"status": "NOT_RUN", "evidence": []},
+    "business_outcomes": {"status": "NOT_RUN", "evidence": []}
+  },
+  "failures": [],
+  "criteria_changes": []
+}
