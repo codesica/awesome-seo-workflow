@@ -2,7 +2,7 @@
 
 The local snapshot at `5b8fb505a24827e56fb9b2d82aa592853813bbee` continues the approved editorial homepage through the introduction, roadmap, six lessons, resources, concepts, templates, guides, examples, CLI record, and Skill pages. It adds six fieldwork exercises in Chinese and English with six blank CSVs.
 
-Run `npm ci && npm run dev` with Node 22+, or run `npm run build` followed by `PORT=4186 npm run preview`. Open `http://127.0.0.1:4186/zh/` or `/en/`. `npm run check` validates a local preview by default; `python3 scripts/check-project.py --release` requests release-mode checks. That snapshot kept `releaseReady: false`. The subsequent v2.5.0 release enables publication following the user’s existing request to publish this same site.
+Run `npm ci && npm run dev` with Node 22+, or run `npm run build` followed by `PORT=4186 npm run preview`. Open `http://127.0.0.1:4186/zh/` or `/en/`. `npm run check` validates a local preview by default; `python3 scripts/check-project.py --release` requests release-mode checks. That snapshot kept `releaseReady: false`. The subsequent v2.5.0 release enables publication following the user’s existing request to publish this same site. The v2.5.1 follow-up removes the project’s automatic GitHub Actions workflow and retains local checks.
 
 The public fieldwork input is `content/advanced-fieldwork`. Its upstream manifest pins 25 sanitized public files. Original article and template bytes are preserved; `integration.json` separately records local integration. Stage mappings follow the existing course topics, not the ordinal numbers of the advanced exercises. No private original source package was read or copied.
 

@@ -20,4 +20,4 @@
 
 改动 Skill 或打包后，运行 `python3 scripts/validate-skill-locales.py` 和 `npm run build:release`。检查两种语言完整 ZIP、相对引用、许可、原始说明下载及网站语言入口。旧中文下载地址继续可用；新链接优先使用明确的 /downloads/skills/zh/ 和 /en/ 路径。同时更新目录、网页说明和字段解释。
 
-使用 `npm run check` 完成统一离线校验：合成案例、内容 ID、内部链接/锚点、中英完整包，以及发布版本、提交和校验和。PR CI 只有 `contents: read`，没有部署凭据、`pull_request_target` 或发布步骤。私密会话 ID、交接记录和个人本机路径不得进入公开源码或 Release。新发布先更新 `site.config.mjs` 的版本，再创建新 tag；不要覆盖既有固定版本附件。
+使用 `npm run check` 完成统一离线校验：合成案例、内容 ID、内部链接/锚点、中英完整包，以及发布版本、提交和校验和。本项目不配置自动 GitHub Actions；检查在本地执行。新增或运行 Actions 须获得用户针对该任务的明确要求。私密会话 ID、交接记录和个人本机路径不得进入公开源码或 Release。新发布先更新 `site.config.mjs` 的版本，再创建新 tag；不要覆盖既有固定版本附件。
