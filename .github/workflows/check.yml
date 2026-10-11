@@ -21,4 +21,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: npm ci --ignore-scripts
-      - run: npm run check
+      - run: python3 scripts/check-project.py --release

@@ -44,6 +44,10 @@
 | [05 · 让需要的人找到入口](https://skills.yangluotong.top/zh/stages/05-discovery-promotion/) | 发现与分享入口记录 |
 | [06 · 看发生了什么，再改](https://skills.yangluotong.top/zh/stages/06-measure-iterate/) | 一项改动与复查条件 |
 
+## 完成练习后，继续深入作业
+
+[学习资料目录](https://skills.yangluotong.top/zh/resources/) 汇集概念、模板、教程、案例与可选 Skills。做完课程里的小练习，再按当前问题选择 [六份深入作业](https://skills.yangluotong.top/zh/advanced/)：机会证据、页面价值、索引诊断、报表口径、渠道选择与有界实验。每份均有完整中英正文、官方依据和空白 CSV。示例完全虚构；真实执行与真人学习验证仍为 `NOT_RUN`。
+
 ## 七个原创 Skills：任务 → 输入 → 输出
 
 先理解任务，再选一个有界帮手。三个浏览器包需要已有授权；七个包都保持真实站点 `NOT_RUN`。
@@ -88,6 +92,7 @@ PORT=4180 npm run preview
 
 - `content/beginner/`：双语首页、入门说明和一次一件事的教学层。
 - `content/workflow/`：六个双语阶段、25 个动作、官方来源与六份空白模板。
+- `content/advanced-fieldwork/`：六份公开双语深入作业、31 个官方来源与六个空白 CSV。
 - `content/concepts/`：23 个双语概念说明。
 - `content/` 与 `content/zh/`：原有三篇完整英文、中文技术教程。
 - `skills/browser/` 与 `skills/workflow/`：保留的中文 Skill 入口。
@@ -113,6 +118,6 @@ npm run check
 
 ## 发布与许可
 
-正式地址为 `https://skills.yangluotong.top`，由现有 `lab-seo-starter-skills` Cloudflare Worker 提供。`npm run deploy` 构建发布版并更新这个 Worker。`/build-info.json` 记录发布版本、源提交与 60 个可索引路由。发布沿用现有配置和权限。
+正式地址为 `https://skills.yangluotong.top`，由现有 `lab-seo-starter-skills` Cloudflare Worker 提供。`npm run deploy` 构建发布版并更新这个 Worker。`/build-info.json` 记录发布版本、源提交与 76 个可索引路由。发布沿用现有配置和权限。
 
 原创代码、教程、示例和七个双语原创 Skill 使用 [MIT 许可](LICENSE)。链接的第三方项目保留各自许可，不包含在七个原创 Skill 下载中。见 [第三方归属说明](THIRD_PARTY.zh-CN.md)。

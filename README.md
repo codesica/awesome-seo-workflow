@@ -44,6 +44,10 @@ Complete your own small task first. The paper route works without a website.
 | [05 · Help people find a way in](https://skills.yangluotong.top/en/stages/05-discovery-promotion/) | A discovery and sharing record |
 | [06 · Check what happened, then improve](https://skills.yangluotong.top/en/stages/06-measure-iterate/) | One change with review conditions |
 
+## Continue with fieldwork
+
+The [resource directory](https://skills.yangluotong.top/en/resources/) links concepts, templates, guides, cases and optional Skills. After the small lessons, choose one of [six fieldwork exercises](https://skills.yangluotong.top/en/advanced/) covering opportunity evidence, page value, indexing diagnosis, report scope, channel fit and bounded experiments. Each has complete Chinese/English prose, official references and a blank CSV. Examples are synthetic; live execution and learner validation remain `NOT_RUN`.
+
 ## Seven original Skills: task → input → output
 
 Understand the task before choosing a bounded helper. Three browser packages require existing access; all seven remain live-site `NOT_RUN`.
@@ -88,6 +92,7 @@ Open `http://127.0.0.1:4180/en/` or `/zh/`. `npm run dev` uses port 4173. The bu
 
 - `content/beginner/`: the bilingual homepage, introduction, and one-task teaching layer.
 - `content/workflow/`: six bilingual stages, 25 actions, official sources, and six blank templates.
+- `content/advanced-fieldwork/`: six public bilingual exercises, 31 official references, and six blank CSVs.
 - `content/concepts/`: 23 bilingual concept explanations.
 - `content/` and `content/zh/`: the three original English and Chinese technical guides.
 - `skills/browser/` and `skills/workflow/`: retained Chinese Skill entrypoints.
@@ -113,6 +118,6 @@ These checks validate the stated local scope, not indexing, rankings, growth, or
 
 ## Publishing and licensing
 
-The confirmed origin is `https://skills.yangluotong.top`, served by the existing `lab-seo-starter-skills` Cloudflare Worker. `npm run deploy` builds a release and updates that Worker. `/build-info.json` records the release version, source commit, and 60 indexable routes. Publishing uses the existing configuration and permissions.
+The confirmed origin is `https://skills.yangluotong.top`, served by the existing `lab-seo-starter-skills` Cloudflare Worker. `npm run deploy` builds a release and updates that Worker. `/build-info.json` records the release version, source commit, and 76 indexable routes. Publishing uses the existing configuration and permissions.
 
 Original code, tutorials, examples, and the seven original bilingual Skills are [MIT licensed](LICENSE). Linked third-party projects retain their own licenses and are not included in these seven-Skill downloads. See [attribution](THIRD_PARTY.md).

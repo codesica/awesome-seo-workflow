@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL_RENDERED_NOT_PUBLISHED",
+  "status": "INTEGRATED_FOR_RELEASE",
   "inputVersion": "1.0+editorial.1",
   "upstreamArchiveSHA256": "886a7535efc77f969f29e45e122734168db429bbd4f3979aa0702388f0c00711",
   "privateSourcesReadOrCopied": false,
@@ -10,5 +10,6 @@
   ],
   "templates": 6,
   "learnerValidation": "NOT_RUN",
-  "liveExecution": "NOT_RUN"
+  "liveExecution": "NOT_RUN",
+  "releaseVersion": "2.5.0"
 }
