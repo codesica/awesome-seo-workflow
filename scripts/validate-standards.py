@@ -85,6 +85,16 @@ def validate_record(obj,path,template=False):
     require(fields<=set(obj),f'{label}: required evidence/QA fields missing')
     require(obj.get('record_kind')==('template' if template else 'record'),f'{label}: template is not a completed record')
     source_ids={s.get('id') for s in obj.get('sources',[])};unique([s.get('id') for s in obj.get('sources',[])],label+' source IDs')
+    # QA uses checks[].id; evidence validation uses its existing named keys.
+    failures=obj.get('failures')
+    failures=failures if isinstance(failures,list) else []
+    checks=((check.get('id'),check) for check in obj.get('checks',[]) if isinstance(check,dict)) if is_qa else obj.get('validation',{}).items()
+    for check_id,check in checks:
+        if isinstance(check,dict) and check.get('status') in {'FAIL','BLOCKED'}:
+            matched=isinstance(check_id,str) and bool(check_id.strip()) and any(
+                isinstance(failure,dict) and failure.get('check_id')==check_id and failure.get('status')==check['status']
+                for failure in failures)
+            require(matched,f'{label}: {check_id}: failure/block needs a matching check_id and status')
     def walk(value):
         if isinstance(value,list):
             for child in value:walk(child)
