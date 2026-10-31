@@ -133,3 +133,5 @@ Read the relevant standard before making changes and record actual local verific
 - [视觉交互 / Visual interaction](docs/standards/visual-interaction.md)
 - [内容 / Content](docs/standards/content-standard.md)
 - [调研 / Research](docs/standards/research-standard.md)
+
+- [教程编辑与设计原件](docs/editorial-history/README.md)：独有历史源文件与用途说明；现行行为和结论沿原正式入口。
